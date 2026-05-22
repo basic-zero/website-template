@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NodeXMind - Website Templates</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg,
+                    #7dd3fc 0%,
+                    #3b82f6 35%,
+                    #a855f7 70%,
+                    #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg,
+                    #7dd3fc 0%,
+                    #3b82f6 35%,
+                    #a855f7 70%,
+                    #ec4899 100%);
+        }
+
+        .template-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .template-card {
+            transition: all 0.35s ease;
+        }
+
+        iframe {
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="fixed top-0 left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 pt-6">
+
+            <div class="glass rounded-2xl px-6 py-4 shadow-xl">
+
+                <div class="flex items-center justify-between">
+
+                    <!-- LOGO -->
+                    <div class="flex items-center gap-4">
+
+                        <div>
+                            <h1 class="text-2xl font-extrabold text-[#0A145A]">
+                                Node<span class="gradient-text">X</span>Mind
+                            </h1>
+
+                            <p class="text-sm text-gray-500">
+                                Connect • Think • Innovate
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- MENU -->
+                    <nav class="hidden lg:flex items-center gap-8">
+
+                        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium transition">
+                            Trang chủ
+                        </a>
+
+                        <a href="#templates" class="text-gray-700 hover:text-blue-500 font-medium transition">
+                            Templates
+                        </a>
+
+                        <a href="#services" class="text-gray-700 hover:text-blue-500 font-medium transition">
+                            Dịch vụ
+                        </a>
+
+                        <a href="#contact" class="text-gray-700 hover:text-blue-500 font-medium transition">
+                            Liên hệ
+                        </a>
+
+                    </nav>
+
+                    <!-- BUTTON -->
+                    <button
+                        class="hidden md:flex items-center justify-center px-6 py-3 rounded-xl text-white font-semibold gradient-bg shadow-lg hover:scale-105 transition">
+                        Bắt đầu ngay
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
+
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+
+        <!-- BG -->
+        <div class="absolute inset-0">
+
+            <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-300 rounded-full blur-[140px] opacity-30">
+            </div>
+
+            <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-300 rounded-full blur-[140px] opacity-30">
+            </div>
+
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 py-32 w-full">
+
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+                <!-- LEFT -->
+                <div>
+
+                    <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white shadow-md mb-8">
+
+                        <div class="w-3 h-3 rounded-full gradient-bg"></div>
+
+                        <span class="text-sm font-semibold text-gray-700">
+                            Website Templates Platform
+                        </span>
+
+                    </div>
+
+                    <h2 class="text-5xl lg:text-7xl font-black leading-tight text-[#0A145A] mb-8">
+
+                        Khám phá
+                        <span class="gradient-text">
+                            giao diện website
+                        </span>
+                        hiện đại cho doanh nghiệp
+                    </h2>
+
+                    <p class="text-xl text-gray-600 leading-relaxed mb-10">
+
+                        Nền tảng cung cấp các mẫu website cao cấp dành cho
+                        Spa, Beauty, E-commerce, Logistics và Startup Technology.
+
+                    </p>
+
+                    <div class="flex flex-wrap gap-5">
+
+                        <button
+                            class="px-8 py-4 rounded-2xl text-white font-bold gradient-bg shadow-xl hover:scale-105 transition">
+
+                            Xem Templates
+
+                        </button>
+
+                        <button
+                            class="px-8 py-4 rounded-2xl bg-white border border-gray-200 text-gray-700 font-bold hover:bg-gray-50 transition">
+
+                            Tư vấn thiết kế
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="relative">
+
+                    <div class="glass rounded-[40px] p-6 shadow-2xl border border-white/50">
+
+                        <div class="bg-white rounded-[30px] overflow-hidden shadow-xl">
+
+                            <div class="h-14 border-b bg-gray-50 flex items-center px-5 gap-3">
+
+                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+
+                            </div>
+
+                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1400&auto=format&fit=crop"
+                                class="w-full h-[500px] object-cover">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- TEMPLATE SECTION -->
+    <!-- ========================= -->
+
+    <section id="templates" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- TITLE -->
+            <div class="text-center mb-16">
+
+                <h2 class="text-5xl font-black text-[#0A145A] mb-5">
+
+                    Website Templates
+
+                </h2>
+
+                <p class="text-xl text-gray-500 max-w-3xl mx-auto">
+
+                    Chọn giao diện phù hợp với doanh nghiệp của bạn và xem preview trực tiếp.
+
+                </p>
+
+            </div>
+
+            <!-- FILTER -->
+            <div class="glass rounded-3xl p-6 shadow-xl mb-14">
+
+                <div class="grid lg:grid-cols-4 gap-5">
+
+                    <input type="text" placeholder="Tìm kiếm template..."
+                        class="h-14 px-5 rounded-2xl border border-gray-200 outline-none focus:ring-4 focus:ring-blue-200">
+
+                    <select
+                        class="h-14 px-5 rounded-2xl border border-gray-200 outline-none focus:ring-4 focus:ring-blue-200">
+                        <option>Tất cả ngành nghề</option>
+                        <option>Beauty & Spa</option>
+                        <option>E-commerce</option>
+                        <option>Logistics</option>
+                        <option>Technology</option>
+                    </select>
+
+                    <select
+                        class="h-14 px-5 rounded-2xl border border-gray-200 outline-none focus:ring-4 focus:ring-blue-200">
+                        <option>Tất cả style</option>
+                        <option>Luxury</option>
+                        <option>Minimal</option>
+                        <option>Modern</option>
+                    </select>
+
+                    <button
+                        class="h-14 rounded-2xl text-white font-bold gradient-bg shadow-xl hover:scale-[1.02] transition">
+
+                        Tìm kiếm
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- GRID -->
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+
+                <!-- CARD -->
+                <div class="template-card bg-white rounded-[32px] overflow-hidden shadow-lg">
+
+                    <!-- IMAGE -->
+                    <div class="relative overflow-hidden">
+
+                        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1400&auto=format&fit=crop"
+                            class="w-full h-[280px] object-cover">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        </div>
+
+                        <div class="absolute bottom-6 left-6 right-6">
+
+                            <span
+                                class="inline-flex px-4 py-2 rounded-full bg-white/20 backdrop-blur-md text-white text-sm font-semibold mb-4">
+
+                                SPA & BEAUTY
+
+                            </span>
+
+                            <h3 class="text-3xl font-black text-white">
+                                Luxury Beauty
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="p-8">
+
+                        <p class="text-gray-500 leading-relaxed mb-8">
+
+                            Giao diện sang trọng dành cho Spa, Nail, Beauty Clinic với trải nghiệm hiện đại và tối ưu
+                            chuyển đổi.
+
+                        </p>
+
+                        <div class="flex gap-4">
+
+                            <button
+                                class="flex-1 h-14 rounded-2xl text-white font-bold gradient-bg hover:scale-[1.03] transition">
+
+                                Xem Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD -->
+                <div class="template-card bg-white rounded-[32px] overflow-hidden shadow-lg">
+
+                    <div class="relative overflow-hidden">
+
+                        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1400&auto=format&fit=crop"
+                            class="w-full h-[280px] object-cover">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        </div>
+
+                        <div class="absolute bottom-6 left-6 right-6">
+
+                            <span
+                                class="inline-flex px-4 py-2 rounded-full bg-white/20 backdrop-blur-md text-white text-sm font-semibold mb-4">
+
+                                E-COMMERCE
+
+                            </span>
+
+                            <h3 class="text-3xl font-black text-white">
+                                Modern Shop
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <p class="text-gray-500 leading-relaxed mb-8">
+
+                            Website thương mại điện tử hiện đại với trải nghiệm mua sắm tối ưu trên mọi thiết bị.
+
+                        </p>
+
+                        <div class="flex gap-4">
+
+                            <button
+                                class="flex-1 h-14 rounded-2xl text-white font-bold gradient-bg hover:scale-[1.03] transition">
+
+                                Xem Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CARD -->
+                <div class="template-card bg-white rounded-[32px] overflow-hidden shadow-lg">
+
+                    <div class="relative overflow-hidden">
+
+                        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=1400&auto=format&fit=crop"
+                            class="w-full h-[280px] object-cover">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        </div>
+
+                        <div class="absolute bottom-6 left-6 right-6">
+
+                            <span
+                                class="inline-flex px-4 py-2 rounded-full bg-white/20 backdrop-blur-md text-white text-sm font-semibold mb-4">
+
+                                TECHNOLOGY
+
+                            </span>
+
+                            <h3 class="text-3xl font-black text-white">
+                                AI Startup
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <p class="text-gray-500 leading-relaxed mb-8">
+
+                            Giao diện startup công nghệ hiện đại theo phong cách AI SaaS Platform.
+
+                        </p>
+
+                        <div class="flex gap-4">
+
+                            <button
+                                class="flex-1 h-14 rounded-2xl text-white font-bold gradient-bg hover:scale-[1.03] transition">
+
+                                Xem Demo
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer id="contact" class="relative overflow-hidden bg-[#0A145A] text-white mt-24">
+
+        <div class="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-500 rounded-full blur-[140px] opacity-20">
+        </div>
+
+        <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-pink-500 rounded-full blur-[140px] opacity-20">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 py-24">
+
+            <div class="grid lg:grid-cols-4 gap-14">
+
+                <!-- BRAND -->
+                <div class="lg:col-span-2">
+
+                    <div class="flex items-center gap-5 mb-8">
+
+
+                        <div>
+
+                            <h3 class="text-4xl font-black">
+                                Node<span class="gradient-text">X</span>Mind
+                            </h3>
+
+                            <p class="text-blue-100 mt-2">
+                                Connect • Think • Innovate
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <p class="text-blue-100 text-lg leading-relaxed max-w-2xl">
+
+                        NodeXMind cung cấp các giải pháp thiết kế website, UI/UX và nền tảng số hiện đại dành cho doanh
+                        nghiệp.
+
+                    </p>
+
+                </div>
+
+                <!-- LINKS -->
+                <div>
+
+                    <h4 class="text-2xl font-bold mb-6">
+                        Dịch vụ
+                    </h4>
+
+                    <ul class="space-y-4 text-blue-100">
+
+                        <li>
+                            Thiết kế website
+                        </li>
+
+                        <li>
+                            UI/UX Design
+                        </li>
+
+                        <li>
+                            SEO Website
+                        </li>
+
+                        <li>
+                            Branding
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- CONTACT -->
+                <div>
+
+                    <h4 class="text-2xl font-bold mb-6">
+                        Liên hệ
+                    </h4>
+
+                    <ul class="space-y-4 text-blue-100">
+
+                        <li>
+                            trangianguyen144@gmail.com
+                        </li>
+
+                        <li>
+                            +84 378794677
+                        </li>
+
+                        <li>
+                            HCM, Việt Nam
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="border-t border-white/10 mt-16 pt-8 text-center text-blue-200">
+
+                © 2026 NodeXMind. All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
