@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thông Tin Cá Nhân - Luxe Beauté</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{gold:'#C9A84C','gold-light':'#E8D5A3',cream:'#F5F0E8','dark':'#0a0a0a'}}}}</script>
+</head>
+<body class="bg-dark text-white font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="font-serif text-2xl tracking-widest"><span>LUXE</span><span class="text-gold"> BEAUTÉ</span></a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="index.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Trang Chủ</a>
+      <a href="products.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Sản Phẩm</a>
+    </div>
+    <a href="cart.html" class="relative text-gray-300 hover:text-gold transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-gold text-dark text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a>
+  </div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1">
+      <div class="border border-gold/20 p-6 mb-4">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-14 h-14 bg-gold/20 rounded-full flex items-center justify-center border-2 border-gold/50"><span class="text-gold font-serif text-2xl">L</span></div>
+          <div><p class="font-semibold">Lan Anh Nguyễn</p><p class="text-gold text-xs tracking-widest uppercase">Thành Viên Vàng</p></div>
+        </div>
+        <nav class="space-y-1">
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gold bg-gold/10 rounded font-semibold">👤 Thông Tin Cá Nhân</a>
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/5 transition rounded">📦 Đơn Hàng Của Tôi</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/5 transition rounded">📍 Địa Chỉ</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/5 transition rounded">❤️ Yêu Thích</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/5 transition rounded">🎁 Điểm Thưởng</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/5 transition rounded">🔒 Đổi Mật Khẩu</a>
+          <hr class="border-gold/20 my-2"/>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-red-400 transition rounded">⬅️ Đăng Xuất</a>
+        </nav>
+      </div>
+      <!-- Membership Card -->
+      <div class="border border-gold/40 p-5 bg-gradient-to-br from-gold/20 to-gray-900">
+        <p class="text-gold text-xs tracking-widest uppercase mb-1">Hạng Thành Viên</p>
+        <p class="font-serif text-2xl text-gold mb-3">Thành Viên Vàng</p>
+        <div class="flex items-center justify-between text-xs text-gray-400 mb-2">
+          <span>Tiến độ lên Bạch Kim</span><span>57%</span>
+        </div>
+        <div class="bg-gray-900 rounded-full h-1.5"><div class="bg-gold h-1.5 rounded-full" style="width:57%"></div></div>
+        <p class="text-gray-500 text-xs mt-2">Chi thêm 4.500.000₫ để lên Bạch Kim</p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="lg:col-span-3 space-y-6">
+      <!-- Avatar Section -->
+      <div class="border border-gold/20 p-6">
+        <div class="flex items-center gap-6">
+          <div class="relative">
+            <div class="w-24 h-24 bg-gold/20 rounded-full flex items-center justify-center border-2 border-gold/50">
+              <span class="text-gold font-serif text-4xl">L</span>
+            </div>
+            <button class="absolute bottom-0 right-0 w-7 h-7 bg-gold rounded-full flex items-center justify-center text-dark text-xs hover:bg-gold-light transition">✎</button>
+          </div>
+          <div>
+            <h2 class="font-serif text-xl">Nguyễn Thị Lan Anh</h2>
+            <p class="text-gray-500 text-sm">Thành viên từ tháng 3, 2022</p>
+            <button class="mt-2 text-gold text-xs tracking-widest uppercase hover:text-gold-light transition border-b border-gold/40">Thay Đổi Ảnh Đại Diện</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Info Form -->
+      <div class="border border-gold/20 p-6">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="font-serif text-xl text-gold">Thông Tin Cá Nhân</h2>
+          <button id="edit-btn" onclick="toggleEdit()" class="text-gold text-xs tracking-widest uppercase border border-gold/40 px-4 py-2 hover:bg-gold/10 transition">Chỉnh Sửa</button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Họ</label>
+            <input id="f-ho" type="text" value="Nguyễn Thị" readonly class="w-full bg-gray-900 border border-gold/30 text-white px-4 py-3 text-sm outline-none read-only:opacity-60 read-only:cursor-not-allowed"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Tên</label>
+            <input id="f-ten" type="text" value="Lan Anh" readonly class="w-full bg-gray-900 border border-gold/30 text-white px-4 py-3 text-sm outline-none read-only:opacity-60 read-only:cursor-not-allowed"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Email</label>
+            <input type="email" value="lananh.nguyen@gmail.com" readonly class="w-full bg-gray-900 border border-gold/30 text-white px-4 py-3 text-sm outline-none read-only:opacity-60 read-only:cursor-not-allowed"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Số Điện Thoại</label>
+            <input id="f-phone" type="tel" value="0912 345 678" readonly class="w-full bg-gray-900 border border-gold/30 text-white px-4 py-3 text-sm outline-none read-only:opacity-60 read-only:cursor-not-allowed"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Ngày Sinh</label>
+            <input type="date" value="1992-08-15" readonly class="w-full bg-gray-900 border border-gold/30 text-gray-400 px-4 py-3 text-sm outline-none read-only:opacity-60 read-only:cursor-not-allowed"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Giới Tính</label>
+            <select disabled class="w-full bg-gray-900 border border-gold/30 text-gray-400 px-4 py-3 text-sm outline-none opacity-60 cursor-not-allowed">
+              <option>Nữ</option><option>Nam</option><option>Khác</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Loại Da</label>
+            <select disabled class="w-full bg-gray-900 border border-gold/30 text-gray-400 px-4 py-3 text-sm outline-none opacity-60 cursor-not-allowed">
+              <option>Da hỗn hợp</option><option>Da dầu</option><option>Da khô</option><option>Da nhạy cảm</option>
+            </select>
+          </div>
+        </div>
+        <div id="save-btn" class="hidden mt-5">
+          <button class="bg-gold text-dark px-8 py-3 text-sm font-bold tracking-widest uppercase hover:bg-gold-light transition mr-3">Lưu Thay Đổi</button>
+          <button onclick="toggleEdit()" class="border border-gold/30 text-gray-400 px-6 py-3 text-sm hover:border-gold hover:text-gold transition">Hủy</button>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="border border-gold/20 p-5 text-center hover:border-gold/40 transition">
+          <p class="font-serif text-3xl text-gold mb-1">12</p>
+          <p class="text-gray-500 text-xs tracking-widest uppercase">Đơn Hàng</p>
+        </div>
+        <div class="border border-gold/20 p-5 text-center hover:border-gold/40 transition">
+          <p class="font-serif text-3xl text-gold mb-1">2.840</p>
+          <p class="text-gray-500 text-xs tracking-widest uppercase">Điểm Thưởng</p>
+        </div>
+        <div class="border border-gold/20 p-5 text-center hover:border-gold/40 transition">
+          <p class="font-serif text-3xl text-gold mb-1">8</p>
+          <p class="text-gray-500 text-xs tracking-widest uppercase">Đã Đánh Giá</p>
+        </div>
+        <div class="border border-gold/20 p-5 text-center hover:border-gold/40 transition">
+          <p class="font-serif text-3xl text-gold mb-1">5</p>
+          <p class="text-gray-500 text-xs tracking-widest uppercase">Yêu Thích</p>
+        </div>
+      </div>
+
+      <!-- Change Password -->
+      <div class="border border-gold/20 p-6">
+        <h2 class="font-serif text-xl mb-5 text-gold">Đổi Mật Khẩu</h2>
+        <div class="space-y-4 max-w-sm">
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Mật Khẩu Hiện Tại</label>
+            <input type="password" placeholder="••••••••" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Mật Khẩu Mới</label>
+            <input type="password" placeholder="Tối thiểu 8 ký tự" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Xác Nhận Mật Khẩu Mới</label>
+            <input type="password" placeholder="Nhập lại mật khẩu" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+          <button class="bg-gold text-dark px-8 py-3 text-sm font-bold tracking-widest uppercase hover:bg-gold-light transition">Cập Nhật Mật Khẩu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleEdit() {
+  const inputs = document.querySelectorAll('#f-ho, #f-ten, #f-phone');
+  const saveBtn = document.getElementById('save-btn');
+  const editBtn = document.getElementById('edit-btn');
+  const isReadOnly = inputs[0].hasAttribute('readonly');
+  inputs.forEach(i => isReadOnly ? i.removeAttribute('readonly') : i.setAttribute('readonly',''));
+  saveBtn.classList.toggle('hidden', !isReadOnly);
+  editBtn.classList.toggle('hidden', isReadOnly);
+}
+</script>
+
+<footer class="bg-dark border-t border-gold/20 py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-600 text-xs tracking-widest">© 2025 LUXE BEAUTÉ. ALL RIGHTS RESERVED.</p></div></footer>
+</body>
+</html>

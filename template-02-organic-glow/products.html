@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sản Phẩm - Organic Glow</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{green:'#2D6A4F','green-light':'#74B49B','green-dark':'#1B4332',sage:'#95C9A8',cream:'#FAF7F0',earth:'#8B5E3C'}}}}</script>
+</head>
+<body class="bg-cream text-gray-800 font-sans">
+
+<!-- Nav -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur border-b border-green/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌿</span><span class="font-bold text-xl text-green-dark">Organic<span class="text-green">Glow</span></span></a>
+    <div class="hidden md:flex items-center space-x-6">
+      <a href="index.html" class="text-gray-600 hover:text-green text-sm transition">Trang Chủ</a>
+      <a href="products.html" class="text-green font-semibold text-sm">Sản Phẩm</a>
+      <a href="about.html" class="text-gray-600 hover:text-green text-sm transition">Về Chúng Tôi</a>
+      <a href="blog.html" class="text-gray-600 hover:text-green text-sm transition">Blog</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="login.html" class="text-gray-600 hover:text-green transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-600 hover:text-green transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-green text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<div class="pt-16 bg-gradient-to-r from-green-dark to-green text-white">
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-2">Tất Cả Sản Phẩm</h1>
+    <p class="text-green-light">Khám phá bộ sưu tập chăm sóc da thuần thiên nhiên từ Organic Glow</p>
+    <div class="flex items-center gap-2 mt-3 text-sm text-green-light">
+      <a href="index.html" class="hover:text-white transition">Trang Chủ</a>
+      <span>/</span>
+      <span class="text-white">Sản Phẩm</span>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <!-- Search + Sort bar -->
+  <div class="flex flex-col sm:flex-row gap-4 mb-8">
+    <div class="relative flex-1">
+      <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      <input type="text" placeholder="Tìm kiếm sản phẩm..." class="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-2xl bg-white focus:outline-none focus:ring-2 focus:ring-green/30 text-sm">
+    </div>
+    <select class="px-4 py-3 border border-gray-200 rounded-2xl bg-white text-sm focus:outline-none focus:ring-2 focus:ring-green/30 text-gray-600">
+      <option>Sắp xếp: Phổ biến nhất</option>
+      <option>Giá tăng dần</option>
+      <option>Giá giảm dần</option>
+      <option>Mới nhất</option>
+      <option>Đánh giá cao nhất</option>
+    </select>
+  </div>
+
+  <div class="flex gap-8">
+    <!-- Sidebar Filter -->
+    <aside class="hidden lg:block w-64 flex-shrink-0">
+      <!-- Danh mục -->
+      <div class="bg-white rounded-2xl p-6 mb-4 shadow-sm">
+        <h3 class="font-bold text-green-dark mb-4">Danh Mục</h3>
+        <div class="space-y-2">
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" checked class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Tất cả</span>
+            <span class="ml-auto text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">77</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Serum & Tinh Chất</span>
+            <span class="ml-auto text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">15</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Kem Dưỡng Ẩm</span>
+            <span class="ml-auto text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">12</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Mặt Nạ</span>
+            <span class="ml-auto text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">12</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Dầu Dưỡng</span>
+            <span class="ml-auto text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">8</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Toner & Xịt Khoáng</span>
+            <span class="ml-auto text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">10</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Chống Nắng</span>
+            <span class="ml-auto text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">6</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="checkbox" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Sữa Rửa Mặt</span>
+            <span class="ml-auto text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">9</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Khoảng giá -->
+      <div class="bg-white rounded-2xl p-6 mb-4 shadow-sm">
+        <h3 class="font-bold text-green-dark mb-4">Khoảng Giá</h3>
+        <div class="space-y-2">
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="radio" name="price" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Tất cả mức giá</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="radio" name="price" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Dưới 200.000₫</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="radio" name="price" checked class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">200.000₫ – 350.000₫</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="radio" name="price" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">350.000₫ – 500.000₫</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input type="radio" name="price" class="accent-green w-4 h-4">
+            <span class="text-sm text-gray-600 group-hover:text-green transition">Trên 500.000₫</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Loại da -->
+      <div class="bg-white rounded-2xl p-6 mb-4 shadow-sm">
+        <h3 class="font-bold text-green-dark mb-4">Phù Hợp Loại Da</h3>
+        <div class="space-y-2">
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Da khô</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Da dầu</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Da hỗn hợp</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" checked class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Da nhạy cảm</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Mọi loại da</span></label>
+        </div>
+      </div>
+
+      <!-- Đặc tính -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h3 class="font-bold text-green-dark mb-4">Đặc Tính</h3>
+        <div class="space-y-2">
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" checked class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">USDA Organic</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Cruelty-Free</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Vegan</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Không Paraben</span></label>
+          <label class="flex items-center gap-3 cursor-pointer group"><input type="checkbox" class="accent-green w-4 h-4"><span class="text-sm text-gray-600 group-hover:text-green transition">Không Hương Liệu</span></label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product Grid -->
+    <div class="flex-1">
+      <div class="flex items-center justify-between mb-6">
+        <p class="text-gray-500 text-sm">Hiển thị <span class="font-semibold text-gray-700">8</span> / 77 sản phẩm</p>
+        <div class="flex gap-2">
+          <button class="p-2 bg-green text-white rounded-xl"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg></button>
+          <button class="p-2 bg-white text-gray-400 rounded-xl border"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg></button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+
+        <!-- Product 1 -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="aspect-square bg-gradient-to-br from-green/10 to-sage/20 flex items-center justify-center relative">
+            <span class="text-7xl">🌿</span>
+            <span class="absolute top-3 left-3 bg-green text-white text-xs px-2 py-1 rounded-full font-medium">Best Seller</span>
+            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow hover:bg-red-50 transition text-gray-400 hover:text-red-400">♡</button>
+            <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Nhanh</a>
+            </div>
+          </div>
+          <div class="p-4">
+            <p class="text-green text-xs font-medium uppercase tracking-wide">Serum</p>
+            <h3 class="font-bold mt-1 hover:text-green transition"><a href="product-detail.html">Serum Rau Má & Vitamin C</a></h3>
+            <div class="flex text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-400 ml-1">(94)</span></div>
+            <div class="flex items-center justify-between mt-3">
+              <div><span class="text-green font-bold">380.000₫</span><span class="text-gray-400 text-sm line-through ml-2">450.000₫</span></div>
+              <button class="bg-green text-white text-xs px-3 py-2 rounded-xl hover:bg-green-dark transition font-medium">+ Giỏ</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="aspect-square bg-gradient-to-br from-pink-50 to-rose-100 flex items-center justify-center relative">
+            <span class="text-7xl">🌸</span>
+            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow hover:bg-red-50 transition text-red-400">♥</button>
+            <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Nhanh</a>
+            </div>
+          </div>
+          <div class="p-4">
+            <p class="text-green text-xs font-medium uppercase tracking-wide">Dưỡng Ẩm</p>
+            <h3 class="font-bold mt-1 hover:text-green transition"><a href="product-detail.html">Kem Dưỡng Hoa Hồng Hữu Cơ</a></h3>
+            <div class="flex text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-400 ml-1">(67)</span></div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-green font-bold">320.000₫</span>
+              <button class="bg-green text-white text-xs px-3 py-2 rounded-xl hover:bg-green-dark transition font-medium">+ Giỏ</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="aspect-square bg-gradient-to-br from-emerald-50 to-teal-100 flex items-center justify-center relative">
+            <span class="text-7xl">🎋</span>
+            <span class="absolute top-3 left-3 bg-earth text-white text-xs px-2 py-1 rounded-full font-medium">-20%</span>
+            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow hover:bg-red-50 transition text-gray-400 hover:text-red-400">♡</button>
+            <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Nhanh</a>
+            </div>
+          </div>
+          <div class="p-4">
+            <p class="text-green text-xs font-medium uppercase tracking-wide">Mặt Nạ</p>
+            <h3 class="font-bold mt-1 hover:text-green transition"><a href="product-detail.html">Mặt Nạ Đất Sét Trà Xanh</a></h3>
+            <div class="flex text-yellow-400 text-xs mt-1">★★★★☆ <span class="text-gray-400 ml-1">(48)</span></div>
+            <div class="flex items-center justify-between mt-3">
+              <div><span class="text-green font-bold">240.000₫</span><span class="text-gray-400 text-sm line-through ml-2">300.000₫</span></div>
+              <button class="bg-green text-white text-xs px-3 py-2 rounded-xl hover:bg-green-dark transition font-medium">+ Giỏ</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="aspect-square bg-gradient-to-br from-amber-50 to-yellow-100 flex items-center justify-center relative">
+            <span class="text-7xl">🫚</span>
+            <span class="absolute top-3 left-3 bg-green text-white text-xs px-2 py-1 rounded-full font-medium">Mới</span>
+            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow hover:bg-red-50 transition text-gray-400 hover:text-red-400">♡</button>
+            <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Nhanh</a>
+            </div>
+          </div>
+          <div class="p-4">
+            <p class="text-green text-xs font-medium uppercase tracking-wide">Dầu Dưỡng</p>
+            <h3 class="font-bold mt-1 hover:text-green transition"><a href="product-detail.html">Dầu Dưỡng Mặt Jojoba & Argan</a></h3>
+            <div class="flex text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-400 ml-1">(31)</span></div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-green font-bold">420.000₫</span>
+              <button class="bg-green text-white text-xs px-3 py-2 rounded-xl hover:bg-green-dark transition font-medium">+ Giỏ</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="aspect-square bg-gradient-to-br from-blue-50 to-cyan-100 flex items-center justify-center relative">
+            <span class="text-7xl">🌼</span>
+            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow hover:bg-red-50 transition text-gray-400 hover:text-red-400">♡</button>
+            <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Nhanh</a>
+            </div>
+          </div>
+          <div class="p-4">
+            <p class="text-green text-xs font-medium uppercase tracking-wide">Toner</p>
+            <h3 class="font-bold mt-1 hover:text-green transition"><a href="product-detail.html">Toner Nha Đam & Hoa Cúc</a></h3>
+            <div class="flex text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-400 ml-1">(55)</span></div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-green font-bold">280.000₫</span>
+              <button class="bg-green text-white text-xs px-3 py-2 rounded-xl hover:bg-green-dark transition font-medium">+ Giỏ</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="aspect-square bg-gradient-to-br from-orange-50 to-amber-100 flex items-center justify-center relative">
+            <span class="text-7xl">☀️</span>
+            <span class="absolute top-3 left-3 bg-green text-white text-xs px-2 py-1 rounded-full font-medium">SPF50</span>
+            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow hover:bg-red-50 transition text-gray-400 hover:text-red-400">♡</button>
+            <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Nhanh</a>
+            </div>
+          </div>
+          <div class="p-4">
+            <p class="text-green text-xs font-medium uppercase tracking-wide">Chống Nắng</p>
+            <h3 class="font-bold mt-1 hover:text-green transition"><a href="product-detail.html">Kem Chống Nắng Khoáng Chất SPF50</a></h3>
+            <div class="flex text-yellow-400 text-xs mt-1">★★★★☆ <span class="text-gray-400 ml-1">(42)</span></div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-green font-bold">350.000₫</span>
+              <button class="bg-green text-white text-xs px-3 py-2 rounded-xl hover:bg-green-dark transition font-medium">+ Giỏ</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="aspect-square bg-gradient-to-br from-green/10 to-sage/20 flex items-center justify-center relative">
+            <span class="text-7xl">🌾</span>
+            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow hover:bg-red-50 transition text-gray-400 hover:text-red-400">♡</button>
+            <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Nhanh</a>
+            </div>
+          </div>
+          <div class="p-4">
+            <p class="text-green text-xs font-medium uppercase tracking-wide">Sữa Rửa Mặt</p>
+            <h3 class="font-bold mt-1 hover:text-green transition"><a href="product-detail.html">Sữa Rửa Mặt Yến Mạch Hữu Cơ</a></h3>
+            <div class="flex text-yellow-400 text-xs mt-1">★★★★★ <span class="text-gray-400 ml-1">(78)</span></div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-green font-bold">180.000₫</span>
+              <button class="bg-green text-white text-xs px-3 py-2 rounded-xl hover:bg-green-dark transition font-medium">+ Giỏ</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="aspect-square bg-gradient-to-br from-yellow-50 to-orange-100 flex items-center justify-center relative">
+            <span class="text-7xl">🍯</span>
+            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow hover:bg-red-50 transition text-gray-400 hover:text-red-400">♡</button>
+            <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+              <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Nhanh</a>
+            </div>
+          </div>
+          <div class="p-4">
+            <p class="text-green text-xs font-medium uppercase tracking-wide">Mặt Nạ</p>
+            <h3 class="font-bold mt-1 hover:text-green transition"><a href="product-detail.html">Mặt Nạ Nghệ & Mật Ong</a></h3>
+            <div class="flex text-yellow-400 text-xs mt-1">★★★★☆ <span class="text-gray-400 ml-1">(36)</span></div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-green font-bold">200.000₫</span>
+              <button class="bg-green text-white text-xs px-3 py-2 rounded-xl hover:bg-green-dark transition font-medium">+ Giỏ</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="flex items-center justify-center gap-2 mt-12">
+        <button class="w-10 h-10 rounded-xl border border-gray-200 bg-white text-gray-400 hover:border-green hover:text-green transition flex items-center justify-center">←</button>
+        <button class="w-10 h-10 rounded-xl bg-green text-white font-bold">1</button>
+        <button class="w-10 h-10 rounded-xl border border-gray-200 bg-white text-gray-600 hover:border-green hover:text-green transition">2</button>
+        <button class="w-10 h-10 rounded-xl border border-gray-200 bg-white text-gray-600 hover:border-green hover:text-green transition">3</button>
+        <span class="text-gray-400">...</span>
+        <button class="w-10 h-10 rounded-xl border border-gray-200 bg-white text-gray-600 hover:border-green hover:text-green transition">10</button>
+        <button class="w-10 h-10 rounded-xl border border-gray-200 bg-white text-gray-400 hover:border-green hover:text-green transition flex items-center justify-center">→</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-green-dark text-white py-12 mt-12">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <div class="flex items-center justify-center gap-2 mb-3"><span class="text-2xl">🌿</span><span class="font-bold text-xl">Organic<span class="text-sage">Glow</span></span></div>
+    <p class="text-green-light text-sm mb-2">📍 56 Đinh Tiên Hoàng, Hà Nội | 📞 1800 5678 | 🌿 hello@organicglow.vn</p>
+    <p class="text-green-light text-xs">© 2025 Organic Glow. Tất cả quyền được bảo lưu.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Son Matte Velvet Cherry Bomb - PinkBloom Cosmetics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pink: '#FF1493',
+            'pink-light': '#FFB6C1',
+            'pink-dark': '#C71585',
+            rose: '#FFE4E8',
+            dark: '#1a1a2e',
+            purple: '#7C3AED'
+          }
+        }
+      }
+    }
+  </script>
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => {
+        el.classList.remove('border-pink','text-pink','font-bold');
+        el.classList.add('border-transparent','text-gray-500');
+      });
+      document.getElementById('tab-' + tab).classList.remove('hidden');
+      document.getElementById('btn-' + tab).classList.add('border-pink','text-pink','font-bold');
+      document.getElementById('btn-' + tab).classList.remove('border-transparent','text-gray-500');
+    }
+    function setQty(delta) {
+      const el = document.getElementById('qty');
+      let v = parseInt(el.textContent) + delta;
+      if (v < 1) v = 1;
+      if (v > 99) v = 99;
+      el.textContent = v;
+    }
+    function selectShade(el) {
+      document.querySelectorAll('.shade-btn').forEach(b => b.classList.remove('ring-2','ring-pink'));
+      el.classList.add('ring-2','ring-pink');
+    }
+  </script>
+</head>
+<body class="bg-white text-dark font-sans">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="text-2xl font-black"><span class="text-pink">Pink</span><span class="text-dark">Bloom</span> <span class="text-pink text-sm font-light">✿</span></a>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-pink text-sm font-medium transition">Trang Chủ</a>
+        <a href="products.html" class="text-pink text-sm font-semibold border-b-2 border-pink pb-0.5">Sản Phẩm</a>
+        <a href="about.html" class="text-gray-600 hover:text-pink text-sm font-medium transition">Về Chúng Tôi</a>
+        <a href="blog.html" class="text-gray-600 hover:text-pink text-sm font-medium transition">Blog</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="login.html" class="text-gray-600 hover:text-pink transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+        <a href="cart.html" class="relative bg-pink text-white p-2 rounded-full hover:bg-pink-dark transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-1 -right-1 bg-dark text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pt-16">
+    <!-- BREADCRUMB -->
+    <div class="max-w-7xl mx-auto px-4 py-4">
+      <p class="text-sm text-gray-400">
+        <a href="index.html" class="hover:text-pink">Trang Chủ</a>
+        <span class="mx-2">/</span>
+        <a href="products.html" class="hover:text-pink">Sản Phẩm</a>
+        <span class="mx-2">/</span>
+        <a href="products.html" class="hover:text-pink">Son Môi</a>
+        <span class="mx-2">/</span>
+        <span class="text-dark font-medium">Son Matte Velvet "Cherry Bomb"</span>
+      </p>
+    </div>
+
+    <!-- PRODUCT MAIN -->
+    <div class="max-w-7xl mx-auto px-4 pb-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <!-- LEFT: IMAGES -->
+        <div class="space-y-4">
+          <!-- Main Image -->
+          <div class="bg-gradient-to-br from-pink-light via-rose to-white rounded-3xl h-96 flex items-center justify-center relative shadow-lg">
+            <span class="text-9xl" id="main-img">💄</span>
+            <span class="absolute top-4 left-4 bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full">🔥 Bestseller</span>
+            <button class="absolute top-4 right-4 text-2xl text-gray-300 hover:text-pink transition">♡</button>
+          </div>
+          <!-- Thumbnails -->
+          <div class="grid grid-cols-4 gap-3">
+            <button onclick="document.getElementById('main-img').textContent='💄'" class="bg-gradient-to-br from-pink-light to-rose rounded-2xl h-20 flex items-center justify-center text-3xl hover:ring-2 hover:ring-pink transition">💄</button>
+            <button onclick="document.getElementById('main-img').textContent='💋'" class="bg-gradient-to-br from-rose to-white rounded-2xl h-20 flex items-center justify-center text-3xl hover:ring-2 hover:ring-pink transition">💋</button>
+            <button onclick="document.getElementById('main-img').textContent='✨'" class="bg-gradient-to-br from-yellow-50 to-rose rounded-2xl h-20 flex items-center justify-center text-3xl hover:ring-2 hover:ring-pink transition">✨</button>
+            <button onclick="document.getElementById('main-img').textContent='🌸'" class="bg-gradient-to-br from-pink-light to-purple/10 rounded-2xl h-20 flex items-center justify-center text-3xl hover:ring-2 hover:ring-pink transition">🌸</button>
+          </div>
+        </div>
+
+        <!-- RIGHT: PRODUCT INFO -->
+        <div>
+          <span class="text-pink text-sm font-semibold uppercase tracking-widest">Son Môi</span>
+          <h1 class="text-3xl font-black text-dark mt-2 mb-3">Son Matte Velvet<br/>"Cherry Bomb"</h1>
+
+          <!-- Rating -->
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex text-yellow-400 text-lg">★★★★★</div>
+            <span class="text-dark font-bold">4.9</span>
+            <a href="#reviews" class="text-gray-400 text-sm hover:text-pink transition">(156 đánh giá)</a>
+            <span class="text-green-500 text-sm font-semibold">✓ Còn hàng</span>
+          </div>
+
+          <!-- Price -->
+          <div class="flex items-baseline gap-3 mb-6">
+            <span class="text-4xl font-black text-pink">185.000₫</span>
+            <span class="text-lg text-gray-400 line-through">220.000₫</span>
+            <span class="bg-pink text-white text-xs font-bold px-2.5 py-1 rounded-full">-16%</span>
+          </div>
+
+          <!-- Short desc -->
+          <p class="text-gray-600 leading-relaxed mb-6 bg-rose/40 rounded-2xl p-4 text-sm">
+            Son lì mịn như nhung với công thức Matte Velvet độc quyền. Màu lên chuẩn, che phủ hoàn hảo chỉ một lớp, không phai trong 8–10 tiếng. Được ưa chuộng bởi hơn 200 MUA chuyên nghiệp tại Việt Nam. 🇰🇷 Xuất xứ Hàn Quốc.
+          </p>
+
+          <!-- Shade Selector -->
+          <div class="mb-6">
+            <p class="font-bold text-dark mb-3">Chọn Màu: <span class="text-pink font-normal text-sm" id="shade-name">Cherry Bomb</span></p>
+            <div class="flex flex-wrap gap-3">
+              <button onclick="selectShade(this); document.getElementById('shade-name').textContent='Cherry Bomb'" class="shade-btn ring-2 ring-pink w-10 h-10 rounded-full bg-red-600 hover:scale-110 transition" title="Cherry Bomb"></button>
+              <button onclick="selectShade(this); document.getElementById('shade-name').textContent='Nude Rose'" class="shade-btn w-10 h-10 rounded-full bg-rose-300 hover:scale-110 transition border-2 border-gray-200" title="Nude Rose"></button>
+              <button onclick="selectShade(this); document.getElementById('shade-name').textContent='Berry Kiss'" class="shade-btn w-10 h-10 rounded-full bg-purple-600 hover:scale-110 transition" title="Berry Kiss"></button>
+              <button onclick="selectShade(this); document.getElementById('shade-name').textContent='Coral Sunset'" class="shade-btn w-10 h-10 rounded-full bg-orange-400 hover:scale-110 transition" title="Coral Sunset"></button>
+              <button onclick="selectShade(this); document.getElementById('shade-name').textContent='Dusty Pink'" class="shade-btn w-10 h-10 rounded-full bg-pink-300 hover:scale-110 transition border-2 border-gray-200" title="Dusty Pink"></button>
+              <button onclick="selectShade(this); document.getElementById('shade-name').textContent='Wine Red'" class="shade-btn w-10 h-10 rounded-full bg-red-900 hover:scale-110 transition" title="Wine Red"></button>
+            </div>
+            <p class="text-gray-400 text-xs mt-2">6 tông màu có sẵn — nhấn để chọn</p>
+          </div>
+
+          <!-- Quantity -->
+          <div class="flex items-center gap-5 mb-7">
+            <p class="font-bold text-dark">Số Lượng:</p>
+            <div class="flex items-center gap-3 bg-rose/30 rounded-2xl px-4 py-2">
+              <button onclick="setQty(-1)" class="text-pink font-black text-xl leading-none hover:text-pink-dark">−</button>
+              <span id="qty" class="font-bold text-dark w-6 text-center">1</span>
+              <button onclick="setQty(1)" class="text-pink font-black text-xl leading-none hover:text-pink-dark">+</button>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 mb-7">
+            <a href="cart.html" class="flex-1 bg-gradient-to-r from-pink to-pink-dark text-white font-bold py-4 rounded-2xl text-center hover:opacity-90 transition shadow-lg text-lg">🛒 Thêm Vào Giỏ Hàng</a>
+            <a href="order.html" class="flex-1 bg-dark text-white font-bold py-4 rounded-2xl text-center hover:bg-gray-800 transition text-lg">⚡ Mua Ngay</a>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="grid grid-cols-3 gap-3 text-center">
+            <div class="bg-rose/30 rounded-2xl p-3">
+              <p class="text-xl">🚚</p>
+              <p class="text-xs text-gray-500 mt-1">Free ship<br/>đơn 300K</p>
+            </div>
+            <div class="bg-rose/30 rounded-2xl p-3">
+              <p class="text-xl">🔄</p>
+              <p class="text-xs text-gray-500 mt-1">Đổi trả<br/>30 ngày</p>
+            </div>
+            <div class="bg-rose/30 rounded-2xl p-3">
+              <p class="text-xl">🌿</p>
+              <p class="text-xs text-gray-500 mt-1">100% Vegan<br/>Cruelty-Free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABS -->
+      <div class="mt-14">
+        <div class="flex gap-0 border-b-2 border-gray-100 mb-8 overflow-x-auto">
+          <button id="btn-desc" class="tab-btn px-6 py-3 text-sm border-b-2 border-pink text-pink font-bold whitespace-nowrap transition" onclick="switchTab('desc')">Mô Tả</button>
+          <button id="btn-ingr" class="tab-btn px-6 py-3 text-sm border-b-2 border-transparent text-gray-500 whitespace-nowrap transition" onclick="switchTab('ingr')">Thành Phần</button>
+          <button id="btn-how" class="tab-btn px-6 py-3 text-sm border-b-2 border-transparent text-gray-500 whitespace-nowrap transition" onclick="switchTab('how')">Hướng Dẫn</button>
+          <button id="btn-rev" class="tab-btn px-6 py-3 text-sm border-b-2 border-transparent text-gray-500 whitespace-nowrap transition" onclick="switchTab('rev')">Đánh Giá (156)</button>
+        </div>
+
+        <div id="tab-desc" class="tab-content">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="font-black text-dark text-lg mb-4">Về Sản Phẩm 💄</h3>
+              <p class="text-gray-600 leading-relaxed mb-4">Son Matte Velvet "Cherry Bomb" được phát triển độc quyền bởi đội ngũ R&D của PinkBloom với công nghệ Micro-Pigment từ Hàn Quốc. Kết cấu kem mịn nhẹ như nhung, trải đều tức thì mà không cần blend nhiều.</p>
+              <p class="text-gray-600 leading-relaxed mb-4">Với thành phần dưỡng ẩm từ Vitamin E và dầu quả mơ, son giữ cho đôi môi mềm mại cả ngày dài ngay cả khi lên lì hoàn toàn — không khô, không bong tróc.</p>
+              <ul class="space-y-2 text-gray-600 text-sm">
+                <li class="flex items-center gap-2"><span class="text-pink">✓</span> Lên màu chuẩn 100%, che phủ chỉ 1 lớp</li>
+                <li class="flex items-center gap-2"><span class="text-pink">✓</span> Độ bền 8–10 tiếng, không phai sau ăn uống nhẹ</li>
+                <li class="flex items-center gap-2"><span class="text-pink">✓</span> Công thức không chứa paraben, không mùi nồng</li>
+                <li class="flex items-center gap-2"><span class="text-pink">✓</span> Phù hợp mọi tông da, đặc biệt da ngăm</li>
+                <li class="flex items-center gap-2"><span class="text-pink">✓</span> Vegan & Cruelty-Free — đạt chứng nhận PETA</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-black text-dark text-lg mb-4">Thông Tin Sản Phẩm 📋</h3>
+              <table class="w-full text-sm">
+                <tr class="border-b border-gray-100"><td class="py-2.5 text-gray-500 w-36">Dung tích</td><td class="py-2.5 font-medium">3.5g</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2.5 text-gray-500">Finish</td><td class="py-2.5 font-medium">Matte Velvet</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2.5 text-gray-500">Xuất xứ</td><td class="py-2.5 font-medium">🇰🇷 Hàn Quốc</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2.5 text-gray-500">Hạn sử dụng</td><td class="py-2.5 font-medium">36 tháng</td></tr>
+                <tr class="border-b border-gray-100"><td class="py-2.5 text-gray-500">Phù hợp</td><td class="py-2.5 font-medium">Mọi loại da</td></tr>
+                <tr><td class="py-2.5 text-gray-500">Chứng nhận</td><td class="py-2.5 font-medium">🌿 Vegan · 🐰 Cruelty-Free</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-ingr" class="tab-content hidden">
+          <h3 class="font-black text-dark text-lg mb-4">Thành Phần 🔬</h3>
+          <div class="bg-rose/20 rounded-2xl p-5 text-sm text-gray-600 leading-relaxed mb-5">
+            Ricinus Communis (Castor) Seed Oil, Isododecane, Trimethylsiloxysilicate, Cyclopentasiloxane, Mica, Titanium Dioxide (CI 77891), Candelilla Cera/Candelilla Wax, Polyethylene, Tocopheryl Acetate (Vitamin E), Prunus Armeniaca Kernel Oil, Rosa Damascena Flower Extract, Phenoxyethanol, Ethylhexylglycerin.
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="bg-green-50 rounded-2xl p-4 text-center">
+              <p class="text-2xl mb-2">🌿</p>
+              <p class="font-bold text-dark text-sm">Không Paraben</p>
+              <p class="text-gray-400 text-xs mt-1">An toàn cho da nhạy cảm</p>
+            </div>
+            <div class="bg-yellow-50 rounded-2xl p-4 text-center">
+              <p class="text-2xl mb-2">💊</p>
+              <p class="font-bold text-dark text-sm">Vitamin E</p>
+              <p class="text-gray-400 text-xs mt-1">Dưỡng ẩm và chống oxy hóa</p>
+            </div>
+            <div class="bg-pink-50 rounded-2xl p-4 text-center">
+              <p class="text-2xl mb-2">🌹</p>
+              <p class="font-bold text-dark text-sm">Rosa Extract</p>
+              <p class="text-gray-400 text-xs mt-1">Chiết xuất hoa hồng làm mềm môi</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-how" class="tab-content hidden">
+          <h3 class="font-black text-dark text-lg mb-6">Hướng Dẫn Sử Dụng ✨</h3>
+          <div class="space-y-4">
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 bg-pink text-white rounded-full flex items-center justify-center font-black shrink-0">1</div>
+              <div><p class="font-bold text-dark">Chuẩn bị môi</p><p class="text-gray-500 text-sm mt-1">Tẩy tế bào chết nhẹ nhàng, thoa một lớp son dưỡng mỏng trước khi trang điểm khoảng 5 phút để môi đủ ẩm.</p></div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 bg-pink text-white rounded-full flex items-center justify-center font-black shrink-0">2</div>
+              <div><p class="font-bold text-dark">Kẻ viền môi</p><p class="text-gray-500 text-sm mt-1">Dùng son Cherry Bomb kẻ nhẹ theo đường viền môi trên để tạo độ gọn gàng, tránh lem màu.</p></div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 bg-pink text-white rounded-full flex items-center justify-center font-black shrink-0">3</div>
+              <div><p class="font-bold text-dark">Tô đều toàn môi</p><p class="text-gray-500 text-sm mt-1">Tô đều từ giữa môi ra ngoài. Dùng đầu son tô 1–2 lớp để màu đạt độ phủ và độ sâu tối đa.</p></div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 bg-pink text-white rounded-full flex items-center justify-center font-black shrink-0">4</div>
+              <div><p class="font-bold text-dark">Hoàn thiện</p><p class="text-gray-500 text-sm mt-1">Chờ 30 giây để son khô và bám dính hoàn toàn. Dùng giấy thấm nhẹ để tăng độ bền nếu muốn.</p></div>
+            </div>
+          </div>
+          <div class="mt-6 bg-yellow-50 rounded-2xl p-4 text-sm text-gray-600">
+            <p class="font-bold text-dark mb-2">💡 Tip từ MUA PinkBloom:</p>
+            <p>Để màu Cherry Bomb lên đẹp trên da ngăm, thoa một lớp nền nhẹ lên môi trước, rồi mới tô son. Màu sẽ tươi hơn và giữ được khoảng 12 tiếng!</p>
+          </div>
+        </div>
+
+        <div id="tab-rev" class="tab-content hidden" id="reviews">
+          <div class="flex items-center gap-8 mb-8 flex-wrap">
+            <div class="text-center">
+              <p class="text-6xl font-black text-pink">4.9</p>
+              <div class="flex text-yellow-400 text-xl justify-center mt-1">★★★★★</div>
+              <p class="text-gray-400 text-sm mt-1">156 đánh giá</p>
+            </div>
+            <div class="flex-1 space-y-2 min-w-48">
+              <div class="flex items-center gap-2"><span class="text-xs w-4">5★</span><div class="flex-1 bg-gray-100 rounded-full h-2"><div class="bg-yellow-400 h-2 rounded-full" style="width:88%"></div></div><span class="text-xs text-gray-400">88%</span></div>
+              <div class="flex items-center gap-2"><span class="text-xs w-4">4★</span><div class="flex-1 bg-gray-100 rounded-full h-2"><div class="bg-yellow-400 h-2 rounded-full" style="width:8%"></div></div><span class="text-xs text-gray-400">8%</span></div>
+              <div class="flex items-center gap-2"><span class="text-xs w-4">3★</span><div class="flex-1 bg-gray-100 rounded-full h-2"><div class="bg-yellow-400 h-2 rounded-full" style="width:3%"></div></div><span class="text-xs text-gray-400">3%</span></div>
+              <div class="flex items-center gap-2"><span class="text-xs w-4">2★</span><div class="flex-1 bg-gray-100 rounded-full h-2"><div class="bg-yellow-400 h-2 rounded-full" style="width:1%"></div></div><span class="text-xs text-gray-400">1%</span></div>
+              <div class="flex items-center gap-2"><span class="text-xs w-4">1★</span><div class="flex-1 bg-gray-100 rounded-full h-2"><div class="bg-yellow-400 h-2 rounded-full" style="width:0%"></div></div><span class="text-xs text-gray-400">0%</span></div>
+            </div>
+          </div>
+
+          <!-- Reviews list -->
+          <div class="space-y-5">
+            <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 bg-pink rounded-full flex items-center justify-center text-white font-bold text-sm">N</div>
+                  <div>
+                    <p class="font-bold text-dark text-sm">Nguyễn Minh Anh</p>
+                    <p class="text-gray-400 text-xs">Đã mua: Cherry Bomb · 12/05/2025</p>
+                  </div>
+                </div>
+                <div class="text-yellow-400 text-sm">★★★★★</div>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed">"Son màu lên chuẩn luôn! Mình da ngăm mà dùng vẫn đẹp, không bị xỉn tông chút nào. Mùi thơm nhẹ dễ chịu, không chảy, không phai suốt 8 tiếng đi học. Chắc chắn sẽ mua thêm màu Berry Kiss!"</p>
+              <div class="flex gap-2 mt-3">
+                <span class="text-xs bg-green-50 text-green-600 px-2.5 py-1 rounded-full">✓ Đã mua hàng</span>
+                <button class="text-xs text-gray-400 hover:text-pink">👍 Hữu ích (12)</button>
+              </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 bg-purple rounded-full flex items-center justify-center text-white font-bold text-sm">T</div>
+                  <div>
+                    <p class="font-bold text-dark text-sm">Trần Khánh Vy</p>
+                    <p class="text-gray-400 text-xs">Đã mua: Wine Red · 08/05/2025</p>
+                  </div>
+                </div>
+                <div class="text-yellow-400 text-sm">★★★★★</div>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed">"Đây là cây son lì tốt nhất mình từng dùng ở tầm giá này. Chất kem mượt, không bị cảm giác khô môi, màu wine red đẹp huyền bí lắm. Gói hàng của shop cute siêu luôn, có giấy gói hồng và sticker thương hiệu!"</p>
+              <div class="flex gap-2 mt-3">
+                <span class="text-xs bg-green-50 text-green-600 px-2.5 py-1 rounded-full">✓ Đã mua hàng</span>
+                <button class="text-xs text-gray-400 hover:text-pink">👍 Hữu ích (8)</button>
+              </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 bg-orange-400 rounded-full flex items-center justify-center text-white font-bold text-sm">L</div>
+                  <div>
+                    <p class="font-bold text-dark text-sm">Lê Thanh Thủy</p>
+                    <p class="text-gray-400 text-xs">Đã mua: Coral Sunset · 01/05/2025</p>
+                  </div>
+                </div>
+                <div class="text-yellow-400 text-sm">★★★★☆</div>
+              </div>
+              <p class="text-gray-600 text-sm leading-relaxed">"Màu Coral Sunset rất hợp mùa hè, tươi và cam đất siêu đẹp. Mình trừ 1 sao vì hơi khô sau 6 tiếng nhưng thoa thêm dầu môi là ổn. Sẽ mua lại và thử màu Nude Rose!"</p>
+              <div class="flex gap-2 mt-3">
+                <span class="text-xs bg-green-50 text-green-600 px-2.5 py-1 rounded-full">✓ Đã mua hàng</span>
+                <button class="text-xs text-gray-400 hover:text-pink">👍 Hữu ích (5)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RELATED PRODUCTS -->
+      <div class="mt-16">
+        <h2 class="text-2xl font-black text-dark mb-7">Sản Phẩm Liên Quan 💄</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition hover:-translate-y-1 group">
+            <a href="products.html"><div class="bg-gradient-to-br from-red-100 to-pink-light h-36 flex items-center justify-center"><span class="text-5xl group-hover:scale-110 transition">💋</span></div></a>
+            <div class="p-4"><p class="text-gray-400 text-xs">Son Môi</p><h3 class="font-bold text-sm text-dark mt-0.5">Son Tint "Berry Love"</h3><p class="text-pink font-black mt-2">155.000₫</p></div>
+          </div>
+          <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition hover:-translate-y-1 group">
+            <a href="products.html"><div class="bg-gradient-to-br from-pink-light to-rose h-36 flex items-center justify-center"><span class="text-5xl group-hover:scale-110 transition">🌸</span></div></a>
+            <div class="p-4"><p class="text-gray-400 text-xs">Má Hồng</p><h3 class="font-bold text-sm text-dark mt-0.5">Blusher "Peach Crush"</h3><p class="text-pink font-black mt-2">165.000₫</p></div>
+          </div>
+          <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition hover:-translate-y-1 group">
+            <a href="products.html"><div class="bg-gradient-to-br from-yellow-100 to-rose h-36 flex items-center justify-center"><span class="text-5xl group-hover:scale-110 transition">⭐</span></div></a>
+            <div class="p-4"><p class="text-gray-400 text-xs">Highlighter</p><h3 class="font-bold text-sm text-dark mt-0.5">Highlighter "Stardust"</h3><p class="text-pink font-black mt-2">195.000₫</p></div>
+          </div>
+          <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition hover:-translate-y-1 group">
+            <a href="products.html"><div class="bg-gradient-to-br from-purple/20 to-pink-light h-36 flex items-center justify-center"><span class="text-5xl group-hover:scale-110 transition">🎨</span></div></a>
+            <div class="p-4"><p class="text-gray-400 text-xs">Eyeshadow</p><h3 class="font-bold text-sm text-dark mt-0.5">Palette "Sunset Vibe"</h3><p class="text-pink font-black mt-2">380.000₫</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-2xl font-black mb-2"><span class="text-pink">Pink</span>Bloom ✿</p>
+      <p class="text-gray-400 text-sm mb-2">📍 28 Nguyễn Đình Chiểu, Q.3, TP.HCM | 📞 028 1234 5678 | 💌 hello@pinkbloom.vn</p>
+      <p class="text-gray-600 text-xs">© 2025 PinkBloom Cosmetics. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

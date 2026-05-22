@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Violet Essence — Hương Thơm Tinh Tế</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{violet:'#4A0072','violet-light':'#7B2FA8',lavender:'#9F7AEA','lavender-light':'#C4B5FD',gold:'#D4AF37','gold-light':'#F0D070',rosegold:'#C9897C','bg-light':'#FAF8FF'}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    .font-serif { font-family: 'Cormorant Garamond', serif; }
+    body { font-family: 'Montserrat', sans-serif; background-color: #FAF8FF; }
+    .hero-gradient { background: linear-gradient(135deg, #FAF8FF 0%, #EDE7F6 40%, #D1C4E9 100%); }
+    .gold-text { background: linear-gradient(135deg, #D4AF37, #F0D070, #D4AF37); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .card-hover { transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(74, 0, 114, 0.15); }
+    .fragrance-card { background: linear-gradient(145deg, #ffffff, #f5f0ff); border: 1px solid rgba(159, 122, 234, 0.2); }
+  </style>
+</head>
+<body class="bg-bg-light">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-bg-light/95 backdrop-blur border-b border-lavender/20">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-18 py-4">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">💜</span><span class="font-serif text-xl tracking-widest text-violet">VIOLET<span class="text-gold"> ESSENCE</span></span></a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-violet font-medium text-sm tracking-widest uppercase transition">Trang Chủ</a>
+      <a href="products.html" class="text-gray-600 hover:text-violet text-sm tracking-widest uppercase transition">Bộ Sưu Tập</a>
+      <a href="about.html" class="text-gray-600 hover:text-violet text-sm tracking-widest uppercase transition">Thương Hiệu</a>
+      <a href="blog.html" class="text-gray-600 hover:text-violet text-sm tracking-widest uppercase transition">Khám Phá</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="login.html" class="text-gray-500 hover:text-violet transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-500 hover:text-violet transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-violet text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-gradient min-h-screen flex items-center pt-20">
+  <div class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <p class="text-lavender tracking-[0.3em] text-xs uppercase mb-4 font-medium">— Collection 2025 —</p>
+      <h1 class="font-serif text-6xl lg:text-7xl leading-tight mb-6">
+        <span class="text-violet">Hương Thơm</span><br/>
+        <em class="gold-text">Định Nghĩa Bạn</em>
+      </h1>
+      <p class="text-gray-600 text-lg leading-relaxed mb-10 max-w-lg">Bộ sưu tập nước hoa và làm đẹp cao cấp — từng chai là một tác phẩm nghệ thuật, từng giọt là một khoảnh khắc đáng nhớ.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="products.html" class="bg-violet text-white px-8 py-4 text-sm tracking-widest uppercase hover:bg-violet-light transition-all duration-300 shadow-lg shadow-violet/30">Khám Phá Bộ Sưu Tập</a>
+        <a href="blog-post.html" class="border border-violet text-violet px-8 py-4 text-sm tracking-widest uppercase hover:bg-violet hover:text-white transition-all duration-300">Tìm Hương Thơm Của Bạn</a>
+      </div>
+      <div class="mt-12 flex gap-8">
+        <div><p class="font-serif text-3xl text-violet">24</p><p class="text-xs text-gray-500 tracking-wider mt-1">FRAGRANCES</p></div>
+        <div class="border-l border-lavender/30 pl-8"><p class="font-serif text-3xl text-violet">15K+</p><p class="text-xs text-gray-500 tracking-wider mt-1">KHÁCH HÀNG</p></div>
+        <div class="border-l border-lavender/30 pl-8"><p class="font-serif text-3xl text-violet">8</p><p class="text-xs text-gray-500 tracking-wider mt-1">NĂM KINH NGHIỆM</p></div>
+      </div>
+    </div>
+    <div class="relative flex justify-center">
+      <div class="w-80 h-96 bg-gradient-to-b from-lavender/30 to-violet/20 rounded-full flex items-center justify-center relative">
+        <div class="absolute inset-0 rounded-full border border-lavender/40 animate-pulse"></div>
+        <div class="text-center">
+          <div class="text-8xl mb-4">🌸</div>
+          <p class="font-serif text-2xl text-violet italic">Violet Bloom</p>
+          <p class="text-gold text-sm tracking-widest mt-1">EDP 50ml</p>
+          <p class="text-violet font-semibold text-xl mt-3">1.250.000₫</p>
+        </div>
+      </div>
+      <div class="absolute top-8 -right-4 bg-white rounded-2xl p-4 shadow-xl border border-lavender/20">
+        <p class="text-xs text-gray-500 mb-1">Top Notes</p>
+        <p class="text-sm text-violet font-medium">Violet · Iris · Bergamot</p>
+      </div>
+      <div class="absolute bottom-16 -left-8 bg-violet text-white rounded-2xl p-4 shadow-xl">
+        <p class="text-xs text-lavender-light mb-1">Best Seller 2025</p>
+        <p class="text-sm font-medium">Midnight Rose EDP</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAGRANCE WHEEL -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <p class="text-lavender tracking-[0.3em] text-xs uppercase mb-3">Khám Phá</p>
+      <h2 class="font-serif text-5xl text-violet mb-4">Gia Đình Hương Thơm</h2>
+      <p class="text-gray-500 max-w-lg mx-auto">Mỗi hương thơm thuộc về một gia đình riêng — hãy tìm ngôn ngữ của linh hồn bạn.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="text-center p-8 fragrance-card rounded-3xl card-hover cursor-pointer">
+        <div class="text-5xl mb-4">🌸</div>
+        <h3 class="font-serif text-xl text-violet mb-2">Floral</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Hoa hồng, violet, mẫu đơn — nữ tính và lãng mạn</p>
+        <p class="text-gold text-xs mt-3 tracking-wider">8 FRAGRANCES</p>
+      </div>
+      <div class="text-center p-8 fragrance-card rounded-3xl card-hover cursor-pointer">
+        <div class="text-5xl mb-4">🕌</div>
+        <h3 class="font-serif text-xl text-violet mb-2">Oriental</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Amber, oud, vanilla — huyền bí và cuốn hút</p>
+        <p class="text-gold text-xs mt-3 tracking-wider">6 FRAGRANCES</p>
+      </div>
+      <div class="text-center p-8 fragrance-card rounded-3xl card-hover cursor-pointer">
+        <div class="text-5xl mb-4">🌿</div>
+        <h3 class="font-serif text-xl text-violet mb-2">Woody</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Sandalwood, cedarwood — ấm áp và sang trọng</p>
+        <p class="text-gold text-xs mt-3 tracking-wider">5 FRAGRANCES</p>
+      </div>
+      <div class="text-center p-8 fragrance-card rounded-3xl card-hover cursor-pointer">
+        <div class="text-5xl mb-4">💧</div>
+        <h3 class="font-serif text-xl text-violet mb-2">Fresh</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Bergamot, citrus, aquatic — tươi mát và năng động</p>
+        <p class="text-gold text-xs mt-3 tracking-wider">5 FRAGRANCES</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED COLLECTION -->
+<section class="py-20 bg-bg-light">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-14">
+      <div>
+        <p class="text-lavender tracking-[0.3em] text-xs uppercase mb-3">Nổi Bật</p>
+        <h2 class="font-serif text-5xl text-violet">Bộ Sưu Tập Tiêu Biểu</h2>
+      </div>
+      <a href="products.html" class="text-violet text-sm tracking-widest uppercase border-b border-violet pb-1 hover:text-gold hover:border-gold transition">Xem Tất Cả →</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Product 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-lavender/20">
+        <div class="h-64 bg-gradient-to-b from-lavender/20 to-violet/10 flex items-center justify-center relative">
+          <div class="text-6xl">🌸</div>
+          <span class="absolute top-4 left-4 bg-violet text-white text-xs px-3 py-1 tracking-wider">BESTSELLER</span>
+        </div>
+        <div class="p-5">
+          <p class="text-lavender text-xs tracking-widest uppercase mb-1">EDP · Floral</p>
+          <h3 class="font-serif text-xl text-violet mb-1">Violet Bloom</h3>
+          <p class="text-gray-500 text-xs mb-3">50ml · Violet · Rose · Sandalwood</p>
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-violet text-lg">1.250.000₫</span>
+            <a href="product-detail.html" class="bg-violet text-white text-xs px-4 py-2 rounded-full hover:bg-violet-light transition">Xem Thêm</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-lavender/20">
+        <div class="h-64 bg-gradient-to-b from-rosegold/20 to-violet/10 flex items-center justify-center relative">
+          <div class="text-6xl">🌹</div>
+          <span class="absolute top-4 left-4 bg-gold text-white text-xs px-3 py-1 tracking-wider">NEW</span>
+        </div>
+        <div class="p-5">
+          <p class="text-lavender text-xs tracking-widest uppercase mb-1">EDP · Oriental Floral</p>
+          <h3 class="font-serif text-xl text-violet mb-1">Midnight Rose</h3>
+          <p class="text-gray-500 text-xs mb-3">30ml · Rose · Oud · Amber</p>
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-violet text-lg">850.000₫</span>
+            <a href="product-detail.html" class="bg-violet text-white text-xs px-4 py-2 rounded-full hover:bg-violet-light transition">Xem Thêm</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-lavender/20">
+        <div class="h-64 bg-gradient-to-b from-blue-100 to-lavender/20 flex items-center justify-center">
+          <div class="text-6xl">💜</div>
+        </div>
+        <div class="p-5">
+          <p class="text-lavender text-xs tracking-widest uppercase mb-1">EDT · Floral Fresh</p>
+          <h3 class="font-serif text-xl text-violet mb-1">Lavender Dreams</h3>
+          <p class="text-gray-500 text-xs mb-3">50ml · Lavender · Iris · Musk</p>
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-violet text-lg">780.000₫</span>
+            <a href="product-detail.html" class="bg-violet text-white text-xs px-4 py-2 rounded-full hover:bg-violet-light transition">Xem Thêm</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="bg-white rounded-2xl overflow-hidden card-hover border border-lavender/20">
+        <div class="h-64 bg-gradient-to-b from-gold/20 to-amber-50 flex items-center justify-center">
+          <div class="text-6xl">🕯️</div>
+        </div>
+        <div class="p-5">
+          <p class="text-lavender text-xs tracking-widest uppercase mb-1">Home Fragrance</p>
+          <h3 class="font-serif text-xl text-violet mb-1">Amber & Iris</h3>
+          <p class="text-gray-500 text-xs mb-3">150g · Nến Thơm Thủ Công</p>
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-violet text-lg">380.000₫</span>
+            <a href="product-detail.html" class="bg-violet text-white text-xs px-4 py-2 rounded-full hover:bg-violet-light transition">Xem Thêm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ BANNER -->
+<section class="py-16 bg-violet">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <div class="text-5xl mb-6">✨</div>
+    <h2 class="font-serif text-5xl text-white mb-4">Perfume Discovery Quiz</h2>
+    <p class="text-lavender-light text-lg mb-8 leading-relaxed">Không biết nên chọn hương thơm nào? Hãy để chúng tôi giúp bạn tìm ra mùi hương hoàn hảo — phù hợp với tính cách và phong cách sống của bạn.</p>
+    <div class="flex flex-wrap gap-4 justify-center mb-8">
+      <span class="bg-white/10 text-lavender-light px-4 py-2 rounded-full text-sm border border-lavender/30">🌸 Bạn là người như thế nào?</span>
+      <span class="bg-white/10 text-lavender-light px-4 py-2 rounded-full text-sm border border-lavender/30">🌿 Bạn thích hương thơm gì?</span>
+      <span class="bg-white/10 text-lavender-light px-4 py-2 rounded-full text-sm border border-lavender/30">💫 Dịp gì bạn muốn dùng?</span>
+    </div>
+    <a href="blog-post.html" class="inline-block bg-gold text-white px-10 py-4 text-sm tracking-widest uppercase hover:bg-gold-light transition-all duration-300 shadow-lg">Bắt Đầu Khám Phá →</a>
+  </div>
+</section>
+
+<!-- INGREDIENT STORIES -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <p class="text-lavender tracking-[0.3em] text-xs uppercase mb-3">Tinh Chất Từ Thiên Nhiên</p>
+      <h2 class="font-serif text-5xl text-violet mb-4">Câu Chuyện Nguyên Liệu</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <div class="w-20 h-20 rounded-full bg-violet/10 flex items-center justify-center mx-auto mb-4 text-3xl">🌸</div>
+        <h3 class="font-serif text-xl text-violet mb-2">Violet</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Được thu hoạch tại vùng Toulouse, Pháp — hoa violet mang vẻ đẹp mong manh và quyến rũ đặc biệt.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-20 h-20 rounded-full bg-rosegold/10 flex items-center justify-center mx-auto mb-4 text-3xl">🌹</div>
+        <h3 class="font-serif text-xl text-violet mb-2">Rose</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Hoa hồng Grasse và Thổ Nhĩ Kỳ — biểu tượng của tình yêu và sự nữ tính vĩnh cửu.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-20 h-20 rounded-full bg-amber-50 flex items-center justify-center mx-auto mb-4 text-3xl">🍂</div>
+        <h3 class="font-serif text-xl text-violet mb-2">Amber</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Nhựa hóa thạch hàng triệu năm tuổi — hơi ấm, sâu thẳm và đầy bí ẩn của phương Đông.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-20 h-20 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-4 text-3xl">🌳</div>
+        <h3 class="font-serif text-violet mb-2 text-xl">Sandalwood</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Đàn hương Mysore Ấn Độ — nền gỗ kem mịn màng, kéo dài hơi thở của hương thơm suốt cả ngày.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-20 bg-bg-light">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <p class="text-lavender tracking-[0.3em] text-xs uppercase mb-3">Cảm Nhận</p>
+      <h2 class="font-serif text-5xl text-violet">Khách Hàng Nói Gì?</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-2xl border border-lavender/20 relative">
+        <div class="text-gold text-3xl mb-4">"</div>
+        <p class="text-gray-600 leading-relaxed italic mb-6">"Violet Bloom là tình yêu sét đánh của tôi. Mùi hương mở đầu bằng violet tươi mát, rồi dần chuyển sang rose ấm áp — hoàn hảo cho mọi dịp."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-lavender/30 flex items-center justify-center text-violet font-serif text-xl">L</div>
+          <div><p class="text-violet font-medium text-sm">Linh Nguyễn</p><p class="text-gray-400 text-xs">TP.HCM · Mua lần 3</p></div>
+        </div>
+        <div class="flex text-gold mt-4 text-sm">★★★★★</div>
+      </div>
+      <div class="bg-violet p-8 rounded-2xl relative">
+        <div class="text-gold text-3xl mb-4">"</div>
+        <p class="text-lavender-light leading-relaxed italic mb-6">"Midnight Rose là mùi hương tôi đã tìm kiếm bao lâu nay. Sang trọng, bí ẩn, và cực kỳ lâu dài. Nhận được rất nhiều lời khen khi dùng."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-serif text-xl">M</div>
+          <div><p class="text-white font-medium text-sm">Mai Trần</p><p class="text-lavender-light text-xs">Hà Nội · Khách VIP</p></div>
+        </div>
+        <div class="flex text-gold mt-4 text-sm">★★★★★</div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl border border-lavender/20 relative">
+        <div class="text-gold text-3xl mb-4">"</div>
+        <p class="text-gray-600 leading-relaxed italic mb-6">"Mua bộ quà tặng Violet Luxury cho mẹ nhân ngày 8/3 — cả nhà ai cũng mê. Đóng gói đẹp xuất sắc, xứng đáng từng đồng."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-lavender/30 flex items-center justify-center text-violet font-serif text-xl">H</div>
+          <div><p class="text-violet font-medium text-sm">Hương Phạm</p><p class="text-gray-400 text-xs">Đà Nẵng · Mua lần 2</p></div>
+        </div>
+        <div class="flex text-gold mt-4 text-sm">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-14">
+      <div>
+        <p class="text-lavender tracking-[0.3em] text-xs uppercase mb-3">Khám Phá</p>
+        <h2 class="font-serif text-5xl text-violet">Thế Giới Hương Thơm</h2>
+      </div>
+      <a href="blog.html" class="text-violet text-sm tracking-widest uppercase border-b border-violet pb-1 hover:text-gold hover:border-gold transition">Tất Cả Bài Viết →</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <a href="blog-post.html" class="group block">
+        <div class="h-56 bg-gradient-to-br from-lavender/20 to-violet/10 rounded-2xl flex items-center justify-center mb-5 group-hover:shadow-lg transition-all duration-300">
+          <span class="text-5xl">🌸</span>
+        </div>
+        <p class="text-lavender text-xs tracking-widest uppercase mb-2">Fragrance Guide</p>
+        <h3 class="font-serif text-xl text-violet mb-2 group-hover:text-gold transition">Violet Bloom — Câu Chuyện Của Một Bông Hoa</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Lịch sử hoa violet trong nghệ thuật làm nước hoa và cách kết hợp hương thơm hoàn hảo...</p>
+      </a>
+      <a href="blog.html" class="group block">
+        <div class="h-56 bg-gradient-to-br from-gold/10 to-amber-50 rounded-2xl flex items-center justify-center mb-5 group-hover:shadow-lg transition-all duration-300">
+          <span class="text-5xl">✨</span>
+        </div>
+        <p class="text-lavender text-xs tracking-widest uppercase mb-2">Beauty</p>
+        <h3 class="font-serif text-xl text-violet mb-2 group-hover:text-gold transition">Bí Quyết Xây Dựng Bộ Sưu Tập Nước Hoa Cá Nhân</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Cách chọn nước hoa phù hợp với từng dịp, từng mùa và từng trạng thái cảm xúc...</p>
+      </a>
+      <a href="blog.html" class="group block">
+        <div class="h-56 bg-gradient-to-br from-rosegold/20 to-pink-50 rounded-2xl flex items-center justify-center mb-5 group-hover:shadow-lg transition-all duration-300">
+          <span class="text-5xl">🌹</span>
+        </div>
+        <p class="text-lavender text-xs tracking-widest uppercase mb-2">Lifestyle</p>
+        <h3 class="font-serif text-xl text-violet mb-2 group-hover:text-gold transition">Layering Fragrance — Nghệ Thuật Pha Trộn Hương Thơm</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Kỹ thuật kết hợp nhiều loại nước hoa để tạo nên chữ ký hương thơm độc đáo của riêng bạn...</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-violet text-white py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div><p class="font-serif text-xl tracking-widest text-gold mb-3">VIOLET ESSENCE</p><p class="text-lavender-light text-sm leading-relaxed">Mỗi hương thơm là một câu chuyện — để bạn trở thành phiên bản đẹp nhất của chính mình.</p></div>
+      <div><p class="text-gold text-xs tracking-widest uppercase mb-3">Liên Hệ</p><p class="text-lavender-light text-sm">📍 18 Pasteur, Q.1, TP.HCM</p><p class="text-lavender-light text-sm mt-1">📞 028 7777 6666 | ✉️ bonjour@violetessence.vn</p></div>
+      <div><p class="text-gold text-xs tracking-widest uppercase mb-3">Flagship Store</p><p class="text-lavender-light text-sm">TP.HCM: 18 Pasteur, Q.1</p><p class="text-lavender-light text-sm mt-1">Hà Nội: 25 Tràng Tiền, Hoàn Kiếm</p><p class="text-lavender-light text-sm mt-1">Đà Nẵng: 2 Bạch Đằng</p></div>
+    </div>
+    <div class="border-t border-lavender/30 pt-6 text-center"><p class="text-lavender-light text-xs">© 2025 Violet Essence. Tous droits réservés.</p></div>
+  </div>
+</footer>
+
+</body>
+</html>

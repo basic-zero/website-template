@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giỏ Hàng - Luxe Beauté</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{gold:'#C9A84C','gold-light':'#E8D5A3',cream:'#F5F0E8','dark':'#0a0a0a'}}}}</script>
+</head>
+<body class="bg-dark text-white font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="font-serif text-2xl tracking-widest"><span>LUXE</span><span class="text-gold"> BEAUTÉ</span></a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="index.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Trang Chủ</a>
+      <a href="products.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Sản Phẩm</a>
+      <a href="about.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Giới Thiệu</a>
+      <a href="blog.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Blog</a>
+    </div>
+    <div class="flex items-center space-x-5">
+      <a href="login.html" class="text-gray-300 hover:text-gold transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gold"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-gold text-dark text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+  <div class="mb-8">
+    <p class="text-gold text-xs tracking-[0.4em] uppercase mb-2">Mua Sắm</p>
+    <h1 class="font-serif text-4xl">Giỏ Hàng Của Bạn</h1>
+  </div>
+
+  <!-- Progress Steps -->
+  <div class="flex items-center gap-2 mb-12 text-xs tracking-widest uppercase">
+    <span class="text-gold border border-gold px-3 py-1">Giỏ Hàng</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Lên Đơn</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Thanh Toán</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Hoàn Tất</span>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <!-- Cart Items -->
+    <div class="lg:col-span-2 space-y-4">
+      <!-- Item 1 -->
+      <div class="border border-gold/20 p-6 flex gap-5 hover:border-gold/40 transition">
+        <div class="w-24 h-24 bg-gradient-to-br from-gray-900 to-gray-800 border border-gold/20 flex items-center justify-center flex-shrink-0">
+          <span class="text-3xl">🧴</span>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-start justify-between gap-4 mb-1">
+            <div>
+              <p class="text-gray-500 text-xs tracking-widest uppercase">Serum</p>
+              <h3 class="font-serif text-lg"><a href="product-detail.html" class="hover:text-gold transition">Serum Vàng 24K Anti-Aging</a></h3>
+              <p class="text-gray-600 text-xs mt-1">Dung tích: 30ml</p>
+            </div>
+            <button class="text-gray-600 hover:text-red-400 transition flex-shrink-0">✕</button>
+          </div>
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center border border-gold/30">
+              <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gold hover:bg-gold/10 transition">−</button>
+              <span class="w-10 text-center text-sm">1</span>
+              <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gold hover:bg-gold/10 transition">+</button>
+            </div>
+            <p class="text-gold font-bold text-lg">2.450.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="border border-gold/20 p-6 flex gap-5 hover:border-gold/40 transition">
+        <div class="w-24 h-24 bg-gradient-to-br from-gray-900 to-gray-800 border border-gold/20 flex items-center justify-center flex-shrink-0">
+          <span class="text-3xl">✨</span>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-start justify-between gap-4 mb-1">
+            <div>
+              <p class="text-gray-500 text-xs tracking-widest uppercase">Dưỡng Ẩm</p>
+              <h3 class="font-serif text-lg"><a href="product-detail.html" class="hover:text-gold transition">Kem Dưỡng Trắng Caviar</a></h3>
+              <p class="text-gray-600 text-xs mt-1">Dung tích: 50ml</p>
+            </div>
+            <button class="text-gray-600 hover:text-red-400 transition flex-shrink-0">✕</button>
+          </div>
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center border border-gold/30">
+              <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gold hover:bg-gold/10 transition">−</button>
+              <span class="w-10 text-center text-sm">1</span>
+              <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gold hover:bg-gold/10 transition">+</button>
+            </div>
+            <p class="text-gold font-bold text-lg">1.850.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="border border-gold/20 p-6 flex gap-5 hover:border-gold/40 transition">
+        <div class="w-24 h-24 bg-gradient-to-br from-gray-900 to-gray-800 border border-gold/20 flex items-center justify-center flex-shrink-0">
+          <span class="text-3xl">💧</span>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-start justify-between gap-4 mb-1">
+            <div>
+              <p class="text-gray-500 text-xs tracking-widest uppercase">Toner</p>
+              <h3 class="font-serif text-lg"><a href="product-detail.html" class="hover:text-gold transition">Toner Cân Bằng Rose Gold</a></h3>
+              <p class="text-gray-600 text-xs mt-1">Dung tích: 150ml</p>
+            </div>
+            <button class="text-gray-600 hover:text-red-400 transition flex-shrink-0">✕</button>
+          </div>
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center border border-gold/30">
+              <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gold hover:bg-gold/10 transition">−</button>
+              <span class="w-10 text-center text-sm">2</span>
+              <button class="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gold hover:bg-gold/10 transition">+</button>
+            </div>
+            <p class="text-gold font-bold text-lg">1.512.000₫</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coupon -->
+      <div class="border border-gold/20 p-6">
+        <p class="text-gold text-xs tracking-widest uppercase mb-3">Mã Giảm Giá</p>
+        <div class="flex gap-3">
+          <input type="text" placeholder="Nhập mã giảm giá..." class="flex-1 bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-2.5 text-sm outline-none placeholder-gray-600"/>
+          <button class="bg-gold text-dark px-6 py-2.5 text-sm font-bold tracking-widest uppercase hover:bg-gold-light transition">Áp Dụng</button>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between pt-2">
+        <a href="products.html" class="flex items-center gap-2 text-gray-400 hover:text-gold transition text-sm">← Tiếp Tục Mua Sắm</a>
+      </div>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="lg:col-span-1">
+      <div class="border border-gold/30 p-8 sticky top-28">
+        <h2 class="font-serif text-xl mb-6 text-gold">Tóm Tắt Đơn Hàng</h2>
+        <div class="space-y-3 mb-6">
+          <div class="flex justify-between text-sm"><span class="text-gray-400">Tạm tính (4 sản phẩm)</span><span>5.812.000₫</span></div>
+          <div class="flex justify-between text-sm"><span class="text-gray-400">Giảm giá</span><span class="text-red-400">-580.000₫</span></div>
+          <div class="flex justify-between text-sm"><span class="text-gray-400">Phí vận chuyển</span><span class="text-green-400">Miễn phí</span></div>
+          <div class="border-t border-gold/20 pt-3 flex justify-between font-bold"><span>Tổng cộng</span><span class="text-gold text-xl">5.232.000₫</span></div>
+        </div>
+        <a href="order.html" class="block w-full bg-gold text-dark py-4 font-bold tracking-widest uppercase text-sm text-center hover:bg-gold-light transition mb-4">Tiến Hành Đặt Hàng</a>
+        <div class="flex items-center justify-center gap-4 text-gray-600 text-xs">
+          <span>🔒 Thanh toán bảo mật</span>
+          <span>•</span>
+          <span>🛡️ An toàn 100%</span>
+        </div>
+        <!-- Accepted Payments -->
+        <div class="mt-6 pt-6 border-t border-gold/20">
+          <p class="text-gray-600 text-xs tracking-widest uppercase mb-3">Phương Thức Thanh Toán</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="border border-gold/20 px-2 py-1 text-xs text-gray-500">VISA</span>
+            <span class="border border-gold/20 px-2 py-1 text-xs text-gray-500">MasterCard</span>
+            <span class="border border-gold/20 px-2 py-1 text-xs text-gray-500">MoMo</span>
+            <span class="border border-gold/20 px-2 py-1 text-xs text-gray-500">ZaloPay</span>
+            <span class="border border-gold/20 px-2 py-1 text-xs text-gray-500">COD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark border-t border-gold/20 py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-600 text-xs tracking-widest">© 2025 LUXE BEAUTÉ. ALL RIGHTS RESERVED.</p></div></footer>
+</body>
+</html>

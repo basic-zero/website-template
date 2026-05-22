@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lên Đơn - Luxe Beauté</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{gold:'#C9A84C','gold-light':'#E8D5A3',cream:'#F5F0E8','dark':'#0a0a0a'}}}}</script>
+</head>
+<body class="bg-dark text-white font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="font-serif text-2xl tracking-widest"><span>LUXE</span><span class="text-gold"> BEAUTÉ</span></a>
+    <a href="cart.html" class="text-gray-400 hover:text-gold text-sm tracking-widest uppercase transition flex items-center gap-2">← Quay Lại Giỏ Hàng</a>
+  </div>
+</nav>
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+  <div class="mb-8">
+    <p class="text-gold text-xs tracking-[0.4em] uppercase mb-2">Đặt Hàng</p>
+    <h1 class="font-serif text-4xl">Thông Tin Giao Hàng</h1>
+  </div>
+
+  <!-- Progress Steps -->
+  <div class="flex items-center gap-2 mb-12 text-xs tracking-widest uppercase">
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Giỏ Hàng ✓</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gold border border-gold px-3 py-1">Lên Đơn</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Thanh Toán</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Hoàn Tất</span>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <!-- Shipping Form -->
+    <div class="lg:col-span-2 space-y-8">
+      <!-- Saved Addresses -->
+      <div class="border border-gold/20 p-6">
+        <h2 class="font-serif text-lg mb-4 text-gold">Địa Chỉ Đã Lưu</h2>
+        <div class="space-y-3">
+          <label class="flex items-start gap-3 border border-gold/40 bg-gold/5 p-4 cursor-pointer">
+            <input type="radio" name="addr" checked class="accent-gold mt-1"/>
+            <div>
+              <p class="font-semibold text-sm">Nguyễn Thị Lan Anh</p>
+              <p class="text-gray-400 text-sm">0912 345 678 · 45 Nguyễn Trãi, P.Nguyễn Cư Trinh, Q.1, TP.HCM</p>
+              <span class="text-gold text-xs border border-gold/40 px-2 py-0.5 mt-1 inline-block">Mặc định</span>
+            </div>
+          </label>
+          <label class="flex items-start gap-3 border border-gold/20 p-4 cursor-pointer hover:border-gold/40 transition">
+            <input type="radio" name="addr" class="accent-gold mt-1"/>
+            <div>
+              <p class="font-semibold text-sm">Nguyễn Thị Lan Anh</p>
+              <p class="text-gray-400 text-sm">0912 345 678 · 12A Lê Duẩn, P.Bến Nghé, Q.1, TP.HCM</p>
+            </div>
+          </label>
+          <button class="text-gold text-sm flex items-center gap-2 hover:text-gold-light transition">+ Thêm địa chỉ mới</button>
+        </div>
+      </div>
+
+      <!-- New Address Form -->
+      <div class="border border-gold/20 p-6">
+        <h2 class="font-serif text-lg mb-6 text-gold">Địa Chỉ Giao Hàng Mới</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Họ Tên *</label>
+            <input type="text" placeholder="Nguyễn Văn A" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Số Điện Thoại *</label>
+            <input type="tel" placeholder="0900 000 000" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Email</label>
+            <input type="email" placeholder="email@example.com" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Tỉnh / Thành Phố *</label>
+            <select class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-gray-300 px-4 py-3 text-sm outline-none">
+              <option>Chọn tỉnh/thành phố</option>
+              <option>TP. Hồ Chí Minh</option>
+              <option>Hà Nội</option>
+              <option>Đà Nẵng</option>
+              <option>Cần Thơ</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Quận / Huyện *</label>
+            <select class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-gray-300 px-4 py-3 text-sm outline-none">
+              <option>Chọn quận/huyện</option>
+              <option>Quận 1</option>
+              <option>Quận 2</option>
+              <option>Quận 3</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Phường / Xã *</label>
+            <select class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-gray-300 px-4 py-3 text-sm outline-none">
+              <option>Chọn phường/xã</option>
+              <option>Phường Bến Nghé</option>
+              <option>Phường Bến Thành</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Địa Chỉ Cụ Thể *</label>
+            <input type="text" placeholder="Số nhà, tên đường..." class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Ghi Chú Đơn Hàng</label>
+            <textarea rows="3" placeholder="Ghi chú cho người giao hàng..." class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600 resize-none"></textarea>
+          </div>
+        </div>
+        <label class="flex items-center gap-2 mt-4 cursor-pointer">
+          <input type="checkbox" class="accent-gold"/>
+          <span class="text-sm text-gray-400">Lưu địa chỉ này cho lần sau</span>
+        </label>
+      </div>
+
+      <!-- Shipping Method -->
+      <div class="border border-gold/20 p-6">
+        <h2 class="font-serif text-lg mb-4 text-gold">Phương Thức Vận Chuyển</h2>
+        <div class="space-y-3">
+          <label class="flex items-center justify-between border border-gold/40 bg-gold/5 p-4 cursor-pointer">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" checked class="accent-gold"/><div><p class="font-semibold text-sm">Giao Hàng Tiêu Chuẩn</p><p class="text-gray-500 text-xs">3-5 ngày làm việc</p></div></div>
+            <span class="text-green-400 font-semibold text-sm">Miễn phí</span>
+          </label>
+          <label class="flex items-center justify-between border border-gold/20 p-4 cursor-pointer hover:border-gold/40 transition">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" class="accent-gold"/><div><p class="font-semibold text-sm">Giao Hàng Nhanh</p><p class="text-gray-500 text-xs">1-2 ngày làm việc</p></div></div>
+            <span class="text-gold font-semibold text-sm">35.000₫</span>
+          </label>
+          <label class="flex items-center justify-between border border-gold/20 p-4 cursor-pointer hover:border-gold/40 transition">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" class="accent-gold"/><div><p class="font-semibold text-sm">Giao Hàng Hỏa Tốc</p><p class="text-gray-500 text-xs">Trong ngày (nội thành TP.HCM)</p></div></div>
+            <span class="text-gold font-semibold text-sm">65.000₫</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="lg:col-span-1">
+      <div class="border border-gold/30 p-8 sticky top-28">
+        <h2 class="font-serif text-xl mb-6 text-gold">Đơn Hàng</h2>
+        <div class="space-y-4 mb-6">
+          <div class="flex gap-3">
+            <div class="w-14 h-14 bg-gray-900 border border-gold/20 flex items-center justify-center flex-shrink-0"><span class="text-xl">🧴</span></div>
+            <div class="flex-1"><p class="text-sm font-semibold">Serum Vàng 24K</p><p class="text-gray-500 text-xs">30ml × 1</p><p class="text-gold text-sm font-bold mt-1">2.450.000₫</p></div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-14 h-14 bg-gray-900 border border-gold/20 flex items-center justify-center flex-shrink-0"><span class="text-xl">✨</span></div>
+            <div class="flex-1"><p class="text-sm font-semibold">Kem Dưỡng Caviar</p><p class="text-gray-500 text-xs">50ml × 1</p><p class="text-gold text-sm font-bold mt-1">1.850.000₫</p></div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-14 h-14 bg-gray-900 border border-gold/20 flex items-center justify-center flex-shrink-0"><span class="text-xl">💧</span></div>
+            <div class="flex-1"><p class="text-sm font-semibold">Toner Rose Gold</p><p class="text-gray-500 text-xs">150ml × 2</p><p class="text-gold text-sm font-bold mt-1">1.512.000₫</p></div>
+          </div>
+        </div>
+        <div class="border-t border-gold/20 pt-4 space-y-2 mb-6">
+          <div class="flex justify-between text-sm"><span class="text-gray-400">Tạm tính</span><span>5.812.000₫</span></div>
+          <div class="flex justify-between text-sm"><span class="text-gray-400">Giảm giá</span><span class="text-red-400">-580.000₫</span></div>
+          <div class="flex justify-between text-sm"><span class="text-gray-400">Vận chuyển</span><span class="text-green-400">Miễn phí</span></div>
+          <div class="border-t border-gold/20 pt-2 flex justify-between font-bold"><span>Tổng</span><span class="text-gold text-xl">5.232.000₫</span></div>
+        </div>
+        <a href="payment.html" class="block w-full bg-gold text-dark py-4 font-bold tracking-widest uppercase text-sm text-center hover:bg-gold-light transition">Tiếp Tục Thanh Toán</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark border-t border-gold/20 py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-600 text-xs tracking-widest">© 2025 LUXE BEAUTÉ. ALL RIGHTS RESERVED.</p></div></footer>
+</body>
+</html>

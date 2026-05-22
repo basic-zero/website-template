@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Glow - Vẻ Đẹp Từ Thiên Nhiên</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{
+  green:'#2D6A4F','green-light':'#74B49B','green-dark':'#1B4332',
+  sage:'#95C9A8',cream:'#FAF7F0',earth:'#8B5E3C'
+}}}}
+</script>
+</head>
+<body class="bg-cream text-gray-800 font-sans">
+
+<!-- Nav -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur border-b border-green/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-18 py-4">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="text-2xl">🌿</span>
+      <span class="font-bold text-xl text-green-dark tracking-wide">Organic<span class="text-green">Glow</span></span>
+    </a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="index.html" class="text-green font-semibold text-sm">Trang Chủ</a>
+      <a href="products.html" class="text-gray-600 hover:text-green text-sm transition">Sản Phẩm</a>
+      <a href="about.html" class="text-gray-600 hover:text-green text-sm transition">Về Chúng Tôi</a>
+      <a href="blog.html" class="text-gray-600 hover:text-green text-sm transition">Blog</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="login.html" class="text-gray-600 hover:text-green transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-600 hover:text-green transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-green text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="min-h-screen flex items-center bg-gradient-to-br from-green-dark via-green to-green-light pt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="text-white">
+        <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full font-medium">🌱 100% Hữu Cơ • Cruelty-Free</span>
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mt-6 mb-6">Vẻ Đẹp<br/><span class="text-sage">Thuần</span><br/>Thiên Nhiên</h1>
+        <p class="text-green-light text-lg leading-relaxed mb-8 max-w-md">Chúng tôi tin rằng thiên nhiên đã tạo ra tất cả những gì da cần. Mỗi sản phẩm được chiết xuất 100% từ thực vật hữu cơ, không hóa chất độc hại.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="products.html" class="bg-white text-green-dark px-8 py-3 rounded-full font-bold hover:bg-cream transition">Khám Phá Ngay</a>
+          <a href="about.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition">Tìm Hiểu Thêm</a>
+        </div>
+        <div class="flex gap-8 mt-10 pt-8 border-t border-white/20">
+          <div><p class="text-2xl font-bold">500+</p><p class="text-green-light text-sm">Thành Phần TN</p></div>
+          <div><p class="text-2xl font-bold">30K+</p><p class="text-green-light text-sm">Khách Hàng</p></div>
+          <div><p class="text-2xl font-bold">Zero</p><p class="text-green-light text-sm">Hóa Chất Độc Hại</p></div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center border-4 border-white/30">
+          <div class="w-64 h-64 bg-white/20 rounded-full flex items-center justify-center border-2 border-white/40">
+            <div class="text-center">
+              <span class="text-7xl">🌿</span>
+              <p class="text-white font-bold mt-3">Serum Rau Má</p>
+              <p class="text-sage text-sm">Bestseller</p>
+              <p class="text-white font-bold text-xl mt-1">380.000₫</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Badges -->
+<div class="bg-white py-6 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-wrap justify-center gap-8 text-center">
+      <div class="flex items-center gap-2"><span class="text-2xl">🌱</span><span class="text-sm font-medium text-gray-700">100% Hữu Cơ</span></div>
+      <div class="flex items-center gap-2"><span class="text-2xl">🐰</span><span class="text-sm font-medium text-gray-700">Cruelty-Free</span></div>
+      <div class="flex items-center gap-2"><span class="text-2xl">♻️</span><span class="text-sm font-medium text-gray-700">Bao Bì Tái Chế</span></div>
+      <div class="flex items-center gap-2"><span class="text-2xl">🌍</span><span class="text-sm font-medium text-gray-700">Carbon Neutral</span></div>
+      <div class="flex items-center gap-2"><span class="text-2xl">🔬</span><span class="text-sm font-medium text-gray-700">Kiểm Nghiệm Da Liễu</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Categories -->
+<section class="py-20 bg-cream">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="bg-green/10 text-green text-xs px-4 py-1 rounded-full font-medium">Danh Mục</span>
+      <h2 class="text-4xl font-bold mt-4 text-green-dark">Sản Phẩm Của Chúng Tôi</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <a href="products.html" class="group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition hover:-translate-y-1">
+        <div class="w-16 h-16 mx-auto bg-green/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-green/20 transition"><span class="text-3xl">🌿</span></div>
+        <h3 class="font-bold text-green-dark">Chăm Sóc Da</h3>
+        <p class="text-gray-500 text-sm mt-1">28 sản phẩm</p>
+      </a>
+      <a href="products.html" class="group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition hover:-translate-y-1">
+        <div class="w-16 h-16 mx-auto bg-green/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-green/20 transition"><span class="text-3xl">💧</span></div>
+        <h3 class="font-bold text-green-dark">Serum & Tinh Chất</h3>
+        <p class="text-gray-500 text-sm mt-1">15 sản phẩm</p>
+      </a>
+      <a href="products.html" class="group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition hover:-translate-y-1">
+        <div class="w-16 h-16 mx-auto bg-green/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-green/20 transition"><span class="text-3xl">🌸</span></div>
+        <h3 class="font-bold text-green-dark">Tóc & Thân</h3>
+        <p class="text-gray-500 text-sm mt-1">22 sản phẩm</p>
+      </a>
+      <a href="products.html" class="group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition hover:-translate-y-1">
+        <div class="w-16 h-16 mx-auto bg-green/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-green/20 transition"><span class="text-3xl">🎋</span></div>
+        <h3 class="font-bold text-green-dark">Mặt Nạ</h3>
+        <p class="text-gray-500 text-sm mt-1">12 sản phẩm</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Best Sellers -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <span class="bg-green/10 text-green text-xs px-4 py-1 rounded-full font-medium">Yêu Thích Nhất</span>
+        <h2 class="text-4xl font-bold mt-3 text-green-dark">Sản Phẩm Bán Chạy</h2>
+      </div>
+      <a href="products.html" class="text-green font-semibold text-sm hover:text-green-dark transition">Xem tất cả →</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="group bg-cream rounded-2xl overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-square bg-gradient-to-br from-green/20 to-sage/20 flex items-center justify-center relative">
+          <span class="text-6xl">🌿</span>
+          <span class="absolute top-3 left-3 bg-green text-white text-xs px-2 py-1 rounded-full font-medium">Best Seller</span>
+          <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold hover:bg-cream transition">Xem Ngay</a>
+          </div>
+        </div>
+        <div class="p-4">
+          <p class="text-green text-xs font-medium uppercase tracking-wide">Serum</p>
+          <h3 class="font-bold mt-1"><a href="product-detail.html" class="hover:text-green transition">Serum Rau Má & Vitamin C</a></h3>
+          <div class="flex items-center gap-2 mt-2"><span class="text-green font-bold text-lg">380.000₫</span><span class="text-gray-400 text-sm line-through">450.000₫</span></div>
+          <div class="flex text-yellow-400 text-sm mt-1">★★★★★ <span class="text-gray-400 text-xs ml-1">(94)</span></div>
+        </div>
+      </div>
+      <div class="group bg-cream rounded-2xl overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-square bg-gradient-to-br from-green/20 to-sage/20 flex items-center justify-center relative">
+          <span class="text-6xl">🌸</span>
+          <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold">Xem Ngay</a></div>
+        </div>
+        <div class="p-4">
+          <p class="text-green text-xs font-medium uppercase tracking-wide">Dưỡng Ẩm</p>
+          <h3 class="font-bold mt-1"><a href="product-detail.html" class="hover:text-green transition">Kem Dưỡng Hoa Hồng Hữu Cơ</a></h3>
+          <div class="flex items-center gap-2 mt-2"><span class="text-green font-bold text-lg">320.000₫</span></div>
+          <div class="flex text-yellow-400 text-sm mt-1">★★★★★ <span class="text-gray-400 text-xs ml-1">(67)</span></div>
+        </div>
+      </div>
+      <div class="group bg-cream rounded-2xl overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-square bg-gradient-to-br from-green/20 to-sage/20 flex items-center justify-center relative">
+          <span class="text-6xl">🎋</span>
+          <span class="absolute top-3 left-3 bg-earth text-white text-xs px-2 py-1 rounded-full font-medium">-20%</span>
+          <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold">Xem Ngay</a></div>
+        </div>
+        <div class="p-4">
+          <p class="text-green text-xs font-medium uppercase tracking-wide">Mặt Nạ</p>
+          <h3 class="font-bold mt-1"><a href="product-detail.html" class="hover:text-green transition">Mặt Nạ Đất Sét Trà Xanh</a></h3>
+          <div class="flex items-center gap-2 mt-2"><span class="text-green font-bold text-lg">240.000₫</span><span class="text-gray-400 text-sm line-through">300.000₫</span></div>
+          <div class="flex text-yellow-400 text-sm mt-1">★★★★☆ <span class="text-gray-400 text-xs ml-1">(48)</span></div>
+        </div>
+      </div>
+      <div class="group bg-cream rounded-2xl overflow-hidden hover:shadow-lg transition">
+        <div class="aspect-square bg-gradient-to-br from-green/20 to-sage/20 flex items-center justify-center relative">
+          <span class="text-6xl">🫚</span>
+          <span class="absolute top-3 left-3 bg-green text-white text-xs px-2 py-1 rounded-full font-medium">Mới</span>
+          <div class="absolute inset-0 bg-green/80 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><a href="product-detail.html" class="bg-white text-green px-5 py-2 rounded-full text-sm font-bold">Xem Ngay</a></div>
+        </div>
+        <div class="p-4">
+          <p class="text-green text-xs font-medium uppercase tracking-wide">Dầu Dưỡng</p>
+          <h3 class="font-bold mt-1"><a href="product-detail.html" class="hover:text-green transition">Dầu Dưỡng Mặt Jojoba & Argan</a></h3>
+          <div class="flex items-center gap-2 mt-2"><span class="text-green font-bold text-lg">420.000₫</span></div>
+          <div class="flex text-yellow-400 text-sm mt-1">★★★★★ <span class="text-gray-400 text-xs ml-1">(31)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Organic -->
+<section class="py-20 bg-green-dark text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Tại Sao Chọn Organic?</h2>
+      <p class="text-green-light max-w-2xl mx-auto">Hóa chất tổng hợp ngấm vào da mỗi ngày. Organic Glow cam kết chỉ dùng thành phần thiên nhiên đã được kiểm chứng an toàn.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white/10 rounded-2xl p-8 text-center">
+        <span class="text-5xl block mb-4">🌱</span>
+        <h3 class="text-xl font-bold mb-3">Không Paraben</h3>
+        <p class="text-green-light text-sm leading-relaxed">Paraben có thể gây rối loạn nội tiết. Tất cả sản phẩm của chúng tôi hoàn toàn không chứa paraben, sulfate hay silicone.</p>
+      </div>
+      <div class="bg-white/10 rounded-2xl p-8 text-center">
+        <span class="text-5xl block mb-4">🔬</span>
+        <h3 class="text-xl font-bold mb-3">Hiệu Quả Khoa Học</h3>
+        <p class="text-green-light text-sm leading-relaxed">Mỗi thành phần được lựa chọn dựa trên nghiên cứu khoa học. Thiên nhiên không chỉ an toàn mà còn cực kỳ hiệu quả.</p>
+      </div>
+      <div class="bg-white/10 rounded-2xl p-8 text-center">
+        <span class="text-5xl block mb-4">♻️</span>
+        <h3 class="text-xl font-bold mb-3">Bền Vững</h3>
+        <p class="text-green-light text-sm leading-relaxed">Bao bì 100% tái chế, nguồn nguyên liệu bền vững, đối tác với nông dân hữu cơ địa phương. Đẹp vì trái đất.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 bg-cream">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-green-dark">Khách Hàng Yêu Thích</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="flex text-yellow-400 mb-3">★★★★★</div>
+        <p class="text-gray-600 leading-relaxed mb-4">"Da tôi nhạy cảm và hay kích ứng nhưng từ khi dùng Organic Glow, da hoàn toàn ổn! Serum rau má thực sự tuyệt vời."</p>
+        <div class="flex items-center gap-3"><div class="w-9 h-9 bg-green/20 rounded-full flex items-center justify-center text-green font-bold">H</div><div><p class="font-semibold text-sm">Hương Giang</p><p class="text-gray-400 text-xs">TP.HCM</p></div></div>
+      </div>
+      <div class="bg-green rounded-2xl p-6 shadow-sm text-white">
+        <div class="flex text-yellow-300 mb-3">★★★★★</div>
+        <p class="text-green-light leading-relaxed mb-4">"Cuối cùng tôi đã tìm được thương hiệu skincare organic thực sự. Mùi hương tự nhiên dễ chịu, da ẩm mượt suốt ngày."</p>
+        <div class="flex items-center gap-3"><div class="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center font-bold">M</div><div><p class="font-semibold text-sm">Minh Trang</p><p class="text-green-light text-xs">Hà Nội</p></div></div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="flex text-yellow-400 mb-3">★★★★★</div>
+        <p class="text-gray-600 leading-relaxed mb-4">"Mua lần đầu vì tò mò, giờ đã dùng được 6 tháng. Không thể thiếu serum vitamin C + rau má buổi sáng."</p>
+        <div class="flex items-center gap-3"><div class="w-9 h-9 bg-green/20 rounded-full flex items-center justify-center text-green font-bold">T</div><div><p class="font-semibold text-sm">Thanh Lan</p><p class="text-gray-400 text-xs">Đà Nẵng</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Preview -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-end justify-between mb-10">
+      <div><h2 class="text-4xl font-bold text-green-dark">Góc Xanh</h2><p class="text-gray-500 mt-1">Kiến thức sống xanh & làm đẹp tự nhiên</p></div>
+      <a href="blog.html" class="text-green font-semibold hover:text-green-dark transition">Xem tất cả →</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article class="group bg-cream rounded-2xl overflow-hidden hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-green/20 to-sage/20 flex items-center justify-center"><span class="text-5xl">🌿</span></div>
+        <div class="p-5"><span class="bg-green/10 text-green text-xs px-3 py-1 rounded-full">Thành Phần</span><h3 class="font-bold mt-3 group-hover:text-green transition"><a href="blog-post.html">Rau Má — Siêu Thành Phần Của Skincare</a></h3><p class="text-gray-500 text-xs mt-2">12 tháng 5, 2025</p></div>
+      </article>
+      <article class="group bg-cream rounded-2xl overflow-hidden hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-green/20 to-sage/20 flex items-center justify-center"><span class="text-5xl">🥑</span></div>
+        <div class="p-5"><span class="bg-green/10 text-green text-xs px-3 py-1 rounded-full">Lối Sống Xanh</span><h3 class="font-bold mt-3 group-hover:text-green transition"><a href="blog-post.html">Detox Da Với 7 Ngày Skincare Tối Giản</a></h3><p class="text-gray-500 text-xs mt-2">8 tháng 5, 2025</p></div>
+      </article>
+      <article class="group bg-cream rounded-2xl overflow-hidden hover:shadow-md transition">
+        <div class="aspect-video bg-gradient-to-br from-green/20 to-sage/20 flex items-center justify-center"><span class="text-5xl">🌍</span></div>
+        <div class="p-5"><span class="bg-green/10 text-green text-xs px-3 py-1 rounded-full">Bền Vững</span><h3 class="font-bold mt-3 group-hover:text-green transition"><a href="blog-post.html">Làm Đẹp Không Gây Hại Môi Trường</a></h3><p class="text-gray-500 text-xs mt-2">3 tháng 5, 2025</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-green-dark text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4"><span class="text-2xl">🌿</span><span class="font-bold text-xl">Organic<span class="text-sage">Glow</span></span></div>
+        <p class="text-green-light text-sm leading-relaxed mb-4 max-w-sm">Thương hiệu chăm sóc da hữu cơ thuần thiên nhiên, cam kết không hóa chất độc hại, không thử nghiệm trên động vật.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition text-sm">f</a>
+          <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition text-sm">ig</a>
+          <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition text-sm">yt</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-sage mb-4">Sản Phẩm</h4>
+        <ul class="space-y-2 text-green-light text-sm">
+          <li><a href="products.html" class="hover:text-white transition">Chăm Sóc Da</a></li>
+          <li><a href="products.html" class="hover:text-white transition">Serum Hữu Cơ</a></li>
+          <li><a href="products.html" class="hover:text-white transition">Mặt Nạ</a></li>
+          <li><a href="products.html" class="hover:text-white transition">Chăm Sóc Tóc</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-sage mb-4">Hỗ Trợ</h4>
+        <ul class="space-y-2 text-green-light text-sm">
+          <li><a href="about.html" class="hover:text-white transition">Về Chúng Tôi</a></li>
+          <li><a href="blog.html" class="hover:text-white transition">Blog Xanh</a></li>
+          <li><a href="#" class="hover:text-white transition">Vận Chuyển</a></li>
+          <li><a href="#" class="hover:text-white transition">Đổi Trả</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-green-light text-xs">© 2025 Organic Glow. Tất cả quyền được bảo lưu.</p>
+      <p class="text-green-light text-xs">📍 56 Đinh Tiên Hoàng, Hà Nội | 📞 1800 5678 | 🌿 hello@organicglow.vn</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

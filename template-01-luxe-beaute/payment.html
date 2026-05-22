@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh Toán - Luxe Beauté</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{gold:'#C9A84C','gold-light':'#E8D5A3',cream:'#F5F0E8','dark':'#0a0a0a'}}}}</script>
+</head>
+<body class="bg-dark text-white font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="font-serif text-2xl tracking-widest"><span>LUXE</span><span class="text-gold"> BEAUTÉ</span></a>
+    <a href="order.html" class="text-gray-400 hover:text-gold text-sm tracking-widest uppercase transition">← Quay Lại</a>
+  </div>
+</nav>
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+  <div class="mb-8">
+    <p class="text-gold text-xs tracking-[0.4em] uppercase mb-2">Bước Cuối</p>
+    <h1 class="font-serif text-4xl">Thanh Toán</h1>
+  </div>
+
+  <div class="flex items-center gap-2 mb-12 text-xs tracking-widest uppercase">
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Giỏ Hàng ✓</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Lên Đơn ✓</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gold border border-gold px-3 py-1">Thanh Toán</span>
+    <span class="text-gray-600">——</span>
+    <span class="text-gray-500 border border-gold/20 px-3 py-1">Hoàn Tất</span>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <div class="lg:col-span-2 space-y-6">
+      <!-- Payment Methods -->
+      <div class="border border-gold/20 p-6">
+        <h2 class="font-serif text-lg mb-5 text-gold">Phương Thức Thanh Toán</h2>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 border border-gold/40 bg-gold/5 p-4 cursor-pointer">
+            <input type="radio" name="pay" checked class="accent-gold"/>
+            <div class="flex items-center gap-3 flex-1">
+              <span class="text-xl">💳</span>
+              <div><p class="font-semibold text-sm">Thẻ Tín Dụng / Ghi Nợ</p><p class="text-gray-500 text-xs">Visa, MasterCard, JCB</p></div>
+            </div>
+          </label>
+          <label class="flex items-center gap-3 border border-gold/20 p-4 cursor-pointer hover:border-gold/40 transition">
+            <input type="radio" name="pay" class="accent-gold"/>
+            <div class="flex items-center gap-3"><span class="text-xl">📱</span><div><p class="font-semibold text-sm">MoMo</p><p class="text-gray-500 text-xs">Ví điện tử MoMo</p></div></div>
+          </label>
+          <label class="flex items-center gap-3 border border-gold/20 p-4 cursor-pointer hover:border-gold/40 transition">
+            <input type="radio" name="pay" class="accent-gold"/>
+            <div class="flex items-center gap-3"><span class="text-xl">💚</span><div><p class="font-semibold text-sm">ZaloPay</p><p class="text-gray-500 text-xs">Ví điện tử ZaloPay</p></div></div>
+          </label>
+          <label class="flex items-center gap-3 border border-gold/20 p-4 cursor-pointer hover:border-gold/40 transition">
+            <input type="radio" name="pay" class="accent-gold"/>
+            <div class="flex items-center gap-3"><span class="text-xl">🏦</span><div><p class="font-semibold text-sm">Chuyển Khoản Ngân Hàng</p><p class="text-gray-500 text-xs">Internet Banking / QR Code</p></div></div>
+          </label>
+          <label class="flex items-center gap-3 border border-gold/20 p-4 cursor-pointer hover:border-gold/40 transition">
+            <input type="radio" name="pay" class="accent-gold"/>
+            <div class="flex items-center gap-3"><span class="text-xl">💵</span><div><p class="font-semibold text-sm">Thanh Toán Khi Nhận Hàng (COD)</p><p class="text-gray-500 text-xs">Trả tiền mặt khi nhận hàng</p></div></div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Card Form -->
+      <div class="border border-gold/30 p-6 bg-gold/5">
+        <h2 class="font-serif text-lg mb-5 text-gold">Thông Tin Thẻ</h2>
+        <div class="space-y-4">
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Số Thẻ *</label>
+            <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600 tracking-wider"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Tên Chủ Thẻ *</label>
+            <input type="text" placeholder="NGUYEN VAN A" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600 uppercase"/>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="text-gold text-xs tracking-widest uppercase block mb-2">Ngày Hết Hạn *</label>
+              <input type="text" placeholder="MM / YY" maxlength="7" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+            </div>
+            <div>
+              <label class="text-gold text-xs tracking-widest uppercase block mb-2">CVV *</label>
+              <input type="text" placeholder="***" maxlength="4" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+            </div>
+          </div>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" class="accent-gold"/>
+            <span class="text-sm text-gray-400">Lưu thẻ này cho lần thanh toán sau</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Delivery Info Summary -->
+      <div class="border border-gold/20 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="font-serif text-lg text-gold">Địa Chỉ Giao Hàng</h2>
+          <a href="order.html" class="text-xs text-gold hover:text-gold-light transition tracking-widest uppercase">Thay Đổi</a>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-gold text-xl mt-0.5">📍</span>
+          <div>
+            <p class="font-semibold">Nguyễn Thị Lan Anh · 0912 345 678</p>
+            <p class="text-gray-400 text-sm mt-1">45 Nguyễn Trãi, Phường Nguyễn Cư Trinh, Quận 1, TP. Hồ Chí Minh</p>
+            <p class="text-gray-500 text-xs mt-2">🚚 Giao hàng tiêu chuẩn · 3-5 ngày làm việc · Miễn phí</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="lg:col-span-1">
+      <div class="border border-gold/30 p-8 sticky top-28">
+        <h2 class="font-serif text-xl mb-6 text-gold">Xác Nhận Đơn</h2>
+        <div class="space-y-3 mb-6 text-sm">
+          <div class="flex justify-between"><span class="text-gray-400">Serum Vàng 24K × 1</span><span>2.450.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-400">Kem Dưỡng Caviar × 1</span><span>1.850.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-400">Toner Rose Gold × 2</span><span>1.512.000₫</span></div>
+          <div class="border-t border-gold/20 pt-3 space-y-2">
+            <div class="flex justify-between"><span class="text-gray-400">Tạm tính</span><span>5.812.000₫</span></div>
+            <div class="flex justify-between"><span class="text-gray-400">Giảm giá</span><span class="text-red-400">-580.000₫</span></div>
+            <div class="flex justify-between"><span class="text-gray-400">Vận chuyển</span><span class="text-green-400">Miễn phí</span></div>
+          </div>
+          <div class="border-t border-gold/20 pt-3 flex justify-between font-bold text-base">
+            <span>Tổng Thanh Toán</span>
+            <span class="text-gold text-xl">5.232.000₫</span>
+          </div>
+        </div>
+        <button onclick="window.location.href='orders.html'" class="w-full bg-gold text-dark py-4 font-bold tracking-widest uppercase text-sm hover:bg-gold-light transition mb-4">
+          🔒 Xác Nhận Thanh Toán
+        </button>
+        <p class="text-center text-gray-600 text-xs">Bằng cách nhấn xác nhận, bạn đồng ý với <span class="text-gold cursor-pointer">Điều khoản dịch vụ</span> của chúng tôi</p>
+        <div class="flex justify-center gap-4 mt-4 text-gray-700 text-xs">
+          <span>🔐 SSL 256-bit</span>
+          <span>🛡️ Bảo mật tuyệt đối</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark border-t border-gold/20 py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-600 text-xs tracking-widest">© 2025 LUXE BEAUTÉ. ALL RIGHTS RESERVED.</p></div></footer>
+</body>
+</html>

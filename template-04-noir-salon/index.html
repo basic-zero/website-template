@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noir Salon & Spa - Đẳng Cấp Trong Từng Khoảnh Khắc</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#1B2A4A','navy-light':'#2D4A7A','navy-dark':'#0D1829',gold:'#C9A84C','gold-light':'#E8D5A3',ivory:'#FAFAF7'}}}}</script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+    .font-serif { font-family: 'Playfair Display', serif; }
+    body { font-family: 'Lato', sans-serif; }
+    @keyframes marquee { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
+    .marquee-inner { animation: marquee 28s linear infinite; }
+    .gold-border { border: 1px solid #C9A84C44; }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(201,168,76,0.15); }
+  </style>
+</head>
+<body class="bg-navy-dark text-white">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-navy/97 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+    <a href="index.html" class="font-serif text-xl tracking-[0.15em] text-white">NOIR <span class="text-gold">SALON</span></a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-gold text-sm tracking-widest uppercase transition">Trang Chủ</a>
+      <a href="products.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Dịch Vụ & Sản Phẩm</a>
+      <a href="about.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Giới Thiệu</a>
+      <a href="blog.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Blog</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="login.html" class="text-gray-300 hover:text-gold transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-300 hover:text-gold transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-gold text-navy text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center bg-navy relative overflow-hidden pt-20">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-20 left-10 text-9xl">✂️</div>
+    <div class="absolute bottom-20 right-10 text-9xl">💎</div>
+    <div class="absolute top-1/2 left-1/4 text-7xl">🌿</div>
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-navy-dark/60 via-transparent to-navy-dark/80"></div>
+  <div class="relative text-center max-w-4xl mx-auto px-6 py-20">
+    <p class="text-gold text-xs tracking-[0.4em] uppercase mb-6">Salon & Spa Cao Cấp</p>
+    <h1 class="font-serif text-5xl md:text-7xl font-bold leading-tight mb-6">
+      Nghệ Thuật<br><span class="text-gold italic">Làm Đẹp</span> Đỉnh Cao
+    </h1>
+    <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+      Trải nghiệm dịch vụ làm đẹp đẳng cấp với đội ngũ chuyên gia hàng đầu. Mỗi khoảnh khắc tại Noir Salon là một hành trình biến đổi hoàn hảo.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="order.html" class="bg-gold text-navy px-8 py-4 text-sm tracking-widest uppercase font-bold hover:bg-gold-light transition">Đặt Lịch Ngay</a>
+      <a href="products.html" class="border border-gold text-gold px-8 py-4 text-sm tracking-widest uppercase hover:bg-gold/10 transition">Xem Dịch Vụ</a>
+    </div>
+    <div class="mt-12 flex justify-center gap-12 text-center">
+      <div><p class="font-serif text-3xl text-gold">10+</p><p class="text-gray-400 text-xs tracking-widest uppercase">Năm Kinh Nghiệm</p></div>
+      <div class="w-px bg-gold/20"></div>
+      <div><p class="font-serif text-3xl text-gold">8.000+</p><p class="text-gray-400 text-xs tracking-widest uppercase">Khách Hàng</p></div>
+      <div class="w-px bg-gold/20"></div>
+      <div><p class="font-serif text-3xl text-gold">20</p><p class="text-gray-400 text-xs tracking-widest uppercase">Chuyên Gia</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="bg-gold py-3 overflow-hidden">
+  <div class="marquee-inner whitespace-nowrap text-navy text-sm font-bold tracking-widest">
+    ✦ ƯU ĐÃI KHAI TRƯƠNG CHI NHÁNH 2 — GIẢM 20% MỌI DỊCH VỤ &nbsp;&nbsp;&nbsp;
+    ✦ THÀNH VIÊN MỚI — TẶNG 100.000₫ &nbsp;&nbsp;&nbsp;
+    ✦ COMBO NHUỘM + PHỤC HỒI CHỈ 1.500.000₫ &nbsp;&nbsp;&nbsp;
+    ✦ MIỄN PHÍ SHIP CHO ĐƠN SẢN PHẨM TRÊN 500.000₫ &nbsp;&nbsp;&nbsp;
+    ✦ BIRTHDAY SPECIAL — GIẢM 30% NGÀY SINH NHẬT &nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="py-24 bg-navy-dark">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Chuyên Nghiệp & Đẳng Cấp</p>
+      <h2 class="font-serif text-4xl md:text-5xl mb-4">Dịch Vụ <span class="text-gold italic">Nổi Bật</span></h2>
+      <div class="w-16 h-px bg-gold mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Service Card 1 -->
+      <div class="service-card gold-border bg-navy p-8 transition duration-300 cursor-pointer">
+        <div class="text-5xl mb-5">✂️</div>
+        <h3 class="font-serif text-xl text-white mb-2">Cắt & Tạo Kiểu Tóc</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Định hình phong cách riêng với kỹ thuật cắt tóc chuẩn châu Âu từ các stylist được đào tạo quốc tế.</p>
+        <div class="flex items-center justify-between">
+          <p class="text-gold font-serif text-lg">Từ 250.000₫</p>
+          <a href="order.html" class="text-xs text-gold border border-gold/40 px-4 py-2 hover:bg-gold hover:text-navy transition tracking-widest uppercase">Đặt Lịch</a>
+        </div>
+      </div>
+      <!-- Service Card 2 -->
+      <div class="service-card gold-border bg-navy p-8 transition duration-300 cursor-pointer">
+        <div class="text-5xl mb-5">🎨</div>
+        <h3 class="font-serif text-xl text-white mb-2">Nhuộm Tóc Toàn Đầu</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Sử dụng thuốc nhuộm cao cấp L'Oréal Professionnel, đa dạng màu sắc từ tự nhiên đến thời trang.</p>
+        <div class="flex items-center justify-between">
+          <p class="text-gold font-serif text-lg">Từ 800.000₫</p>
+          <a href="order.html" class="text-xs text-gold border border-gold/40 px-4 py-2 hover:bg-gold hover:text-navy transition tracking-widest uppercase">Đặt Lịch</a>
+        </div>
+      </div>
+      <!-- Service Card 3 -->
+      <div class="service-card gold-border bg-navy p-8 transition duration-300 cursor-pointer">
+        <div class="text-5xl mb-5">💇‍♀️</div>
+        <h3 class="font-serif text-xl text-white mb-2">Uốn Tóc Hàn Quốc</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Kỹ thuật uốn Digital Perm và Cold Perm từ Hàn Quốc, tạo lọn tự nhiên bền đẹp lâu dài.</p>
+        <div class="flex items-center justify-between">
+          <p class="text-gold font-serif text-lg">Từ 1.200.000₫</p>
+          <a href="order.html" class="text-xs text-gold border border-gold/40 px-4 py-2 hover:bg-gold hover:text-navy transition tracking-widest uppercase">Đặt Lịch</a>
+        </div>
+      </div>
+      <!-- Service Card 4 -->
+      <div class="service-card gold-border bg-navy p-8 transition duration-300 cursor-pointer">
+        <div class="text-5xl mb-5">✨</div>
+        <h3 class="font-serif text-xl text-white mb-2">Chăm Sóc Da Mặt Premium</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Liệu trình chăm sóc da chuyên sâu với công nghệ hiện đại, phù hợp mọi loại da.</p>
+        <div class="flex items-center justify-between">
+          <p class="text-gold font-serif text-lg">650.000₫</p>
+          <a href="order.html" class="text-xs text-gold border border-gold/40 px-4 py-2 hover:bg-gold hover:text-navy transition tracking-widest uppercase">Đặt Lịch</a>
+        </div>
+      </div>
+      <!-- Service Card 5 -->
+      <div class="service-card gold-border bg-navy p-8 transition duration-300 cursor-pointer">
+        <div class="text-5xl mb-5">🧘‍♀️</div>
+        <h3 class="font-serif text-xl text-white mb-2">Massage Thư Giãn 60 Phút</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Liệu pháp massage thư giãn toàn thân kết hợp tinh dầu thiên nhiên cao cấp, giải tỏa căng thẳng.</p>
+        <div class="flex items-center justify-between">
+          <p class="text-gold font-serif text-lg">400.000₫</p>
+          <a href="order.html" class="text-xs text-gold border border-gold/40 px-4 py-2 hover:bg-gold hover:text-navy transition tracking-widest uppercase">Đặt Lịch</a>
+        </div>
+      </div>
+      <!-- Service Card 6 -->
+      <div class="service-card gold-border bg-navy p-8 transition duration-300 cursor-pointer">
+        <div class="text-5xl mb-5">💅</div>
+        <h3 class="font-serif text-xl text-white mb-2">Làm Móng Gel Cao Cấp</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Dịch vụ làm móng gel bền đẹp với hơn 200 màu sắc đa dạng, nail art theo yêu cầu.</p>
+        <div class="flex items-center justify-between">
+          <p class="text-gold font-serif text-lg">300.000₫</p>
+          <a href="order.html" class="text-xs text-gold border border-gold/40 px-4 py-2 hover:bg-gold hover:text-navy transition tracking-widest uppercase">Đặt Lịch</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="products.html" class="border border-gold text-gold px-10 py-4 text-sm tracking-widest uppercase hover:bg-gold hover:text-navy transition">Xem Tất Cả Dịch Vụ</a>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE/AFTER TRANSFORMATION -->
+<section class="py-24 bg-navy">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Kết Quả Thực Tế</p>
+      <h2 class="font-serif text-4xl md:text-5xl mb-4">Sự <span class="text-gold italic">Biến Đổi</span> Kỳ Diệu</h2>
+      <div class="w-16 h-px bg-gold mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="gold-border bg-navy-dark p-6 text-center">
+        <div class="flex gap-4 justify-center items-center mb-4">
+          <div class="flex-1 bg-navy rounded p-6 text-center">
+            <div class="text-5xl mb-2">😐</div>
+            <p class="text-gray-500 text-xs uppercase tracking-wider">Trước</p>
+          </div>
+          <div class="text-gold text-2xl">→</div>
+          <div class="flex-1 bg-navy rounded p-6 text-center">
+            <div class="text-5xl mb-2">😍</div>
+            <p class="text-gold text-xs uppercase tracking-wider">Sau</p>
+          </div>
+        </div>
+        <h4 class="font-serif text-lg text-white mb-2">Nhuộm Balayage</h4>
+        <p class="text-gray-400 text-sm">Chuyển hóa từ tóc đen đơn điệu sang Balayage honey blonde tự nhiên</p>
+      </div>
+      <div class="gold-border bg-navy-dark p-6 text-center">
+        <div class="flex gap-4 justify-center items-center mb-4">
+          <div class="flex-1 bg-navy rounded p-6 text-center">
+            <div class="text-5xl mb-2">😕</div>
+            <p class="text-gray-500 text-xs uppercase tracking-wider">Trước</p>
+          </div>
+          <div class="text-gold text-2xl">→</div>
+          <div class="flex-1 bg-navy rounded p-6 text-center">
+            <div class="text-5xl mb-2">🤩</div>
+            <p class="text-gold text-xs uppercase tracking-wider">Sau</p>
+          </div>
+        </div>
+        <h4 class="font-serif text-lg text-white mb-2">Uốn Digital Perm</h4>
+        <p class="text-gray-400 text-sm">Từ tóc thẳng mỏng đến lọn sóng Hàn Quốc bồng bềnh quyến rũ</p>
+      </div>
+      <div class="gold-border bg-navy-dark p-6 text-center">
+        <div class="flex gap-4 justify-center items-center mb-4">
+          <div class="flex-1 bg-navy rounded p-6 text-center">
+            <div class="text-5xl mb-2">😶</div>
+            <p class="text-gray-500 text-xs uppercase tracking-wider">Trước</p>
+          </div>
+          <div class="text-gold text-2xl">→</div>
+          <div class="flex-1 bg-navy rounded p-6 text-center">
+            <div class="text-5xl mb-2">✨</div>
+            <p class="text-gold text-xs uppercase tracking-wider">Sau</p>
+          </div>
+        </div>
+        <h4 class="font-serif text-lg text-white mb-2">Chăm Sóc Da Premium</h4>
+        <p class="text-gray-400 text-sm">Da sạm tối, lỗ chân lông to thành làn da căng mịn, sáng khỏe</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="py-24 bg-navy-dark">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Chất Lượng Salon</p>
+      <h2 class="font-serif text-4xl md:text-5xl mb-4">Sản Phẩm <span class="text-gold italic">Bán Chạy</span></h2>
+      <div class="w-16 h-px bg-gold mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="gold-border bg-navy group hover:-translate-y-1 transition duration-300">
+        <div class="p-8 text-center text-6xl bg-navy-light/30">🧴</div>
+        <div class="p-5">
+          <p class="text-gold text-xs tracking-widest uppercase mb-1">Dầu Dưỡng Tóc</p>
+          <h4 class="font-serif text-white mb-3">Keratin Hair Oil</h4>
+          <div class="flex items-center justify-between">
+            <p class="text-gold font-bold">580.000₫</p>
+            <button onclick="window.location='cart.html'" class="bg-gold text-navy text-xs px-3 py-2 hover:bg-gold-light transition">Mua Ngay</button>
+          </div>
+        </div>
+      </div>
+      <div class="gold-border bg-navy group hover:-translate-y-1 transition duration-300">
+        <div class="p-8 text-center text-6xl bg-navy-light/30">🫙</div>
+        <div class="p-5">
+          <p class="text-gold text-xs tracking-widest uppercase mb-1">Mặt Nạ Tóc</p>
+          <h4 class="font-serif text-white mb-3">Collagen Hair Mask</h4>
+          <div class="flex items-center justify-between">
+            <p class="text-gold font-bold">320.000₫</p>
+            <button onclick="window.location='cart.html'" class="bg-gold text-navy text-xs px-3 py-2 hover:bg-gold-light transition">Mua Ngay</button>
+          </div>
+        </div>
+      </div>
+      <div class="gold-border bg-navy group hover:-translate-y-1 transition duration-300">
+        <div class="p-8 text-center text-6xl bg-navy-light/30">💆‍♀️</div>
+        <div class="p-5">
+          <p class="text-gold text-xs tracking-widest uppercase mb-1">Serum Dưỡng Da</p>
+          <h4 class="font-serif text-white mb-3">Salon Grade Serum</h4>
+          <div class="flex items-center justify-between">
+            <p class="text-gold font-bold">890.000₫</p>
+            <a href="product-detail.html" class="bg-gold text-navy text-xs px-3 py-2 hover:bg-gold-light transition">Xem Chi Tiết</a>
+          </div>
+        </div>
+      </div>
+      <div class="gold-border bg-navy group hover:-translate-y-1 transition duration-300">
+        <div class="p-8 text-center text-6xl bg-navy-light/30">🎁</div>
+        <div class="p-5">
+          <p class="text-gold text-xs tracking-widest uppercase mb-1">Bộ Sản Phẩm</p>
+          <h4 class="font-serif text-white mb-3">Salon Series Set</h4>
+          <div class="flex items-center justify-between">
+            <p class="text-gold font-bold">1.200.000₫</p>
+            <button onclick="window.location='cart.html'" class="bg-gold text-navy text-xs px-3 py-2 hover:bg-gold-light transition">Mua Ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="products.html" class="border border-gold text-gold px-10 py-4 text-sm tracking-widest uppercase hover:bg-gold hover:text-navy transition">Xem Tất Cả Sản Phẩm</a>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING CTA -->
+<section class="py-24 bg-navy relative overflow-hidden">
+  <div class="absolute inset-0 opacity-5 text-center text-[20rem] flex items-center justify-center text-gold font-serif leading-none">N</div>
+  <div class="relative max-w-3xl mx-auto px-6 text-center">
+    <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Ưu Đãi Đặc Biệt</p>
+    <h2 class="font-serif text-4xl md:text-5xl mb-6">Đặt Lịch Hôm Nay<br><span class="text-gold italic">Nhận Ngay Ưu Đãi</span></h2>
+    <p class="text-gray-300 mb-4">Thành viên mới được tặng <strong class="text-gold">100.000₫</strong> vào tài khoản sau lần đặt lịch đầu tiên.</p>
+    <p class="text-gray-400 text-sm mb-10">Đặt lịch online trước 24h — không cần chờ đợi, đúng giờ hẹn.</p>
+    <a href="order.html" class="bg-gold text-navy px-12 py-4 text-sm tracking-widest uppercase font-bold hover:bg-gold-light transition inline-block">Đặt Lịch Ngay — Miễn Phí</a>
+    <p class="text-gray-500 text-xs mt-4">Hủy lịch miễn phí trước 2 giờ</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-24 bg-navy-dark">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Khách Hàng Nói Gì</p>
+      <h2 class="font-serif text-4xl md:text-5xl mb-4">Đánh Giá <span class="text-gold italic">Thực Tế</span></h2>
+      <div class="w-16 h-px bg-gold mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="gold-border bg-navy p-8">
+        <div class="flex text-gold text-xl mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-gray-300 text-sm leading-relaxed italic mb-6">"Salon đẳng cấp nhất mà tôi từng trải nghiệm ở Sài Gòn. Stylist Minh hiểu ý khách hàng rất tốt, kết quả nhuộm vượt kỳ vọng. Không gian sang trọng, phục vụ tận tâm."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center text-lg">👩</div>
+          <div>
+            <p class="text-white text-sm font-medium">Nguyễn Thị Lan Anh</p>
+            <p class="text-gray-500 text-xs">Khách hàng thân thiết · 2 năm</p>
+          </div>
+        </div>
+      </div>
+      <div class="gold-border bg-navy p-8">
+        <div class="flex text-gold text-xl mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-gray-300 text-sm leading-relaxed italic mb-6">"Liệu trình chăm sóc da Premium thật sự hiệu quả. Sau 3 buổi, da tôi sáng hơn hẳn và các vết thâm mờ dần. Serum Salon Grade mua về dùng cũng tuyệt vời."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center text-lg">👩‍💼</div>
+          <div>
+            <p class="text-white text-sm font-medium">Trần Phương Thảo</p>
+            <p class="text-gray-500 text-xs">Beauty Blogger · TP.HCM</p>
+          </div>
+        </div>
+      </div>
+      <div class="gold-border bg-navy p-8">
+        <div class="flex text-gold text-xl mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-gray-300 text-sm leading-relaxed italic mb-6">"Uốn Digital Perm tại Noir cho kết quả cực đẹp và bền. Đã 2 tháng mà lọn vẫn giữ form tốt. Chị Huyền tư vấn nhiệt tình, hiểu rõ mình muốn gì."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center text-lg">👩‍🎨</div>
+          <div>
+            <p class="text-white text-sm font-medium">Lê Minh Châu</p>
+            <p class="text-gray-500 text-xs">Giám đốc Marketing · Q.3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section class="py-24 bg-navy">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Kiến Thức Làm Đẹp</p>
+      <h2 class="font-serif text-4xl md:text-5xl mb-4">Blog <span class="text-gold italic">Mới Nhất</span></h2>
+      <div class="w-16 h-px bg-gold mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <a href="blog-post.html" class="gold-border bg-navy-dark group hover:-translate-y-1 transition duration-300 block">
+        <div class="p-8 text-center text-6xl bg-navy/50">💇‍♀️</div>
+        <div class="p-6">
+          <p class="text-gold text-xs tracking-widest uppercase mb-2">Chăm Sóc Tóc</p>
+          <h4 class="font-serif text-lg text-white mb-3 group-hover:text-gold transition">Bí Quyết Tóc Đẹp Sau Nhuộm</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Tóc nhuộm cần được chăm sóc đặc biệt để giữ màu bền và tóc khỏe mạnh. Khám phá 7 bí quyết từ chuyên gia Noir...</p>
+          <p class="text-gold text-xs">Đọc thêm →</p>
+        </div>
+      </a>
+      <a href="blog.html" class="gold-border bg-navy-dark group hover:-translate-y-1 transition duration-300 block">
+        <div class="p-8 text-center text-6xl bg-navy/50">✨</div>
+        <div class="p-6">
+          <p class="text-gold text-xs tracking-widest uppercase mb-2">Xu Hướng 2025</p>
+          <h4 class="font-serif text-lg text-white mb-3 group-hover:text-gold transition">Màu Tóc Hot Nhất Mùa Hè 2025</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Từ chocolate brown sang trọng đến blonde sáng nổi bật — những màu tóc đang làm mưa làm gió 2025...</p>
+          <p class="text-gold text-xs">Đọc thêm →</p>
+        </div>
+      </a>
+      <a href="blog.html" class="gold-border bg-navy-dark group hover:-translate-y-1 transition duration-300 block">
+        <div class="p-8 text-center text-6xl bg-navy/50">🌿</div>
+        <div class="p-6">
+          <p class="text-gold text-xs tracking-widest uppercase mb-2">Skincare</p>
+          <h4 class="font-serif text-lg text-white mb-3 group-hover:text-gold transition">Routine Chăm Sóc Da Tối Giản</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">5 bước chăm sóc da hiệu quả không cần tốn nhiều thời gian, phù hợp cho phụ nữ bận rộn hiện đại...</p>
+          <p class="text-gold text-xs">Đọc thêm →</p>
+        </div>
+      </a>
+    </div>
+    <div class="text-center mt-10">
+      <a href="blog.html" class="border border-gold text-gold px-10 py-4 text-sm tracking-widest uppercase hover:bg-gold hover:text-navy transition">Xem Tất Cả Bài Viết</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-dark text-white py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div><p class="font-serif text-xl text-gold mb-3">NOIR SALON & SPA</p><p class="text-gray-400 text-sm">Đẳng cấp trong từng trải nghiệm làm đẹp</p></div>
+      <div><p class="text-gold text-xs tracking-widest uppercase mb-3">Liên Hệ</p><p class="text-gray-400 text-sm">📍 8 Lê Thánh Tôn, Q.1, TP.HCM</p><p class="text-gray-400 text-sm mt-1">📞 028 8888 9999</p><p class="text-gray-400 text-sm mt-1">✉️ booking@noirsalon.vn</p></div>
+      <div><p class="text-gold text-xs tracking-widest uppercase mb-3">Giờ Hoạt Động</p><p class="text-gray-400 text-sm">Thứ 2 - Thứ 6: 8:00 - 21:00</p><p class="text-gray-400 text-sm mt-1">Thứ 7 - CN: 8:00 - 22:00</p></div>
+    </div>
+    <div class="border-t border-gold/20 pt-6 text-center"><p class="text-gray-600 text-xs">© 2025 Noir Salon & Spa. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+</body>
+</html>

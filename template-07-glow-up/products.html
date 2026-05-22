@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Glow Up Beauty</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E55555',purple:'#7C3AED','purple-light':'#A78BFA',yellow:'#FFD93D',teal:'#06D6A0','dark':'#0F0F0F','off-white':'#FAFAFA'}}}}</script>
+  <style>
+    .text-gradient{background:linear-gradient(135deg,#FF6B6B,#A78BFA,#FFD93D);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .neon-border{border:1px solid transparent;background:linear-gradient(#1a1a1a,#1a1a1a) padding-box,linear-gradient(135deg,#FF6B6B,#7C3AED,#FFD93D) border-box}
+    .shade-dot{width:16px;height:16px;border-radius:50%;display:inline-block;border:2px solid rgba(255,255,255,0.2);cursor:pointer;transition:transform .2s}
+    .shade-dot:hover{transform:scale(1.3)}
+    .filter-btn{transition:all .2s}
+    .filter-btn.active{background:#FF6B6B;color:#0F0F0F;border-color:#FF6B6B}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0F0F0F}::-webkit-scrollbar-thumb{background:#FF6B6B;border-radius:3px}
+  </style>
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <nav class="fixed top-0 w-full z-50 bg-dark/95 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="index.html" class="font-black text-xl"><span class="text-coral">GLOW</span><span class="text-white"> UP</span><span class="text-yellow">✦</span></a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="index.html" class="text-gray-300 hover:text-coral text-sm font-medium transition">Home</a>
+        <a href="products.html" class="text-coral text-sm font-medium transition">Shop</a>
+        <a href="about.html" class="text-gray-300 hover:text-coral text-sm font-medium transition">About</a>
+        <a href="blog.html" class="text-gray-300 hover:text-coral text-sm font-medium transition">Blog</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="login.html" class="text-gray-400 hover:text-coral transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+        <a href="cart.html" class="relative text-gray-400 hover:text-coral transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-coral text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">3</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pt-20">
+    <!-- PAGE HEADER -->
+    <div class="bg-gradient-to-r from-purple/20 via-dark to-coral/10 py-14 px-4 text-center border-b border-white/5">
+      <h1 class="text-5xl font-black mb-3">Shop <span class="text-gradient">All Products</span></h1>
+      <p class="text-gray-400">10 sản phẩm · Makeup bold · 100% Vegan · Made in Vietnam</p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      <div class="flex flex-col lg:flex-row gap-8">
+
+        <!-- SIDEBAR FILTERS -->
+        <aside class="lg:w-64 flex-shrink-0">
+          <div class="bg-[#1a1a1a] rounded-2xl p-6 sticky top-24">
+            <h3 class="font-black text-lg mb-5 flex items-center justify-between">
+              Bộ Lọc
+              <button class="text-coral text-sm font-normal hover:underline">Reset</button>
+            </h3>
+
+            <!-- Search -->
+            <div class="mb-6">
+              <div class="relative">
+                <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <input type="text" placeholder="Tìm sản phẩm..." class="w-full bg-dark border border-white/10 rounded-full py-2 pl-9 pr-4 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-coral">
+              </div>
+            </div>
+
+            <!-- Category -->
+            <div class="mb-6">
+              <p class="text-xs text-gray-400 font-bold tracking-widest mb-3">DANH MỤC</p>
+              <div class="space-y-2">
+                <button class="filter-btn active w-full text-left px-3 py-2 rounded-lg border border-white/10 text-sm font-medium">✨ Tất Cả (10)</button>
+                <button class="filter-btn w-full text-left px-3 py-2 rounded-lg border border-white/10 text-sm font-medium text-gray-300 hover:border-coral">💄 Lips (3)</button>
+                <button class="filter-btn w-full text-left px-3 py-2 rounded-lg border border-white/10 text-sm font-medium text-gray-300 hover:border-coral">👁️ Eyes (3)</button>
+                <button class="filter-btn w-full text-left px-3 py-2 rounded-lg border border-white/10 text-sm font-medium text-gray-300 hover:border-coral">🌟 Face (3)</button>
+                <button class="filter-btn w-full text-left px-3 py-2 rounded-lg border border-white/10 text-sm font-medium text-gray-300 hover:border-coral">💎 Skincare (1)</button>
+              </div>
+            </div>
+
+            <!-- Skin Tone -->
+            <div class="mb-6">
+              <p class="text-xs text-gray-400 font-bold tracking-widest mb-3">TÔNG DA</p>
+              <div class="flex gap-2 flex-wrap">
+                <button class="w-8 h-8 rounded-full border-2 border-white/20 hover:border-coral transition" style="background:#FDDBB4" title="Da sáng"></button>
+                <button class="w-8 h-8 rounded-full border-2 border-white/20 hover:border-coral transition" style="background:#D4A76A" title="Da trung tính"></button>
+                <button class="w-8 h-8 rounded-full border-2 border-white/20 hover:border-coral transition" style="background:#A0714F" title="Da bánh mật"></button>
+                <button class="w-8 h-8 rounded-full border-2 border-white/20 hover:border-coral transition" style="background:#7B4F2E" title="Da nâu"></button>
+                <button class="w-8 h-8 rounded-full border-2 border-white/20 hover:border-coral transition" style="background:#4A2C17" title="Da đậm"></button>
+              </div>
+            </div>
+
+            <!-- Finish -->
+            <div class="mb-6">
+              <p class="text-xs text-gray-400 font-bold tracking-widest mb-3">FINISH</p>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-coral"> <span class="text-sm text-gray-300">Matte</span></label>
+                <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-coral" checked> <span class="text-sm text-gray-300">Dewy / Glow</span></label>
+                <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-coral"> <span class="text-sm text-gray-300">Satin</span></label>
+              </div>
+            </div>
+
+            <!-- Price -->
+            <div class="mb-6">
+              <p class="text-xs text-gray-400 font-bold tracking-widest mb-3">GIÁ</p>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="price" class="accent-coral"> <span class="text-sm text-gray-300">Dưới 200.000₫</span></label>
+                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="price" class="accent-coral" checked> <span class="text-sm text-gray-300">200K – 400K₫</span></label>
+                <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="price" class="accent-coral"> <span class="text-sm text-gray-300">Trên 400.000₫</span></label>
+              </div>
+            </div>
+
+            <!-- Vegan Only -->
+            <div>
+              <label class="flex items-center gap-3 cursor-pointer p-3 bg-teal/10 border border-teal/20 rounded-xl">
+                <div class="w-10 h-5 bg-teal rounded-full relative flex-shrink-0">
+                  <div class="absolute right-0.5 top-0.5 w-4 h-4 bg-white rounded-full"></div>
+                </div>
+                <span class="text-sm text-teal font-bold">Vegan Only 🌱</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- PRODUCT GRID -->
+        <div class="flex-1">
+          <!-- Sort bar -->
+          <div class="flex items-center justify-between mb-6">
+            <p class="text-gray-400 text-sm">Hiển thị <span class="text-white font-bold">10</span> sản phẩm</p>
+            <select class="bg-[#1a1a1a] border border-white/10 text-sm text-white rounded-lg px-3 py-2 focus:outline-none focus:border-coral">
+              <option>Phổ biến nhất</option>
+              <option>Mới nhất</option>
+              <option>Giá tăng dần</option>
+              <option>Giá giảm dần</option>
+              <option>Đánh giá cao</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+
+            <!-- 1 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-purple/30 to-coral/20 rounded-xl mb-4 flex items-center justify-center text-5xl">✨</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-yellow/20 text-yellow px-2 py-0.5 rounded-full font-bold">BEST #1</span>
+                <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full">18 màu</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Eyeshadow Palette "Neon Dreams"</h3>
+              <p class="text-gray-400 text-xs mb-3">18 shades neon pigment cao</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#FF6B6B"></span>
+                <span class="shade-dot" style="background:#7C3AED"></span>
+                <span class="shade-dot" style="background:#FFD93D"></span>
+                <span class="shade-dot" style="background:#06D6A0"></span>
+                <span class="shade-dot" style="background:#F72585"></span>
+                <span class="shade-dot" style="background:#4361EE"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">450.000₫</p><p class="text-yellow text-xs">★★★★★ (284)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 2 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-coral/30 to-yellow/20 rounded-xl mb-4 flex items-center justify-center text-5xl">💄</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-coral/20 text-coral px-2 py-0.5 rounded-full font-bold">HOT</span>
+                <span class="text-xs bg-purple/20 text-purple-light px-2 py-0.5 rounded-full">40 Shades</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Foundation "Skin Match"</h3>
+              <p class="text-gray-400 text-xs mb-3">Coverage vừa-full, wear 12h</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#FDDBB4"></span>
+                <span class="shade-dot" style="background:#D4A76A"></span>
+                <span class="shade-dot" style="background:#A0714F"></span>
+                <span class="shade-dot" style="background:#7B4F2E"></span>
+                <span class="shade-dot" style="background:#4A2C17"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">380.000₫</p><p class="text-yellow text-xs">★★★★★ (512)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 3 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-yellow/30 to-pink-500/20 rounded-xl mb-4 flex items-center justify-center text-5xl">💋</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-yellow/20 text-yellow px-2 py-0.5 rounded-full font-bold">SET</span>
+                <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full">6 màu</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Lip Gloss "Glow Up" Set</h3>
+              <p class="text-gray-400 text-xs mb-3">Siêu bóng, không dính, lâu phai</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#FF6B6B"></span>
+                <span class="shade-dot" style="background:#FF1493"></span>
+                <span class="shade-dot" style="background:#FF8C00"></span>
+                <span class="shade-dot" style="background:#DC143C"></span>
+                <span class="shade-dot" style="background:#FF69B4"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">250.000₫</p><p class="text-yellow text-xs">★★★★★ (198)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 4 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-pink-500/30 to-coral/20 rounded-xl mb-4 flex items-center justify-center text-5xl">🌸</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-purple/20 text-purple-light px-2 py-0.5 rounded-full">4 màu</span>
+                <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full">Vegan</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Blush Stick "Flush"</h3>
+              <p class="text-gray-400 text-xs mb-3">Má hồng dạng thỏi, blend mượt</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#FF6B6B"></span>
+                <span class="shade-dot" style="background:#FFB6C1"></span>
+                <span class="shade-dot" style="background:#FF8C00"></span>
+                <span class="shade-dot" style="background:#DB7093"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">185.000₫</p><p class="text-yellow text-xs">★★★★½ (143)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 5 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-dark to-purple/30 rounded-xl mb-4 flex items-center justify-center text-5xl">👁️</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-coral/20 text-coral px-2 py-0.5 rounded-full font-bold">BESTSELLER</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Mascara "Thick Queen"</h3>
+              <p class="text-gray-400 text-xs mb-3">Cong 24h, dày gấp 3x, không nhòe</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#1a1a1a; border-color:#fff"></span>
+                <span class="shade-dot" style="background:#3D2B1F"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">195.000₫</p><p class="text-yellow text-xs">★★★★★ (367)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 6 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-teal/20 to-yellow/20 rounded-xl mb-4 flex items-center justify-center text-5xl">🪄</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full">20 Shades</span>
+                <span class="text-xs bg-yellow/20 text-yellow px-2 py-0.5 rounded-full">Buildable</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Concealer "Flawless"</h3>
+              <p class="text-gray-400 text-xs mb-3">Che phủ hoàn hảo, không creasing</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#FDDBB4"></span>
+                <span class="shade-dot" style="background:#D4A76A"></span>
+                <span class="shade-dot" style="background:#A0714F"></span>
+                <span class="shade-dot" style="background:#7B4F2E"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">280.000₫</p><p class="text-yellow text-xs">★★★★★ (221)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 7 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-yellow/20 to-coral/20 rounded-xl mb-4 flex items-center justify-center text-5xl">✨</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-yellow/20 text-yellow px-2 py-0.5 rounded-full">Baked</span>
+                <span class="text-xs bg-purple/20 text-purple-light px-2 py-0.5 rounded-full">Matte</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Setting Powder "Baked"</h3>
+              <p class="text-gray-400 text-xs mb-3">Fix lớp nền suốt 16 tiếng</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#F5E6D3"></span>
+                <span class="shade-dot" style="background:#E2C59A"></span>
+                <span class="shade-dot" style="background:#C49A6C"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">320.000₫</p><p class="text-yellow text-xs">★★★★½ (178)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 8 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-dark to-coral/20 rounded-xl mb-4 flex items-center justify-center text-5xl">🖊️</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-coral/20 text-coral px-2 py-0.5 rounded-full">Gel</span>
+                <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full">Smudge-proof</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Eyeliner Gel "Wing It"</h3>
+              <p class="text-gray-400 text-xs mb-3">Kẻ siêu chuẩn, không lem, nước proof</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#111; border-color:#fff"></span>
+                <span class="shade-dot" style="background:#3D2B1F"></span>
+                <span class="shade-dot" style="background:#1a1a2e"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">165.000₫</p><p class="text-yellow text-xs">★★★★★ (294)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 9 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-coral/20 to-pink-500/20 rounded-xl mb-4 flex items-center justify-center text-5xl">✏️</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-purple/20 text-purple-light px-2 py-0.5 rounded-full">12 Shades</span>
+                <span class="text-xs bg-yellow/20 text-yellow px-2 py-0.5 rounded-full">Matte</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Lip Liner "Overline"</h3>
+              <p class="text-gray-400 text-xs mb-3">Kẻ môi precise, lâu trôi</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#FF6B6B"></span>
+                <span class="shade-dot" style="background:#DC143C"></span>
+                <span class="shade-dot" style="background:#8B0000"></span>
+                <span class="shade-dot" style="background:#FF69B4"></span>
+                <span class="shade-dot" style="background:#FF8C00"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">145.000₫</p><p class="text-yellow text-xs">★★★★½ (156)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+            <!-- 10 -->
+            <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-[1.02] transition block">
+              <div class="aspect-square bg-gradient-to-br from-teal/30 to-purple/20 rounded-xl mb-4 flex items-center justify-center text-5xl">💎</div>
+              <div class="flex gap-2 flex-wrap mb-2">
+                <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full font-bold">NEW</span>
+                <span class="text-xs bg-purple/20 text-purple-light px-2 py-0.5 rounded-full">Skincare</span>
+              </div>
+              <h3 class="font-bold text-white mb-1">Serum "Glow Boost"</h3>
+              <p class="text-gray-400 text-xs mb-3">Căng bóng sau 7 ngày, Niacinamide 10%</p>
+              <div class="flex gap-1 mb-3 flex-wrap">
+                <span class="shade-dot" style="background:#06D6A0"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div><p class="font-black text-coral">340.000₫</p><p class="text-yellow text-xs">★★★★★ (89)</p></div>
+                <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full">+ Giỏ</button>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-12 border-t border-white/10 mt-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="font-black text-2xl mb-3"><span class="text-coral">GLOW</span> UP <span class="text-yellow">✦</span></p>
+      <p class="text-gray-400 text-sm mb-2">📍 88 Võ Văn Tần, Q.3, TP.HCM | 📞 028 9999 8888 | 💌 hello@glowupbeauty.vn</p>
+      <div class="flex justify-center gap-4 mt-4 text-sm"><a href="#" class="text-gray-400 hover:text-coral transition">Instagram</a><a href="#" class="text-gray-400 hover:text-coral transition">TikTok</a><a href="#" class="text-gray-400 hover:text-coral transition">YouTube</a></div>
+      <p class="text-gray-600 text-xs mt-4">© 2025 Glow Up Beauty. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

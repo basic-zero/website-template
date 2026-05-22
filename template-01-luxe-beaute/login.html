@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng Nhập / Đăng Ký - Luxe Beauté</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{gold:'#C9A84C','gold-light':'#E8D5A3',cream:'#F5F0E8','dark':'#0a0a0a'}}}}</script>
+</head>
+<body class="bg-dark text-white font-sans min-h-screen flex flex-col">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="font-serif text-2xl tracking-widest"><span>LUXE</span><span class="text-gold"> BEAUTÉ</span></a>
+    <a href="index.html" class="text-gray-400 hover:text-gold text-sm tracking-widest uppercase transition">← Về Trang Chủ</a>
+  </div>
+</nav>
+
+<div class="flex-1 flex items-center justify-center pt-20 pb-10 px-4">
+  <div class="w-full max-w-md">
+    <!-- Tab Switch -->
+    <div class="flex border border-gold/30 mb-8">
+      <button id="tab-login" onclick="showTab('login')" class="flex-1 py-3 text-sm tracking-widest uppercase font-semibold bg-gold text-dark">Đăng Nhập</button>
+      <button id="tab-register" onclick="showTab('register')" class="flex-1 py-3 text-sm tracking-widest uppercase font-semibold text-gray-400 hover:text-gold transition">Đăng Ký</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="form-login">
+      <div class="text-center mb-8">
+        <h1 class="font-serif text-3xl mb-2">Chào Mừng Trở Lại</h1>
+        <p class="text-gray-500 text-sm">Đăng nhập để trải nghiệm đặc quyền thành viên</p>
+      </div>
+      <div class="space-y-4">
+        <div>
+          <label class="text-gold text-xs tracking-widest uppercase block mb-2">Email *</label>
+          <input type="email" placeholder="email@example.com" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+        </div>
+        <div>
+          <label class="text-gold text-xs tracking-widest uppercase block mb-2">Mật Khẩu *</label>
+          <div class="relative">
+            <input type="password" placeholder="••••••••" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600 pr-12"/>
+            <button class="absolute right-4 top-3.5 text-gray-500 hover:text-gold transition text-xs">Hiện</button>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-gold"/><span class="text-sm text-gray-400">Ghi nhớ đăng nhập</span></label>
+          <a href="#" class="text-gold text-xs hover:text-gold-light transition">Quên mật khẩu?</a>
+        </div>
+        <a href="profile.html" class="block w-full bg-gold text-dark py-4 font-bold tracking-widest uppercase text-sm text-center hover:bg-gold-light transition mt-2">Đăng Nhập</a>
+      </div>
+      <div class="relative my-6"><div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gold/20"></div></div><div class="relative flex justify-center"><span class="bg-dark px-4 text-gray-600 text-xs">HOẶC ĐĂNG NHẬP VỚI</span></div></div>
+      <div class="grid grid-cols-2 gap-3">
+        <button class="border border-gold/30 hover:border-gold/60 py-3 text-sm text-gray-400 hover:text-white transition flex items-center justify-center gap-2">
+          <span class="text-lg">G</span> Google
+        </button>
+        <button class="border border-gold/30 hover:border-gold/60 py-3 text-sm text-gray-400 hover:text-white transition flex items-center justify-center gap-2">
+          <span class="text-lg">f</span> Facebook
+        </button>
+      </div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="form-register" class="hidden">
+      <div class="text-center mb-8">
+        <h1 class="font-serif text-3xl mb-2">Tạo Tài Khoản</h1>
+        <p class="text-gray-500 text-sm">Gia nhập cộng đồng Luxe Beauté và nhận ưu đãi độc quyền</p>
+      </div>
+      <div class="space-y-4">
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Họ *</label>
+            <input type="text" placeholder="Nguyễn" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+          <div>
+            <label class="text-gold text-xs tracking-widest uppercase block mb-2">Tên *</label>
+            <input type="text" placeholder="Lan Anh" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+          </div>
+        </div>
+        <div>
+          <label class="text-gold text-xs tracking-widest uppercase block mb-2">Email *</label>
+          <input type="email" placeholder="email@example.com" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+        </div>
+        <div>
+          <label class="text-gold text-xs tracking-widest uppercase block mb-2">Số Điện Thoại</label>
+          <input type="tel" placeholder="0900 000 000" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+        </div>
+        <div>
+          <label class="text-gold text-xs tracking-widest uppercase block mb-2">Mật Khẩu *</label>
+          <input type="password" placeholder="Tối thiểu 8 ký tự" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+        </div>
+        <div>
+          <label class="text-gold text-xs tracking-widest uppercase block mb-2">Xác Nhận Mật Khẩu *</label>
+          <input type="password" placeholder="Nhập lại mật khẩu" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-white px-4 py-3 text-sm outline-none placeholder-gray-600"/>
+        </div>
+        <div>
+          <label class="text-gold text-xs tracking-widest uppercase block mb-2">Ngày Sinh</label>
+          <input type="date" class="w-full bg-gray-900 border border-gold/30 focus:border-gold text-gray-400 px-4 py-3 text-sm outline-none"/>
+        </div>
+        <label class="flex items-start gap-2 cursor-pointer">
+          <input type="checkbox" class="accent-gold mt-1"/>
+          <span class="text-sm text-gray-400">Tôi đồng ý với <a href="#" class="text-gold hover:text-gold-light">Điều khoản dịch vụ</a> và <a href="#" class="text-gold hover:text-gold-light">Chính sách bảo mật</a></span>
+        </label>
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" class="accent-gold" checked/>
+          <span class="text-sm text-gray-400">Nhận thông tin ưu đãi và bài viết làm đẹp qua email</span>
+        </label>
+        <a href="profile.html" class="block w-full bg-gold text-dark py-4 font-bold tracking-widest uppercase text-sm text-center hover:bg-gold-light transition">Tạo Tài Khoản</a>
+      </div>
+    </div>
+
+    <!-- Member Benefits -->
+    <div class="mt-10 border-t border-gold/20 pt-8">
+      <p class="text-gold text-xs tracking-widest uppercase text-center mb-4">Đặc Quyền Thành Viên</p>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="flex items-center gap-2 text-xs text-gray-500"><span class="text-gold">✦</span> Tích điểm thưởng</div>
+        <div class="flex items-center gap-2 text-xs text-gray-500"><span class="text-gold">✦</span> Ưu đãi sinh nhật</div>
+        <div class="flex items-center gap-2 text-xs text-gray-500"><span class="text-gold">✦</span> Early access sản phẩm mới</div>
+        <div class="flex items-center gap-2 text-xs text-gray-500"><span class="text-gold">✦</span> Tư vấn da miễn phí</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function showTab(tab) {
+  document.getElementById('form-login').classList.toggle('hidden', tab !== 'login');
+  document.getElementById('form-register').classList.toggle('hidden', tab !== 'register');
+  document.getElementById('tab-login').className = tab === 'login' ? 'flex-1 py-3 text-sm tracking-widest uppercase font-semibold bg-gold text-dark' : 'flex-1 py-3 text-sm tracking-widest uppercase font-semibold text-gray-400 hover:text-gold transition';
+  document.getElementById('tab-register').className = tab === 'register' ? 'flex-1 py-3 text-sm tracking-widest uppercase font-semibold bg-gold text-dark' : 'flex-1 py-3 text-sm tracking-widest uppercase font-semibold text-gray-400 hover:text-gold transition';
+}
+</script>
+</body>
+</html>

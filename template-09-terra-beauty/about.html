@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câu Chuyện Chúng Tôi - Terra Beauty</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{terra:'#C25B3F','terra-light':'#D4816B',cream:'#FAF3E8',brown:'#8B6B4A','brown-light':'#B8956A',forest:'#3D5A3E',sand:'#E8D5B0'}}}}</script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .playfair { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-cream">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full z-50 bg-cream/95 backdrop-blur border-b border-terra/20">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌍</span><span class="font-bold text-xl text-brown">Terra<span class="text-terra">Beauty</span></span></a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="index.html" class="text-brown hover:text-terra text-sm font-medium transition">Trang Chủ</a>
+        <a href="products.html" class="text-brown hover:text-terra text-sm font-medium transition">Sản Phẩm</a>
+        <a href="about.html" class="text-terra text-sm font-medium">Câu Chuyện</a>
+        <a href="blog.html" class="text-brown hover:text-terra text-sm font-medium transition">Blog</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="login.html" class="text-brown hover:text-terra transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+        <a href="cart.html" class="relative text-brown hover:text-terra transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-terra text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-20 bg-gradient-to-br from-terra/10 via-cream to-sand/40">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="inline-block bg-terra/10 text-terra text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">Thành Lập 2019 · Đà Lạt</span>
+      <h1 class="playfair text-5xl md:text-6xl font-bold text-brown mb-6">
+        Câu Chuyện<br>
+        <span class="text-terra italic">Terra Beauty</span>
+      </h1>
+      <p class="text-brown/70 text-xl leading-relaxed max-w-2xl mx-auto">
+        Từ mảnh vườn nhỏ trên đồi Đà Lạt đến thương hiệu mỹ phẩm thuần thiên nhiên được yêu thích — đây là hành trình của chúng tôi.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOUNDER STORY -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="bg-terra/10 rounded-[3rem] p-10 relative">
+            <div class="text-8xl text-center mb-6">👩‍🌾</div>
+            <div class="bg-white/80 rounded-2xl p-6 shadow-sm">
+              <p class="playfair text-2xl text-brown font-bold mb-1">Nguyễn Thị Hòa</p>
+              <p class="text-terra text-sm font-medium">Founder & Chief Herbalist</p>
+              <p class="text-brown/60 text-sm mt-3 leading-relaxed italic">"Tôi không bắt đầu với ý định tạo ra một thương hiệu. Tôi chỉ muốn dùng những gì tốt nhất từ mảnh đất của gia đình."</p>
+            </div>
+            <div class="absolute -bottom-4 -right-4 bg-forest text-white text-xs px-4 py-2 rounded-full font-semibold">Nông dân thứ 3 🌱</div>
+          </div>
+        </div>
+        <div>
+          <span class="text-terra text-xs tracking-widest uppercase font-semibold">Câu Chuyện Sáng Lập</span>
+          <h2 class="playfair text-4xl text-brown mt-3 mb-6">Từ Vườn Nhà Đến Xưởng Nhỏ</h2>
+          <div class="space-y-5 text-brown/70 leading-relaxed">
+            <p>Nguyễn Thị Hòa sinh ra và lớn lên trên mảnh đất Đà Lạt với gia đình ba đời làm nông. Ông nội bà trồng rau, cha mẹ bà chuyển sang trồng hoa. Và Hòa — người thứ ba — quyết định làm điều gì đó khác hơn với những gì đất mang lại.</p>
+            <p>Năm 2016, sau khi tốt nghiệp ngành hóa dược tại Đại học Y Dược TP.HCM, Hòa trở về Đà Lạt và nhận ra rằng những bông hoa hồng, lavender, cúc la mã mà gia đình trồng có thể trở thành nền tảng cho những sản phẩm chăm sóc da thực sự thuần tự nhiên.</p>
+            <p>Năm 2019, sau 3 năm nghiên cứu và thử nghiệm trong căn bếp nhỏ của gia đình, <strong class="text-brown">Terra Beauty</strong> ra đời với 3 sản phẩm đầu tiên: nước hoa hồng, dầu dừa và mặt nạ nghệ. Tất cả đều được làm thủ công, theo từng batch nhỏ.</p>
+          </div>
+          <div class="flex gap-6 mt-8">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-terra">2019</div>
+              <div class="text-xs text-brown/60">Năm thành lập</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-terra">3</div>
+              <div class="text-xs text-brown/60">SP đầu tiên</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-terra">5K+</div>
+              <div class="text-xs text-brown/60">Khách hàng</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="py-20 bg-white/50">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-14">
+        <span class="text-terra text-xs tracking-widest uppercase font-semibold">Hành Trình</span>
+        <h2 class="playfair text-4xl text-brown mt-2">Những Mốc Quan Trọng</h2>
+      </div>
+      <div class="space-y-8 relative">
+        <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-terra/20 hidden md:block"></div>
+        <div class="flex gap-6 items-start">
+          <div class="w-12 h-12 bg-terra rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0 z-10">2019</div>
+          <div class="bg-cream rounded-2xl p-6 flex-1 border border-terra/10">
+            <h3 class="font-bold text-brown">Terra Beauty Ra Đời</h3>
+            <p class="text-brown/60 text-sm mt-2">3 sản phẩm đầu tiên được handcrafted trong bếp nhà. Bán tại chợ trời Đà Lạt và qua mạng xã hội.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="w-12 h-12 bg-brown rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0 z-10">2020</div>
+          <div class="bg-cream rounded-2xl p-6 flex-1 border border-terra/10">
+            <h3 class="font-bold text-brown">Xưởng Sản Xuất Đầu Tiên</h3>
+            <p class="text-brown/60 text-sm mt-2">Thuê xưởng nhỏ 50m² tại Đà Lạt. Mở rộng lên 8 sản phẩm. Đạt chứng nhận hữu cơ từ IFOAM.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="w-12 h-12 bg-forest rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0 z-10">2021</div>
+          <div class="bg-cream rounded-2xl p-6 flex-1 border border-terra/10">
+            <h3 class="font-bold text-brown">Zero Waste Commitment</h3>
+            <p class="text-brown/60 text-sm mt-2">Chuyển hoàn toàn sang bao bì tái chế. Ra mắt chương trình "Bring Back Bottle" — đổi vỏ chai cũ lấy giảm giá.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="w-12 h-12 bg-terra rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0 z-10">2022</div>
+          <div class="bg-cream rounded-2xl p-6 flex-1 border border-terra/10">
+            <h3 class="font-bold text-brown">Cửa Hàng TP.HCM</h3>
+            <p class="text-brown/60 text-sm mt-2">Khai trương flagship store tại Q.1, TP.HCM. Nhận giải "Thương Hiệu Bền Vững Tiêu Biểu" từ Green Beauty Awards Vietnam.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="w-12 h-12 bg-brown-light rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0 z-10">2023</div>
+          <div class="bg-cream rounded-2xl p-6 flex-1 border border-terra/10">
+            <h3 class="font-bold text-brown">Farm Partnership Network</h3>
+            <p class="text-brown/60 text-sm mt-2">Ký kết hợp tác với 50+ nông hộ tại Đà Lạt, Phú Quốc và Tây Nguyên. Ra mắt Farm Visit Program.</p>
+          </div>
+        </div>
+        <div class="flex gap-6 items-start">
+          <div class="w-12 h-12 bg-terra rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0 z-10">2025</div>
+          <div class="bg-terra/10 rounded-2xl p-6 flex-1 border border-terra/20">
+            <h3 class="font-bold text-brown">Hôm Nay 🌟</h3>
+            <p class="text-brown/60 text-sm mt-2">10+ sản phẩm, 5.000+ khách hàng trung thành, và vẫn handcrafted mỗi ngày với cùng tình yêu từ ngày đầu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="py-20 bg-brown text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-sand text-xs tracking-widest uppercase font-semibold">Triết Lý</span>
+          <h2 class="playfair text-4xl text-white mt-3 mb-6">Farm-to-Face Philosophy</h2>
+          <div class="space-y-4 text-sand/80 leading-relaxed">
+            <p>Chúng tôi tin rằng làn da của bạn xứng đáng được nhận những gì thuần khiết và chân thực nhất từ thiên nhiên — không phải phòng thí nghiệm, không phải hóa chất tổng hợp.</p>
+            <p>"Farm-to-Face" không chỉ là slogan. Đó là cam kết rằng mỗi nguyên liệu chúng tôi sử dụng đều có nguồn gốc rõ ràng, được trồng trọt có trách nhiệm, và được chế biến tối thiểu để bảo toàn dưỡng chất tự nhiên.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mt-8">
+            <div class="bg-white/10 rounded-2xl p-4 border border-sand/20">
+              <div class="text-2xl mb-2">🌿</div>
+              <p class="font-semibold text-sand text-sm">Nguyên Liệu Sạch</p>
+              <p class="text-sand/60 text-xs mt-1">Không parabens, sulfates, silicones hay hương liệu tổng hợp</p>
+            </div>
+            <div class="bg-white/10 rounded-2xl p-4 border border-sand/20">
+              <div class="text-2xl mb-2">🔬</div>
+              <p class="font-semibold text-sand text-sm">Khoa Học + Tự Nhiên</p>
+              <p class="text-sand/60 text-xs mt-1">Kết hợp kiến thức dược học với công thức truyền thống</p>
+            </div>
+            <div class="bg-white/10 rounded-2xl p-4 border border-sand/20">
+              <div class="text-2xl mb-2">♻️</div>
+              <p class="font-semibold text-sand text-sm">Trách Nhiệm Môi Trường</p>
+              <p class="text-sand/60 text-xs mt-1">Bao bì tái chế, giảm thiểu carbon footprint</p>
+            </div>
+            <div class="bg-white/10 rounded-2xl p-4 border border-sand/20">
+              <div class="text-2xl mb-2">🤝</div>
+              <p class="font-semibold text-sand text-sm">Công Bằng Thương Mại</p>
+              <p class="text-sand/60 text-xs mt-1">Trả giá công bằng cho nông dân, hỗ trợ cộng đồng</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-terra/30 rounded-3xl p-8 text-center">
+            <div class="text-5xl mb-4">🌸</div>
+            <p class="font-bold text-xl text-sand">Hoa Hồng</p>
+            <p class="text-sand/60 text-sm mt-1">Thu hoạch lúc bình minh khi hàm lượng tinh dầu cao nhất</p>
+          </div>
+          <div class="bg-terra/20 rounded-3xl p-8 text-center mt-10">
+            <div class="text-5xl mb-4">🍯</div>
+            <p class="font-bold text-xl text-sand">Mật Ong</p>
+            <p class="text-sand/60 text-sm mt-1">Lấy từ ong rừng tự nhiên Tây Nguyên, không nuôi nhốt</p>
+          </div>
+          <div class="bg-white/10 rounded-3xl p-8 text-center">
+            <div class="text-5xl mb-4">🥥</div>
+            <p class="font-bold text-xl text-sand">Dầu Dừa</p>
+            <p class="text-sand/60 text-sm mt-1">Cold-pressed trong 2 giờ sau thu hoạch</p>
+          </div>
+          <div class="bg-forest/30 rounded-3xl p-8 text-center mt-10">
+            <div class="text-5xl mb-4">🌿</div>
+            <p class="font-bold text-xl text-sand">Nghệ Vàng</p>
+            <p class="text-sand/60 text-sm mt-1">Nghệ 12 tháng tuổi, hàm lượng curcumin cao nhất</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14">
+        <span class="text-terra text-xs tracking-widest uppercase font-semibold">Con Người</span>
+        <h2 class="playfair text-4xl text-brown mt-2">Đội Ngũ Terra Beauty</h2>
+        <p class="text-brown/60 mt-3">Những con người đam mê thiên nhiên, tận tâm với từng sản phẩm</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center bg-white/70 rounded-3xl p-8 hover:shadow-lg transition border border-terra/10">
+          <div class="text-6xl mb-4">👩‍🌾</div>
+          <h3 class="font-bold text-brown">Nguyễn Thị Hòa</h3>
+          <p class="text-terra text-sm">Founder & Herbalist</p>
+          <p class="text-brown/50 text-xs mt-2">Dược học · 10 năm kinh nghiệm thực vật học</p>
+        </div>
+        <div class="text-center bg-white/70 rounded-3xl p-8 hover:shadow-lg transition border border-terra/10">
+          <div class="text-6xl mb-4">👨‍🔬</div>
+          <h3 class="font-bold text-brown">Lê Văn Minh</h3>
+          <p class="text-terra text-sm">Master Formulator</p>
+          <p class="text-brown/50 text-xs mt-2">Hoá học hữu cơ · 8 năm R&D mỹ phẩm tự nhiên</p>
+        </div>
+        <div class="text-center bg-white/70 rounded-3xl p-8 hover:shadow-lg transition border border-terra/10">
+          <div class="text-6xl mb-4">👩‍🍳</div>
+          <h3 class="font-bold text-brown">Trần Thị Mai</h3>
+          <p class="text-terra text-sm">Head of Production</p>
+          <p class="text-brown/50 text-xs mt-2">Quản lý xưởng thủ công · Chuyên gia kiểm soát chất lượng</p>
+        </div>
+        <div class="text-center bg-white/70 rounded-3xl p-8 hover:shadow-lg transition border border-terra/10">
+          <div class="text-6xl mb-4">🌱</div>
+          <h3 class="font-bold text-brown">Phạm Đức Tuấn</h3>
+          <p class="text-terra text-sm">Farm Manager</p>
+          <p class="text-brown/50 text-xs mt-2">Kỹ sư nông nghiệp · Canh tác hữu cơ 15 năm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="py-16 bg-terra/5 border-y border-terra/20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="text-terra text-xs tracking-widest uppercase font-semibold">Ghi Nhận</span>
+        <h2 class="playfair text-3xl text-brown mt-2">Giải Thưởng & Chứng Nhận</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center p-6">
+          <div class="text-4xl mb-3">🏆</div>
+          <p class="font-semibold text-brown text-sm">Best Sustainable Beauty 2023</p>
+          <p class="text-brown/50 text-xs mt-1">Green Beauty Awards Vietnam</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-3">🌿</div>
+          <p class="font-semibold text-brown text-sm">IFOAM Organic Certified</p>
+          <p class="text-brown/50 text-xs mt-1">Chứng nhận hữu cơ quốc tế</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-3">🐰</div>
+          <p class="font-semibold text-brown text-sm">Leaping Bunny Certified</p>
+          <p class="text-brown/50 text-xs mt-1">Không thử nghiệm động vật</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-3">🌱</div>
+          <p class="font-semibold text-brown text-sm">Vietnam Startup Award 2022</p>
+          <p class="text-brown/50 text-xs mt-1">Top 10 Startup Phát Triển Bền Vững</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FARM VISIT CTA -->
+  <section class="py-20 bg-gradient-to-br from-brown to-forest text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="text-5xl mb-6">🌄</div>
+      <h2 class="playfair text-4xl text-white mb-4">Thăm Nông Trại Của Chúng Tôi</h2>
+      <p class="text-sand/80 text-lg mb-8 max-w-2xl mx-auto">Đặt lịch thăm trang trại tại Đà Lạt, tự tay thu hái nguyên liệu và tham gia workshop làm mỹ phẩm handcrafted cùng đội ngũ Terra.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="#" class="bg-terra text-white px-8 py-3.5 rounded-full font-semibold hover:bg-terra-light transition">Đặt Lịch Farm Visit</a>
+        <a href="products.html" class="border-2 border-sand/50 text-sand px-8 py-3.5 rounded-full font-semibold hover:border-white hover:text-white transition">Xem Sản Phẩm</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brown text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div><div class="flex items-center gap-2 mb-3"><span class="text-2xl">🌍</span><span class="font-bold text-xl">Terra<span class="text-sand">Beauty</span></span></div><p class="text-sand text-sm leading-relaxed">Handcrafted với tình yêu và trách nhiệm với trái đất. Mỗi sản phẩm là cam kết của chúng tôi với thiên nhiên.</p></div>
+        <div><p class="text-sand text-xs tracking-widest uppercase mb-3">Liên Hệ</p><p class="text-sand text-sm">📍 Farm: Đà Lạt, Lâm Đồng</p><p class="text-sand text-sm mt-1">🏪 Shop: 34 Trần Hưng Đạo, Q.1, TP.HCM</p><p class="text-sand text-sm mt-1">📞 0800 123 456 | 🌍 hello@terrabeauty.vn</p></div>
+        <div><p class="text-sand text-xs tracking-widest uppercase mb-3">Cam Kết</p><p class="text-sand text-sm">🌱 Nguyên liệu từ nông trại Đà Lạt</p><p class="text-sand text-sm mt-1">♻️ Bao bì 100% tái chế</p><p class="text-sand text-sm mt-1">🌿 Không chất bảo quản nhân tạo</p><p class="text-sand text-sm mt-1">🐝 Hỗ trợ nông dân địa phương</p></div>
+      </div>
+      <div class="border-t border-sand/20 pt-6 text-center"><p class="text-sand text-xs">© 2025 Terra Beauty. Handcrafted with 💛 in Vietnam.</p></div>
+    </div>
+  </footer>
+
+</body>
+</html>

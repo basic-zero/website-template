@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sản Phẩm - PinkBloom Cosmetics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pink: '#FF1493',
+            'pink-light': '#FFB6C1',
+            'pink-dark': '#C71585',
+            rose: '#FFE4E8',
+            dark: '#1a1a2e',
+            purple: '#7C3AED'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-dark font-sans">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="text-2xl font-black"><span class="text-pink">Pink</span><span class="text-dark">Bloom</span> <span class="text-pink text-sm font-light">✿</span></a>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-pink text-sm font-medium transition">Trang Chủ</a>
+        <a href="products.html" class="text-pink text-sm font-semibold border-b-2 border-pink pb-0.5">Sản Phẩm</a>
+        <a href="about.html" class="text-gray-600 hover:text-pink text-sm font-medium transition">Về Chúng Tôi</a>
+        <a href="blog.html" class="text-gray-600 hover:text-pink text-sm font-medium transition">Blog</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="login.html" class="text-gray-600 hover:text-pink transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+        <a href="cart.html" class="relative bg-pink text-white p-2 rounded-full hover:bg-pink-dark transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-1 -right-1 bg-dark text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pt-16">
+    <!-- PAGE HEADER -->
+    <div class="bg-gradient-to-r from-rose to-pink-light py-10 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-black text-dark">Tất Cả Sản Phẩm 💄</h1>
+        <p class="text-gray-500 mt-2">Khám phá hơn 200 sản phẩm makeup & skincare chất lượng cao</p>
+        <!-- Search Bar -->
+        <div class="mt-5 max-w-xl relative">
+          <input type="text" placeholder="Tìm kiếm sản phẩm... (son, cushion, mascara...)" class="w-full pl-12 pr-4 py-3 rounded-2xl border-2 border-pink-light focus:border-pink focus:outline-none text-sm bg-white shadow-sm" />
+          <span class="absolute left-4 top-1/2 -translate-y-1/2 text-pink">🔍</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <div class="flex flex-col lg:flex-row gap-8">
+
+        <!-- SIDEBAR FILTERS -->
+        <aside class="lg:w-64 flex-shrink-0">
+          <div class="bg-white rounded-3xl shadow-md p-6 sticky top-20 space-y-7">
+            <div>
+              <h3 class="font-black text-dark mb-3 flex items-center gap-2"><span>📂</span> Danh Mục</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="radio" name="cat" class="accent-pink" checked /> <span class="text-sm text-gray-600 group-hover:text-pink">Tất cả <span class="text-gray-400">(86)</span></span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="radio" name="cat" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">💄 Son Môi <span class="text-gray-400">(24)</span></span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="radio" name="cat" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">👁️ Mắt <span class="text-gray-400">(18)</span></span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="radio" name="cat" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">✨ Phấn Nền / Da <span class="text-gray-400">(22)</span></span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="radio" name="cat" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">🌸 Má Hồng <span class="text-gray-400">(10)</span></span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="radio" name="cat" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">🖌️ Bộ Cọ <span class="text-gray-400">(12)</span></span>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-black text-dark mb-3 flex items-center gap-2"><span>💰</span> Khoảng Giá</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">Dưới 150.000₫</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" checked /> <span class="text-sm text-gray-600 group-hover:text-pink">150.000₫ – 300.000₫</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">300.000₫ – 500.000₫</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">Trên 500.000₫</span>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-black text-dark mb-3 flex items-center gap-2"><span>🎨</span> Tông Da</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">Da trắng / sáng</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">Da trung tính</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">Da ngăm / nâu</span>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-black text-dark mb-3 flex items-center gap-2"><span>💎</span> Finish</h3>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">Matte</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" checked /> <span class="text-sm text-gray-600 group-hover:text-pink">Glow / Dewy</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">Satin</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer group">
+                  <input type="checkbox" class="accent-pink" /> <span class="text-sm text-gray-600 group-hover:text-pink">Shimmer / Glitter</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="w-full bg-pink text-white py-3 rounded-2xl font-bold hover:bg-pink-dark transition">Áp Dụng Bộ Lọc</button>
+            <button class="w-full text-gray-400 text-sm hover:text-pink transition">Xóa bộ lọc</button>
+          </div>
+        </aside>
+
+        <!-- PRODUCT GRID -->
+        <div class="flex-1">
+          <!-- Sort & Count -->
+          <div class="flex items-center justify-between mb-6">
+            <p class="text-gray-500 text-sm">Hiển thị <strong class="text-dark">86</strong> sản phẩm</p>
+            <select class="border-2 border-pink-light rounded-xl px-4 py-2 text-sm focus:border-pink focus:outline-none">
+              <option>Phổ biến nhất</option>
+              <option>Mới nhất</option>
+              <option>Giá tăng dần</option>
+              <option>Giá giảm dần</option>
+              <option>Đánh giá cao nhất</option>
+            </select>
+          </div>
+
+          <!-- Grid -->
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- Product 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <a href="product-detail.html" class="block">
+                <div class="bg-gradient-to-br from-pink-light to-rose h-44 flex items-center justify-center relative">
+                  <span class="text-6xl group-hover:scale-110 transition">💄</span>
+                  <span class="absolute top-3 left-3 bg-pink text-white text-xs font-bold px-2.5 py-1 rounded-full">🔥 Hot</span>
+                  <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+                </div>
+              </a>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Son Môi</p>
+                <a href="product-detail.html"><h3 class="font-bold text-dark text-sm mt-0.5 mb-2 hover:text-pink transition leading-tight">Son Matte Velvet "Cherry Bomb"</h3></a>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(203)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">185.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <a href="products.html" class="block">
+                <div class="bg-gradient-to-br from-purple/20 to-pink-light h-44 flex items-center justify-center relative">
+                  <span class="text-6xl group-hover:scale-110 transition">✨</span>
+                  <span class="absolute top-3 left-3 bg-purple text-white text-xs font-bold px-2.5 py-1 rounded-full">Sale</span>
+                  <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+                </div>
+              </a>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Phấn Nền</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Cushion "Glow Glass"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(187)</span></div>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-pink font-black">420.000₫</span>
+                    <span class="text-gray-400 text-xs line-through ml-1">520.000₫</span>
+                  </div>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-yellow-100 to-pink-light h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">👁️</span>
+                <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">New</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Mascara</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Mascara "Lash Queen"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★☆ <span class="text-gray-400 ml-1">(145)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">220.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-orange-100 to-pink-light h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">🎨</span>
+                <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">🔥 Hot</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Eyeshadow</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Palette "Sunset Vibe" 12 màu</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(312)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">380.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-pink-light to-rose h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">🌸</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Má Hồng</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Blusher "Peach Crush"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(98)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">165.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-blue-50 to-pink-light h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">💫</span>
+                <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">New</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Kem Nền</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Liquid "Poreless Pro"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(224)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">350.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-yellow-100 to-rose h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">⭐</span>
+                <span class="absolute top-3 left-3 bg-yellow-400 text-dark text-xs font-bold px-2.5 py-1 rounded-full">Trending</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Highlighter</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Highlighter "Stardust"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(176)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">195.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-cyan-50 to-pink-light h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">💧</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Setting Spray</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Setting Spray "Lock & Glow"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★☆ <span class="text-gray-400 ml-1">(89)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">145.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-rose to-pink-light h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">🌹</span>
+                <span class="absolute top-3 left-3 bg-pink text-white text-xs font-bold px-2.5 py-1 rounded-full">Bestseller</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Tẩy Trang</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Tẩy Trang "Micellar Rose"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(340)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">120.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-pink-light to-purple/20 h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">🖌️</span>
+                <span class="absolute top-3 left-3 bg-purple text-white text-xs font-bold px-2.5 py-1 rounded-full">Set</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Bộ Cọ</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Bộ Cọ 12 Cây "Pink Dream Set"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(121)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">450.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-red-100 to-pink-light h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">💋</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Son Môi</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Son Tint "Berry Love"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★☆ <span class="text-gray-400 ml-1">(67)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">155.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 group">
+              <div class="bg-gradient-to-br from-purple/10 to-blue-50 h-44 flex items-center justify-center relative">
+                <span class="text-6xl group-hover:scale-110 transition">🎭</span>
+                <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">New</span>
+                <button class="absolute top-3 right-3 text-gray-300 hover:text-pink transition text-lg">♡</button>
+              </div>
+              <div class="p-4">
+                <p class="text-gray-400 text-xs">Phấn Mắt</p>
+                <h3 class="font-bold text-dark text-sm mt-0.5 mb-2 leading-tight">Eyeliner "Ink Black"</h3>
+                <div class="flex text-yellow-400 text-xs mb-2">★★★★★ <span class="text-gray-400 ml-1">(58)</span></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-pink font-black">175.000₫</span>
+                  <button class="bg-pink text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-pink-dark transition">+ Giỏ</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- PAGINATION -->
+          <div class="flex items-center justify-center gap-2 mt-12">
+            <button class="w-10 h-10 rounded-full border-2 border-pink-light text-gray-400 hover:border-pink hover:text-pink transition flex items-center justify-center text-sm">←</button>
+            <button class="w-10 h-10 rounded-full bg-pink text-white font-bold text-sm">1</button>
+            <button class="w-10 h-10 rounded-full border-2 border-pink-light text-gray-600 hover:border-pink hover:text-pink transition text-sm">2</button>
+            <button class="w-10 h-10 rounded-full border-2 border-pink-light text-gray-600 hover:border-pink hover:text-pink transition text-sm">3</button>
+            <span class="text-gray-400 text-sm">...</span>
+            <button class="w-10 h-10 rounded-full border-2 border-pink-light text-gray-600 hover:border-pink hover:text-pink transition text-sm">8</button>
+            <button class="w-10 h-10 rounded-full border-2 border-pink-light text-gray-400 hover:border-pink hover:text-pink transition flex items-center justify-center text-sm">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-2xl font-black mb-2"><span class="text-pink">Pink</span>Bloom ✿</p>
+      <p class="text-gray-400 text-sm mb-2">📍 28 Nguyễn Đình Chiểu, Q.3, TP.HCM | 📞 028 1234 5678 | 💌 hello@pinkbloom.vn</p>
+      <p class="text-gray-600 text-xs">© 2025 PinkBloom Cosmetics. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

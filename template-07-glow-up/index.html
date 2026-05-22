@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Up Beauty - Tỏa Sáng Theo Cách Của Bạn</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E55555',purple:'#7C3AED','purple-light':'#A78BFA',yellow:'#FFD93D',teal:'#06D6A0','dark':'#0F0F0F','off-white':'#FAFAFA'}}}}</script>
+  <style>
+    @keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+    .marquee-inner { animation: marquee 20s linear infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    .float { animation: float 4s ease-in-out infinite; }
+    @keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .gradient-animate { background-size:200% 200%; animation: gradientShift 5s ease infinite; }
+    .neon-border { border: 1px solid transparent; background: linear-gradient(#1a1a1a,#1a1a1a) padding-box, linear-gradient(135deg,#FF6B6B,#7C3AED,#FFD93D) border-box; }
+    .text-gradient { background: linear-gradient(135deg,#FF6B6B,#A78BFA,#FFD93D); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .shade-dot { width:18px; height:18px; border-radius:50%; display:inline-block; border:2px solid rgba(255,255,255,0.2); cursor:pointer; }
+    ::-webkit-scrollbar{width:6px} ::-webkit-scrollbar-track{background:#0F0F0F} ::-webkit-scrollbar-thumb{background:#FF6B6B;border-radius:3px}
+  </style>
+</head>
+<body class="bg-dark text-white font-sans overflow-x-hidden">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full z-50 bg-dark/95 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="index.html" class="font-black text-xl"><span class="text-coral">GLOW</span><span class="text-white"> UP</span><span class="text-yellow">✦</span></a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="index.html" class="text-coral text-sm font-medium transition">Home</a>
+        <a href="products.html" class="text-gray-300 hover:text-coral text-sm font-medium transition">Shop</a>
+        <a href="about.html" class="text-gray-300 hover:text-coral text-sm font-medium transition">About</a>
+        <a href="blog.html" class="text-gray-300 hover:text-coral text-sm font-medium transition">Blog</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="login.html" class="text-gray-400 hover:text-coral transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+        <a href="cart.html" class="relative text-gray-400 hover:text-coral transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-coral text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">3</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MARQUEE BANNER -->
+  <div class="fixed top-16 w-full z-40 bg-coral overflow-hidden py-1.5">
+    <div class="flex whitespace-nowrap marquee-inner">
+      <span class="text-dark font-black text-xs tracking-widest mx-8">40 SHADES ✦ VEGAN ✦ INCLUSIVE ✦ CRUELTY FREE ✦ GEN Z APPROVED ✦ BOLD AF ✦ 40 SHADES ✦ VEGAN ✦ INCLUSIVE ✦ CRUELTY FREE ✦ GEN Z APPROVED ✦ BOLD AF ✦ 40 SHADES ✦ VEGAN ✦ INCLUSIVE ✦ CRUELTY FREE ✦ GEN Z APPROVED ✦ BOLD AF ✦ 40 SHADES ✦ VEGAN ✦ INCLUSIVE ✦ CRUELTY FREE ✦ GEN Z APPROVED ✦ BOLD AF ✦</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-28">
+    <div class="absolute inset-0 bg-gradient-to-br from-dark via-purple/20 to-dark"></div>
+    <div class="absolute top-20 left-10 w-72 h-72 bg-coral/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple/20 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow/5 rounded-full blur-3xl"></div>
+    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-6">
+        <span class="w-2 h-2 bg-teal rounded-full animate-pulse"></span>
+        <span class="text-xs text-gray-300 font-medium">New Drop: Neon Dreams Palette đã ra mắt 🔥</span>
+      </div>
+      <h1 class="font-black text-5xl md:text-8xl leading-none mb-2">
+        <span class="text-gradient">Your Glow,</span>
+      </h1>
+      <h1 class="font-black text-5xl md:text-8xl leading-none mb-6">
+        <span class="text-white">Your </span><span class="text-coral">Rules</span><span class="text-yellow"> ✦</span>
+      </h1>
+      <p class="text-lg md:text-2xl text-gray-300 mb-4 font-medium">Makeup không có giới hạn</p>
+      <p class="text-base text-gray-400 mb-10 max-w-xl mx-auto">Tỏa sáng theo cách của bạn — cho dù bạn là ai, da bạn màu gì,<br>bạn luôn xứng đáng được <span class="text-coral font-bold">tỏa sáng.</span></p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="products.html" class="px-8 py-4 bg-coral hover:bg-coral-dark font-black text-dark rounded-full text-lg transition transform hover:scale-105 shadow-lg shadow-coral/30">Shop Now 🔥</a>
+        <a href="#shade-finder" class="px-8 py-4 border-2 border-white/20 hover:border-coral text-white font-bold rounded-full text-lg transition transform hover:scale-105">Find Your Shade ✨</a>
+      </div>
+      <div class="mt-14 flex justify-center gap-8 text-center">
+        <div><p class="text-3xl font-black text-coral">40+</p><p class="text-xs text-gray-400 mt-1">Shades</p></div>
+        <div class="w-px bg-white/10"></div>
+        <div><p class="text-3xl font-black text-purple-light">100%</p><p class="text-xs text-gray-400 mt-1">Vegan</p></div>
+        <div class="w-px bg-white/10"></div>
+        <div><p class="text-3xl font-black text-yellow">50K+</p><p class="text-xs text-gray-400 mt-1">Happy Glowers</p></div>
+        <div class="w-px bg-white/10"></div>
+        <div><p class="text-3xl font-black text-teal">4.9★</p><p class="text-xs text-gray-400 mt-1">Rating</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-black mb-3">Shop <span class="text-gradient">By Category</span></h2>
+        <p class="text-gray-400">Khám phá bộ sưu tập makeup đầy màu sắc</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="products.html" class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-coral to-pink-500 p-6 min-h-[180px] flex flex-col justify-end hover:scale-105 transition">
+          <div class="absolute top-4 right-4 text-4xl float">💄</div>
+          <p class="text-2xl font-black text-white">Lips</p>
+          <p class="text-white/70 text-sm">6 sản phẩm</p>
+        </a>
+        <a href="products.html" class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple to-purple-light p-6 min-h-[180px] flex flex-col justify-end hover:scale-105 transition">
+          <div class="absolute top-4 right-4 text-4xl float" style="animation-delay:.5s">✨</div>
+          <p class="text-2xl font-black text-white">Eyes</p>
+          <p class="text-white/70 text-sm">4 sản phẩm</p>
+        </a>
+        <a href="products.html" class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow to-orange-400 p-6 min-h-[180px] flex flex-col justify-end hover:scale-105 transition">
+          <div class="absolute top-4 right-4 text-4xl float" style="animation-delay:1s">🌟</div>
+          <p class="text-2xl font-black text-dark">Face</p>
+          <p class="text-dark/70 text-sm">5 sản phẩm</p>
+        </a>
+        <a href="products.html" class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal to-cyan-400 p-6 min-h-[180px] flex flex-col justify-end hover:scale-105 transition">
+          <div class="absolute top-4 right-4 text-4xl float" style="animation-delay:1.5s">💎</div>
+          <p class="text-2xl font-black text-dark">Skincare</p>
+          <p class="text-dark/70 text-sm">2 sản phẩm</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BESTSELLERS -->
+  <section class="py-20 px-4 bg-white/2">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-12">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-black">Bestsellers <span class="text-coral">🔥</span></h2>
+          <p class="text-gray-400 mt-2">Những sản phẩm được yêu thích nhất</p>
+        </div>
+        <a href="products.html" class="hidden md:block px-5 py-2 border border-coral text-coral hover:bg-coral hover:text-dark font-bold rounded-full text-sm transition">Xem Tất Cả →</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Product 1 -->
+        <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-105 transition group block">
+          <div class="aspect-square bg-gradient-to-br from-purple/30 to-coral/20 rounded-xl mb-4 flex items-center justify-center text-6xl">✨</div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-yellow/20 text-yellow px-2 py-0.5 rounded-full font-bold">BEST #1</span>
+            <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full">Vegan</span>
+          </div>
+          <h3 class="font-bold text-white mb-1">Eyeshadow Palette "Neon Dreams"</h3>
+          <p class="text-gray-400 text-xs mb-3">18 màu sắc neon cực đỉnh</p>
+          <div class="flex gap-1 mb-3">
+            <span class="shade-dot" style="background:#FF6B6B"></span>
+            <span class="shade-dot" style="background:#7C3AED"></span>
+            <span class="shade-dot" style="background:#FFD93D"></span>
+            <span class="shade-dot" style="background:#06D6A0"></span>
+            <span class="shade-dot" style="background:#F72585"></span>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="font-black text-coral text-lg">450.000₫</p>
+            <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full transition">+ Giỏ</button>
+          </div>
+        </a>
+
+        <!-- Product 2 -->
+        <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-105 transition group block">
+          <div class="aspect-square bg-gradient-to-br from-coral/30 to-yellow/20 rounded-xl mb-4 flex items-center justify-center text-6xl">💄</div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-coral/20 text-coral px-2 py-0.5 rounded-full font-bold">HOT</span>
+            <span class="text-xs bg-purple/20 text-purple-light px-2 py-0.5 rounded-full">40 Shades</span>
+          </div>
+          <h3 class="font-bold text-white mb-1">Foundation "Skin Match"</h3>
+          <p class="text-gray-400 text-xs mb-3">40 tông màu cho mọi da</p>
+          <div class="flex gap-1 mb-3">
+            <span class="shade-dot" style="background:#FDDBB4"></span>
+            <span class="shade-dot" style="background:#D4A76A"></span>
+            <span class="shade-dot" style="background:#A0714F"></span>
+            <span class="shade-dot" style="background:#7B4F2E"></span>
+            <span class="shade-dot" style="background:#4A2C17"></span>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="font-black text-coral text-lg">380.000₫</p>
+            <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full transition">+ Giỏ</button>
+          </div>
+        </a>
+
+        <!-- Product 3 -->
+        <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-105 transition group block">
+          <div class="aspect-square bg-gradient-to-br from-yellow/30 to-teal/20 rounded-xl mb-4 flex items-center justify-center text-6xl">💋</div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-yellow/20 text-yellow px-2 py-0.5 rounded-full font-bold">SET</span>
+            <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full">6 màu</span>
+          </div>
+          <h3 class="font-bold text-white mb-1">Lip Gloss "Glow Up" Set</h3>
+          <p class="text-gray-400 text-xs mb-3">6 màu siêu bóng không dính</p>
+          <div class="flex gap-1 mb-3">
+            <span class="shade-dot" style="background:#FF6B6B"></span>
+            <span class="shade-dot" style="background:#FF1493"></span>
+            <span class="shade-dot" style="background:#FF8C00"></span>
+            <span class="shade-dot" style="background:#DC143C"></span>
+            <span class="shade-dot" style="background:#FF69B4"></span>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="font-black text-coral text-lg">250.000₫</p>
+            <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full transition">+ Giỏ</button>
+          </div>
+        </a>
+
+        <!-- Product 4 -->
+        <a href="product-detail.html" class="neon-border rounded-2xl p-5 bg-[#1a1a1a] hover:scale-105 transition group block">
+          <div class="aspect-square bg-gradient-to-br from-teal/30 to-purple/20 rounded-xl mb-4 flex items-center justify-center text-6xl">🌟</div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-teal/20 text-teal px-2 py-0.5 rounded-full font-bold">NEW</span>
+            <span class="text-xs bg-purple/20 text-purple-light px-2 py-0.5 rounded-full">Skincare</span>
+          </div>
+          <h3 class="font-bold text-white mb-1">Serum "Glow Boost"</h3>
+          <p class="text-gray-400 text-xs mb-3">Da căng bóng sau 7 ngày</p>
+          <div class="flex gap-1 mb-3">
+            <span class="shade-dot" style="background:#06D6A0"></span>
+            <span class="shade-dot" style="background:#A78BFA"></span>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="font-black text-coral text-lg">340.000₫</p>
+            <button class="bg-coral hover:bg-coral-dark text-dark font-bold text-xs px-3 py-1.5 rounded-full transition">+ Giỏ</button>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SHADE FINDER BANNER -->
+  <section id="shade-finder" class="py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="rounded-3xl bg-gradient-to-r from-purple via-coral to-yellow p-1">
+        <div class="bg-[#0f0f0f] rounded-3xl p-10 md:p-16 text-center">
+          <p class="text-yellow font-bold text-sm tracking-widest mb-4">✦ SHADE FINDER QUIZ ✦</p>
+          <h2 class="text-4xl md:text-6xl font-black mb-4">Tìm Tông Màu <span class="text-gradient">Hoàn Hảo</span></h2>
+          <p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto">Trả lời 5 câu hỏi đơn giản — chúng tôi sẽ gợi ý đúng shade foundation và concealer phù hợp với bạn nhất.</p>
+          <div class="flex flex-wrap justify-center gap-3 mb-8">
+            <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">🤎 Da Nâu Ấm</span>
+            <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">🤍 Da Sáng Lạnh</span>
+            <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">✨ Da Trung Tính</span>
+            <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300">🌑 Da Tối Đậm</span>
+          </div>
+          <a href="products.html" class="inline-block px-10 py-4 gradient-animate bg-gradient-to-r from-coral via-purple to-yellow font-black text-white rounded-full text-lg transition hover:scale-105 shadow-xl">Bắt Đầu Quiz →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF / UGC -->
+  <section class="py-20 px-4 bg-[#0a0a0a]">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-black mb-3">Glow Up Gang <span class="text-yellow">✦</span></h2>
+        <p class="text-gray-400">Cộng đồng 50,000+ người dùng yêu thích</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-[#1a1a1a] border border-white/5 rounded-2xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-coral to-purple flex items-center justify-center font-black text-sm">TL</div>
+            <div><p class="font-bold text-sm">Thanh Lam</p><p class="text-xs text-gray-400">Da nâu ấm • TP.HCM</p></div>
+            <span class="ml-auto text-yellow text-sm">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed">"Foundation Skin Match màu #28W là CHÍNH XÁC với da mình 🤯 Sau bao năm dùng foundation sai tông, cuối cùng tìm được thứ này. Cảm ơn Glow Up!"</p>
+          <div class="flex gap-2 mt-4">
+            <span class="text-xs bg-coral/10 text-coral px-2 py-1 rounded-full">#SkinMatch</span>
+            <span class="text-xs bg-purple/10 text-purple-light px-2 py-1 rounded-full">#GlowUp</span>
+          </div>
+        </div>
+        <div class="bg-[#1a1a1a] border border-white/5 rounded-2xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow to-teal flex items-center justify-center font-black text-sm">MK</div>
+            <div><p class="font-bold text-sm">Minh Khoa</p><p class="text-xs text-gray-400">Da trung tính • Hà Nội</p></div>
+            <span class="ml-auto text-yellow text-sm">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed">"Mình là con trai đầu tiên dùng makeup và Glow Up là brand đầu tiên không judge 💜 Palette Neon Dreams too cute, blend cực mịn!"</p>
+          <div class="flex gap-2 mt-4">
+            <span class="text-xs bg-purple/10 text-purple-light px-2 py-1 rounded-full">#Inclusive</span>
+            <span class="text-xs bg-teal/10 text-teal px-2 py-1 rounded-full">#NeonDreams</span>
+          </div>
+        </div>
+        <div class="bg-[#1a1a1a] border border-white/5 rounded-2xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple to-coral flex items-center justify-center font-black text-sm">HA</div>
+            <div><p class="font-bold text-sm">Hồng Anh</p><p class="text-xs text-gray-400">Da sáng lạnh • Đà Nẵng</p></div>
+            <span class="ml-auto text-yellow text-sm">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed">"Set Lip Gloss 6 màu OMG quá xịn 😍 Màu Coral Red đẹp điên, bóng tự nhiên, không dính, không phai. Đặt liền 2 set để tặng bạn!"</p>
+          <div class="flex gap-2 mt-4">
+            <span class="text-xs bg-coral/10 text-coral px-2 py-1 rounded-full">#LipGloss</span>
+            <span class="text-xs bg-yellow/10 text-yellow px-2 py-1 rounded-full">#GlowGang</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-full px-6 py-3">
+          <span class="text-yellow">★★★★★</span>
+          <span class="text-white font-bold">4.9/5</span>
+          <span class="text-gray-400 text-sm">từ 2,847 đánh giá</span>
+          <span class="w-px h-4 bg-white/20"></span>
+          <span class="text-xs text-gray-400">Verified Purchases</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between mb-12">
+        <div>
+          <h2 class="text-4xl font-black">Glow Up <span class="text-coral">Blog</span> 🔥</h2>
+          <p class="text-gray-400 mt-2">Tips, tutorials & trend từ đội ngũ beauty experts</p>
+        </div>
+        <a href="blog.html" class="hidden md:block px-5 py-2 border border-coral text-coral hover:bg-coral hover:text-dark font-bold rounded-full text-sm transition">Xem Tất Cả →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="blog-post.html" class="group block">
+          <div class="aspect-video bg-gradient-to-br from-purple via-coral to-yellow rounded-2xl mb-4 flex items-center justify-center text-5xl group-hover:scale-105 transition">✨</div>
+          <span class="text-xs text-coral font-bold tracking-widest">TUTORIAL</span>
+          <h3 class="font-bold text-lg mt-1 mb-2 group-hover:text-coral transition">5 Kiểu Makeup Đỉnh Cho Dịp Lễ Tết 2026</h3>
+          <p class="text-gray-400 text-sm">Từ look thanh lịch đến bold neon — tất cả đều có trong hướng dẫn đặc biệt này.</p>
+        </a>
+        <a href="blog.html" class="group block">
+          <div class="aspect-video bg-gradient-to-br from-teal via-purple to-coral rounded-2xl mb-4 flex items-center justify-center text-5xl group-hover:scale-105 transition">💄</div>
+          <span class="text-xs text-purple-light font-bold tracking-widest">SHADE GUIDE</span>
+          <h3 class="font-bold text-lg mt-1 mb-2 group-hover:text-coral transition">Cách Tìm Foundation Đúng Tông Da Nâu</h3>
+          <p class="text-gray-400 text-sm">Hướng dẫn chi tiết cho các bạn da nâu tìm đúng shade Skin Match.</p>
+        </a>
+        <a href="blog.html" class="group block">
+          <div class="aspect-video bg-gradient-to-br from-yellow via-coral to-pink-500 rounded-2xl mb-4 flex items-center justify-center text-5xl group-hover:scale-105 transition">🌈</div>
+          <span class="text-xs text-yellow font-bold tracking-widest">TREND</span>
+          <h3 class="font-bold text-lg mt-1 mb-2 group-hover:text-coral transition">Neon Makeup: Xu Hướng Không Thể Bỏ Lỡ 2026</h3>
+          <p class="text-gray-400 text-sm">Màu neon đang thống trị mọi festival, runway và TikTok FYP của bạn.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="font-black text-2xl mb-3"><span class="text-coral">GLOW</span> UP <span class="text-yellow">✦</span></p>
+      <p class="text-gray-400 text-sm mb-2">📍 88 Võ Văn Tần, Q.3, TP.HCM | 📞 028 9999 8888 | 💌 hello@glowupbeauty.vn</p>
+      <div class="flex justify-center gap-4 mt-4 text-sm"><a href="#" class="text-gray-400 hover:text-coral transition">Instagram</a><a href="#" class="text-gray-400 hover:text-coral transition">TikTok</a><a href="#" class="text-gray-400 hover:text-coral transition">YouTube</a></div>
+      <p class="text-gray-600 text-xs mt-4">© 2025 Glow Up Beauty. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới Thiệu - Noir Salon & Spa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#1B2A4A','navy-light':'#2D4A7A','navy-dark':'#0D1829',gold:'#C9A84C','gold-light':'#E8D5A3',ivory:'#FAFAF7'}}}}</script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+    .font-serif { font-family: 'Playfair Display', serif; }
+    body { font-family: 'Lato', sans-serif; }
+    .gold-border { border: 1px solid #C9A84C44; }
+  </style>
+</head>
+<body class="bg-navy-dark text-white">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-navy/97 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+    <a href="index.html" class="font-serif text-xl tracking-[0.15em] text-white">NOIR <span class="text-gold">SALON</span></a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Trang Chủ</a>
+      <a href="products.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Dịch Vụ & Sản Phẩm</a>
+      <a href="about.html" class="text-gold text-sm tracking-widest uppercase transition">Giới Thiệu</a>
+      <a href="blog.html" class="text-gray-300 hover:text-gold text-sm tracking-widest uppercase transition">Blog</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="login.html" class="text-gray-300 hover:text-gold transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-300 hover:text-gold transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-gold text-navy text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-20 pb-24 bg-navy relative overflow-hidden">
+  <div class="absolute inset-0 opacity-5 flex items-center justify-center text-[25rem] font-serif text-gold leading-none pointer-events-none">N</div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center pt-16">
+    <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Thành Lập Năm 2015</p>
+    <h1 class="font-serif text-5xl md:text-6xl font-bold mb-6">Câu Chuyện <span class="text-gold italic">Của Chúng Tôi</span></h1>
+    <div class="w-16 h-px bg-gold mx-auto mb-8"></div>
+    <p class="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
+      Hành trình 10 năm xây dựng tiêu chuẩn làm đẹp đỉnh cao tại TP.HCM — từ một studio nhỏ đến hệ thống salon uy tín hàng đầu.
+    </p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="py-24 bg-navy-dark">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Người Sáng Lập</p>
+        <h2 class="font-serif text-4xl mb-6">Nguyễn Thị <span class="text-gold italic">Thu Huyền</span></h2>
+        <div class="w-12 h-px bg-gold mb-8"></div>
+        <p class="text-gray-300 leading-relaxed mb-5">
+          Sinh ra trong một gia đình có truyền thống làm đẹp tại Hà Nội, Huyền sớm bộc lộ niềm đam mê với nghệ thuật tạo hình tóc từ nhỏ. Sau khi tốt nghiệp thủ khoa ngành Thiết kế Thời trang tại trường Đại học Mỹ thuật TP.HCM, chị được học bổng tu nghiệp tại <strong class="text-gold">Paris — kinh đô thời trang thế giới</strong> trong 3 năm liên tiếp.
+        </p>
+        <p class="text-gray-300 leading-relaxed mb-5">
+          Làm việc tại các salon danh tiếng như <em class="text-gold">Jean-Louis David</em> và <em class="text-gold">Franck Provost</em> Paris, chị tích lũy kinh nghiệm chuyên sâu về kỹ thuật nhuộm châu Âu, cắt tóc theo hệ Sassoon và chăm sóc tóc bằng liệu pháp tự nhiên.
+        </p>
+        <p class="text-gray-300 leading-relaxed mb-8">
+          Năm 2015, với khát vọng mang tiêu chuẩn salon châu Âu về Việt Nam, chị Huyền thành lập <strong class="text-white">Noir Salon & Spa</strong> — không gian làm đẹp kết hợp triết lý "đẹp từ bên trong" với kỹ thuật chuyên nghiệp đỉnh cao.
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center text-2xl">👩‍🎨</div>
+          <div>
+            <p class="text-white font-medium">NTT Huyền</p>
+            <p class="text-gold text-xs tracking-wider">Founder & Creative Director</p>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="gold-border bg-navy p-8 text-center">
+          <div class="text-6xl mb-4">🏆</div>
+          <h4 class="font-serif text-xl text-white mb-2">Được Công Nhận Quốc Tế</h4>
+          <p class="text-gray-400 text-sm">Certificate of Excellence từ L'Oréal Professionnel Paris 2019 & 2023</p>
+        </div>
+        <div class="gold-border bg-navy p-6 flex items-center gap-6">
+          <div class="text-4xl">🇫🇷</div>
+          <div>
+            <h4 class="font-serif text-lg text-white">Tu Nghiệp Paris</h4>
+            <p class="text-gray-400 text-sm">3 năm tại Jean-Louis David & Franck Provost, Paris</p>
+          </div>
+        </div>
+        <div class="gold-border bg-navy p-6 flex items-center gap-6">
+          <div class="text-4xl">✨</div>
+          <div>
+            <h4 class="font-serif text-lg text-white">Top 10 Salon Uy Tín</h4>
+            <p class="text-gray-400 text-sm">Tạp chí Beauty Vietnam bình chọn 2022, 2023, 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="py-20 bg-gold">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <p class="font-serif text-5xl text-navy font-bold">10</p>
+        <p class="text-navy/70 text-sm tracking-widest uppercase mt-2">Năm Kinh Nghiệm</p>
+      </div>
+      <div>
+        <p class="font-serif text-5xl text-navy font-bold">8.000+</p>
+        <p class="text-navy/70 text-sm tracking-widest uppercase mt-2">Khách Hàng Thân Thiết</p>
+      </div>
+      <div>
+        <p class="font-serif text-5xl text-navy font-bold">20</p>
+        <p class="text-navy/70 text-sm tracking-widest uppercase mt-2">Chuyên Gia Stylist</p>
+      </div>
+      <div>
+        <p class="font-serif text-5xl text-navy font-bold">2</p>
+        <p class="text-navy/70 text-sm tracking-widest uppercase mt-2">Chi Nhánh TP.HCM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="py-24 bg-navy">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Đội Ngũ Chuyên Nghiệp</p>
+      <h2 class="font-serif text-4xl md:text-5xl mb-4">Các Stylist <span class="text-gold italic">Hàng Đầu</span></h2>
+      <div class="w-16 h-px bg-gold mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="gold-border bg-navy-dark text-center p-8 hover:-translate-y-1 transition duration-300">
+        <div class="text-6xl mb-4">👩‍🎨</div>
+        <h4 class="font-serif text-lg text-white mb-1">Thu Huyền</h4>
+        <p class="text-gold text-xs tracking-widest uppercase mb-3">Founder & Creative Director</p>
+        <p class="text-gray-400 text-xs leading-relaxed">Chuyên gia nhuộm Balayage & Ombre. Tu nghiệp Paris 3 năm.</p>
+        <div class="mt-4 flex justify-center gap-1">
+          <span class="text-gold text-xs">⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
+      <div class="gold-border bg-navy-dark text-center p-8 hover:-translate-y-1 transition duration-300">
+        <div class="text-6xl mb-4">👨‍🎨</div>
+        <h4 class="font-serif text-lg text-white mb-1">Minh Tuấn</h4>
+        <p class="text-gold text-xs tracking-widest uppercase mb-3">Senior Hair Stylist</p>
+        <p class="text-gray-400 text-xs leading-relaxed">Chuyên cắt tóc nam nữ theo phong cách Hàn Quốc & Nhật Bản.</p>
+        <div class="mt-4 flex justify-center gap-1">
+          <span class="text-gold text-xs">⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
+      <div class="gold-border bg-navy-dark text-center p-8 hover:-translate-y-1 transition duration-300">
+        <div class="text-6xl mb-4">👩‍⚕️</div>
+        <h4 class="font-serif text-lg text-white mb-1">Bảo Châu</h4>
+        <p class="text-gold text-xs tracking-widest uppercase mb-3">Skincare Specialist</p>
+        <p class="text-gray-400 text-xs leading-relaxed">Chứng chỉ Da liễu thẩm mỹ. Chuyên trị mụn, nám, làn da sáng khỏe.</p>
+        <div class="mt-4 flex justify-center gap-1">
+          <span class="text-gold text-xs">⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
+      <div class="gold-border bg-navy-dark text-center p-8 hover:-translate-y-1 transition duration-300">
+        <div class="text-6xl mb-4">💅</div>
+        <h4 class="font-serif text-lg text-white mb-1">Thanh Vy</h4>
+        <p class="text-gold text-xs tracking-widest uppercase mb-3">Nail Artist</p>
+        <p class="text-gray-400 text-xs leading-relaxed">Nail art 3D, vẽ tay cầu kỳ. Huy chương Vàng thi Nail quốc gia 2023.</p>
+        <div class="mt-4 flex justify-center gap-1">
+          <span class="text-gold text-xs">⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="py-24 bg-navy-dark">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-gold text-xs tracking-[0.4em] uppercase mb-4">Thành Tựu</p>
+      <h2 class="font-serif text-4xl md:text-5xl mb-4">Giải Thưởng & <span class="text-gold italic">Chứng Nhận</span></h2>
+      <div class="w-16 h-px bg-gold mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="gold-border bg-navy p-8 text-center">
+        <div class="text-5xl mb-4">🏅</div>
+        <h4 class="font-serif text-lg text-gold mb-2">Top 10 Salon 2024</h4>
+        <p class="text-gray-400 text-sm">Tạp chí Beauty Vietnam — Hạng mục Salon Luxury tốt nhất TP.HCM</p>
+      </div>
+      <div class="gold-border bg-navy p-8 text-center">
+        <div class="text-5xl mb-4">🌟</div>
+        <h4 class="font-serif text-lg text-gold mb-2">L'Oréal Partner Salon</h4>
+        <p class="text-gray-400 text-sm">Đối tác chính thức L'Oréal Professionnel Vietnam từ năm 2018</p>
+      </div>
+      <div class="gold-border bg-navy p-8 text-center">
+        <div class="text-5xl mb-4">🎗️</div>
+        <h4 class="font-serif text-lg text-gold mb-2">ISO 9001:2015</h4>
+        <p class="text-gray-400 text-sm">Chứng nhận Hệ thống quản lý chất lượng dịch vụ quốc tế</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="py-24 bg-navy relative overflow-hidden">
+  <div class="absolute inset-0 opacity-5 flex items-center justify-center text-[20rem] font-serif text-gold leading-none pointer-events-none">✦</div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center">
+    <p class="text-gold text-xs tracking-[0.4em] uppercase mb-6">Triết Lý Của Chúng Tôi</p>
+    <h2 class="font-serif text-4xl md:text-5xl mb-8">
+      "<span class="text-gold italic">Vẻ đẹp chân thực</span><br>bắt đầu từ sự tự tin."
+    </h2>
+    <div class="w-16 h-px bg-gold mx-auto mb-10"></div>
+    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+      Chúng tôi tin rằng mỗi người đều có một vẻ đẹp riêng biệt đang chờ được khám phá. Sứ mệnh của Noir không chỉ là làm đẹp về mặt ngoại hình — mà là giúp mỗi khách hàng cảm nhận sự tự tin, quyền năng và đẳng cấp trong chính mình.
+    </p>
+    <p class="text-gray-400 leading-relaxed mb-10">
+      Mỗi dịch vụ tại Noir đều được thiết kế với sự chú tâm tuyệt đối: từ tư vấn chân thành, kỹ thuật chuyên sâu đến trải nghiệm thư giãn sang trọng trong không gian được curate tỉ mỉ.
+    </p>
+    <a href="order.html" class="bg-gold text-navy px-12 py-4 text-sm tracking-widest uppercase font-bold hover:bg-gold-light transition inline-block">Đặt Lịch Trải Nghiệm</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-dark text-white py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div><p class="font-serif text-xl text-gold mb-3">NOIR SALON & SPA</p><p class="text-gray-400 text-sm">Đẳng cấp trong từng trải nghiệm làm đẹp</p></div>
+      <div><p class="text-gold text-xs tracking-widest uppercase mb-3">Liên Hệ</p><p class="text-gray-400 text-sm">📍 8 Lê Thánh Tôn, Q.1, TP.HCM</p><p class="text-gray-400 text-sm mt-1">📞 028 8888 9999</p><p class="text-gray-400 text-sm mt-1">✉️ booking@noirsalon.vn</p></div>
+      <div><p class="text-gold text-xs tracking-widest uppercase mb-3">Giờ Hoạt Động</p><p class="text-gray-400 text-sm">Thứ 2 - Thứ 6: 8:00 - 21:00</p><p class="text-gray-400 text-sm mt-1">Thứ 7 - CN: 8:00 - 22:00</p></div>
+    </div>
+    <div class="border-t border-gold/20 pt-6 text-center"><p class="text-gray-600 text-xs">© 2025 Noir Salon & Spa. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+</body>
+</html>

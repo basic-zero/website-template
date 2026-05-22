@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skincare - Hana Beauty 하나뷰티</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{kpink:'#FFB7C5','kpink-dark':'#E8839A',lilac:'#C8B2DB',mint:'#B2DBC8',peach:'#FFD5B8',soft:'#FAFAFA','text-main':'#333333'}}}}</script>
+  <style>body{font-family:'Segoe UI',sans-serif;background:#FAFAFA;color:#333}</style>
+</head>
+<body>
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur shadow-sm border-b border-kpink/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl text-kpink-dark">Hana<span class="text-lilac">Beauty</span></span><span class="text-xs text-gray-400 ml-1">하나뷰티</span></a>
+    <div class="hidden md:flex items-center gap-6">
+      <a href="index.html" class="text-gray-600 hover:text-kpink text-sm transition">Trang Chủ</a>
+      <a href="products.html" class="text-kpink font-medium text-sm">Skincare</a>
+      <a href="about.html" class="text-gray-600 hover:text-kpink text-sm transition">Về Chúng Tôi</a>
+      <a href="blog.html" class="text-gray-600 hover:text-kpink text-sm transition">K-Blog</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="login.html" class="text-gray-500 hover:text-kpink transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-500 hover:text-kpink transition"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-kpink text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="pt-16 bg-gradient-to-br from-pink-50 to-purple-50">
+  <div class="max-w-7xl mx-auto px-4 py-10">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <span class="text-kpink text-sm font-medium">스킨케어 컬렉션</span>
+        <h1 class="text-3xl font-bold text-gray-800 mt-1">Bộ Sưu Tập Skincare</h1>
+        <p class="text-gray-500 text-sm mt-1">150+ sản phẩm K-beauty chính hãng từ Hàn Quốc</p>
+      </div>
+      <!-- Search -->
+      <div class="relative w-full md:w-72">
+        <input type="text" placeholder="Tìm sản phẩm... 🔍" class="w-full border border-kpink/30 rounded-full px-5 py-2.5 text-sm focus:outline-none focus:border-kpink bg-white shadow-sm"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTERS + GRID -->
+<section class="py-8">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-8">
+    <!-- FILTERS SIDEBAR -->
+    <aside class="w-full lg:w-60 shrink-0">
+      <div class="bg-white rounded-3xl shadow-sm p-5 border border-kpink/10">
+        <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2"><span>🔧</span> Bộ Lọc</h3>
+        <!-- Bước Skincare -->
+        <div class="mb-5">
+          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Bước Skincare</p>
+          <div class="space-y-2">
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Bước 1 — Tẩy Trang</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Bước 2 — Rửa Mặt</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400" checked/> Bước 3 — Toner</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400" checked/> Bước 4 — Serum</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Bước 5 — Mặt Nạ</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Bước 8 — Kem Dưỡng</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Bước 9 — Chống Nắng</label>
+          </div>
+        </div>
+        <!-- Loại Da -->
+        <div class="mb-5">
+          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Loại Da</p>
+          <div class="space-y-2">
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="radio" name="skin" class="accent-pink-400"/> Da Dầu</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="radio" name="skin" class="accent-pink-400"/> Da Khô</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="radio" name="skin" class="accent-pink-400" checked/> Da Hỗn Hợp</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="radio" name="skin" class="accent-pink-400"/> Da Nhạy Cảm</label>
+          </div>
+        </div>
+        <!-- Price -->
+        <div class="mb-5">
+          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Giá</p>
+          <div class="space-y-2">
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Dưới 200K</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400" checked/> 200K – 400K</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Trên 400K</label>
+          </div>
+        </div>
+        <!-- Brand -->
+        <div>
+          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Thương Hiệu Hàn</p>
+          <div class="space-y-2">
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400" checked/> COSRX</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Innisfree</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Laneige</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Some By Mi</label>
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-kpink"><input type="checkbox" class="accent-pink-400"/> Hana Beauty</label>
+          </div>
+        </div>
+        <button class="mt-5 w-full bg-kpink-dark text-white py-2 rounded-full text-sm font-medium hover:bg-pink-500 transition">Áp Dụng Bộ Lọc</button>
+      </div>
+    </aside>
+
+    <!-- PRODUCT GRID -->
+    <div class="flex-1">
+      <!-- Sort bar -->
+      <div class="flex items-center justify-between mb-6">
+        <p class="text-sm text-gray-500">Hiển thị <strong class="text-gray-800">10</strong> sản phẩm</p>
+        <select class="border border-kpink/30 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-kpink bg-white">
+          <option>Phổ biến nhất</option>
+          <option>Giá thấp → cao</option>
+          <option>Giá cao → thấp</option>
+          <option>Mới nhất</option>
+          <option>Đánh giá cao</option>
+        </select>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-kpink/20 to-lilac/20 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">🐌</span>
+            <span class="absolute top-3 left-3 bg-kpink-dark text-white text-xs px-2 py-1 rounded-full">#1 Bestseller</span>
+            <span class="absolute top-3 right-3 bg-yellow-400 text-white text-xs px-2 py-1 rounded-full">-18%</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-lilac font-medium mb-1">K-Beauty Pick ✨ · Bước 4</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Snail Mucin Serum 96%</h3>
+            <p class="text-xs text-gray-400 mb-2">달팽이 뮤신 세럼 — COSRX</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★★</span><span class="text-xs text-gray-400">(4.9 · 1.2k đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">285.000₫</span>
+              <span class="text-gray-400 text-xs line-through">350.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-kpink/15 hover:bg-kpink-dark hover:text-white text-kpink-dark text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-mint/20 to-teal-100 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">🌿</span>
+            <span class="absolute top-3 left-3 bg-teal-400 text-white text-xs px-2 py-1 rounded-full">Skin Repair</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-teal-500 font-medium mb-1">Bestseller Hàn ✨ · Bước 8</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Kem Dưỡng CICA 100ml</h3>
+            <p class="text-xs text-gray-400 mb-2">시카 크림 — Dr.Jart+</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★★</span><span class="text-xs text-gray-400">(4.8 · 980 đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">220.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-mint/20 hover:bg-teal-400 hover:text-white text-teal-600 text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-peach/30 to-kpink/20 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">🍑</span>
+            <span class="absolute top-3 left-3 bg-orange-300 text-white text-xs px-2 py-1 rounded-full">Mới Về</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-orange-400 font-medium mb-1">Toner Yêu Thích ✨ · Bước 3</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Toner Hoa Đào 200ml</h3>
+            <p class="text-xs text-gray-400 mb-2">복숭아 토너 — Skinfood</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★★</span><span class="text-xs text-gray-400">(4.7 · 750 đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">195.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-peach/25 hover:bg-orange-400 hover:text-white text-orange-500 text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-blue-50 to-mint/20 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">🎭</span>
+            <span class="absolute top-3 left-3 bg-blue-400 text-white text-xs px-2 py-1 rounded-full">Set 10 miếng</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-blue-400 font-medium mb-1">K-Beauty Pick ✨ · Bước 5</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Mặt Nạ Sheet Pack (10 miếng)</h3>
+            <p class="text-xs text-gray-400 mb-2">마스크팩 세트 — Mediheal</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★☆</span><span class="text-xs text-gray-400">(4.6 · 2.1k đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">150.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-blue-50 hover:bg-blue-400 hover:text-white text-blue-500 text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-kpink/15 to-peach/20 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">🪞</span>
+            <span class="absolute top-3 left-3 bg-kpink text-white text-xs px-2 py-1 rounded-full">SPF 50+</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-kpink-dark font-medium mb-1">K-Makeup ✨ · Foundation</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Cushion Foundation SPF50+</h3>
+            <p class="text-xs text-gray-400 mb-2">쿠션 파운데이션 — Laneige</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★★</span><span class="text-xs text-gray-400">(4.9 · 1.8k đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">380.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-kpink/15 hover:bg-kpink-dark hover:text-white text-kpink-dark text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-lilac/25 to-purple-100 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">💄</span>
+            <span class="absolute top-3 left-3 bg-lilac text-white text-xs px-2 py-1 rounded-full">Set 3 màu</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-lilac font-medium mb-1">Korean Makeup ✨ · Lip</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Lip Tint "Korean Kiss" 3 màu set</h3>
+            <p class="text-xs text-gray-400 mb-2">립 틴트 세트 — Rom&nd</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★★</span><span class="text-xs text-gray-400">(4.9 · 3.4k đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">280.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-lilac/20 hover:bg-lilac hover:text-white text-lilac text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-yellow-50 to-mint/20 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">✨</span>
+            <span class="absolute top-3 left-3 bg-yellow-400 text-white text-xs px-2 py-1 rounded-full">Niacinamide 15%</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-yellow-600 font-medium mb-1">Brightening ✨ · Bước 4</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Serum Niacinamide 15%</h3>
+            <p class="text-xs text-gray-400 mb-2">나이아신아마이드 세럼 — Some By Mi</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★★</span><span class="text-xs text-gray-400">(4.8 · 2.6k đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">245.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-yellow-50 hover:bg-yellow-400 hover:text-white text-yellow-600 text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-orange-50 to-peach/30 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">☀️</span>
+            <span class="absolute top-3 left-3 bg-orange-400 text-white text-xs px-2 py-1 rounded-full">SPF 50+ PA+++</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-orange-400 font-medium mb-1">Sun Protection ✨ · Bước 9</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Kem Chống Nắng Sun Cushion SPF50+</h3>
+            <p class="text-xs text-gray-400 mb-2">선 쿠션 — Banila Co.</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★★</span><span class="text-xs text-gray-400">(4.9 · 900 đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">310.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-orange-50 hover:bg-orange-400 hover:text-white text-orange-500 text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 9 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10">
+          <div class="bg-gradient-to-br from-green-50 to-mint/30 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">💎</span>
+            <span class="absolute top-3 left-3 bg-green-400 text-white text-xs px-2 py-1 rounded-full">Peeling Gel</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-green-500 font-medium mb-1">Exfoliate ✨ · Bước 2</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Peeling Gel Tẩy Tế Bào Chết</h3>
+            <p class="text-xs text-gray-400 mb-2">필링 젤 — Neogen</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★☆</span><span class="text-xs text-gray-400">(4.5 · 620 đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold">175.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-green-50 hover:bg-green-400 hover:text-white text-green-600 text-sm py-2 rounded-full font-medium transition text-center block">Xem Chi Tiết</a>
+          </div>
+        </div>
+        <!-- Product 10 -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group border border-kpink/10 sm:col-span-2 xl:col-span-1">
+          <div class="bg-gradient-to-br from-kpink/20 via-lilac/15 to-mint/20 h-48 flex items-center justify-center relative">
+            <span class="text-7xl group-hover:scale-110 transition-transform">🎁</span>
+            <span class="absolute top-3 left-3 bg-kpink-dark text-white text-xs px-2 py-1 rounded-full">🔥 Hot Deal</span>
+            <span class="absolute top-3 right-3 bg-yellow-400 text-white text-xs px-2 py-1 rounded-full">-43%</span>
+          </div>
+          <div class="p-4">
+            <div class="text-xs text-kpink-dark font-medium mb-1">Full Routine ✨ · 10 Bước</div>
+            <h3 class="font-semibold text-gray-800 text-sm mb-1">Bộ 10 Bước Skincare Hàn Quốc</h3>
+            <p class="text-xs text-gray-400 mb-2">10단계 스킨케어 세트 — Hana Beauty</p>
+            <div class="flex items-center gap-1 mb-3"><span class="text-yellow-400 text-xs">★★★★★</span><span class="text-xs text-gray-400">(5.0 · 450 đánh giá)</span></div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="text-kpink-dark font-bold text-lg">850.000₫</span>
+              <span class="text-gray-400 text-xs line-through">1.500.000₫</span>
+            </div>
+            <a href="product-detail.html" class="w-full bg-kpink-dark text-white text-sm py-2 rounded-full font-medium hover:bg-pink-500 transition text-center block">Mua Ngay 🛍️</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGINATION -->
+      <div class="flex items-center justify-center gap-2 mt-10">
+        <button class="w-9 h-9 rounded-full border border-kpink/30 text-gray-500 hover:bg-kpink/10 text-sm transition">&lt;</button>
+        <button class="w-9 h-9 rounded-full bg-kpink-dark text-white text-sm font-medium">1</button>
+        <button class="w-9 h-9 rounded-full border border-kpink/30 text-gray-600 hover:bg-kpink/10 text-sm transition">2</button>
+        <button class="w-9 h-9 rounded-full border border-kpink/30 text-gray-600 hover:bg-kpink/10 text-sm transition">3</button>
+        <span class="text-gray-400 text-sm">...</span>
+        <button class="w-9 h-9 rounded-full border border-kpink/30 text-gray-600 hover:bg-kpink/10 text-sm transition">15</button>
+        <button class="w-9 h-9 rounded-full border border-kpink/30 text-gray-500 hover:bg-kpink/10 text-sm transition">&gt;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-kpink-dark text-white py-10">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <p class="text-xl font-bold mb-2">🌸 Hana Beauty 하나뷰티</p>
+    <p class="text-pink-200 text-sm mb-2">📍 15 Bùi Viện, Q.1, TP.HCM | 📞 0909 123 456 | 💌 xin@hanabeauty.vn</p>
+    <p class="text-pink-200 text-xs">© 2025 Hana Beauty. All rights reserved. 💕</p>
+  </div>
+</footer>
+</body>
+</html>
