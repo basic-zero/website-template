@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh Toán - PinkBloom</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{pink:'#FF1493','pink-dark':'#C71585','pink-light':'#FFB6C1',rose:'#FFE4E8','dark':'#1a1a2e'}}}}</script>
+</head>
+<body class="bg-rose font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-pink/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl text-dark">Pink<span class="text-pink">Bloom</span></span></a>
+    <a href="order.html" class="text-pink text-sm">← Quay Lại</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <!-- Steps -->
+  <div class="flex items-center justify-center gap-2 mb-10 text-sm">
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink/20 rounded-full flex items-center justify-center text-pink font-bold text-xs">✓</div><span class="text-gray-400">Giỏ Hàng</span></div>
+    <div class="w-12 h-0.5 bg-pink"></div>
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink/20 rounded-full flex items-center justify-center text-pink font-bold text-xs">✓</div><span class="text-gray-400">Đặt Hàng</span></div>
+    <div class="w-12 h-0.5 bg-pink"></div>
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink rounded-full flex items-center justify-center text-white font-bold text-xs">3</div><span class="font-semibold text-pink">Thanh Toán</span></div>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <!-- Payment Methods -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h2 class="font-bold text-dark mb-5">💳 Phương Thức Thanh Toán</h2>
+        <div class="space-y-3" id="pay-methods">
+          <label class="flex items-center gap-3 p-4 border-2 border-pink rounded-xl cursor-pointer bg-rose" onclick="showCard(true)">
+            <input type="radio" name="pay" checked class="accent-pink"/><span class="text-lg">💳</span><div><p class="font-semibold text-sm">Thẻ Ngân Hàng / Visa / Mastercard</p><p class="text-gray-400 text-xs">Thanh toán trực tuyến an toàn</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-pink/20 rounded-xl cursor-pointer hover:border-pink/50 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-pink"/><span class="text-lg">📱</span><div><p class="font-semibold text-sm">Ví Điện Tử (MoMo / ZaloPay)</p><p class="text-gray-400 text-xs">Quét mã QR hoặc liên kết ví</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-pink/20 rounded-xl cursor-pointer hover:border-pink/50 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-pink"/><span class="text-lg">💵</span><div><p class="font-semibold text-sm">Thanh Toán Khi Nhận Hàng (COD)</p><p class="text-gray-400 text-xs">Trả tiền mặt khi nhận được hàng</p></div>
+          </label>
+        </div>
+        <!-- Card Form -->
+        <div id="card-form" class="mt-5 space-y-4 p-4 bg-rose rounded-xl">
+          <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Số Thẻ</label><input type="text" placeholder="1234 5678 9012 3456" class="w-full bg-white border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Tên Chủ Thẻ</label><input type="text" placeholder="LE THI BAO TRAN" class="w-full bg-white border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Ngày Hết Hạn</label><input type="text" placeholder="MM/YY" class="w-full bg-white border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">CVV</label><input type="text" placeholder="123" class="w-full bg-white border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-pink"/><span class="text-xs text-gray-500">Lưu thẻ này cho lần sau</span></label>
+        </div>
+      </div>
+      <!-- Shipping Summary -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h2 class="font-bold text-dark mb-4">📍 Địa Chỉ Giao Hàng</h2>
+        <div class="flex justify-between items-start">
+          <div><p class="font-semibold">Lê Thị Bảo Trân</p><p class="text-gray-500 text-sm">0901 234 567</p><p class="text-gray-600 text-sm mt-1">12 Nguyễn Huệ, P. Bến Nghé, Q.1, TP.HCM</p></div>
+          <a href="order.html" class="text-pink text-xs font-semibold hover:text-pink-dark">Thay đổi</a>
+        </div>
+      </div>
+    </div>
+    <!-- Order Summary -->
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24">
+        <h2 class="font-bold text-dark mb-4">Tổng Kết Đơn</h2>
+        <div class="space-y-3 mb-4 text-sm">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính</span><span>1.245.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Giảm giá (10%)</span><span class="text-red-400">-124.500₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-pink font-semibold">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-pink/20 pt-4 flex justify-between font-bold text-xl mb-5"><span>Tổng</span><span class="text-pink">1.120.500₫</span></div>
+        <p class="text-pink text-xs mb-4">💗 Bạn sẽ tích được 1.120 Pink Points từ đơn này!</p>
+        <button onclick="window.location.href='orders.html'" class="w-full bg-pink text-white py-3.5 rounded-2xl font-bold hover:bg-pink-dark transition text-sm">Xác Nhận Thanh Toán 💗</button>
+        <div class="mt-4 flex items-center justify-center gap-4 text-xs text-gray-400">
+          <span>🔒 SSL Secure</span><span>✓ PCI DSS</span><span>🛡️ 3D Secure</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-pink-light text-xs">© 2025 PinkBloom. Made with 💗</p></div></footer>
+<script>
+function showCard(show){document.getElementById('card-form').classList.toggle('hidden',!show);}
+</script>
+</body>
+</html>

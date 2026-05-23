@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giỏ Hàng - PinkBloom</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{pink:'#FF1493','pink-dark':'#C71585','pink-light':'#FFB6C1',rose:'#FFE4E8','dark':'#1a1a2e'}}}}</script>
+</head>
+<body class="bg-rose font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-pink/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl text-dark">Pink<span class="text-pink">Bloom</span></span></a>
+    <div class="flex items-center gap-4">
+      <a href="products.html" class="text-gray-600 hover:text-pink text-sm">Sản Phẩm</a>
+      <a href="login.html" class="text-gray-600 hover:text-pink"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-pink"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-pink text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a>
+    </div>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <!-- Steps -->
+  <div class="flex items-center justify-center gap-2 mb-10 text-sm">
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink rounded-full flex items-center justify-center text-white font-bold text-xs">1</div><span class="font-semibold text-pink">Giỏ Hàng</span></div>
+    <div class="w-12 h-0.5 bg-pink/30"></div>
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink/20 rounded-full flex items-center justify-center text-pink/50 font-bold text-xs">2</div><span class="text-gray-400">Đặt Hàng</span></div>
+    <div class="w-12 h-0.5 bg-pink/30"></div>
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink/20 rounded-full flex items-center justify-center text-pink/50 font-bold text-xs">3</div><span class="text-gray-400">Thanh Toán</span></div>
+  </div>
+  <h1 class="text-2xl font-bold text-dark mb-6">Giỏ Hàng Của Bạn 🛍️</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-4">
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4">
+        <div class="w-20 h-20 bg-rose rounded-xl flex items-center justify-center flex-shrink-0"><span class="text-3xl">💄</span></div>
+        <div class="flex-1"><p class="text-xs text-pink uppercase font-medium">Son Môi</p><p class="font-bold">Son Môi Matte Velvet #Ruby Kiss</p><p class="text-gray-400 text-sm">Màu: Ruby Kiss · 3.5g</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-bold text-pink">185.000₫</p>
+          <div class="flex items-center gap-2 border border-pink/30 rounded-xl px-3 py-1">
+            <button class="text-pink font-bold text-lg leading-none">−</button>
+            <span class="w-6 text-center text-sm font-semibold">1</span>
+            <button class="text-pink font-bold text-lg leading-none">+</button>
+          </div>
+          <button class="text-gray-400 text-xs hover:text-red-400 transition">🗑️ Xóa</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4">
+        <div class="w-20 h-20 bg-rose rounded-xl flex items-center justify-center flex-shrink-0"><span class="text-3xl">✨</span></div>
+        <div class="flex-1"><p class="text-xs text-pink uppercase font-medium">Nền</p><p class="font-bold">Cushion Glow Glass SPF50+</p><p class="text-gray-400 text-sm">Tone: 21N Natural · 15g</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-bold text-pink">420.000₫</p>
+          <div class="flex items-center gap-2 border border-pink/30 rounded-xl px-3 py-1">
+            <button class="text-pink font-bold text-lg leading-none">−</button>
+            <span class="w-6 text-center text-sm font-semibold">2</span>
+            <button class="text-pink font-bold text-lg leading-none">+</button>
+          </div>
+          <button class="text-gray-400 text-xs hover:text-red-400 transition">🗑️ Xóa</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4">
+        <div class="w-20 h-20 bg-rose rounded-xl flex items-center justify-center flex-shrink-0"><span class="text-3xl">👁️</span></div>
+        <div class="flex-1"><p class="text-xs text-pink uppercase font-medium">Mascara</p><p class="font-bold">Mascara Lash Queen Waterproof</p><p class="text-gray-400 text-sm">Black · 8ml</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-bold text-pink">220.000₫</p>
+          <div class="flex items-center gap-2 border border-pink/30 rounded-xl px-3 py-1">
+            <button class="text-pink font-bold text-lg leading-none">−</button>
+            <span class="w-6 text-center text-sm font-semibold">1</span>
+            <button class="text-pink font-bold text-lg leading-none">+</button>
+          </div>
+          <button class="text-gray-400 text-xs hover:text-red-400 transition">🗑️ Xóa</button>
+        </div>
+      </div>
+      <!-- Coupon -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm">
+        <p class="font-semibold text-sm mb-3">🎟️ Mã Giảm Giá</p>
+        <div class="flex gap-2"><input type="text" placeholder="Nhập mã khuyến mãi..." class="flex-1 bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/><button class="bg-pink text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-pink-dark transition">Áp Dụng</button></div>
+      </div>
+    </div>
+    <!-- Summary -->
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24">
+        <h2 class="font-bold text-dark mb-4">Tóm Tắt Đơn Hàng</h2>
+        <div class="space-y-3 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính (4 sp)</span><span>1.245.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Giảm giá</span><span class="text-red-500">-124.500₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-pink font-semibold">Miễn phí 🎉</span></div>
+        </div>
+        <div class="border-t border-pink/20 pt-4 flex justify-between font-bold text-lg mb-5"><span>Tổng</span><span class="text-pink">1.120.500₫</span></div>
+        <a href="order.html" class="block w-full bg-pink text-white py-3.5 rounded-2xl font-bold text-center hover:bg-pink-dark transition text-sm">Đặt Hàng Ngay 🌸</a>
+        <a href="products.html" class="block w-full text-center text-pink text-sm mt-3 hover:text-pink-dark">← Tiếp Tục Mua Sắm</a>
+        <div class="mt-4 pt-4 border-t border-pink/10 text-xs text-gray-400 space-y-1">
+          <p>🔒 Thanh toán an toàn SSL</p>
+          <p>🚚 Giao hàng toàn quốc 2-4 ngày</p>
+          <p>↩️ Đổi trả trong 7 ngày</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-pink-light text-xs">© 2025 PinkBloom. Made with 💗</p></div></footer>
+</body>
+</html>

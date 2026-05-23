@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Hana Beauty</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{kpink:'#FFB7C5','kpink-dark':'#E8839A',lilac:'#C8B2DB',mint:'#B2DBC8'}}}}</script>
+</head>
+<body style="background-color:#FFF8FA;" class="text-gray-800 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-kpink/30">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl" style="color:#3d2b3d;">Hana<span style="color:#FFB7C5;">Beauty</span></span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="index.html" class="text-gray-500 hover:text-kpink-dark">Trang Chủ</a>
+      <a href="products.html" class="text-gray-500 hover:text-kpink-dark">Sản Phẩm</a>
+      <a href="blog.html" class="font-semibold" style="color:#E8839A;">Blog</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="login.html" class="text-gray-500 hover:text-kpink-dark"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-500 hover:text-kpink-dark"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold" style="background:#E8839A;">3</span></a>
+    </div>
+  </div>
+</nav>
+<section class="pt-24 pb-12 text-white text-center" style="background:linear-gradient(135deg,#E8839A,#C8B2DB);">
+  <span class="bg-white/20 text-white text-xs px-4 py-1 rounded-full">🇰🇷 K-Beauty Blog</span>
+  <h1 class="text-4xl font-bold mt-4 mb-3">Hana Beauty Blog</h1>
+  <p class="max-w-lg mx-auto" style="color:rgba(255,255,255,0.8);">Bí quyết skincare Hàn Quốc, review sản phẩm và xu hướng làm đẹp mới nhất 🌸</p>
+</section>
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col md:flex-row gap-4 mb-10">
+    <div class="relative flex-1 max-w-md">
+      <input type="text" placeholder="Tìm bài viết..." class="w-full bg-white border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 pl-10 text-sm outline-none"/>
+      <svg class="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      <button class="text-white px-4 py-2 rounded-full text-xs font-semibold" style="background:#E8839A;">Tất Cả</button>
+      <button class="bg-white border border-kpink/40 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-kpink-dark transition">K-Skincare</button>
+      <button class="bg-white border border-kpink/40 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-kpink-dark transition">Review</button>
+      <button class="bg-white border border-kpink/40 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-kpink-dark transition">Routine</button>
+      <button class="bg-white border border-kpink/40 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-kpink-dark transition">Trend 2025</button>
+    </div>
+  </div>
+  <!-- Featured -->
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-12 group hover:shadow-md transition">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="aspect-video lg:aspect-auto flex items-center justify-center min-h-64" style="background:linear-gradient(135deg,#FFB7C5,#C8B2DB);"><span class="text-8xl opacity-40">🇰🇷</span></div>
+      <div class="p-10 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-3"><span class="text-white text-xs px-3 py-1 rounded-full font-semibold" style="background:#E8839A;">🔥 Hot</span><span class="text-gray-400 text-xs">10 tháng 5, 2025</span></div>
+        <span class="text-xs px-3 py-1 rounded-full w-fit mb-3 font-medium" style="background:#FFF0F5;color:#E8839A;">K-Skincare</span>
+        <h2 class="text-2xl font-bold mb-4 group-hover:text-kpink-dark transition" style="color:#3d2b3d;"><a href="blog-post.html">10-Step Korean Skincare: Có Thực Sự Cần Thiết Không?</a></h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">Routine 10 bước nổi tiếng của người Hàn — sự thật là bạn không cần làm đủ 10 bước mỗi ngày. Chúng tôi giải thích từng bước và cho bạn biết đâu là bắt buộc...</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm text-white" style="background:#E8839A;">L</div>
+            <div><p class="text-sm font-semibold">Thùy Linh</p><p class="text-gray-400 text-xs">K-Beauty Expert</p></div>
+          </div>
+          <a href="blog-post.html" class="font-semibold text-sm hover:text-kpink-dark" style="color:#E8839A;">Đọc Ngay →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video flex items-center justify-center" style="background:linear-gradient(135deg,#FFB7C5,#FFE4E8);"><span class="text-5xl opacity-50">🐌</span></div>
+      <div class="p-5">
+        <span class="text-xs px-3 py-1 rounded-full" style="background:#FFF0F5;color:#E8839A;">Review</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-kpink-dark transition"><a href="blog-post.html">Snail Mucin Thực Sự Làm Được Gì Cho Da?</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Dịch nhầy ốc sên nghe thì ghê — nhưng tại sao hàng triệu người Hàn không thể thiếu nó trong routine...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>05/05/2025 · 5 phút</span><a href="blog-post.html" class="hover:text-kpink-dark" style="color:#E8839A;">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video flex items-center justify-center" style="background:linear-gradient(135deg,#C8B2DB,#E0D4F0);"><span class="text-5xl opacity-50">💜</span></div>
+      <div class="p-5">
+        <span class="text-xs px-3 py-1 rounded-full" style="background:#F5F0FF;color:#9B72CF;">Routine</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-kpink-dark transition"><a href="blog-post.html">Morning vs Evening Routine: Sự Khác Biệt Quan Trọng</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Buổi sáng và buổi tối không dùng cùng sản phẩm — đây là lý do tại sao và cách xây dựng đúng...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>28/04/2025 · 6 phút</span><a href="blog-post.html" class="hover:text-kpink-dark" style="color:#E8839A;">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video flex items-center justify-center" style="background:linear-gradient(135deg,#B2DBC8,#D4F0E4);"><span class="text-5xl opacity-50">🍑</span></div>
+      <div class="p-5">
+        <span class="text-xs px-3 py-1 rounded-full" style="background:#E8F8F0;color:#5A9E7E;">K-Skincare</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-kpink-dark transition"><a href="blog-post.html">Glass Skin vs Dewy Skin: Bạn Muốn Đạt Được Gì?</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Hai xu hướng skin finish hot nhất Hàn Quốc — và cách đạt được từng loại với sản phẩm đúng...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>20/04/2025 · 7 phút</span><a href="blog-post.html" class="hover:text-kpink-dark" style="color:#E8839A;">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video flex items-center justify-center" style="background:linear-gradient(135deg,#FFB7C5,#FFF0F5);"><span class="text-5xl opacity-50">🌸</span></div>
+      <div class="p-5">
+        <span class="text-xs px-3 py-1 rounded-full" style="background:#FFF0F5;color:#E8839A;">Trend 2025</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-kpink-dark transition"><a href="blog-post.html">Skinimalism: Xu Hướng Tối Giản Hóa Skincare</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Less is more — phong trào giảm bớt sản phẩm, tập trung vào chất lượng đang thống trị K-beauty 2025...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>15/04/2025 · 5 phút</span><a href="blog-post.html" class="hover:text-kpink-dark" style="color:#E8839A;">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video flex items-center justify-center" style="background:linear-gradient(135deg,#C8B2DB,#FFB7C5);"><span class="text-5xl opacity-50">🧴</span></div>
+      <div class="p-5">
+        <span class="text-xs px-3 py-1 rounded-full" style="background:#FFF0F5;color:#E8839A;">Review</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-kpink-dark transition"><a href="blog-post.html">COSRX vs SOME BY MI: Sản Phẩm Nào Tốt Hơn?</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Hai thương hiệu K-beauty đình đám cùng nhau trong ring đấu — chúng tôi đã test cả hai trong 30 ngày...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>08/04/2025 · 9 phút</span><a href="blog-post.html" class="hover:text-kpink-dark" style="color:#E8839A;">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video flex items-center justify-center" style="background:linear-gradient(135deg,#B2DBC8,#C8B2DB);"><span class="text-5xl opacity-50">🧪</span></div>
+      <div class="p-5">
+        <span class="text-xs px-3 py-1 rounded-full" style="background:#E8F8F0;color:#5A9E7E;">K-Skincare</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-kpink-dark transition"><a href="blog-post.html">AHA/BHA/PHA: Acid Nào Phù Hợp Với Loại Da Của Bạn?</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Exfoliating acid là trái tim của K-skincare — nhưng chọn sai sẽ gây kích ứng. Hãy để chúng tôi hướng dẫn...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>01/04/2025 · 8 phút</span><a href="blog-post.html" class="hover:text-kpink-dark" style="color:#E8839A;">Đọc →</a></div>
+      </div>
+    </article>
+  </div>
+  <div class="flex justify-center gap-2 mt-10">
+    <button class="w-10 h-10 text-white rounded-full font-bold text-sm" style="background:#E8839A;">1</button>
+    <button class="w-10 h-10 bg-white border border-kpink/40 text-gray-600 rounded-full text-sm hover:border-kpink-dark transition">2</button>
+    <button class="w-10 h-10 bg-white border border-kpink/40 text-gray-600 rounded-full text-sm hover:border-kpink-dark transition">3</button>
+  </div>
+</div>
+<footer style="background:#3d2b3d;" class="text-white py-10 mt-12"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-kpink text-xs">© 2025 Hana Beauty. K-Beauty ở Việt Nam 🌸</p></div></footer>
+</body>
+</html>

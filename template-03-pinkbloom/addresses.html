@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Địa Chỉ - PinkBloom</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{pink:'#FF1493','pink-dark':'#C71585','pink-light':'#FFB6C1',rose:'#FFE4E8','dark':'#1a1a2e'}}}}</script>
+</head>
+<body class="bg-rose font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-pink/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl text-dark">Pink<span class="text-pink">Bloom</span></span></a>
+    <div class="flex items-center gap-3"><a href="cart.html" class="relative text-gray-600 hover:text-pink"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a></div>
+  </div>
+</nav>
+<div class="max-w-7xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <aside class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-5 shadow-sm mb-4">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 bg-pink/20 rounded-full flex items-center justify-center text-pink font-bold text-xl">B</div>
+          <div><p class="font-semibold">Bảo Trân Lê</p><p class="text-pink text-xs font-medium">💗 Pink Member</p></div>
+        </div>
+        <nav class="space-y-1">
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-600 hover:text-pink hover:bg-pink/5 rounded-xl transition">👤 Thông Tin</a>
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-600 hover:text-pink hover:bg-pink/5 rounded-xl transition">📦 Đơn Hàng</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2 text-sm text-pink bg-pink/10 rounded-xl font-semibold">📍 Địa Chỉ</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-600 hover:text-pink hover:bg-pink/5 rounded-xl transition">❤️ Yêu Thích</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-600 hover:text-pink hover:bg-pink/5 rounded-xl transition">💗 Pink Points</a>
+          <hr class="border-pink/10 my-2"/>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-red-400 rounded-xl transition">⬅️ Đăng Xuất</a>
+        </nav>
+      </div>
+    </aside>
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-2xl font-bold text-dark">Địa Chỉ Của Tôi 📍</h1>
+        <button onclick="showAddForm()" class="bg-pink text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-pink-dark transition">+ Thêm Địa Chỉ</button>
+      </div>
+      <div id="add-form" class="hidden bg-white rounded-2xl shadow-sm p-6 mb-6">
+        <h3 class="font-bold text-dark mb-5">Thêm Địa Chỉ Mới</h3>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Họ Và Tên *</label><input type="text" placeholder="Lê Thị Bảo Trân" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Số Điện Thoại *</label><input type="tel" placeholder="0901 234 567" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Địa Chỉ *</label><input type="text" placeholder="Số nhà, tên đường" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Tỉnh/Thành</label><select class="w-full bg-rose border border-pink/30 rounded-xl px-3 py-2.5 text-sm outline-none"><option>TP. HCM</option><option>Hà Nội</option><option>Đà Nẵng</option></select></div>
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Quận/Huyện</label><select class="w-full bg-rose border border-pink/30 rounded-xl px-3 py-2.5 text-sm outline-none"><option>Quận 1</option><option>Quận 3</option><option>Bình Thạnh</option></select></div>
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Phường/Xã</label><select class="w-full bg-rose border border-pink/30 rounded-xl px-3 py-2.5 text-sm outline-none"><option>P. Bến Nghé</option><option>P. Bến Thành</option></select></div>
+          </div>
+          <div class="flex gap-3">
+            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="type" value="home" checked class="accent-pink"/><span class="text-sm">🏠 Nhà Riêng</span></label>
+            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="type" value="office" class="accent-pink"/><span class="text-sm">🏢 Văn Phòng</span></label>
+          </div>
+          <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-pink"/><span class="text-sm text-gray-600">Đặt làm địa chỉ mặc định</span></label>
+          <div class="flex gap-3"><button class="bg-pink text-white px-6 py-2.5 rounded-xl text-sm font-semibold hover:bg-pink-dark">Lưu Địa Chỉ</button><button onclick="hideAddForm()" class="border border-pink/30 text-pink px-6 py-2.5 rounded-xl text-sm hover:bg-pink/5">Hủy</button></div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white rounded-2xl shadow-sm p-5 border-2 border-pink/40 relative">
+          <span class="absolute top-4 right-4 bg-pink text-white text-xs px-3 py-1 rounded-full">💗 Mặc Định</span>
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-2xl">🏠</span>
+            <div><p class="font-bold text-dark">Nhà Riêng</p><p class="font-semibold mt-1">Lê Thị Bảo Trân</p><p class="text-gray-500 text-sm">0901 234 567</p><p class="text-gray-600 text-sm mt-1">12 Nguyễn Huệ, P. Bến Nghé, Q.1, TP.HCM</p></div>
+          </div>
+          <div class="flex gap-2 border-t border-gray-100 pt-3">
+            <button class="text-pink text-xs font-semibold hover:text-pink-dark">✏️ Chỉnh Sửa</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm p-5">
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-2xl">🏢</span>
+            <div><p class="font-bold text-dark">Trường Đại Học</p><p class="font-semibold mt-1">Lê Thị Bảo Trân</p><p class="text-gray-500 text-sm">0901 234 567</p><p class="text-gray-600 text-sm mt-1">Khu A, Đại Học Quốc Gia TP.HCM, Thủ Đức, TP.HCM</p></div>
+          </div>
+          <div class="flex gap-2 border-t border-gray-100 pt-3">
+            <button class="text-pink text-xs font-semibold hover:text-pink-dark">✏️ Chỉnh Sửa</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-pink text-xs hover:text-pink-dark">📌 Đặt Mặc Định</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-pink-light text-xs">© 2025 PinkBloom. Made with 💗</p></div></footer>
+<script>
+function showAddForm(){document.getElementById('add-form').classList.remove('hidden');}
+function hideAddForm(){document.getElementById('add-form').classList.add('hidden');}
+</script>
+</body>
+</html>

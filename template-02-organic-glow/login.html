@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng Nhập - Organic Glow</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{green:'#2D6A4F','green-light':'#74B49B','green-dark':'#1B4332',sage:'#95C9A8',cream:'#FAF7F0',earth:'#8B5E3C'}}}}</script>
+</head>
+<body class="bg-cream min-h-screen flex flex-col font-sans">
+<nav class="bg-cream border-b border-green/20 py-4 px-6 flex items-center justify-between">
+  <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌿</span><span class="font-bold text-xl text-green-dark">Organic<span class="text-green">Glow</span></span></a>
+  <a href="index.html" class="text-green text-sm hover:text-green-dark">← Trang Chủ</a>
+</nav>
+<div class="flex-1 flex items-center justify-center px-4 py-12">
+  <div class="w-full max-w-md">
+    <div class="text-center mb-8"><span class="text-5xl">🌿</span><h1 class="text-2xl font-bold text-green-dark mt-3">Chào Mừng Trở Lại</h1><p class="text-gray-500 text-sm mt-1">Đăng nhập để tiếp tục hành trình xanh</p></div>
+    <div class="flex rounded-2xl overflow-hidden border border-green/30 mb-8">
+      <button id="tab-login" onclick="switchTab('login')" class="flex-1 py-3 text-sm font-semibold bg-green text-white">Đăng Nhập</button>
+      <button id="tab-reg" onclick="switchTab('reg')" class="flex-1 py-3 text-sm font-semibold text-gray-500 hover:text-green transition">Đăng Ký</button>
+    </div>
+
+    <div id="form-login" class="bg-white rounded-2xl p-8 shadow-sm space-y-4">
+      <div><label class="text-green text-xs font-semibold uppercase tracking-wide block mb-2">Email *</label><input type="email" placeholder="email@example.com" class="w-full bg-gray-50 border border-green/30 focus:border-green rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div><label class="text-green text-xs font-semibold uppercase tracking-wide block mb-2">Mật Khẩu *</label><input type="password" placeholder="••••••••" class="w-full bg-gray-50 border border-green/30 focus:border-green rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div class="flex justify-between items-center"><label class="flex items-center gap-2 text-sm text-gray-500 cursor-pointer"><input type="checkbox" class="accent-green"/>Ghi nhớ</label><a href="#" class="text-green text-xs hover:text-green-dark">Quên mật khẩu?</a></div>
+      <a href="profile.html" class="block w-full bg-green text-white py-3 rounded-xl font-bold text-center hover:bg-green-dark transition">Đăng Nhập</a>
+      <div class="relative"><div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200"></div></div><div class="relative flex justify-center"><span class="bg-white px-3 text-gray-400 text-xs">hoặc</span></div></div>
+      <div class="grid grid-cols-2 gap-3">
+        <button class="border border-gray-200 rounded-xl py-2.5 text-sm text-gray-600 hover:border-green transition flex items-center justify-center gap-2">🔵 Google</button>
+        <button class="border border-gray-200 rounded-xl py-2.5 text-sm text-gray-600 hover:border-green transition flex items-center justify-center gap-2">🔷 Facebook</button>
+      </div>
+    </div>
+
+    <div id="form-reg" class="hidden bg-white rounded-2xl p-8 shadow-sm space-y-4">
+      <div class="grid grid-cols-2 gap-3">
+        <div><label class="text-green text-xs font-semibold uppercase tracking-wide block mb-2">Họ *</label><input type="text" placeholder="Nguyễn" class="w-full bg-gray-50 border border-green/30 focus:border-green rounded-xl px-4 py-3 text-sm outline-none"/></div>
+        <div><label class="text-green text-xs font-semibold uppercase tracking-wide block mb-2">Tên *</label><input type="text" placeholder="Mai Anh" class="w-full bg-gray-50 border border-green/30 focus:border-green rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      </div>
+      <div><label class="text-green text-xs font-semibold uppercase tracking-wide block mb-2">Email *</label><input type="email" placeholder="email@example.com" class="w-full bg-gray-50 border border-green/30 focus:border-green rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div><label class="text-green text-xs font-semibold uppercase tracking-wide block mb-2">Số Điện Thoại</label><input type="tel" placeholder="0900 000 000" class="w-full bg-gray-50 border border-green/30 focus:border-green rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div><label class="text-green text-xs font-semibold uppercase tracking-wide block mb-2">Mật Khẩu *</label><input type="password" placeholder="Tối thiểu 8 ký tự" class="w-full bg-gray-50 border border-green/30 focus:border-green rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div><label class="text-green text-xs font-semibold uppercase tracking-wide block mb-2">Loại Da</label>
+        <select class="w-full bg-gray-50 border border-green/30 focus:border-green rounded-xl px-4 py-3 text-sm outline-none text-gray-600">
+          <option>Chọn loại da</option><option>Da dầu</option><option>Da khô</option><option>Da hỗn hợp</option><option>Da nhạy cảm</option>
+        </select>
+      </div>
+      <label class="flex items-start gap-2 cursor-pointer"><input type="checkbox" class="accent-green mt-1"/><span class="text-xs text-gray-500">Tôi đồng ý với <a href="#" class="text-green">Điều khoản dịch vụ</a> và muốn nhận tips skincare organic từ Organic Glow</span></label>
+      <a href="profile.html" class="block w-full bg-green text-white py-3 rounded-xl font-bold text-center hover:bg-green-dark transition">Tạo Tài Khoản 🌿</a>
+    </div>
+
+    <div class="mt-8 bg-green/5 border border-green/20 rounded-2xl p-5">
+      <p class="text-green text-xs font-semibold uppercase tracking-wide mb-3">Đặc Quyền Thành Viên</p>
+      <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+        <div class="flex items-center gap-2">🌿 Tích điểm mỗi đơn hàng</div>
+        <div class="flex items-center gap-2">🎁 Quà sinh nhật đặc biệt</div>
+        <div class="flex items-center gap-2">📧 Newsletter skincare tips</div>
+        <div class="flex items-center gap-2">🏷️ Ưu đãi thành viên độc quyền</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function switchTab(t){
+  document.getElementById('form-login').classList.toggle('hidden',t!=='login');
+  document.getElementById('form-reg').classList.toggle('hidden',t!=='reg');
+  document.getElementById('tab-login').className=t==='login'?'flex-1 py-3 text-sm font-semibold bg-green text-white':'flex-1 py-3 text-sm font-semibold text-gray-500';
+  document.getElementById('tab-reg').className=t==='reg'?'flex-1 py-3 text-sm font-semibold bg-green text-white':'flex-1 py-3 text-sm font-semibold text-gray-500';
+}
+</script>
+</body>
+</html>

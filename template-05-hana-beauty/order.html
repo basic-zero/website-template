@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đặt Hàng - Hana Beauty</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{kpink:'#FFB7C5','kpink-dark':'#E8839A',lilac:'#C8B2DB',mint:'#B2DBC8'}}}}</script>
+</head>
+<body style="background-color:#FFF8FA;" class="font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-kpink/30">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl" style="color:#3d2b3d;">Hana<span style="color:#FFB7C5;">Beauty</span></span></a>
+    <a href="cart.html" class="text-sm" style="color:#E8839A;">← Giỏ Hàng</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-3 mb-8 text-sm">
+    <span class="w-7 h-7 bg-kpink/30 rounded-full flex items-center justify-center text-xs" style="color:#E8839A;">✓</span>
+    <span class="text-gray-400">Giỏ hàng</span>
+    <div class="h-0.5 w-8" style="background:#E8839A;"></div>
+    <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs text-white font-bold" style="background:#E8839A;">2</span>
+    <span class="font-semibold" style="color:#E8839A;">Đặt hàng</span>
+    <div class="h-0.5 w-8 bg-kpink/40"></div>
+    <span class="w-7 h-7 bg-kpink/30 text-gray-400 rounded-full flex items-center justify-center text-xs">3</span>
+    <span class="text-gray-400">Thanh toán</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h2 class="font-bold mb-5" style="color:#3d2b3d;">📍 Thông Tin Giao Hàng</h2>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Họ</label><input type="text" placeholder="Phạm" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Tên</label><input type="text" placeholder="Thùy Linh" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+          </div>
+          <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Số Điện Thoại</label><input type="tel" placeholder="0987 654 321" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+          <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Email</label><input type="email" placeholder="thuylinh@gmail.com" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+          <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Địa Chỉ</label><input type="text" placeholder="Số nhà, đường" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Tỉnh/Thành</label><select class="w-full border border-kpink/40 rounded-xl px-3 py-2.5 text-sm outline-none" style="background:#FFF8FA;"><option>TP. HCM</option><option>Hà Nội</option><option>Đà Nẵng</option></select></div>
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Quận/Huyện</label><select class="w-full border border-kpink/40 rounded-xl px-3 py-2.5 text-sm outline-none" style="background:#FFF8FA;"><option>Quận 3</option><option>Quận 1</option><option>Bình Thạnh</option></select></div>
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Phường/Xã</label><select class="w-full border border-kpink/40 rounded-xl px-3 py-2.5 text-sm outline-none" style="background:#FFF8FA;"><option>P. 5</option><option>P. 7</option></select></div>
+          </div>
+          <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Ghi Chú</label><textarea placeholder="Ghi chú cho shipper..." rows="2" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none resize-none" style="background:#FFF8FA;"></textarea></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h2 class="font-bold mb-4" style="color:#3d2b3d;">🚚 Phương Thức Vận Chuyển</h2>
+        <div class="space-y-3">
+          <label class="flex items-center justify-between p-4 border-2 border-kpink-dark rounded-xl cursor-pointer" style="background:#FFF0F5;">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" checked class="accent-kpink-dark"/><div><p class="font-semibold text-sm">Giao Hàng Nhanh (GHN)</p><p class="text-gray-500 text-xs">2-3 ngày làm việc</p></div></div>
+            <span class="font-bold text-sm" style="color:#E8839A;">Miễn phí</span>
+          </label>
+          <label class="flex items-center justify-between p-4 border border-kpink/30 rounded-xl cursor-pointer">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" class="accent-kpink-dark"/><div><p class="font-semibold text-sm">Giao Hỏa Tốc Nội Thành</p><p class="text-gray-500 text-xs">Trong ngày (HCM)</p></div></div>
+            <span class="font-bold text-sm">30.000₫</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24">
+        <h2 class="font-bold mb-4" style="color:#3d2b3d;">Đơn Hàng 💕</h2>
+        <div class="space-y-3 mb-4">
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#FFF0F5;"><span>🐌</span></div><div class="flex-1 text-xs"><p class="font-semibold">Snail Mucin 96%</p><p class="text-gray-400">×1</p></div><p class="font-bold text-sm" style="color:#E8839A;">285K</p></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#F0F8FF;"><span>🌿</span></div><div class="flex-1 text-xs"><p class="font-semibold">Kem CICA</p><p class="text-gray-400">×2</p></div><p class="font-bold text-sm" style="color:#E8839A;">440K</p></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#FFF5F5;"><span>🍑</span></div><div class="flex-1 text-xs"><p class="font-semibold">Toner Hoa Đào</p><p class="text-gray-400">×1</p></div><p class="font-bold text-sm" style="color:#E8839A;">195K</p></div>
+        </div>
+        <div class="border-t border-kpink/20 pt-4 space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính</span><span>920.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Giảm giá</span><span class="text-red-400">-92.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span style="color:#E8839A;" class="font-semibold">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-kpink/20 pt-4 flex justify-between font-bold text-lg mb-5"><span>Tổng</span><span style="color:#E8839A;">828.000₫</span></div>
+        <a href="payment.html" class="block w-full text-white py-3.5 rounded-2xl font-bold text-center text-sm" style="background:#E8839A;">Tiếp Tục →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer style="background:#3d2b3d;" class="text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-kpink text-xs">© 2025 Hana Beauty.</p></div></footer>
+</body>
+</html>

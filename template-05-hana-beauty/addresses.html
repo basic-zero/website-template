@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Địa Chỉ - Hana Beauty</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{kpink:'#FFB7C5','kpink-dark':'#E8839A',lilac:'#C8B2DB',mint:'#B2DBC8'}}}}</script>
+</head>
+<body style="background-color:#FFF8FA;" class="font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-kpink/30">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl" style="color:#3d2b3d;">Hana<span style="color:#FFB7C5;">Beauty</span></span></a>
+    <a href="cart.html" class="relative text-gray-500 hover:text-kpink-dark"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-7xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <aside class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-5 shadow-sm mb-4">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl text-white" style="background:#E8839A;">L</div>
+          <div><p class="font-semibold" style="color:#3d2b3d;">Phạm Thùy Linh</p><p class="text-xs font-medium" style="color:#E8839A;">🌸 Hana Member</p></div>
+        </div>
+        <nav class="space-y-1">
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-kpink-dark hover:bg-kpink/10 rounded-xl transition">👤 Thông Tin</a>
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-kpink-dark hover:bg-kpink/10 rounded-xl transition">📦 Đơn Hàng</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2 text-sm rounded-xl font-semibold" style="color:#E8839A;background:#FFF0F5;">📍 Địa Chỉ</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-kpink-dark hover:bg-kpink/10 rounded-xl transition">❤️ Yêu Thích</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-kpink-dark hover:bg-kpink/10 rounded-xl transition">🌸 Hana Points</a>
+          <hr class="border-kpink/20 my-2"/>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-red-400 rounded-xl transition">⬅️ Đăng Xuất</a>
+        </nav>
+      </div>
+    </aside>
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-2xl font-bold" style="color:#3d2b3d;">Địa Chỉ Của Tôi 📍</h1>
+        <button onclick="showAddForm()" class="text-white px-5 py-2.5 rounded-xl text-sm font-semibold" style="background:#E8839A;">+ Thêm Địa Chỉ</button>
+      </div>
+      <div id="add-form" class="hidden bg-white rounded-2xl shadow-sm p-6 mb-6">
+        <h3 class="font-bold mb-5" style="color:#3d2b3d;">Thêm Địa Chỉ Mới</h3>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Họ Và Tên *</label><input type="text" placeholder="Phạm Thị Thùy Linh" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Số Điện Thoại *</label><input type="tel" placeholder="0987 654 321" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+          </div>
+          <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Địa Chỉ *</label><input type="text" placeholder="Số nhà, tên đường" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Tỉnh/Thành</label><select class="w-full border border-kpink/40 rounded-xl px-3 py-2.5 text-sm outline-none" style="background:#FFF8FA;"><option>TP. HCM</option><option>Hà Nội</option></select></div>
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Quận/Huyện</label><select class="w-full border border-kpink/40 rounded-xl px-3 py-2.5 text-sm outline-none" style="background:#FFF8FA;"><option>Quận 3</option><option>Quận 1</option></select></div>
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Phường/Xã</label><select class="w-full border border-kpink/40 rounded-xl px-3 py-2.5 text-sm outline-none" style="background:#FFF8FA;"><option>Phường 5</option></select></div>
+          </div>
+          <label class="flex items-center gap-2 cursor-pointer"><input type="checkbox" class="accent-kpink-dark"/><span class="text-sm text-gray-600">Đặt làm địa chỉ mặc định</span></label>
+          <div class="flex gap-3"><button class="text-white px-6 py-2.5 rounded-xl text-sm font-semibold" style="background:#E8839A;">Lưu Địa Chỉ</button><button onclick="hideAddForm()" class="border border-kpink/40 px-6 py-2.5 rounded-xl text-sm hover:bg-kpink/10" style="color:#E8839A;">Hủy</button></div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white rounded-2xl shadow-sm p-5 relative" style="border:2px solid #E8839A;">
+          <span class="absolute top-4 right-4 text-white text-xs px-3 py-1 rounded-full" style="background:#E8839A;">🌸 Mặc Định</span>
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-2xl">🏠</span>
+            <div><p class="font-bold" style="color:#3d2b3d;">Nhà Riêng</p><p class="font-semibold mt-1">Phạm Thị Thùy Linh</p><p class="text-gray-500 text-sm">0987 654 321</p><p class="text-gray-600 text-sm mt-1">78 Nguyễn Đình Chiểu, Phường 5, Quận 3, TP.HCM</p></div>
+          </div>
+          <div class="flex gap-2 border-t border-gray-100 pt-3">
+            <button class="text-xs font-semibold" style="color:#E8839A;">✏️ Chỉnh Sửa</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm p-5">
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-2xl">🏫</span>
+            <div><p class="font-bold" style="color:#3d2b3d;">Ký Túc Xá</p><p class="font-semibold mt-1">Phạm Thị Thùy Linh</p><p class="text-gray-500 text-sm">0987 654 321</p><p class="text-gray-600 text-sm mt-1">KTX Đại Học Quốc Gia, Khu Phố 6, Thủ Đức, TP.HCM</p></div>
+          </div>
+          <div class="flex gap-2 border-t border-gray-100 pt-3">
+            <button class="text-xs font-semibold" style="color:#E8839A;">✏️ Chỉnh Sửa</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-xs" style="color:#E8839A;">📌 Đặt Mặc Định</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer style="background:#3d2b3d;" class="text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-kpink text-xs">© 2025 Hana Beauty.</p></div></footer>
+<script>
+function showAddForm(){document.getElementById('add-form').classList.remove('hidden');}
+function hideAddForm(){document.getElementById('add-form').classList.add('hidden');}
+</script>
+</body>
+</html>

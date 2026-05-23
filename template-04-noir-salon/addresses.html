@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Địa Chỉ - Noir Salon</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#1B2A4A','navy-dark':'#0D1829',gold:'#C9A84C',ivory:'#FAFAF7'}}}}</script>
+</head>
+<body class="bg-ivory font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-navy/98 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">✂️</span><span class="font-bold text-xl text-ivory">Noir<span class="text-gold">Salon</span></span></a>
+    <a href="cart.html" class="text-gray-300 hover:text-gold"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-7xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <aside class="lg:col-span-1">
+      <div class="bg-navy rounded-xl p-5 border border-gold/20 mb-4">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center text-gold font-bold text-xl">K</div>
+          <div><p class="font-semibold text-ivory">Trần Minh Khoa</p><p class="text-gold text-xs font-medium">✂️ Khách VIP Gold</p></div>
+        </div>
+        <nav class="space-y-1">
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">👤 Thông Tin</a>
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">📦 Lịch Sử Đặt</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gold bg-gold/10 rounded-lg font-semibold">📍 Địa Chỉ</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">🗓️ Lịch Hẹn</a>
+          <hr class="border-gold/10 my-2"/>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-red-400 rounded-lg transition">⬅️ Đăng Xuất</a>
+        </nav>
+      </div>
+    </aside>
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-2xl font-bold text-navy-dark">Địa Chỉ Nhận Hàng</h1>
+        <button onclick="showAddForm()" class="bg-gold text-navy-dark px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-yellow-500 transition">+ Thêm Địa Chỉ</button>
+      </div>
+      <div id="add-form" class="hidden bg-white rounded-xl shadow-sm p-6 mb-6 border border-gray-100">
+        <h3 class="font-bold text-navy-dark mb-5">Thêm Địa Chỉ Mới</h3>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Họ Và Tên *</label><input type="text" placeholder="Trần Minh Khoa" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Số Điện Thoại *</label><input type="tel" placeholder="0934 567 890" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Địa Chỉ *</label><input type="text" placeholder="Số nhà, tên đường" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Tỉnh/Thành</label><select class="w-full bg-ivory border border-gold/30 rounded-lg px-3 py-2.5 text-sm outline-none"><option>Hà Nội</option><option>TP. HCM</option><option>Đà Nẵng</option></select></div>
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Quận/Huyện</label><select class="w-full bg-ivory border border-gold/30 rounded-lg px-3 py-2.5 text-sm outline-none"><option>Hoàn Kiếm</option><option>Ba Đình</option><option>Đống Đa</option></select></div>
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Phường/Xã</label><select class="w-full bg-ivory border border-gold/30 rounded-lg px-3 py-2.5 text-sm outline-none"><option>P. Tràng Tiền</option><option>P. Hàng Bạc</option></select></div>
+          </div>
+          <div class="flex gap-3"><button class="bg-gold text-navy-dark px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-yellow-500">Lưu Địa Chỉ</button><button onclick="hideAddForm()" class="border border-gold/30 text-gold px-6 py-2.5 rounded-lg text-sm hover:bg-gold/5">Hủy</button></div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white rounded-xl shadow-sm p-5 border-2 border-gold/40 relative">
+          <span class="absolute top-4 right-4 bg-gold text-navy-dark text-xs px-3 py-1 rounded-full font-bold">✓ Mặc Định</span>
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-2xl">🏠</span>
+            <div><p class="font-bold text-navy-dark">Nhà Riêng</p><p class="font-semibold mt-1">Trần Minh Khoa</p><p class="text-gray-500 text-sm">0934 567 890</p><p class="text-gray-600 text-sm mt-1">45 Lý Thường Kiệt, P. Hàng Bài, Q. Hoàn Kiếm, Hà Nội</p></div>
+          </div>
+          <div class="flex gap-2 border-t border-gray-100 pt-3">
+            <button class="text-gold text-xs font-semibold hover:text-yellow-600">✏️ Chỉnh Sửa</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-2xl">🏢</span>
+            <div><p class="font-bold text-navy-dark">Văn Phòng</p><p class="font-semibold mt-1">Trần Minh Khoa</p><p class="text-gray-500 text-sm">0934 567 890</p><p class="text-gray-600 text-sm mt-1">Tầng 12, Tòa nhà Sun Red River, 23 Phan Chu Trinh, Hà Nội</p></div>
+          </div>
+          <div class="flex gap-2 border-t border-gray-100 pt-3">
+            <button class="text-gold text-xs font-semibold hover:text-yellow-600">✏️ Chỉnh Sửa</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-gold text-xs hover:text-yellow-600">📌 Đặt Mặc Định</button>
+            <span class="text-gray-200">|</span>
+            <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-navy-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gold/60 text-xs">© 2025 Noir Salon.</p></div></footer>
+<script>
+function showAddForm(){document.getElementById('add-form').classList.remove('hidden');}
+function hideAddForm(){document.getElementById('add-form').classList.add('hidden');}
+</script>
+</body>
+</html>

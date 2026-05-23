@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - PinkBloom</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{pink:'#FF1493','pink-dark':'#C71585','pink-light':'#FFB6C1',rose:'#FFE4E8','dark':'#1a1a2e'}}}}</script>
+</head>
+<body class="bg-rose text-gray-800 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-pink/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl text-dark">Pink<span class="text-pink">Bloom</span></span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="index.html" class="text-gray-600 hover:text-pink transition">Trang Chủ</a>
+      <a href="products.html" class="text-gray-600 hover:text-pink transition">Sản Phẩm</a>
+      <a href="blog.html" class="text-pink font-semibold">Blog</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="login.html" class="text-gray-600 hover:text-pink"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-600 hover:text-pink"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-pink text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a>
+    </div>
+  </div>
+</nav>
+<section class="pt-24 pb-12 bg-gradient-to-br from-pink to-pink-dark text-white text-center">
+  <span class="bg-white/20 text-white text-xs px-4 py-1 rounded-full">💗 Beauty Diaries</span>
+  <h1 class="text-4xl font-bold mt-4 mb-3">PinkBloom Blog</h1>
+  <p class="text-pink-light max-w-lg mx-auto">Makeup tips, skincare secrets & trend alerts dành cho beauty lovers 💅</p>
+</section>
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col md:flex-row gap-4 mb-10">
+    <div class="relative flex-1 max-w-md">
+      <input type="text" placeholder="Tìm bài viết..." class="w-full bg-white border border-pink/30 focus:border-pink rounded-xl px-4 py-3 pl-10 text-sm outline-none"/>
+      <svg class="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      <button class="bg-pink text-white px-4 py-2 rounded-full text-xs font-semibold">Tất Cả</button>
+      <button class="bg-white border border-pink/30 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-pink hover:text-pink transition">Makeup Tips</button>
+      <button class="bg-white border border-pink/30 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-pink hover:text-pink transition">Skincare</button>
+      <button class="bg-white border border-pink/30 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-pink hover:text-pink transition">Trend Alert</button>
+      <button class="bg-white border border-pink/30 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-pink hover:text-pink transition">Review</button>
+    </div>
+  </div>
+  <!-- Featured -->
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-12 group hover:shadow-md transition">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="aspect-video lg:aspect-auto bg-gradient-to-br from-pink/20 to-rose flex items-center justify-center min-h-64"><span class="text-8xl opacity-40">💄</span></div>
+      <div class="p-10 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-3"><span class="bg-pink text-white text-xs px-3 py-1 rounded-full font-semibold">🔥 Trending</span><span class="text-gray-400 text-xs">18 tháng 5, 2025</span></div>
+        <span class="bg-pink/10 text-pink text-xs px-3 py-1 rounded-full font-medium w-fit mb-3">Makeup Tips</span>
+        <h2 class="text-2xl font-bold mb-4 group-hover:text-pink transition"><a href="blog-post.html">5 Bước Makeup Tự Nhiên Đi Học Không Bị Nhắc Nhở</a></h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">Makeup đẹp mà vẫn trông "no-makeup" — bí kíp của các beauty blogger Gen Z để vừa đẹp vừa qua được "no makeup at school"...</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-pink/20 rounded-full flex items-center justify-center text-pink font-bold text-sm">B</div>
+            <div><p class="text-sm font-semibold">Bảo Trân · PinkBloom</p><p class="text-gray-400 text-xs">Beauty Editor</p></div>
+          </div>
+          <a href="blog-post.html" class="text-pink font-semibold text-sm hover:text-pink-dark">Đọc Ngay →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-pink/15 to-rose flex items-center justify-center"><span class="text-5xl opacity-50">✨</span></div>
+      <div class="p-5">
+        <span class="bg-pink/10 text-pink text-xs px-3 py-1 rounded-full">Skincare</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-pink transition"><a href="blog-post.html">Glass Skin Là Gì & Cách Đạt Được Ở Nhà</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Làn da như kính không còn là đặc quyền của idol Hàn — chúng mình sẽ chỉ bạn từng bước nhỏ...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>12/05/2025 · 5 phút</span><a href="blog-post.html" class="text-pink hover:text-pink-dark">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-pink/15 to-rose flex items-center justify-center"><span class="text-5xl opacity-50">🌸</span></div>
+      <div class="p-5">
+        <span class="bg-pink/10 text-pink text-xs px-3 py-1 rounded-full">Trend Alert</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-pink transition"><a href="blog-post.html">Màu Môi Hot Nhất Hè 2025: Coral & Peach</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Forget red lips — summer 2025 belongs to warm corals and juicy peach tones. Cùng update tủ son nhé!</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>05/05/2025 · 4 phút</span><a href="blog-post.html" class="text-pink hover:text-pink-dark">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-pink/15 to-rose flex items-center justify-center"><span class="text-5xl opacity-50">💖</span></div>
+      <div class="p-5">
+        <span class="bg-pink/10 text-pink text-xs px-3 py-1 rounded-full">Review</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-pink transition"><a href="blog-post.html">Review Son Kem PinkBloom After 30 Days</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Mình đã dùng bộ son kem matte PinkBloom trong cả tháng. Đây là honest review không sponsored...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>28/04/2025 · 7 phút</span><a href="blog-post.html" class="text-pink hover:text-pink-dark">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-pink/15 to-rose flex items-center justify-center"><span class="text-5xl opacity-50">👁️</span></div>
+      <div class="p-5">
+        <span class="bg-pink/10 text-pink text-xs px-3 py-1 rounded-full">Makeup Tips</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-pink transition"><a href="blog-post.html">Kẻ Mắt Mèo Chuẩn Như Chuyên Gia</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Cat-eye không khó như bạn nghĩ! Chỉ cần nắm 3 bí kíp nhỏ này là có thể kẻ đều hai bên...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>20/04/2025 · 6 phút</span><a href="blog-post.html" class="text-pink hover:text-pink-dark">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-pink/15 to-rose flex items-center justify-center"><span class="text-5xl opacity-50">🧴</span></div>
+      <div class="p-5">
+        <span class="bg-pink/10 text-pink text-xs px-3 py-1 rounded-full">Skincare</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-pink transition"><a href="blog-post.html">Skincare Routine Cho Da Mụn Tuổi Teen</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Nổi mụn tuổi teen là bình thường — nhưng skincare đúng cách sẽ giúp bạn tự tin hơn rất nhiều...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>15/04/2025 · 8 phút</span><a href="blog-post.html" class="text-pink hover:text-pink-dark">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-pink/15 to-rose flex items-center justify-center"><span class="text-5xl opacity-50">🌟</span></div>
+      <div class="p-5">
+        <span class="bg-pink/10 text-pink text-xs px-3 py-1 rounded-full">Trend Alert</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-pink transition"><a href="blog-post.html">Blush Draping — Xu Hướng Má Hồng Hot Nhất TikTok</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Không chỉ là má hồng thông thường — blush draping đang thay đổi cách chúng ta tán phấn hoàn toàn...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>10/04/2025 · 5 phút</span><a href="blog-post.html" class="text-pink hover:text-pink-dark">Đọc →</a></div>
+      </div>
+    </article>
+  </div>
+  <div class="flex justify-center gap-2 mt-10">
+    <button class="w-10 h-10 bg-pink text-white rounded-full font-bold text-sm">1</button>
+    <button class="w-10 h-10 bg-white border border-pink/30 text-gray-600 rounded-full text-sm hover:border-pink transition">2</button>
+    <button class="w-10 h-10 bg-white border border-pink/30 text-gray-600 rounded-full text-sm hover:border-pink transition">3</button>
+  </div>
+</div>
+<footer class="bg-dark text-white py-10 mt-12"><div class="max-w-7xl mx-auto px-4 text-center"><div class="flex items-center justify-center gap-2 mb-3"><span class="text-2xl">🌸</span><span class="font-bold text-xl">Pink<span class="text-pink-light">Bloom</span></span></div><p class="text-pink-light text-xs">© 2025 PinkBloom. Made with 💗</p></div></footer>
+</body>
+</html>

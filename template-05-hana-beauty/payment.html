@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh Toán - Hana Beauty</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{kpink:'#FFB7C5','kpink-dark':'#E8839A',lilac:'#C8B2DB',mint:'#B2DBC8'}}}}</script>
+</head>
+<body style="background-color:#FFF8FA;" class="font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-kpink/30">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl" style="color:#3d2b3d;">Hana<span style="color:#FFB7C5;">Beauty</span></span></a>
+    <a href="order.html" class="text-sm" style="color:#E8839A;">← Quay Lại</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-3 mb-8 text-sm">
+    <span class="w-7 h-7 bg-kpink/30 rounded-full flex items-center justify-center text-xs" style="color:#E8839A;">✓</span><span class="text-gray-400">Giỏ hàng</span>
+    <div class="h-0.5 w-8" style="background:#E8839A;"></div>
+    <span class="w-7 h-7 bg-kpink/30 rounded-full flex items-center justify-center text-xs" style="color:#E8839A;">✓</span><span class="text-gray-400">Đặt hàng</span>
+    <div class="h-0.5 w-8" style="background:#E8839A;"></div>
+    <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs text-white font-bold" style="background:#E8839A;">3</span>
+    <span class="font-semibold" style="color:#E8839A;">Thanh toán</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h2 class="font-bold mb-5" style="color:#3d2b3d;">💳 Phương Thức Thanh Toán</h2>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 p-4 border-2 border-kpink-dark rounded-xl cursor-pointer" style="background:#FFF0F5;" onclick="showCard(true)">
+            <input type="radio" name="pay" checked class="accent-kpink-dark"/><span>💳</span><div><p class="font-semibold text-sm">Thẻ Ngân Hàng</p><p class="text-gray-400 text-xs">Visa, Mastercard</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-kpink/30 rounded-xl cursor-pointer" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-kpink-dark"/><span>📱</span><div><p class="font-semibold text-sm">MoMo / ZaloPay</p><p class="text-gray-400 text-xs">Quét mã QR</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-kpink/30 rounded-xl cursor-pointer" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-kpink-dark"/><span>💵</span><div><p class="font-semibold text-sm">COD - Thu Tiền Khi Giao</p><p class="text-gray-400 text-xs">Không thu thêm phí</p></div>
+          </label>
+        </div>
+        <div id="card-form" class="mt-5 space-y-4 p-4 rounded-xl" style="background:#FFF8FA;">
+          <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Số Thẻ</label><input type="text" placeholder="0000 0000 0000 0000" class="w-full bg-white border border-kpink/30 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Tên Chủ Thẻ</label><input type="text" placeholder="PHAM THUY LINH" class="w-full bg-white border border-kpink/30 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Hết Hạn</label><input type="text" placeholder="MM/YY" class="w-full bg-white border border-kpink/30 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">CVV</label><input type="text" placeholder="123" class="w-full bg-white border border-kpink/30 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm">
+        <h2 class="font-bold mb-3" style="color:#3d2b3d;">📍 Giao Đến</h2>
+        <div class="flex justify-between">
+          <div><p class="font-semibold">Phạm Thùy Linh</p><p class="text-gray-500 text-sm">0987 654 321</p><p class="text-gray-600 text-sm mt-1">78 Nguyễn Đình Chiểu, P.5, Q.3, TP.HCM</p></div>
+          <a href="order.html" class="text-xs font-semibold" style="color:#E8839A;">Thay đổi</a>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24">
+        <h2 class="font-bold mb-4" style="color:#3d2b3d;">Tổng Kết 🌸</h2>
+        <div class="space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính</span><span>920.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Giảm 10%</span><span class="text-red-400">-92.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span style="color:#E8839A;" class="font-semibold">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-kpink/20 pt-4 flex justify-between font-bold text-xl mb-4"><span>Tổng</span><span style="color:#E8839A;">828.000₫</span></div>
+        <p class="text-xs mb-4" style="color:#E8839A;">🌸 Tích 828 Hana Points từ đơn này!</p>
+        <button onclick="window.location.href='orders.html'" class="w-full text-white py-3.5 rounded-2xl font-bold text-sm" style="background:#E8839A;">Xác Nhận Thanh Toán 🌸</button>
+        <div class="mt-4 flex justify-center gap-4 text-xs text-gray-400"><span>🔒 SSL</span><span>✓ An toàn</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer style="background:#3d2b3d;" class="text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-kpink text-xs">© 2025 Hana Beauty.</p></div></footer>
+<script>function showCard(show){document.getElementById('card-form').classList.toggle('hidden',!show);}</script>
+</body>
+</html>

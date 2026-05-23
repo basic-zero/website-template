@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh Toán - Noir Salon</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#1B2A4A','navy-dark':'#0D1829',gold:'#C9A84C',ivory:'#FAFAF7'}}}}</script>
+</head>
+<body class="bg-ivory font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-navy/98 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">✂️</span><span class="font-bold text-xl text-ivory">Noir<span class="text-gold">Salon</span></span></a>
+    <a href="order.html" class="text-gold text-sm">← Quay Lại</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-2 mb-8 text-xs text-gray-400">
+    <span class="text-gold font-bold">✓ Giỏ hàng</span><span>→</span><span class="text-gold font-bold">✓ Đặt hàng</span><span>→</span><span class="font-bold text-gold">3 Thanh toán</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-navy-dark mb-5">Phương Thức Thanh Toán</h2>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 p-4 border-2 border-gold rounded-xl cursor-pointer bg-gold/5" onclick="showCard(true)">
+            <input type="radio" name="pay" checked class="accent-gold"/><span class="text-lg">💳</span><div><p class="font-semibold text-sm">Thẻ Tín Dụng / Ghi Nợ</p><p class="text-gray-400 text-xs">Visa, Mastercard, JCB</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-gold/50 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-gold"/><span class="text-lg">📱</span><div><p class="font-semibold text-sm">Ví Điện Tử</p><p class="text-gray-400 text-xs">MoMo, ZaloPay, VNPay</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-gold/50 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-gold"/><span class="text-lg">💵</span><div><p class="font-semibold text-sm">Thanh Toán Tại Salon / COD</p><p class="text-gray-400 text-xs">Trả tại quầy khi đến làm tóc</p></div>
+          </label>
+        </div>
+        <div id="card-form" class="mt-5 space-y-4 p-4 bg-ivory rounded-xl">
+          <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Số Thẻ</label><input type="text" placeholder="1234 5678 9012 3456" class="w-full bg-white border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Tên Chủ Thẻ</label><input type="text" placeholder="TRAN MINH KHOA" class="w-full bg-white border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Hết Hạn</label><input type="text" placeholder="MM/YY" class="w-full bg-white border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">CVV</label><input type="text" placeholder="***" class="w-full bg-white border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-navy-dark mb-3">Xác Nhận Lịch Hẹn</h2>
+        <div class="flex justify-between items-start">
+          <div><p class="font-semibold">Nhuộm Highlight Balayage</p><p class="text-gray-500 text-sm mt-1">Stylist: Nguyễn Thành Đạt | 28/05/2025 lúc 10:00</p><p class="text-gray-500 text-sm">Khách: Trần Minh Khoa · 0934 567 890</p></div>
+          <a href="order.html" class="text-gold text-xs font-semibold">Đổi</a>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-navy rounded-xl p-6 text-white sticky top-24">
+        <h2 class="font-bold text-gold mb-4">Tổng Kết Đơn</h2>
+        <div class="space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-300">Dịch vụ</span><span>1.200.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-300">Sản phẩm</span><span>380.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-300">Vận chuyển</span><span class="text-gold">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-gold/20 pt-4 flex justify-between font-bold text-xl mb-5"><span>Tổng</span><span class="text-gold">1.580.000₫</span></div>
+        <button onclick="window.location.href='orders.html'" class="w-full bg-gold text-navy-dark py-3.5 rounded-xl font-bold hover:bg-yellow-500 transition text-sm">Xác Nhận Đặt Lịch ✂️</button>
+        <div class="mt-4 flex justify-center gap-4 text-xs text-gray-400"><span>🔒 SSL</span><span>✓ PCI DSS</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-navy-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gold/60 text-xs">© 2025 Noir Salon.</p></div></footer>
+<script>function showCard(show){document.getElementById('card-form').classList.toggle('hidden',!show);}</script>
+</body>
+</html>

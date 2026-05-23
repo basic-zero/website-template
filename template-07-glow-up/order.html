@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đặt Hàng - Glow Up</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E05555',purple:'#7C3AED',yellow:'#FFD93D',dark:'#0F0F0F'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-1"><span class="text-2xl">✨</span><span class="font-black text-xl text-dark">Glow<span class="text-coral">Up</span></span></a>
+    <a href="cart.html" class="text-coral text-sm font-bold">← Giỏ Hàng</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-2 text-xs text-gray-400 mb-8">
+    <span class="text-coral font-bold">✓ Giỏ hàng</span><span>›</span><span class="font-black text-dark">2. Đặt hàng</span><span>›</span><span>3. Thanh toán</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-black text-dark mb-5">📦 Thông Tin Giao Hàng</h2>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-coral text-xs font-bold uppercase block mb-1">Họ</label><input type="text" placeholder="Nguyễn" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+            <div><label class="text-coral text-xs font-bold uppercase block mb-1">Tên</label><input type="text" placeholder="Ngọc Anh" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+          </div>
+          <div><label class="text-coral text-xs font-bold uppercase block mb-1">Email</label><input type="email" placeholder="ngocanh@email.com" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+          <div><label class="text-coral text-xs font-bold uppercase block mb-1">Số Điện Thoại</label><input type="tel" placeholder="0912 345 678" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+          <div><label class="text-coral text-xs font-bold uppercase block mb-1">Địa Chỉ</label><input type="text" placeholder="Số nhà, tên đường" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-coral text-xs font-bold uppercase block mb-1">Tỉnh/Thành</label><select class="w-full bg-gray-50 border-2 border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none"><option>TP. HCM</option><option>Hà Nội</option><option>Đà Nẵng</option></select></div>
+            <div><label class="text-coral text-xs font-bold uppercase block mb-1">Quận/Huyện</label><select class="w-full bg-gray-50 border-2 border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none"><option>Quận 3</option><option>Quận 1</option><option>Bình Thạnh</option></select></div>
+            <div><label class="text-coral text-xs font-bold uppercase block mb-1">Phường/Xã</label><select class="w-full bg-gray-50 border-2 border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none"><option>P. 6</option><option>P. 5</option></select></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-black text-dark mb-4">🚚 Phương Thức Vận Chuyển</h2>
+        <div class="space-y-3">
+          <label class="flex items-center justify-between p-4 border-2 border-coral rounded-2xl cursor-pointer bg-coral/5">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" checked class="accent-coral"/><div><p class="font-black text-sm">Giao Hàng Tiêu Chuẩn</p><p class="text-gray-400 text-xs">2-3 ngày · GHN/GHTK</p></div></div>
+            <span class="text-coral font-black text-sm">Miễn phí</span>
+          </label>
+          <label class="flex items-center justify-between p-4 border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-coral/30 transition">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" class="accent-coral"/><div><p class="font-black text-sm">Giao Nhanh Same-Day ⚡</p><p class="text-gray-400 text-xs">Trong ngày (TP.HCM, Hà Nội)</p></div></div>
+            <span class="font-black text-sm">45.000₫</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24 border border-gray-100">
+        <h2 class="font-black text-dark mb-4">Đơn Hàng</h2>
+        <div class="space-y-3 mb-4">
+          <div class="flex items-center gap-3"><div class="w-10 h-10 bg-yellow/20 rounded-xl flex items-center justify-center"><span>🌟</span></div><div class="flex-1 text-xs"><p class="font-bold">Glow Serum Vitamin C</p><p class="text-gray-400">30ml ×1</p></div><p class="text-coral font-black text-sm">490K</p></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 bg-purple/10 rounded-xl flex items-center justify-center"><span>💜</span></div><div class="flex-1 text-xs"><p class="font-bold">Hydra Barrier Cream</p><p class="text-gray-400">50ml ×1</p></div><p class="text-coral font-black text-sm">380K</p></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 bg-coral/10 rounded-xl flex items-center justify-center"><span>☀️</span></div><div class="flex-1 text-xs"><p class="font-bold">SPF 50+ Shield</p><p class="text-gray-400">50ml ×1</p></div><p class="text-coral font-black text-sm">320K</p></div>
+        </div>
+        <div class="border-t-2 border-gray-100 pt-4 space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính</span><span>1.190.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-coral font-bold">Miễn phí</span></div>
+        </div>
+        <div class="border-t-2 border-gray-100 pt-4 flex justify-between font-black text-lg mb-5"><span>Tổng</span><span class="text-coral">1.190.000₫</span></div>
+        <a href="payment.html" class="block w-full bg-coral text-white py-4 rounded-2xl font-black text-center hover:bg-coral-dark transition">Tiếp Tục →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-500 text-xs">© 2025 Glow Up Beauty.</p></div></footer>
+</body>
+</html>

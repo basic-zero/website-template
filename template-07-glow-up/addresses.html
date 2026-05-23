@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Địa Chỉ - Glow Up</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E05555',purple:'#7C3AED',yellow:'#FFD93D',dark:'#0F0F0F'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-1"><span class="text-2xl">✨</span><span class="font-black text-xl text-dark">Glow<span class="text-coral">Up</span></span></a>
+    <a href="cart.html" class="relative text-gray-600 hover:text-coral"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1">
+      <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+        <div class="bg-gradient-to-br from-yellow via-coral to-purple p-5 text-center">
+          <div class="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl font-black text-white">N</div>
+          <p class="font-black text-white">Nguyễn Ngọc Anh</p>
+          <p class="text-white/70 text-xs mt-0.5">✨ Glow Member</p>
+        </div>
+        <div class="p-4 text-center bg-yellow/5 border-b border-gray-100">
+          <p class="text-2xl font-black text-coral">3.190</p>
+          <p class="text-xs text-gray-500 font-medium">Glow Points</p>
+          <div class="mt-2 bg-gray-200 rounded-full h-2"><div class="bg-coral h-2 rounded-full" style="width:64%"></div></div>
+          <p class="text-xs text-gray-400 mt-1">Còn 1.810 pts → Super Glow ⚡</p>
+        </div>
+        <nav class="p-3">
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm"><span>📦</span>Đơn Hàng</a>
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>👤</span>Hồ Sơ</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl bg-coral/10 text-coral font-black text-sm mt-1"><span>📍</span>Địa Chỉ</a>
+          <a href="blog.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>✨</span>Vibe Blog</a>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>🚪</span>Đăng Xuất</a>
+        </nav>
+      </div>
+    </aside>
+    <!-- Main -->
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-xl font-black text-dark">Địa Chỉ Giao Hàng 📍</h1>
+        <button onclick="toggleAddForm()" class="bg-coral text-white px-4 py-2 rounded-2xl text-sm font-black hover:bg-coral-dark transition">+ Thêm Địa Chỉ</button>
+      </div>
+      <!-- Add form -->
+      <div id="add-form" class="hidden bg-white rounded-3xl p-6 shadow-sm border-2 border-coral/30 mb-6">
+        <h3 class="font-black text-dark mb-4">Địa Chỉ Mới 🆕</h3>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Họ Tên</label><input type="text" placeholder="Nguyễn Ngọc Anh" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Số ĐT</label><input type="tel" placeholder="0912 345 678" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          </div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Địa Chỉ</label><input type="text" placeholder="Số nhà, tên đường" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Tỉnh/Thành</label><select class="w-full bg-gray-50 border-2 border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none"><option>TP. HCM</option><option>Hà Nội</option><option>Đà Nẵng</option></select></div>
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Quận/Huyện</label><select class="w-full bg-gray-50 border-2 border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none"><option>Quận 3</option><option>Quận 1</option></select></div>
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Phường/Xã</label><select class="w-full bg-gray-50 border-2 border-gray-200 rounded-xl px-3 py-2.5 text-sm outline-none"><option>P. 6</option><option>P. 5</option></select></div>
+          </div>
+          <div class="flex gap-4">
+            <label class="flex items-center gap-2 text-sm cursor-pointer font-bold"><input type="radio" name="addr-type" checked class="accent-coral"/><span>🏠 Nhà</span></label>
+            <label class="flex items-center gap-2 text-sm cursor-pointer font-bold"><input type="radio" name="addr-type" class="accent-coral"/><span>🏢 Văn phòng</span></label>
+            <label class="flex items-center gap-2 text-sm cursor-pointer font-bold"><input type="radio" name="addr-type" class="accent-coral"/><span>📍 Khác</span></label>
+          </div>
+          <label class="flex items-center gap-2 text-sm cursor-pointer font-medium text-gray-600"><input type="checkbox" class="accent-coral"/><span>Đặt làm địa chỉ mặc định</span></label>
+          <div class="flex gap-3 pt-2">
+            <button onclick="toggleAddForm()" class="flex-1 border-2 border-gray-200 text-gray-600 py-2.5 rounded-2xl text-sm font-black hover:bg-gray-50 transition">Hủy</button>
+            <button onclick="toggleAddForm()" class="flex-1 bg-coral text-white py-2.5 rounded-2xl text-sm font-black hover:bg-coral-dark transition">Lưu ✨</button>
+          </div>
+        </div>
+      </div>
+      <!-- Address cards -->
+      <div class="space-y-4">
+        <div class="bg-white rounded-3xl p-5 shadow-sm border-2 border-coral">
+          <div class="flex justify-between items-start mb-3">
+            <div class="flex items-center gap-2">
+              <span class="text-lg">🏠</span>
+              <span class="font-black text-coral text-sm">Nhà Riêng</span>
+              <span class="bg-coral text-white text-xs px-2 py-0.5 rounded-full font-black">Mặc Định</span>
+            </div>
+            <div class="flex gap-2 text-xs">
+              <button class="text-coral font-black hover:text-coral-dark">Sửa</button>
+              <span class="text-gray-300">|</span>
+              <button class="text-red-400 hover:text-red-600 font-bold">Xóa</button>
+            </div>
+          </div>
+          <p class="font-black text-sm">Nguyễn Ngọc Anh</p>
+          <p class="text-gray-500 text-sm mt-0.5 font-medium">0912 345 678</p>
+          <p class="text-gray-600 text-sm mt-1">52 Nguyễn Thị Minh Khai, P. 6, Q. 3, TP. Hồ Chí Minh</p>
+        </div>
+        <div class="bg-white rounded-3xl p-5 shadow-sm border-2 border-gray-100">
+          <div class="flex justify-between items-start mb-3">
+            <div class="flex items-center gap-2">
+              <span class="text-lg">🏫</span>
+              <span class="font-black text-gray-700 text-sm">KTX / Trường</span>
+            </div>
+            <div class="flex gap-2 text-xs">
+              <button class="text-coral font-black hover:text-coral-dark">Sửa</button>
+              <span class="text-gray-300">|</span>
+              <button class="text-purple font-black hover:text-purple/70 text-xs">Đặt Mặc Định</button>
+              <span class="text-gray-300">|</span>
+              <button class="text-red-400 hover:text-red-600 font-bold">Xóa</button>
+            </div>
+          </div>
+          <p class="font-black text-sm">Nguyễn Ngọc Anh</p>
+          <p class="text-gray-500 text-sm mt-0.5 font-medium">0912 345 678</p>
+          <p class="text-gray-600 text-sm mt-1">KTX Khu B, Đại học Kinh tế TP.HCM, P. Linh Xuân, TP. Thủ Đức</p>
+        </div>
+        <div class="bg-white rounded-3xl p-5 shadow-sm border-2 border-gray-100">
+          <div class="flex justify-between items-start mb-3">
+            <div class="flex items-center gap-2">
+              <span class="text-lg">🏢</span>
+              <span class="font-black text-gray-700 text-sm">Văn Phòng</span>
+            </div>
+            <div class="flex gap-2 text-xs">
+              <button class="text-coral font-black hover:text-coral-dark">Sửa</button>
+              <span class="text-gray-300">|</span>
+              <button class="text-purple font-black hover:text-purple/70 text-xs">Đặt Mặc Định</button>
+              <span class="text-gray-300">|</span>
+              <button class="text-red-400 hover:text-red-600 font-bold">Xóa</button>
+            </div>
+          </div>
+          <p class="font-black text-sm">Nguyễn Ngọc Anh</p>
+          <p class="text-gray-500 text-sm mt-0.5 font-medium">0912 345 678</p>
+          <p class="text-gray-600 text-sm mt-1">Tầng 8, Toà nhà Viettel, 285 Cách Mạng Tháng 8, P. 12, Q. 10, TP.HCM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8 mt-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-500 text-xs">© 2025 Glow Up Beauty. Stay glowing ✨</p></div></footer>
+<script>function toggleAddForm(){document.getElementById('add-form').classList.toggle('hidden');}</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đơn Hàng - Dermis Lab</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{clinic:'#003580',teal:'#00A896','clinic-dark':'#002060'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-clinic/10 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🔬</span><span class="font-bold text-xl text-clinic">Dermis<span class="text-teal">Lab</span></span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm"><a href="index.html" class="text-gray-600 hover:text-clinic">Trang Chủ</a><a href="products.html" class="text-gray-600 hover:text-clinic">Sản Phẩm</a></div>
+    <a href="cart.html" class="relative text-gray-600 hover:text-clinic"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1">
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+        <div class="bg-clinic p-5 text-center">
+          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl font-bold text-white">N</div>
+          <p class="font-bold text-white">Nguyễn Thị Lan</p>
+          <p class="text-teal text-xs mt-0.5">Lab Member</p>
+        </div>
+        <div class="p-4 text-center bg-teal/5 border-b border-gray-100">
+          <p class="text-2xl font-bold text-teal">2.840</p>
+          <p class="text-xs text-gray-500">Lab Points</p>
+          <div class="mt-2 bg-gray-200 rounded-full h-1.5"><div class="bg-teal h-1.5 rounded-full" style="width:57%"></div></div>
+          <p class="text-xs text-gray-400 mt-1">Còn 2.160 pts → Clinical Member</p>
+        </div>
+        <nav class="p-3">
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-clinic/10 text-clinic font-semibold text-sm"><span>📦</span>Đơn Hàng</a>
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 text-sm mt-1"><span>👤</span>Hồ Sơ</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 text-sm mt-1"><span>📍</span>Địa Chỉ</a>
+          <a href="blog.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 text-sm mt-1"><span>🔬</span>Journal</a>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 text-sm mt-1"><span>🚪</span>Đăng Xuất</a>
+        </nav>
+      </div>
+      <!-- Lab Points card -->
+      <div class="bg-clinic/5 border border-clinic/20 rounded-xl p-4 text-sm">
+        <p class="font-semibold text-clinic mb-2">🧪 Lab Points</p>
+        <div class="space-y-1 text-xs text-gray-600">
+          <div class="flex justify-between"><span>Tổng tích lũy</span><span class="font-bold">2.840</span></div>
+          <div class="flex justify-between"><span>Đã dùng</span><span>500</span></div>
+          <div class="flex justify-between text-teal font-semibold"><span>Khả dụng</span><span>2.340</span></div>
+        </div>
+        <p class="text-xs text-gray-400 mt-3">1.000 pts = giảm 100.000₫</p>
+      </div>
+    </aside>
+    <!-- Main -->
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-xl font-bold text-clinic">Lịch Sử Đơn Hàng</h1>
+        <select class="bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs outline-none text-gray-600">
+          <option>Tất cả đơn hàng</option>
+          <option>Đang giao</option>
+          <option>Đã giao</option>
+          <option>Đã hủy</option>
+        </select>
+      </div>
+      <div class="space-y-4">
+        <!-- Order 1 -->
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-bold text-clinic text-sm">#DL-2025-0842</p><p class="text-gray-400 text-xs mt-0.5">08/05/2025 · Giao Hàng Tiêu Chuẩn</p></div>
+            <span class="bg-teal/10 text-teal text-xs px-3 py-1 rounded-full font-semibold">✓ Đã Giao</span>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-clinic/5 rounded-lg flex items-center justify-center flex-shrink-0 border border-clinic/10"><span class="text-xl">🔬</span></div>
+            <div class="flex-1"><p class="font-semibold text-sm">Retinol 0.3% Advanced Serum</p><p class="text-gray-400 text-xs">30ml ×1</p></div>
+            <p class="font-bold text-clinic text-sm">680.000₫</p>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-teal/10 rounded-lg flex items-center justify-center flex-shrink-0 border border-teal/10"><span class="text-xl">🍋</span></div>
+            <div class="flex-1"><p class="font-semibold text-sm">Vitamin C 20% Brightening</p><p class="text-gray-400 text-xs">30ml ×1</p></div>
+            <p class="font-bold text-clinic text-sm">750.000₫</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+            <div class="text-xs text-gray-500">Tổng: <span class="font-bold text-clinic">1.430.000₫</span> · +1.430 pts</div>
+            <div class="flex gap-2">
+              <button class="text-xs border border-clinic/20 text-clinic px-3 py-1.5 rounded-lg hover:bg-clinic/5 transition">Mua Lại</button>
+              <a href="order-detail.html" class="text-xs bg-clinic text-white px-3 py-1.5 rounded-lg hover:bg-clinic-dark transition">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </div>
+        <!-- Order 2 -->
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-bold text-clinic text-sm">#DL-2025-0719</p><p class="text-gray-400 text-xs mt-0.5">22/04/2025 · Giao Nhanh Express</p></div>
+            <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded-full font-semibold">🚚 Đang Giao</span>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-clinic/5 rounded-lg flex items-center justify-center flex-shrink-0 border border-clinic/10"><span class="text-xl">☀️</span></div>
+            <div class="flex-1"><p class="font-semibold text-sm">UV Shield SPF 50+ PA++++</p><p class="text-gray-400 text-xs">50ml ×1</p></div>
+            <p class="font-bold text-clinic text-sm">450.000₫</p>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-teal/10 rounded-lg flex items-center justify-center flex-shrink-0 border border-teal/10"><span class="text-xl">🧬</span></div>
+            <div class="flex-1"><p class="font-semibold text-sm">Peptide Complex Anti-Age</p><p class="text-gray-400 text-xs">30ml ×1</p></div>
+            <p class="font-bold text-clinic text-sm">890.000₫</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+            <div class="text-xs text-gray-500">Tổng: <span class="font-bold text-clinic">1.380.000₫</span> · GHN: 9842017</div>
+            <div class="flex gap-2">
+              <a href="order-detail.html" class="text-xs bg-clinic text-white px-3 py-1.5 rounded-lg hover:bg-clinic-dark transition">Theo Dõi Đơn</a>
+            </div>
+          </div>
+        </div>
+        <!-- Order 3 -->
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-bold text-clinic text-sm">#DL-2025-0601</p><p class="text-gray-400 text-xs mt-0.5">05/03/2025 · Giao Hàng Tiêu Chuẩn</p></div>
+            <span class="bg-teal/10 text-teal text-xs px-3 py-1 rounded-full font-semibold">✓ Đã Giao</span>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-clinic/5 rounded-lg flex items-center justify-center flex-shrink-0 border border-clinic/10"><span class="text-xl">💧</span></div>
+            <div class="flex-1"><p class="font-semibold text-sm">Hyaluronic Acid 3D Complex</p><p class="text-gray-400 text-xs">30ml ×2</p></div>
+            <p class="font-bold text-clinic text-sm">1.040.000₫</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+            <div class="text-xs text-gray-500">Tổng: <span class="font-bold text-clinic">1.040.000₫</span> · +1.040 pts</div>
+            <div class="flex gap-2">
+              <button class="text-xs border border-clinic/20 text-clinic px-3 py-1.5 rounded-lg hover:bg-clinic/5 transition">Mua Lại</button>
+              <a href="order-detail.html" class="text-xs bg-clinic text-white px-3 py-1.5 rounded-lg hover:bg-clinic-dark transition">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-clinic text-white py-8 mt-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-teal text-xs">© 2025 Dermis Lab. Science-Backed. Dermatologist-Approved.</p></div></footer>
+</body>
+</html>

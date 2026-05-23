@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giỏ Hàng - Hana Beauty</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{kpink:'#FFB7C5','kpink-dark':'#E8839A',lilac:'#C8B2DB',mint:'#B2DBC8','bg-soft':'#FFF8FA'}}}}</script>
+</head>
+<body style="background-color:#FFF8FA;" class="font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-kpink/30">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl" style="color:#3d2b3d;">Hana<span style="color:#FFB7C5;">Beauty</span></span></a>
+    <div class="flex items-center gap-4">
+      <a href="products.html" class="text-gray-500 hover:text-kpink-dark text-sm">Sản Phẩm</a>
+      <a href="login.html" class="text-gray-500 hover:text-kpink-dark"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-kpink-dark"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-kpink-dark text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a>
+    </div>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-3 mb-8 text-sm">
+    <div class="flex items-center gap-2"><span class="w-7 h-7 bg-kpink-dark text-white rounded-full flex items-center justify-center text-xs font-bold">1</span><span class="text-kpink-dark font-semibold">Giỏ hàng</span></div>
+    <div class="h-0.5 w-8 bg-kpink/40"></div>
+    <div class="flex items-center gap-2"><span class="w-7 h-7 bg-kpink/30 text-gray-400 rounded-full flex items-center justify-center text-xs">2</span><span class="text-gray-400">Đặt hàng</span></div>
+    <div class="h-0.5 w-8 bg-kpink/40"></div>
+    <div class="flex items-center gap-2"><span class="w-7 h-7 bg-kpink/30 text-gray-400 rounded-full flex items-center justify-center text-xs">3</span><span class="text-gray-400">Thanh toán</span></div>
+  </div>
+  <h1 class="text-2xl font-bold mb-6" style="color:#3d2b3d;">Giỏ Hàng Của Bạn 🛒</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-4">
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4">
+        <div class="w-20 h-20 rounded-2xl flex items-center justify-center flex-shrink-0" style="background:#FFF0F5;"><span class="text-3xl">🐌</span></div>
+        <div class="flex-1"><p class="text-xs font-medium uppercase" style="color:#E8839A;">Serum</p><p class="font-bold" style="color:#3d2b3d;">Snail Mucin 96% Essence</p><p class="text-gray-400 text-sm">100ml × 1</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-bold" style="color:#E8839A;">285.000₫</p>
+          <div class="flex items-center gap-2 border border-kpink/40 rounded-xl px-3 py-1">
+            <button class="font-bold text-lg leading-none" style="color:#E8839A;">−</button>
+            <span class="w-6 text-center text-sm font-semibold">1</span>
+            <button class="font-bold text-lg leading-none" style="color:#E8839A;">+</button>
+          </div>
+          <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4">
+        <div class="w-20 h-20 rounded-2xl flex items-center justify-center flex-shrink-0" style="background:#F0F8FF;"><span class="text-3xl">🌿</span></div>
+        <div class="flex-1"><p class="text-xs font-medium uppercase" style="color:#E8839A;">Kem Dưỡng</p><p class="font-bold" style="color:#3d2b3d;">Kem CICA Phục Hồi Da Nhạy Cảm</p><p class="text-gray-400 text-sm">50ml × 2</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-bold" style="color:#E8839A;">440.000₫</p>
+          <div class="flex items-center gap-2 border border-kpink/40 rounded-xl px-3 py-1">
+            <button class="font-bold text-lg leading-none" style="color:#E8839A;">−</button>
+            <span class="w-6 text-center text-sm font-semibold">2</span>
+            <button class="font-bold text-lg leading-none" style="color:#E8839A;">+</button>
+          </div>
+          <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4">
+        <div class="w-20 h-20 rounded-2xl flex items-center justify-center flex-shrink-0" style="background:#FFF5F5;"><span class="text-3xl">🍑</span></div>
+        <div class="flex-1"><p class="text-xs font-medium uppercase" style="color:#E8839A;">Toner</p><p class="font-bold" style="color:#3d2b3d;">Toner Hoa Đào Làm Sáng Da</p><p class="text-gray-400 text-sm">200ml × 1</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-bold" style="color:#E8839A;">195.000₫</p>
+          <div class="flex items-center gap-2 border border-kpink/40 rounded-xl px-3 py-1">
+            <button class="font-bold text-lg leading-none" style="color:#E8839A;">−</button>
+            <span class="w-6 text-center text-sm font-semibold">1</span>
+            <button class="font-bold text-lg leading-none" style="color:#E8839A;">+</button>
+          </div>
+          <button class="text-gray-400 text-xs hover:text-red-400">🗑️ Xóa</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm">
+        <p class="font-semibold text-sm mb-3" style="color:#3d2b3d;">🎟️ Mã Giảm Giá</p>
+        <div class="flex gap-2"><input type="text" placeholder="Nhập mã..." class="flex-1 border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/><button class="text-white px-5 py-2.5 rounded-xl text-sm font-bold" style="background:#E8839A;">Áp Dụng</button></div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24">
+        <h2 class="font-bold mb-4" style="color:#3d2b3d;">Tóm Tắt Đơn 💕</h2>
+        <div class="space-y-3 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính</span><span>920.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Giảm giá</span><span class="text-red-400">-92.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span style="color:#E8839A;" class="font-semibold">Miễn phí 🎉</span></div>
+        </div>
+        <div class="border-t border-kpink/20 pt-4 flex justify-between font-bold text-lg mb-5"><span>Tổng</span><span style="color:#E8839A;">828.000₫</span></div>
+        <a href="order.html" class="block w-full text-white py-3.5 rounded-2xl font-bold text-center text-sm transition" style="background:#E8839A;" onmouseover="this.style.background='#d4607a'" onmouseout="this.style.background='#E8839A'">Đặt Hàng Ngay 🌸</a>
+        <a href="products.html" class="block text-center text-sm mt-3" style="color:#E8839A;">← Tiếp tục mua sắm</a>
+        <div class="mt-4 pt-4 border-t border-kpink/10 text-xs text-gray-400 space-y-1">
+          <p>🔒 Thanh toán an toàn</p><p>🚚 Giao hàng 2-4 ngày</p><p>↩️ Đổi trả 7 ngày</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer style="background:#3d2b3d;" class="text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-kpink text-xs">© 2025 Hana Beauty. K-Beauty ở Việt Nam 🌸</p></div></footer>
+</body>
+</html>

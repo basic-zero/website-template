@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh Toán - Gentleman's Care</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{charcoal:'#1C2233','charcoal-dark':'#0F1520',copper:'#B87333','copper-dark':'#966030',offwhite:'#F4F1EE'}}}}</script>
+</head>
+<body class="bg-offwhite font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-charcoal border-b border-white/10 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-xl">⚔️</span><span class="font-bold text-xl tracking-widest text-white">GENTLEMAN'S<span class="text-copper"> CARE</span></span></a>
+    <a href="order.html" class="text-copper text-sm tracking-wider font-semibold">← QUAY LẠI</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-2 text-xs text-gray-400 mb-8 tracking-wider">
+    <span class="text-copper font-bold">✓ GIỎ HÀNG</span><span>›</span><span class="text-copper font-bold">✓ ĐẶT HÀNG</span><span>›</span><span class="font-bold text-charcoal">3. THANH TOÁN</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-charcoal mb-5 tracking-wider">PHƯƠNG THỨC THANH TOÁN</h2>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 p-4 border-2 border-charcoal rounded-xl cursor-pointer bg-charcoal/5" onclick="showCard(true)">
+            <input type="radio" name="pay" checked class="accent-charcoal"/><span>💳</span><div><p class="font-semibold text-sm tracking-wider">THẺ TÍN DỤNG / GHI NỢ</p><p class="text-gray-400 text-xs">Visa · Mastercard · JCB · Napas</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-copper/30 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-charcoal"/><span>📱</span><div><p class="font-semibold text-sm tracking-wider">VÍ ĐIỆN TỬ</p><p class="text-gray-400 text-xs">MoMo · ZaloPay · VNPay</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-copper/30 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-charcoal"/><span>🏦</span><div><p class="font-semibold text-sm tracking-wider">CHUYỂN KHOẢN NGÂN HÀNG</p><p class="text-gray-400 text-xs">Thông tin gửi qua email sau đặt hàng</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-copper/30 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-charcoal"/><span>💵</span><div><p class="font-semibold text-sm tracking-wider">COD - THU TIỀN KHI NHẬN</p><p class="text-gray-400 text-xs">Không phụ thu</p></div>
+          </label>
+        </div>
+        <div id="card-form" class="mt-5 space-y-4 p-5 bg-charcoal rounded-xl border border-white/10">
+          <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Số Thẻ</label><input type="text" placeholder="0000 0000 0000 0000" class="w-full bg-white/10 border border-white/20 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none text-white placeholder-white/40"/></div>
+          <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Tên Chủ Thẻ</label><input type="text" placeholder="NGUYEN VAN MANH" class="w-full bg-white/10 border border-white/20 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none text-white placeholder-white/40"/></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Hết Hạn</label><input type="text" placeholder="MM/YY" class="w-full bg-white/10 border border-white/20 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none text-white placeholder-white/40"/></div>
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">CVV</label><input type="text" placeholder="***" class="w-full bg-white/10 border border-white/20 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none text-white placeholder-white/40"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-charcoal mb-3 tracking-wider">ĐỊA CHỈ GIAO HÀNG</h2>
+        <div class="flex justify-between items-start">
+          <div><p class="font-semibold">Nguyễn Văn Mạnh</p><p class="text-gray-500 text-sm">0934 567 890</p><p class="text-gray-600 text-sm mt-1">42 Đinh Tiên Hoàng, P. Tràng Tiền, Q. Hoàn Kiếm, Hà Nội</p></div>
+          <a href="order.html" class="text-copper text-xs font-semibold tracking-wider">ĐỔI</a>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-xl p-6 shadow-sm sticky top-24 border border-gray-100">
+        <h2 class="font-bold text-charcoal mb-4 tracking-wider">TỔNG KẾT</h2>
+        <div class="space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Beard Oil Cedar</span><span>420.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Daily Moisturizer</span><span>380.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-copper font-semibold">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-gray-200 pt-4 flex justify-between font-bold text-xl mb-5"><span>Tổng</span><span class="text-charcoal">800.000₫</span></div>
+        <p class="text-copper text-xs mb-4">⚔️ +800 Gentleman Points từ đơn này</p>
+        <button onclick="window.location.href='orders.html'" class="w-full bg-charcoal text-white py-3.5 rounded-lg font-bold hover:bg-charcoal-dark transition text-sm tracking-wider">XÁC NHẬN ĐẶT HÀNG</button>
+        <div class="mt-4 flex justify-center gap-4 text-xs text-gray-400 tracking-wider"><span>🔒 SSL</span><span>✓ PCI DSS</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-charcoal text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-copper/60 text-xs tracking-wider">© 2025 Gentleman's Care.</p></div></footer>
+<script>function showCard(show){document.getElementById('card-form').classList.toggle('hidden',!show);}</script>
+</body>
+</html>
