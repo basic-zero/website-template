@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồ Sơ - Dermis Lab</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{clinic:'#003580',teal:'#00A896','clinic-dark':'#002060'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-clinic/10 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🔬</span><span class="font-bold text-xl text-clinic">Dermis<span class="text-teal">Lab</span></span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm"><a href="index.html" class="text-gray-600 hover:text-clinic">Trang Chủ</a><a href="products.html" class="text-gray-600 hover:text-clinic">Sản Phẩm</a></div>
+    <a href="cart.html" class="relative text-gray-600 hover:text-clinic"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1">
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+        <div class="bg-clinic p-5 text-center">
+          <div class="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl font-bold text-white">N</div>
+          <p class="font-bold text-white">Nguyễn Thị Lan</p>
+          <p class="text-teal text-xs mt-0.5">Lab Member</p>
+        </div>
+        <div class="p-4 text-center bg-teal/5 border-b border-gray-100">
+          <p class="text-2xl font-bold text-teal">2.840</p>
+          <p class="text-xs text-gray-500">Lab Points</p>
+          <div class="mt-2 bg-gray-200 rounded-full h-1.5"><div class="bg-teal h-1.5 rounded-full" style="width:57%"></div></div>
+          <p class="text-xs text-gray-400 mt-1">Còn 2.160 pts → Clinical Member</p>
+        </div>
+        <nav class="p-3">
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 text-sm"><span>📦</span>Đơn Hàng</a>
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-clinic/10 text-clinic font-semibold text-sm mt-1"><span>👤</span>Hồ Sơ</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 text-sm mt-1"><span>📍</span>Địa Chỉ</a>
+          <a href="blog.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 text-sm mt-1"><span>🔬</span>Journal</a>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-50 text-sm mt-1"><span>🚪</span>Đăng Xuất</a>
+        </nav>
+      </div>
+      <!-- Stats -->
+      <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+        <p class="text-xs font-semibold text-gray-500 uppercase mb-3">Thống Kê</p>
+        <div class="space-y-2">
+          <div class="flex justify-between text-sm"><span class="text-gray-500">Tổng đơn hàng</span><span class="font-bold text-clinic">7</span></div>
+          <div class="flex justify-between text-sm"><span class="text-gray-500">Lab Points</span><span class="font-bold text-teal">2.840</span></div>
+          <div class="flex justify-between text-sm"><span class="text-gray-500">Đánh giá</span><span class="font-bold text-clinic">5</span></div>
+          <div class="flex justify-between text-sm"><span class="text-gray-500">Thành viên từ</span><span class="text-gray-600">01/2025</span></div>
+        </div>
+      </div>
+    </aside>
+    <!-- Main -->
+    <div class="lg:col-span-3 space-y-6">
+      <!-- Membership Card -->
+      <div class="bg-gradient-to-r from-clinic to-clinic-dark rounded-2xl p-6 text-white relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-32 h-32 bg-white/5 rounded-full -translate-y-10 translate-x-10"></div>
+        <div class="absolute right-8 bottom-0 w-20 h-20 bg-teal/20 rounded-full translate-y-6"></div>
+        <div class="relative z-10 flex justify-between items-start">
+          <div>
+            <p class="text-teal text-xs font-semibold uppercase tracking-widest mb-1">Lab Member</p>
+            <p class="text-xl font-bold">Nguyễn Thị Lan</p>
+            <p class="text-gray-300 text-sm mt-1">Thành viên từ tháng 01/2025</p>
+            <div class="mt-4">
+              <div class="flex items-baseline gap-2"><span class="text-3xl font-bold text-teal">2.840</span><span class="text-gray-300 text-sm">Lab Points</span></div>
+              <div class="mt-2 bg-white/20 rounded-full h-1.5 w-48"><div class="bg-teal h-1.5 rounded-full" style="width:57%"></div></div>
+              <p class="text-xs text-gray-300 mt-1">57% → Clinical Member (5.000 pts)</p>
+            </div>
+          </div>
+          <div class="text-right"><span class="text-4xl">🔬</span><p class="text-xs text-gray-400 mt-1">Dermis Lab</p></div>
+        </div>
+      </div>
+      <!-- Profile info -->
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="font-bold text-clinic">Thông Tin Cá Nhân</h2>
+          <button id="edit-btn" onclick="toggleEdit()" class="text-clinic text-sm font-semibold hover:text-clinic-dark">✏️ Chỉnh Sửa</button>
+        </div>
+        <!-- View mode -->
+        <div id="view-mode" class="grid grid-cols-2 gap-4 text-sm">
+          <div><p class="text-xs text-teal font-semibold uppercase mb-1">Họ Tên</p><p class="text-gray-700">Nguyễn Thị Lan</p></div>
+          <div><p class="text-xs text-teal font-semibold uppercase mb-1">Email</p><p class="text-gray-700">thilan@email.com</p></div>
+          <div><p class="text-xs text-teal font-semibold uppercase mb-1">Số Điện Thoại</p><p class="text-gray-700">0901 234 567</p></div>
+          <div><p class="text-xs text-teal font-semibold uppercase mb-1">Ngày Sinh</p><p class="text-gray-700">14/02/1995</p></div>
+          <div><p class="text-xs text-teal font-semibold uppercase mb-1">Loại Da</p><p class="text-gray-700">Da hỗn hợp (Combination)</p></div>
+          <div><p class="text-xs text-teal font-semibold uppercase mb-1">Vấn Đề Da</p><p class="text-gray-700">Lỗ chân lông to, thiếu ẩm</p></div>
+        </div>
+        <!-- Edit mode -->
+        <div id="edit-mode" class="hidden space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Họ</label><input type="text" value="Nguyễn" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Tên</label><input type="text" value="Thị Lan" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Email</label><input type="email" value="thilan@email.com" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Số Điện Thoại</label><input type="tel" value="0901 234 567" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Ngày Sinh</label><input type="date" value="1995-02-14" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Loại Da</label>
+            <select class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none">
+              <option>Da thường (Normal)</option>
+              <option>Da dầu (Oily)</option>
+              <option>Da khô (Dry)</option>
+              <option selected>Da hỗn hợp (Combination)</option>
+              <option>Da nhạy cảm (Sensitive)</option>
+            </select>
+          </div>
+          <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Vấn Đề Da</label><input type="text" value="Lỗ chân lông to, thiếu ẩm" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          <div class="flex gap-3 pt-2">
+            <button onclick="cancelEdit()" class="flex-1 border border-gray-200 text-gray-600 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-50 transition">Hủy</button>
+            <button onclick="cancelEdit()" class="flex-1 bg-clinic text-white py-2.5 rounded-xl text-sm font-semibold hover:bg-clinic-dark transition">Lưu Thay Đổi</button>
+          </div>
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-clinic mb-4">Bảo Mật</h2>
+        <div class="space-y-4">
+          <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Mật Khẩu Hiện Tại</label><input type="password" placeholder="••••••••" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Mật Khẩu Mới</label><input type="password" placeholder="••••••••" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Xác Nhận</label><input type="password" placeholder="••••••••" class="w-full bg-gray-50 border border-clinic/20 focus:border-clinic rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <button class="bg-clinic text-white px-6 py-2.5 rounded-xl text-sm font-semibold hover:bg-clinic-dark transition">Đổi Mật Khẩu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-clinic text-white py-8 mt-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-teal text-xs">© 2025 Dermis Lab. Science-Backed. Dermatologist-Approved.</p></div></footer>
+<script>
+function toggleEdit(){
+  const edit=document.getElementById('edit-mode'),view=document.getElementById('view-mode'),btn=document.getElementById('edit-btn');
+  const isEditing=!edit.classList.contains('hidden');
+  edit.classList.toggle('hidden',isEditing);view.classList.toggle('hidden',!isEditing);
+  btn.textContent=isEditing?'✏️ Chỉnh Sửa':'';
+}
+function cancelEdit(){
+  document.getElementById('edit-mode').classList.add('hidden');
+  document.getElementById('view-mode').classList.remove('hidden');
+  document.getElementById('edit-btn').textContent='✏️ Chỉnh Sửa';
+}
+</script>
+</body>
+</html>

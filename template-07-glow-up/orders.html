@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đơn Hàng - Glow Up</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E05555',purple:'#7C3AED',yellow:'#FFD93D',dark:'#0F0F0F'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-1"><span class="text-2xl">✨</span><span class="font-black text-xl text-dark">Glow<span class="text-coral">Up</span></span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium"><a href="index.html" class="text-gray-500 hover:text-coral">Home</a><a href="products.html" class="text-gray-500 hover:text-coral">Shop</a></div>
+    <a href="cart.html" class="relative text-gray-600 hover:text-coral"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1">
+      <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+        <div class="bg-gradient-to-br from-yellow via-coral to-purple p-5 text-center">
+          <div class="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl font-black text-white">N</div>
+          <p class="font-black text-white">Nguyễn Ngọc Anh</p>
+          <p class="text-white/70 text-xs mt-0.5">✨ Glow Member</p>
+        </div>
+        <div class="p-4 text-center bg-yellow/5 border-b border-gray-100">
+          <p class="text-2xl font-black text-coral">3.190</p>
+          <p class="text-xs text-gray-500 font-medium">Glow Points</p>
+          <div class="mt-2 bg-gray-200 rounded-full h-2"><div class="bg-coral h-2 rounded-full" style="width:64%"></div></div>
+          <p class="text-xs text-gray-400 mt-1">Còn 1.810 pts → Super Glow ⚡</p>
+        </div>
+        <nav class="p-3">
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl bg-coral/10 text-coral font-black text-sm"><span>📦</span>Đơn Hàng</a>
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>👤</span>Hồ Sơ</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>📍</span>Địa Chỉ</a>
+          <a href="blog.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>✨</span>Vibe Blog</a>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>🚪</span>Đăng Xuất</a>
+        </nav>
+      </div>
+    </aside>
+    <!-- Main -->
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-xl font-black text-dark">Đơn Hàng Của Mình 📦</h1>
+        <select class="bg-white border-2 border-gray-200 rounded-xl px-3 py-2 text-xs font-bold outline-none text-gray-600">
+          <option>Tất cả</option><option>Đang giao</option><option>Đã giao</option><option>Đã hủy</option>
+        </select>
+      </div>
+      <div class="space-y-4">
+        <!-- Order 1 -->
+        <div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-black text-dark">#GU-2025-1190</p><p class="text-gray-400 text-xs mt-0.5 font-medium">12/05/2025 · Giao Tiêu Chuẩn</p></div>
+            <span class="bg-green-50 text-green-600 text-xs px-3 py-1 rounded-full font-black">✓ Đã Giao</span>
+          </div>
+          <div class="space-y-3 mb-4">
+            <div class="flex gap-3"><div class="w-12 h-12 bg-yellow/20 rounded-xl flex items-center justify-center flex-shrink-0"><span class="text-xl">🌟</span></div><div class="flex-1"><p class="font-black text-sm">Glow Serum Vitamin C 15%</p><p class="text-gray-400 text-xs">30ml ×1</p></div><p class="font-black text-coral text-sm">490K</p></div>
+            <div class="flex gap-3"><div class="w-12 h-12 bg-purple/10 rounded-xl flex items-center justify-center flex-shrink-0"><span class="text-xl">💜</span></div><div class="flex-1"><p class="font-black text-sm">Hydra Barrier Cream</p><p class="text-gray-400 text-xs">50ml ×1</p></div><p class="font-black text-coral text-sm">380K</p></div>
+            <div class="flex gap-3"><div class="w-12 h-12 bg-coral/10 rounded-xl flex items-center justify-center flex-shrink-0"><span class="text-xl">☀️</span></div><div class="flex-1"><p class="font-black text-sm">SPF 50+ Invisible Shield</p><p class="text-gray-400 text-xs">50ml ×1</p></div><p class="font-black text-coral text-sm">320K</p></div>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t-2 border-gray-100">
+            <div class="text-xs text-gray-500 font-medium">Tổng: <span class="font-black text-dark">1.190.000₫</span> · <span class="text-coral font-black">+1.190 pts ✨</span></div>
+            <div class="flex gap-2">
+              <button class="text-xs border-2 border-coral text-coral px-3 py-1.5 rounded-xl font-black hover:bg-coral/5 transition">Mua Lại</button>
+              <a href="order-detail.html" class="text-xs bg-coral text-white px-3 py-1.5 rounded-xl font-black hover:bg-coral-dark transition">Chi Tiết</a>
+            </div>
+          </div>
+        </div>
+        <!-- Order 2 -->
+        <div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-black text-dark">#GU-2025-0980</p><p class="text-gray-400 text-xs mt-0.5 font-medium">25/04/2025 · Same-Day Express</p></div>
+            <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded-full font-black">🚚 Đang Giao</span>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-coral/10 rounded-xl flex items-center justify-center flex-shrink-0"><span class="text-xl">🔴</span></div>
+            <div class="flex-1"><p class="font-black text-sm">Neon Blush Duo — #Coral Flush</p><p class="text-gray-400 text-xs">2 màu ×1</p></div>
+            <p class="font-black text-coral text-sm">290K</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t-2 border-gray-100">
+            <div class="text-xs text-gray-500 font-medium">GHN: 8827401</div>
+            <a href="order-detail.html" class="text-xs bg-coral text-white px-3 py-1.5 rounded-xl font-black hover:bg-coral-dark transition">Theo Dõi ⚡</a>
+          </div>
+        </div>
+        <!-- Order 3 -->
+        <div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-black text-dark">#GU-2025-0741</p><p class="text-gray-400 text-xs mt-0.5 font-medium">10/03/2025 · Giao Tiêu Chuẩn</p></div>
+            <span class="bg-green-50 text-green-600 text-xs px-3 py-1 rounded-full font-black">✓ Đã Giao</span>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-purple/10 rounded-xl flex items-center justify-center flex-shrink-0"><span class="text-xl">💄</span></div>
+            <div class="flex-1"><p class="font-black text-sm">Lip Liner Set 5 Màu</p><p class="text-gray-400 text-xs">5 cây ×1</p></div>
+            <p class="font-black text-coral text-sm">350K</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t-2 border-gray-100">
+            <div class="text-xs text-gray-500 font-medium">Tổng: <span class="font-black text-dark">350.000₫</span> · <span class="text-coral font-black">+350 pts</span></div>
+            <div class="flex gap-2">
+              <button class="text-xs border-2 border-coral text-coral px-3 py-1.5 rounded-xl font-black hover:bg-coral/5 transition">Mua Lại</button>
+              <a href="order-detail.html" class="text-xs bg-coral text-white px-3 py-1.5 rounded-xl font-black hover:bg-coral-dark transition">Chi Tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8 mt-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-500 text-xs">© 2025 Glow Up Beauty. Stay glowing ✨</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đơn Hàng - Noir Salon</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#1B2A4A','navy-dark':'#0D1829',gold:'#C9A84C',ivory:'#FAFAF7'}}}}</script>
+</head>
+<body class="bg-ivory font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-navy/98 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">✂️</span><span class="font-bold text-xl text-ivory">Noir<span class="text-gold">Salon</span></span></a>
+    <a href="cart.html" class="relative text-gray-300 hover:text-gold"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-7xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <aside class="lg:col-span-1">
+      <div class="bg-navy rounded-xl p-5 border border-gold/20 mb-4">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center text-gold font-bold text-xl">K</div>
+          <div><p class="font-semibold text-ivory">Trần Minh Khoa</p><p class="text-gold text-xs font-medium">✂️ Khách VIP</p></div>
+        </div>
+        <nav class="space-y-1">
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">👤 Thông Tin</a>
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gold bg-gold/10 rounded-lg font-semibold">📦 Lịch Sử Đặt</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">📍 Địa Chỉ</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">🗓️ Lịch Hẹn</a>
+          <hr class="border-gold/10 my-2"/>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-red-400 rounded-lg transition">⬅️ Đăng Xuất</a>
+        </nav>
+      </div>
+      <div class="bg-gold/10 border border-gold/30 rounded-xl p-5">
+        <p class="text-gold text-xs font-semibold uppercase mb-2">Điểm Thành Viên</p>
+        <p class="text-2xl font-bold text-navy-dark">3.560 <span class="text-sm font-normal text-gray-500">điểm</span></p>
+        <div class="mt-2 bg-white rounded-full h-2"><div class="bg-gold h-2 rounded-full" style="width:71%"></div></div>
+        <p class="text-gray-500 text-xs mt-1">Cần 1.440 điểm lên hạng Diamond</p>
+      </div>
+    </aside>
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-2xl font-bold text-navy-dark">Lịch Sử Đặt Hàng & Lịch Hẹn</h1>
+        <select class="bg-white border border-gold/30 rounded-xl px-4 py-2 text-sm outline-none text-gray-600">
+          <option>Tất cả</option><option>Dịch vụ</option><option>Sản phẩm</option>
+        </select>
+      </div>
+      <div class="flex gap-1 mb-6 bg-white rounded-xl p-1 shadow-sm">
+        <button class="flex-1 py-2 text-xs font-semibold text-navy-dark bg-gold rounded-lg">Tất Cả (4)</button>
+        <button class="flex-1 py-2 text-xs text-gray-500 hover:text-gold rounded-lg">Sắp Tới (1)</button>
+        <button class="flex-1 py-2 text-xs text-gray-500 hover:text-gold rounded-lg">Hoàn Thành (3)</button>
+        <button class="flex-1 py-2 text-xs text-gray-500 hover:text-gold rounded-lg">Đã Hủy (0)</button>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+          <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+            <div class="flex items-center gap-6">
+              <div><p class="text-xs text-gray-400 uppercase">Mã đơn</p><p class="font-bold text-gold">#NS-20250528-001</p></div>
+              <div><p class="text-xs text-gray-400 uppercase">Ngày</p><p class="text-sm font-medium">28/05/2025 · 10:00</p></div>
+            </div>
+            <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded-full font-medium">🗓️ Sắp Tới</span>
+          </div>
+          <div class="px-6 py-4">
+            <div class="flex flex-wrap gap-3 mb-4">
+              <div class="flex items-center gap-2"><div class="w-10 h-10 bg-navy/5 rounded-lg flex items-center justify-center"><span>🎨</span></div><div><p class="text-sm font-semibold">Balayage Highlight</p><p class="text-xs text-gray-400">Stylist: Thành Đạt</p></div></div>
+              <div class="flex items-center gap-2"><div class="w-10 h-10 bg-navy/5 rounded-lg flex items-center justify-center"><span>🧴</span></div><div><p class="text-sm font-semibold">Dầu Gội Keratin</p><p class="text-xs text-gray-400">×1</p></div></div>
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-gold font-bold text-lg">1.580.000₫</p>
+              <div class="flex gap-2">
+                <button class="border border-red-200 text-red-400 px-3 py-1.5 rounded-lg text-xs hover:bg-red-50">Hủy Lịch</button>
+                <a href="order-detail.html" class="bg-gold text-navy-dark px-4 py-1.5 rounded-lg text-xs font-bold hover:bg-yellow-500">Chi Tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+          <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+            <div class="flex items-center gap-6">
+              <div><p class="text-xs text-gray-400 uppercase">Mã đơn</p><p class="font-bold text-gray-700">#NS-20250415-002</p></div>
+              <div><p class="text-xs text-gray-400 uppercase">Ngày</p><p class="text-sm font-medium">15/04/2025</p></div>
+            </div>
+            <span class="bg-green-50 text-green-600 text-xs px-3 py-1 rounded-full font-medium">✓ Hoàn Thành</span>
+          </div>
+          <div class="px-6 py-4">
+            <div class="flex flex-wrap gap-3 mb-4">
+              <div class="flex items-center gap-2"><div class="w-10 h-10 bg-navy/5 rounded-lg flex items-center justify-center"><span>💇</span></div><div><p class="text-sm font-semibold">Cắt + Uốn Hàn Quốc</p><p class="text-xs text-gray-400">Stylist: Hồng Nhung</p></div></div>
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-gold font-bold text-lg">1.450.000₫</p>
+              <div class="flex gap-2">
+                <button class="border border-gold/30 text-gold px-3 py-1.5 rounded-lg text-xs hover:bg-gold/5">Đặt Lại</button>
+                <button class="border border-gold/30 text-gold px-3 py-1.5 rounded-lg text-xs hover:bg-gold/5">Đánh Giá</button>
+                <a href="order-detail.html" class="bg-gold text-navy-dark px-4 py-1.5 rounded-lg text-xs font-bold hover:bg-yellow-500">Chi Tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-navy-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gold/60 text-xs">© 2025 Noir Salon.</p></div></footer>
+</body>
+</html>

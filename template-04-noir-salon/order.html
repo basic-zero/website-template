@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đặt Hàng - Noir Salon</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#1B2A4A','navy-dark':'#0D1829',gold:'#C9A84C',ivory:'#FAFAF7'}}}}</script>
+</head>
+<body class="bg-ivory font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-navy/98 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">✂️</span><span class="font-bold text-xl text-ivory">Noir<span class="text-gold">Salon</span></span></a>
+    <a href="cart.html" class="text-gold text-sm">← Giỏ Hàng</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-2 mb-8 text-xs text-gray-400">
+    <span class="text-gold font-bold">✓ Giỏ hàng</span><span>→</span><span class="font-bold text-gold">2 Đặt hàng</span><span>→</span><span>3 Thanh toán</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-navy-dark mb-5">Thông Tin Khách Hàng</h2>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Họ</label><input type="text" placeholder="Trần" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Tên</label><input type="text" placeholder="Minh Khoa" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Số Điện Thoại</label><input type="tel" placeholder="0934 567 890" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Email</label><input type="email" placeholder="minh.khoa@email.com" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Địa Chỉ Giao Hàng (Sản Phẩm)</label><input type="text" placeholder="Số nhà, tên đường, quận, TP" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Yêu Cầu Đặc Biệt</label><textarea placeholder="Yêu cầu về kiểu tóc, màu sắc, dị ứng thành phần..." rows="3" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none resize-none"></textarea></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-navy-dark mb-4">Thông Tin Lịch Hẹn</h2>
+        <div class="bg-navy/5 rounded-xl p-4 flex items-center justify-between">
+          <div><p class="font-semibold">Nhuộm Highlight Balayage</p><p class="text-gray-500 text-sm mt-1">✂️ Stylist: Nguyễn Thành Đạt (Master Colorist)</p><p class="text-gold text-sm mt-1">📅 28/05/2025 lúc 10:00</p></div>
+          <a href="products.html" class="text-gold text-xs font-semibold hover:text-yellow-600">Đổi Lịch</a>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-navy rounded-xl p-6 text-white sticky top-24">
+        <h2 class="font-bold text-gold mb-4">Tóm Tắt</h2>
+        <div class="space-y-3 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-300">Nhuộm Balayage</span><span>1.200.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-300">Dầu Gội Keratin</span><span>380.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-300">Vận chuyển</span><span class="text-gold">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-gold/20 pt-4 flex justify-between font-bold text-lg mb-5"><span>Tổng</span><span class="text-gold">1.580.000₫</span></div>
+        <a href="payment.html" class="block w-full bg-gold text-navy-dark py-3.5 rounded-xl font-bold text-center hover:bg-yellow-500 transition text-sm">Tiếp Tục Thanh Toán →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-navy-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gold/60 text-xs">© 2025 Noir Salon. Đẳng Cấp Trong Từng Đường Kéo.</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồ Sơ - Noir Salon</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#1B2A4A','navy-dark':'#0D1829',gold:'#C9A84C',ivory:'#FAFAF7'}}}}</script>
+</head>
+<body class="bg-ivory font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-navy/98 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">✂️</span><span class="font-bold text-xl text-ivory">Noir<span class="text-gold">Salon</span></span></a>
+    <a href="cart.html" class="text-gray-300 hover:text-gold"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-7xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <aside class="lg:col-span-1">
+      <div class="bg-navy rounded-xl p-5 border border-gold/20 mb-4">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center text-gold font-bold text-xl">K</div>
+          <div><p class="font-semibold text-ivory">Trần Minh Khoa</p><p class="text-gold text-xs font-medium">✂️ Khách VIP Gold</p></div>
+        </div>
+        <nav class="space-y-1">
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gold bg-gold/10 rounded-lg font-semibold">👤 Thông Tin</a>
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">📦 Lịch Sử Đặt</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">📍 Địa Chỉ</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-gold hover:bg-gold/10 rounded-lg transition">🗓️ Lịch Hẹn</a>
+          <hr class="border-gold/10 my-2"/>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-red-400 rounded-lg transition">⬅️ Đăng Xuất</a>
+        </nav>
+      </div>
+      <div class="bg-gold/10 border border-gold/30 rounded-xl p-5">
+        <p class="text-gold text-xs font-semibold uppercase mb-2">Điểm Thành Viên</p>
+        <p class="text-2xl font-bold text-navy-dark">3.560 <span class="text-sm font-normal text-gray-500">điểm</span></p>
+        <div class="mt-2 bg-white rounded-full h-2"><div class="bg-gold h-2 rounded-full" style="width:71%"></div></div>
+        <p class="text-gray-500 text-xs mt-1">Cần 1.440 điểm lên hạng Diamond 💎</p>
+      </div>
+    </aside>
+    <div class="lg:col-span-3 space-y-6">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-white rounded-xl p-5 shadow-sm text-center border border-gray-100"><p class="text-3xl font-bold text-gold">4</p><p class="text-gray-500 text-sm mt-1">Lần Đặt</p></div>
+        <div class="bg-white rounded-xl p-5 shadow-sm text-center border border-gray-100"><p class="text-3xl font-bold text-gold">3.560</p><p class="text-gray-500 text-sm mt-1">Điểm VIP</p></div>
+        <div class="bg-white rounded-xl p-5 shadow-sm text-center border border-gray-100"><p class="text-3xl font-bold text-gold">3</p><p class="text-gray-500 text-sm mt-1">Đánh Giá</p></div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+        <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+          <h2 class="font-bold text-navy-dark">Thông Tin Cá Nhân</h2>
+          <button onclick="toggleEdit()" id="edit-btn" class="text-gold text-sm font-semibold hover:text-yellow-600">✏️ Chỉnh Sửa</button>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-5 mb-6 pb-6 border-b border-gray-100">
+            <div class="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center text-4xl font-bold text-gold">K</div>
+            <div><p class="font-bold text-lg">Trần Minh Khoa</p><p class="text-gray-500 text-sm">Thành viên từ tháng 6, 2023</p><p class="text-gold text-xs font-semibold mt-1">✂️ VIP Gold Member</p></div>
+          </div>
+          <div id="view-mode" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div><p class="text-gold text-xs font-semibold uppercase mb-1">Họ Và Tên</p><p>Trần Minh Khoa</p></div>
+            <div><p class="text-gold text-xs font-semibold uppercase mb-1">Ngày Sinh</p><p>10/07/1990</p></div>
+            <div><p class="text-gold text-xs font-semibold uppercase mb-1">Email</p><p>minh.khoa@gmail.com</p></div>
+            <div><p class="text-gold text-xs font-semibold uppercase mb-1">Số Điện Thoại</p><p>0934 567 890</p></div>
+            <div><p class="text-gold text-xs font-semibold uppercase mb-1">Giới Tính</p><p>Nam</p></div>
+            <div><p class="text-gold text-xs font-semibold uppercase mb-1">Stylist Ưa Thích</p><p>Nguyễn Thành Đạt</p></div>
+          </div>
+          <div id="edit-mode" class="hidden space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Họ</label><input type="text" value="Trần" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+              <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Tên</label><input type="text" value="Minh Khoa" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Email</label><input type="email" value="minh.khoa@gmail.com" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+              <div><label class="text-gold text-xs font-semibold uppercase block mb-1">Điện Thoại</label><input type="tel" value="0934 567 890" class="w-full bg-ivory border border-gold/30 focus:border-gold rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+            </div>
+            <div class="flex gap-3"><button onclick="toggleEdit()" class="bg-gold text-navy-dark px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-yellow-500">Lưu</button><button onclick="cancelEdit()" class="border border-gold/30 text-gold px-6 py-2.5 rounded-lg text-sm hover:bg-gold/5">Hủy</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-br from-navy to-navy-dark rounded-xl p-6 text-white border border-gold/20">
+        <div class="flex items-center justify-between mb-4">
+          <div><p class="text-gold text-xs uppercase font-semibold">Hạng Thành Viên</p><p class="text-2xl font-bold text-gold mt-1">✂️ VIP Gold</p></div>
+          <div class="text-right"><p class="text-gray-400 text-xs">Điểm tích lũy</p><p class="text-3xl font-bold text-gold">3.560</p></div>
+        </div>
+        <div class="bg-gold/20 rounded-full h-2 mb-2"><div class="bg-gold h-2 rounded-full" style="width:71%"></div></div>
+        <div class="flex justify-between text-xs text-gray-400"><span>Gold (2.500–5.000)</span><span>Diamond 💎 (5.000+)</span></div>
+        <div class="mt-4 pt-4 border-t border-gold/20 grid grid-cols-2 gap-3 text-sm">
+          <div>✓ Đặt lịch ưu tiên</div><div>✓ Giảm 15% dịch vụ</div>
+          <div>✓ Tặng 1 lần gội đầu/tháng</div><div>✓ Stylist riêng theo yêu cầu</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-navy-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gold/60 text-xs">© 2025 Noir Salon.</p></div></footer>
+<script>
+function toggleEdit(){
+  const edit=document.getElementById('edit-mode'),view=document.getElementById('view-mode'),btn=document.getElementById('edit-btn');
+  const isEditing=!edit.classList.contains('hidden');
+  edit.classList.toggle('hidden',isEditing);view.classList.toggle('hidden',!isEditing);
+  btn.textContent=isEditing?'✏️ Chỉnh Sửa':'';
+}
+function cancelEdit(){
+  document.getElementById('edit-mode').classList.add('hidden');document.getElementById('view-mode').classList.remove('hidden');
+  document.getElementById('edit-btn').textContent='✏️ Chỉnh Sửa';
+}
+</script>
+</body>
+</html>

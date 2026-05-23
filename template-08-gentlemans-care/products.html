@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sản Phẩm - Gentleman's Care</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{charcoal:'#1C2233','charcoal-dark':'#0F1520',copper:'#B87333','copper-dark':'#966030',offwhite:'#F4F1EE'}}}}</script>
+</head>
+<body class="bg-offwhite font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-charcoal border-b border-white/10 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-xl">⚔️</span><span class="font-bold text-xl tracking-widest text-white">GENTLEMAN'S<span class="text-copper"> CARE</span></span></a>
+    <div class="hidden md:flex items-center gap-8 text-sm"><a href="index.html" class="text-gray-400 hover:text-copper tracking-wider">HOME</a><a href="products.html" class="text-copper font-semibold tracking-wider">SHOP</a><a href="blog.html" class="text-gray-400 hover:text-copper tracking-wider">JOURNAL</a></div>
+    <div class="flex items-center gap-3"><a href="login.html" class="text-gray-400 hover:text-copper"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a><a href="cart.html" class="relative text-gray-400 hover:text-copper"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-copper text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></a></div>
+  </div>
+</nav>
+<div class="max-w-7xl mx-auto px-4 pt-24 pb-20">
+  <!-- Header -->
+  <div class="text-center mb-12">
+    <p class="text-copper text-xs tracking-widest uppercase font-semibold mb-2">Premium Collection</p>
+    <h1 class="text-4xl font-bold text-charcoal tracking-wide mb-3">Men's Grooming</h1>
+    <p class="text-gray-500 max-w-lg mx-auto text-sm">Được nghiên cứu và phát triển riêng cho làn da nam. Không phô trương — chỉ kết quả thực.</p>
+  </div>
+  <!-- Filter -->
+  <div class="flex flex-col md:flex-row gap-4 mb-10">
+    <div class="relative flex-1 max-w-sm"><input type="text" placeholder="Tìm sản phẩm..." class="w-full bg-white border border-gray-200 focus:border-copper rounded-lg px-4 py-3 pl-10 text-sm outline-none"/><svg class="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+    <div class="flex flex-wrap gap-2">
+      <button class="bg-charcoal text-white px-4 py-2 rounded-lg text-xs font-semibold tracking-wider">TẤT CẢ</button>
+      <button class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-lg text-xs tracking-wider hover:border-copper transition">BEARD</button>
+      <button class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-lg text-xs tracking-wider hover:border-copper transition">SKINCARE</button>
+      <button class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-lg text-xs tracking-wider hover:border-copper transition">HAIR</button>
+      <button class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-lg text-xs tracking-wider hover:border-copper transition">BODY</button>
+    </div>
+  </div>
+  <!-- Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="bg-white rounded-xl overflow-hidden group hover:shadow-lg transition border border-gray-100">
+      <div class="aspect-square bg-charcoal/5 flex items-center justify-center group-hover:bg-charcoal/10 transition"><span class="text-5xl opacity-40">🪒</span></div>
+      <div class="p-4"><p class="text-xs text-copper uppercase tracking-wider font-semibold">Beard</p><h3 class="font-bold text-sm mt-1 group-hover:text-copper transition">Beard Oil Premium Cedar</h3><p class="text-gray-400 text-xs mt-1">30ml · Tinh dầu xách gỗ</p><div class="flex items-center justify-between mt-3"><span class="font-bold text-charcoal">420.000₫</span><a href="product-detail.html" class="bg-charcoal text-white text-xs px-3 py-1.5 rounded-lg hover:bg-copper transition font-semibold">Mua</a></div></div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden group hover:shadow-lg transition border border-gray-100">
+      <div class="aspect-square bg-copper/5 flex items-center justify-center group-hover:bg-copper/10 transition"><span class="text-5xl opacity-40">🧴</span></div>
+      <div class="p-4"><p class="text-xs text-copper uppercase tracking-wider font-semibold">Skincare</p><h3 class="font-bold text-sm mt-1 group-hover:text-copper transition">Daily Moisturizer SPF 30</h3><p class="text-gray-400 text-xs mt-1">50ml · Dưỡng ẩm ban ngày</p><div class="flex items-center justify-between mt-3"><span class="font-bold text-charcoal">380.000₫</span><a href="product-detail.html" class="bg-charcoal text-white text-xs px-3 py-1.5 rounded-lg hover:bg-copper transition font-semibold">Mua</a></div></div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden group hover:shadow-lg transition border border-gray-100">
+      <div class="aspect-square bg-charcoal/5 flex items-center justify-center group-hover:bg-charcoal/10 transition"><span class="text-5xl opacity-40">✂️</span></div>
+      <div class="p-4"><p class="text-xs text-copper uppercase tracking-wider font-semibold">Beard</p><h3 class="font-bold text-sm mt-1 group-hover:text-copper transition">Beard Balm & Shaping Wax</h3><p class="text-gray-400 text-xs mt-1">60g · Tạo hình & dưỡng</p><div class="flex items-center justify-between mt-3"><span class="font-bold text-charcoal">290.000₫</span><a href="product-detail.html" class="bg-charcoal text-white text-xs px-3 py-1.5 rounded-lg hover:bg-copper transition font-semibold">Mua</a></div></div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden group hover:shadow-lg transition border border-gray-100">
+      <div class="aspect-square bg-copper/5 flex items-center justify-center group-hover:bg-copper/10 transition relative"><span class="text-5xl opacity-40">💆</span><span class="absolute top-2 right-2 bg-copper text-white text-xs px-2 py-0.5 rounded font-bold">HOT</span></div>
+      <div class="p-4"><p class="text-xs text-copper uppercase tracking-wider font-semibold">Skincare</p><h3 class="font-bold text-sm mt-1 group-hover:text-copper transition">Charcoal Deep Cleanse Foam</h3><p class="text-gray-400 text-xs mt-1">150ml · Sữa rửa mặt than hoạt tính</p><div class="flex items-center justify-between mt-3"><span class="font-bold text-charcoal">220.000₫</span><a href="product-detail.html" class="bg-charcoal text-white text-xs px-3 py-1.5 rounded-lg hover:bg-copper transition font-semibold">Mua</a></div></div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden group hover:shadow-lg transition border border-gray-100">
+      <div class="aspect-square bg-charcoal/5 flex items-center justify-center group-hover:bg-charcoal/10 transition"><span class="text-5xl opacity-40">💈</span></div>
+      <div class="p-4"><p class="text-xs text-copper uppercase tracking-wider font-semibold">Hair</p><h3 class="font-bold text-sm mt-1 group-hover:text-copper transition">Matt Clay Strong Hold</h3><p class="text-gray-400 text-xs mt-1">100g · Sáp tạo kiểu tóc mờ</p><div class="flex items-center justify-between mt-3"><span class="font-bold text-charcoal">310.000₫</span><a href="product-detail.html" class="bg-charcoal text-white text-xs px-3 py-1.5 rounded-lg hover:bg-copper transition font-semibold">Mua</a></div></div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden group hover:shadow-lg transition border border-gray-100">
+      <div class="aspect-square bg-copper/5 flex items-center justify-center group-hover:bg-copper/10 transition"><span class="text-5xl opacity-40">🫧</span></div>
+      <div class="p-4"><p class="text-xs text-copper uppercase tracking-wider font-semibold">Body</p><h3 class="font-bold text-sm mt-1 group-hover:text-copper transition">Activated Charcoal Body Wash</h3><p class="text-gray-400 text-xs mt-1">250ml · Sữa tắm than hoạt tính</p><div class="flex items-center justify-between mt-3"><span class="font-bold text-charcoal">260.000₫</span><a href="product-detail.html" class="bg-charcoal text-white text-xs px-3 py-1.5 rounded-lg hover:bg-copper transition font-semibold">Mua</a></div></div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden group hover:shadow-lg transition border border-gray-100">
+      <div class="aspect-square bg-charcoal/5 flex items-center justify-center group-hover:bg-charcoal/10 transition"><span class="text-5xl opacity-40">🪑</span></div>
+      <div class="p-4"><p class="text-xs text-copper uppercase tracking-wider font-semibold">Skincare</p><h3 class="font-bold text-sm mt-1 group-hover:text-copper transition">Anti-Aging Retinol Serum</h3><p class="text-gray-400 text-xs mt-1">30ml · Chống lão hóa cho nam</p><div class="flex items-center justify-between mt-3"><div><span class="font-bold text-charcoal">590.000₫</span><span class="text-gray-400 line-through text-xs ml-1">720.000₫</span></div><a href="product-detail.html" class="bg-charcoal text-white text-xs px-3 py-1.5 rounded-lg hover:bg-copper transition font-semibold">Mua</a></div></div>
+    </div>
+    <div class="bg-white rounded-xl overflow-hidden group hover:shadow-lg transition border border-gray-100">
+      <div class="aspect-square bg-copper/5 flex items-center justify-center group-hover:bg-copper/10 transition"><span class="text-5xl opacity-40">🌲</span></div>
+      <div class="p-4"><p class="text-xs text-copper uppercase tracking-wider font-semibold">Body</p><h3 class="font-bold text-sm mt-1 group-hover:text-copper transition">Cedar & Sandalwood Parfum</h3><p class="text-gray-400 text-xs mt-1">50ml · Nước hoa nam tính</p><div class="flex items-center justify-between mt-3"><span class="font-bold text-charcoal">850.000₫</span><a href="product-detail.html" class="bg-charcoal text-white text-xs px-3 py-1.5 rounded-lg hover:bg-copper transition font-semibold">Mua</a></div></div>
+    </div>
+  </div>
+</div>
+<footer class="bg-charcoal text-white py-10 mt-12"><div class="max-w-7xl mx-auto px-4 text-center"><div class="flex items-center justify-center gap-2 mb-3"><span class="text-xl">⚔️</span><span class="font-bold tracking-widest text-white">GENTLEMAN'S<span class="text-copper"> CARE</span></span></div><p class="text-copper/60 text-xs tracking-wider">© 2025 Gentleman's Care. Crafted for the Modern Man.</p></div></footer>
+</body>
+</html>

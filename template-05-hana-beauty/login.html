@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng Nhập - Hana Beauty</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{kpink:'#FFB7C5','kpink-dark':'#E8839A',lilac:'#C8B2DB',mint:'#B2DBC8'}}}}</script>
+</head>
+<body style="background-color:#FFF8FA;" class="min-h-screen flex flex-col font-sans">
+<nav class="bg-white border-b border-kpink/30 py-4 px-6 flex items-center justify-between">
+  <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl" style="color:#3d2b3d;">Hana<span style="color:#FFB7C5;">Beauty</span></span></a>
+  <a href="index.html" class="text-sm" style="color:#E8839A;">← Trang Chủ</a>
+</nav>
+<div class="flex-1 flex items-center justify-center px-4 py-12">
+  <div class="w-full max-w-md">
+    <div class="text-center mb-8"><span class="text-5xl">🌸</span><h1 class="text-2xl font-bold mt-3" style="color:#3d2b3d;">Xin Chào!</h1><p class="text-gray-500 text-sm mt-1">Đăng nhập để khám phá K-Beauty</p></div>
+    <div class="flex rounded-2xl overflow-hidden border border-kpink/40 mb-8">
+      <button id="tab-login" onclick="switchTab('login')" class="flex-1 py-3 text-sm font-semibold text-white" style="background:#E8839A;">Đăng Nhập</button>
+      <button id="tab-reg" onclick="switchTab('reg')" class="flex-1 py-3 text-sm font-semibold text-gray-500 hover:text-kpink-dark transition">Đăng Ký</button>
+    </div>
+    <div id="form-login" class="bg-white rounded-2xl p-8 shadow-sm space-y-4">
+      <div><label class="text-xs font-semibold uppercase tracking-wide block mb-2" style="color:#E8839A;">Email *</label><input type="email" placeholder="email@example.com" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 text-sm outline-none" style="background:#FFF8FA;"/></div>
+      <div><label class="text-xs font-semibold uppercase tracking-wide block mb-2" style="color:#E8839A;">Mật Khẩu *</label><input type="password" placeholder="••••••••" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 text-sm outline-none" style="background:#FFF8FA;"/></div>
+      <div class="flex justify-between items-center"><label class="flex items-center gap-2 text-sm text-gray-500 cursor-pointer"><input type="checkbox" class="accent-kpink-dark"/>Ghi nhớ</label><a href="#" class="text-xs" style="color:#E8839A;">Quên mật khẩu?</a></div>
+      <a href="profile.html" class="block w-full text-white py-3 rounded-xl font-bold text-center transition" style="background:#E8839A;" onmouseover="this.style.background='#d4607a'" onmouseout="this.style.background='#E8839A'">Đăng Nhập 🌸</a>
+      <div class="relative"><div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200"></div></div><div class="relative flex justify-center"><span class="bg-white px-3 text-gray-400 text-xs">hoặc</span></div></div>
+      <div class="grid grid-cols-2 gap-3">
+        <button class="border border-gray-200 rounded-xl py-2.5 text-sm text-gray-600 hover:border-kpink transition flex items-center justify-center gap-2">🔵 Google</button>
+        <button class="border border-gray-200 rounded-xl py-2.5 text-sm text-gray-600 hover:border-kpink transition flex items-center justify-center gap-2">💙 Kakao</button>
+      </div>
+    </div>
+    <div id="form-reg" class="hidden bg-white rounded-2xl p-8 shadow-sm space-y-4">
+      <div class="grid grid-cols-2 gap-3">
+        <div><label class="text-xs font-semibold uppercase tracking-wide block mb-2" style="color:#E8839A;">Họ *</label><input type="text" placeholder="Phạm" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 text-sm outline-none" style="background:#FFF8FA;"/></div>
+        <div><label class="text-xs font-semibold uppercase tracking-wide block mb-2" style="color:#E8839A;">Tên *</label><input type="text" placeholder="Thùy Linh" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 text-sm outline-none" style="background:#FFF8FA;"/></div>
+      </div>
+      <div><label class="text-xs font-semibold uppercase tracking-wide block mb-2" style="color:#E8839A;">Email *</label><input type="email" placeholder="email@example.com" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 text-sm outline-none" style="background:#FFF8FA;"/></div>
+      <div><label class="text-xs font-semibold uppercase tracking-wide block mb-2" style="color:#E8839A;">Số Điện Thoại</label><input type="tel" placeholder="0987 654 321" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 text-sm outline-none" style="background:#FFF8FA;"/></div>
+      <div><label class="text-xs font-semibold uppercase tracking-wide block mb-2" style="color:#E8839A;">Loại Da</label>
+        <select class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 text-sm outline-none" style="background:#FFF8FA;">
+          <option>Chọn loại da</option><option>Da khô</option><option>Da dầu</option><option>Da hỗn hợp</option><option>Da nhạy cảm</option>
+        </select>
+      </div>
+      <div><label class="text-xs font-semibold uppercase tracking-wide block mb-2" style="color:#E8839A;">Mật Khẩu *</label><input type="password" placeholder="Tối thiểu 8 ký tự" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-3 text-sm outline-none" style="background:#FFF8FA;"/></div>
+      <label class="flex items-start gap-2 cursor-pointer"><input type="checkbox" class="accent-kpink-dark mt-1"/><span class="text-xs text-gray-500">Đồng ý với <a href="#" style="color:#E8839A;">Điều khoản</a> & nhận tips K-Beauty từ Hana</span></label>
+      <a href="profile.html" class="block w-full text-white py-3 rounded-xl font-bold text-center" style="background:#E8839A;">Tham Gia Hana 🌸</a>
+    </div>
+    <div class="mt-8 bg-white rounded-2xl p-5 shadow-sm">
+      <p class="text-xs font-semibold uppercase tracking-wide mb-3" style="color:#E8839A;">Đặc Quyền Hana Member 🌸</p>
+      <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+        <div>🌸 Tích Hana Points</div><div>🎁 Quà thành viên</div>
+        <div>💌 K-Beauty tips</div><div>🇰🇷 Hàng Hàn chính hãng</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function switchTab(t){
+  document.getElementById('form-login').classList.toggle('hidden',t!=='login');
+  document.getElementById('form-reg').classList.toggle('hidden',t!=='reg');
+  const active='flex-1 py-3 text-sm font-semibold text-white';
+  const inactive='flex-1 py-3 text-sm font-semibold text-gray-500';
+  document.getElementById('tab-login').className=t==='login'?active:inactive;
+  document.getElementById('tab-login').style.background=t==='login'?'#E8839A':'';
+  document.getElementById('tab-reg').className=t==='reg'?active:inactive;
+  document.getElementById('tab-reg').style.background=t==='reg'?'#E8839A':'';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng Nhập - Glow Up</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E05555',purple:'#7C3AED',yellow:'#FFD93D',dark:'#0F0F0F'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans min-h-screen">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-1"><span class="text-2xl">✨</span><span class="font-black text-xl text-dark">Glow<span class="text-coral">Up</span></span></a>
+    <a href="index.html" class="text-coral text-sm font-bold">← Về Trang Chủ</a>
+  </div>
+</nav>
+<div class="min-h-screen flex pt-16">
+  <!-- Left panel -->
+  <div class="hidden lg:flex lg:w-5/12 bg-gradient-to-br from-yellow via-coral to-purple flex-col justify-between p-12">
+    <div></div>
+    <div>
+      <p class="text-6xl mb-6">✨</p>
+      <h2 class="text-3xl font-black text-white mb-4 leading-tight">Your Glow,<br/>Your Rules.</h2>
+      <p class="text-white/80 text-sm leading-relaxed mb-8">Join cộng đồng Glow Up — skincare addicts, makeup lovers và tất cả những ai muốn glow up từng ngày 🔥</p>
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 text-sm"><div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">🎁</div><span class="text-white/90">500 Glow Points khi đăng ký lần đầu</span></div>
+        <div class="flex items-center gap-3 text-sm"><div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">💰</div><span class="text-white/90">Ưu đãi độc quyền cho members</span></div>
+        <div class="flex items-center gap-3 text-sm"><div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">📦</div><span class="text-white/90">Theo dõi đơn hàng real-time</span></div>
+      </div>
+    </div>
+    <p class="text-white/40 text-xs">© 2025 Glow Up Beauty</p>
+  </div>
+  <!-- Right panel -->
+  <div class="flex-1 flex items-center justify-center p-6">
+    <div class="w-full max-w-md">
+      <!-- Tabs -->
+      <div class="flex bg-gray-100 rounded-2xl p-1 mb-8">
+        <button id="tab-login" onclick="switchTab('login')" class="flex-1 py-2.5 text-sm font-black bg-white text-coral rounded-xl shadow-sm">Đăng Nhập</button>
+        <button id="tab-reg" onclick="switchTab('reg')" class="flex-1 py-2.5 text-sm font-black text-gray-400 rounded-xl">Đăng Ký</button>
+      </div>
+      <!-- Login -->
+      <div id="form-login">
+        <h1 class="text-2xl font-black text-dark mb-1">Chào mừng back! 👋</h1>
+        <p class="text-gray-400 text-sm mb-6">Đăng nhập để xem đơn hàng và Glow Points</p>
+        <div class="space-y-4">
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Email</label><input type="email" placeholder="ngocanh@email.com" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-2xl px-4 py-3 text-sm outline-none font-medium"/></div>
+          <div>
+            <div class="flex justify-between mb-1"><label class="text-coral text-xs font-black uppercase">Mật Khẩu</label><a href="#" class="text-coral text-xs font-bold">Quên mật khẩu?</a></div>
+            <input type="password" placeholder="••••••••" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-2xl px-4 py-3 text-sm outline-none font-medium"/>
+          </div>
+          <label class="flex items-center gap-2 text-sm text-gray-500 cursor-pointer font-medium"><input type="checkbox" class="accent-coral"/><span>Ghi nhớ đăng nhập</span></label>
+        </div>
+        <a href="orders.html" class="block w-full bg-coral text-white py-4 rounded-2xl font-black text-center hover:bg-coral-dark transition mt-6">Đăng Nhập ✨</a>
+        <div class="flex items-center gap-3 my-5"><div class="flex-1 h-px bg-gray-200"></div><span class="text-gray-400 text-xs font-bold">hoặc</span><div class="flex-1 h-px bg-gray-200"></div></div>
+        <div class="grid grid-cols-2 gap-3">
+          <button class="flex items-center justify-center gap-2 border-2 border-gray-200 rounded-2xl py-3 text-sm font-bold hover:border-coral transition"><span>🔵</span>Google</button>
+          <button class="flex items-center justify-center gap-2 border-2 border-gray-200 rounded-2xl py-3 text-sm font-bold hover:border-coral transition"><span>📘</span>Facebook</button>
+        </div>
+      </div>
+      <!-- Register -->
+      <div id="form-reg" class="hidden">
+        <h1 class="text-2xl font-black text-dark mb-1">Glow Up cùng mình! 🌟</h1>
+        <p class="text-gray-400 text-sm mb-6">Nhận ngay 500 Glow Points khi đăng ký</p>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-3">
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Họ</label><input type="text" placeholder="Nguyễn" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-2xl px-4 py-3 text-sm outline-none font-medium"/></div>
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Tên</label><input type="text" placeholder="Ngọc Anh" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-2xl px-4 py-3 text-sm outline-none font-medium"/></div>
+          </div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Email</label><input type="email" placeholder="ngocanh@email.com" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-2xl px-4 py-3 text-sm outline-none font-medium"/></div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Số Điện Thoại</label><input type="tel" placeholder="0912 345 678" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-2xl px-4 py-3 text-sm outline-none font-medium"/></div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Mật Khẩu</label><input type="password" placeholder="Tối thiểu 8 ký tự" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-2xl px-4 py-3 text-sm outline-none font-medium"/></div>
+          <label class="flex items-start gap-2 text-xs text-gray-500 cursor-pointer font-medium"><input type="checkbox" class="accent-coral mt-0.5"/><span>Tôi đồng ý với <a href="#" class="text-coral font-black">Điều khoản</a> và <a href="#" class="text-coral font-black">Chính sách</a> của Glow Up</span></label>
+        </div>
+        <a href="orders.html" class="block w-full bg-coral text-white py-4 rounded-2xl font-black text-center hover:bg-coral-dark transition mt-6">Glow Up Now 🚀</a>
+        <div class="flex items-center gap-3 my-5"><div class="flex-1 h-px bg-gray-200"></div><span class="text-gray-400 text-xs font-bold">hoặc</span><div class="flex-1 h-px bg-gray-200"></div></div>
+        <div class="grid grid-cols-2 gap-3">
+          <button class="flex items-center justify-center gap-2 border-2 border-gray-200 rounded-2xl py-3 text-sm font-bold hover:border-coral transition"><span>🔵</span>Google</button>
+          <button class="flex items-center justify-center gap-2 border-2 border-gray-200 rounded-2xl py-3 text-sm font-bold hover:border-coral transition"><span>📘</span>Facebook</button>
+        </div>
+        <div class="mt-6 bg-yellow/10 border-2 border-yellow rounded-2xl p-4 text-center">
+          <p class="text-dark font-black text-sm">🎁 Welcome Bonus!</p>
+          <p class="text-gray-500 text-xs mt-1">500 Glow Points + Free Shipping đơn đầu tiên</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function switchTab(t){
+  document.getElementById('form-login').classList.toggle('hidden',t!=='login');
+  document.getElementById('form-reg').classList.toggle('hidden',t!=='reg');
+  document.getElementById('tab-login').className=t==='login'?'flex-1 py-2.5 text-sm font-black bg-white text-coral rounded-xl shadow-sm':'flex-1 py-2.5 text-sm font-black text-gray-400 rounded-xl';
+  document.getElementById('tab-reg').className=t==='reg'?'flex-1 py-2.5 text-sm font-black bg-white text-coral rounded-xl shadow-sm':'flex-1 py-2.5 text-sm font-black text-gray-400 rounded-xl';
+}
+</script>
+</body>
+</html>

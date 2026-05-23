@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Địa Chỉ - Gentleman's Care</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{charcoal:'#1C2233','charcoal-dark':'#0F1520',copper:'#B87333','copper-dark':'#966030',offwhite:'#F4F1EE'}}}}</script>
+</head>
+<body class="bg-offwhite font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-charcoal border-b border-white/10 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-xl">⚔️</span><span class="font-bold text-xl tracking-widest text-white">GENTLEMAN'S<span class="text-copper"> CARE</span></span></a>
+    <a href="cart.html" class="relative text-gray-400 hover:text-copper"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <aside class="lg:col-span-1">
+      <div class="bg-charcoal rounded-xl shadow-sm overflow-hidden mb-4">
+        <div class="p-5 text-center border-b border-white/10">
+          <div class="w-14 h-14 bg-copper/20 border-2 border-copper rounded-full flex items-center justify-center mx-auto mb-2 text-2xl font-bold text-copper">M</div>
+          <p class="font-bold text-white tracking-wider">NGUYỄN VĂN MẠNH</p>
+          <p class="text-copper text-xs mt-0.5 tracking-widest">GOLD MEMBER</p>
+        </div>
+        <div class="p-4 text-center border-b border-white/10">
+          <p class="text-2xl font-bold text-copper">2.400</p>
+          <p class="text-xs text-gray-400 tracking-wider">GENTLEMAN POINTS</p>
+          <div class="mt-2 bg-white/10 rounded-full h-1.5"><div class="bg-copper h-1.5 rounded-full" style="width:48%"></div></div>
+        </div>
+        <nav class="p-3">
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:text-copper text-sm tracking-wider"><span>📦</span>ĐƠN HÀNG</a>
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:text-copper text-sm tracking-wider mt-1"><span>👤</span>HỒ SƠ</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-copper/20 text-copper font-semibold text-sm tracking-wider mt-1"><span>📍</span>ĐỊA CHỈ</a>
+          <a href="blog.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:text-copper text-sm tracking-wider mt-1"><span>📰</span>JOURNAL</a>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:text-copper text-sm tracking-wider mt-1"><span>🚪</span>ĐĂNG XUẤT</a>
+        </nav>
+      </div>
+    </aside>
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-xl font-bold text-charcoal tracking-wider">ĐỊA CHỈ GIAO HÀNG</h1>
+        <button onclick="toggleAddForm()" class="bg-charcoal text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-charcoal-dark transition tracking-wider">+ THÊM ĐỊA CHỈ</button>
+      </div>
+      <div id="add-form" class="hidden bg-white rounded-xl p-6 shadow-sm border-2 border-copper/30 mb-6">
+        <h3 class="font-bold text-charcoal mb-4 tracking-wider">ĐỊA CHỈ MỚI</h3>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Họ Tên</label><input type="text" placeholder="Nguyễn Văn Mạnh" class="w-full bg-offwhite border border-gray-200 focus:border-copper rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Số Điện Thoại</label><input type="tel" placeholder="0934 567 890" class="w-full bg-offwhite border border-gray-200 focus:border-copper rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Địa Chỉ</label><input type="text" placeholder="Số nhà, tên đường" class="w-full bg-offwhite border border-gray-200 focus:border-copper rounded-lg px-3 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Tỉnh/Thành</label><select class="w-full bg-offwhite border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none"><option>Hà Nội</option><option>TP. HCM</option></select></div>
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Quận/Huyện</label><select class="w-full bg-offwhite border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none"><option>Hoàn Kiếm</option><option>Ba Đình</option></select></div>
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Phường/Xã</label><select class="w-full bg-offwhite border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none"><option>P. Tràng Tiền</option></select></div>
+          </div>
+          <div class="flex gap-3 pt-2">
+            <button onclick="toggleAddForm()" class="flex-1 border border-gray-200 text-gray-600 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-50 transition tracking-wider">HỦY</button>
+            <button onclick="toggleAddForm()" class="flex-1 bg-charcoal text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-charcoal-dark transition tracking-wider">LƯU</button>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white rounded-xl p-5 shadow-sm border-2 border-copper">
+          <div class="flex justify-between items-start mb-3">
+            <div class="flex items-center gap-2"><span class="text-lg">🏠</span><span class="font-bold text-copper text-sm tracking-wider">NHÀ RIÊNG</span><span class="bg-copper text-white text-xs px-2 py-0.5 rounded font-semibold tracking-wider">MẶC ĐỊNH</span></div>
+            <div class="flex gap-2 text-xs"><button class="text-copper font-semibold hover:text-copper-dark tracking-wider">SỬA</button><span class="text-gray-300">|</span><button class="text-red-400 hover:text-red-600 tracking-wider">XÓA</button></div>
+          </div>
+          <p class="font-semibold text-sm">Nguyễn Văn Mạnh</p>
+          <p class="text-gray-500 text-sm mt-0.5">0934 567 890</p>
+          <p class="text-gray-600 text-sm mt-1">42 Đinh Tiên Hoàng, P. Tràng Tiền, Q. Hoàn Kiếm, Hà Nội</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-3">
+            <div class="flex items-center gap-2"><span class="text-lg">🏢</span><span class="font-bold text-gray-700 text-sm tracking-wider">VĂN PHÒNG</span></div>
+            <div class="flex gap-2 text-xs"><button class="text-copper font-semibold hover:text-copper-dark tracking-wider">SỬA</button><span class="text-gray-300">|</span><button class="text-charcoal font-semibold hover:text-charcoal-dark tracking-wider">ĐẶT MẶC ĐỊNH</button><span class="text-gray-300">|</span><button class="text-red-400 hover:text-red-600 tracking-wider">XÓA</button></div>
+          </div>
+          <p class="font-semibold text-sm">Nguyễn Văn Mạnh</p>
+          <p class="text-gray-500 text-sm mt-0.5">0934 567 890</p>
+          <p class="text-gray-600 text-sm mt-1">Tầng 15, Lotte Center, 54 Liễu Giai, Q. Ba Đình, Hà Nội</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-charcoal text-white py-8 mt-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-copper/60 text-xs tracking-wider">© 2025 Gentleman's Care.</p></div></footer>
+<script>function toggleAddForm(){document.getElementById('add-form').classList.toggle('hidden');}</script>
+</body>
+</html>

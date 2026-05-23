@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Noir Salon</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#1B2A4A','navy-dark':'#0D1829',gold:'#C9A84C',ivory:'#FAFAF7'}}}}</script>
+</head>
+<body class="bg-ivory text-gray-800 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-navy/98 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">✂️</span><span class="font-bold text-xl text-ivory">Noir<span class="text-gold">Salon</span></span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <a href="index.html" class="text-gray-300 hover:text-gold">Trang Chủ</a>
+      <a href="products.html" class="text-gray-300 hover:text-gold">Dịch Vụ</a>
+      <a href="about.html" class="text-gray-300 hover:text-gold">Về Chúng Tôi</a>
+      <a href="blog.html" class="text-gold font-semibold">Blog</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="login.html" class="text-gray-300 hover:text-gold"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a>
+      <a href="cart.html" class="relative text-gray-300 hover:text-gold"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+    </div>
+  </div>
+</nav>
+<section class="pt-24 pb-12 bg-navy text-white text-center">
+  <span class="bg-gold/20 text-gold text-xs px-4 py-1 rounded-full border border-gold/30">✂️ Noir Journal</span>
+  <h1 class="text-4xl font-bold mt-4 mb-3">Blog Làm Đẹp</h1>
+  <p class="text-gray-300 max-w-lg mx-auto">Xu hướng tóc, kỹ thuật tạo kiểu và bí quyết chăm sóc tóc từ đội ngũ master stylist Noir Salon</p>
+</section>
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col md:flex-row gap-4 mb-10">
+    <div class="relative flex-1 max-w-md">
+      <input type="text" placeholder="Tìm bài viết..." class="w-full bg-white border border-gold/30 focus:border-gold rounded-xl px-4 py-3 pl-10 text-sm outline-none"/>
+      <svg class="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      <button class="bg-gold text-navy-dark px-4 py-2 rounded-full text-xs font-semibold">Tất Cả</button>
+      <button class="bg-white border border-gold/30 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-gold hover:text-gold transition">Xu Hướng Tóc</button>
+      <button class="bg-white border border-gold/30 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-gold hover:text-gold transition">Kỹ Thuật</button>
+      <button class="bg-white border border-gold/30 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-gold hover:text-gold transition">Chăm Sóc</button>
+      <button class="bg-white border border-gold/30 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-gold hover:text-gold transition">Phong Cách</button>
+    </div>
+  </div>
+  <!-- Featured -->
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-12 group hover:shadow-md transition">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="aspect-video lg:aspect-auto bg-gradient-to-br from-navy to-navy-dark flex items-center justify-center min-h-64"><span class="text-8xl opacity-30">✂️</span></div>
+      <div class="p-10 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-3"><span class="bg-gold text-navy-dark text-xs px-3 py-1 rounded-full font-bold">Nổi Bật</span><span class="text-gray-400 text-xs">15 tháng 5, 2025</span></div>
+        <span class="bg-gold/10 text-gold text-xs px-3 py-1 rounded-full w-fit mb-3">Xu Hướng 2025</span>
+        <h2 class="text-2xl font-bold mb-4 group-hover:text-gold transition"><a href="blog-post.html">Balayage 2025: Kỹ Thuật Nhuộm Tóc Ombre Thế Hệ Mới</a></h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">Balayage không còn là kỹ thuật mới — nhưng năm 2025, các master stylist đang đẩy giới hạn với những biến thể chưa từng có trước đây...</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold font-bold text-sm">Đ</div>
+            <div><p class="text-sm font-semibold">Nguyễn Thành Đạt</p><p class="text-gray-400 text-xs">Master Colorist</p></div>
+          </div>
+          <a href="blog-post.html" class="text-gold font-semibold text-sm hover:text-yellow-600 transition">Đọc Ngay →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-navy/10 to-gold/10 flex items-center justify-center"><span class="text-5xl opacity-50">💇</span></div>
+      <div class="p-5">
+        <span class="bg-gold/10 text-gold text-xs px-3 py-1 rounded-full">Xu Hướng Tóc</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-gold transition"><a href="blog-post.html">Top 5 Kiểu Tóc Layer Nữ Được Yêu Cầu Nhiều Nhất 2025</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Từ curtain bangs đến butterfly cut — những kiểu tóc layer nào đang dẫn đầu xu hướng năm nay?</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>08/05/2025 · 5 phút</span><a href="blog-post.html" class="text-gold hover:text-yellow-600">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-navy/10 to-gold/10 flex items-center justify-center"><span class="text-5xl opacity-50">🎨</span></div>
+      <div class="p-5">
+        <span class="bg-gold/10 text-gold text-xs px-3 py-1 rounded-full">Kỹ Thuật</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-gold transition"><a href="blog-post.html">Màu Tóc Chocolate Brown: Kỹ Thuật Tông Tông Hoàn Hảo</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Màu nâu chocolate đã trở lại mạnh mẽ. Đây là những gì bạn cần biết trước khi đặt lịch nhuộm...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>02/05/2025 · 7 phút</span><a href="blog-post.html" class="text-gold hover:text-yellow-600">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-navy/10 to-gold/10 flex items-center justify-center"><span class="text-5xl opacity-50">🧴</span></div>
+      <div class="p-5">
+        <span class="bg-gold/10 text-gold text-xs px-3 py-1 rounded-full">Chăm Sóc</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-gold transition"><a href="blog-post.html">Tóc Nhuộm Nhiều Lần? Đây Là Cách Phục Hồi Tóc Hư</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Keratin, protein treatment hay oil masking? Chúng tôi so sánh hiệu quả từng phương pháp phục hồi...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>25/04/2025 · 8 phút</span><a href="blog-post.html" class="text-gold hover:text-yellow-600">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-navy/10 to-gold/10 flex items-center justify-center"><span class="text-5xl opacity-50">👔</span></div>
+      <div class="p-5">
+        <span class="bg-gold/10 text-gold text-xs px-3 py-1 rounded-full">Phong Cách</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-gold transition"><a href="blog-post.html">Kiểu Tóc Nam Công Sở: Chuyên Nghiệp Mà Vẫn Trendy</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Từ phòng họp đến buổi tối với bạn bè — những kiểu tóc nào giúp anh chàng luôn chỉn chu?</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>18/04/2025 · 6 phút</span><a href="blog-post.html" class="text-gold hover:text-yellow-600">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-navy/10 to-gold/10 flex items-center justify-center"><span class="text-5xl opacity-50">💍</span></div>
+      <div class="p-5">
+        <span class="bg-gold/10 text-gold text-xs px-3 py-1 rounded-full">Xu Hướng</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-gold transition"><a href="blog-post.html">Tóc Cô Dâu 2025: Những Kiểu Tết Đẹp Nhất Cho Ngày Trọng Đại</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Những kiểu búi tóc, tết thác đổ và updo kinh điển được nâng tầm với phụ kiện hiện đại...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>12/04/2025 · 9 phút</span><a href="blog-post.html" class="text-gold hover:text-yellow-600">Đọc →</a></div>
+      </div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition">
+      <div class="aspect-video bg-gradient-to-br from-navy/10 to-gold/10 flex items-center justify-center"><span class="text-5xl opacity-50">🌊</span></div>
+      <div class="p-5">
+        <span class="bg-gold/10 text-gold text-xs px-3 py-1 rounded-full">Kỹ Thuật</span>
+        <h3 class="font-bold text-base mt-3 mb-2 group-hover:text-gold transition"><a href="blog-post.html">Uốn Hàn Quốc vs Uốn Digital: Cái Nào Phù Hợp Với Bạn?</a></h3>
+        <p class="text-gray-500 text-sm mb-3">Cả hai đều cho tóc xoăn đẹp — nhưng công nghệ khác nhau, giá khác nhau, và kết quả cũng khác nhau...</p>
+        <div class="flex justify-between text-xs text-gray-400"><span>05/04/2025 · 7 phút</span><a href="blog-post.html" class="text-gold hover:text-yellow-600">Đọc →</a></div>
+      </div>
+    </article>
+  </div>
+  <div class="flex justify-center gap-2 mt-10">
+    <button class="w-10 h-10 bg-gold text-navy-dark rounded-full font-bold text-sm">1</button>
+    <button class="w-10 h-10 bg-white border border-gold/30 text-gray-600 rounded-full text-sm hover:border-gold transition">2</button>
+    <button class="w-10 h-10 bg-white border border-gold/30 text-gray-600 rounded-full text-sm hover:border-gold transition">3</button>
+  </div>
+</div>
+<footer class="bg-navy-dark text-white py-10 mt-12"><div class="max-w-7xl mx-auto px-4 text-center"><div class="flex items-center justify-center gap-2 mb-3"><span class="text-2xl">✂️</span><span class="font-bold text-xl text-ivory">Noir<span class="text-gold">Salon</span></span></div><p class="text-gold/60 text-xs">© 2025 Noir Salon. Đẳng Cấp Trong Từng Đường Kéo.</p></div></footer>
+</body>
+</html>

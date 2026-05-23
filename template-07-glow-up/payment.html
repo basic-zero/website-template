@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh Toán - Glow Up</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E05555',purple:'#7C3AED',yellow:'#FFD93D',dark:'#0F0F0F'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-1"><span class="text-2xl">✨</span><span class="font-black text-xl text-dark">Glow<span class="text-coral">Up</span></span></a>
+    <a href="order.html" class="text-coral text-sm font-bold">← Quay Lại</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-2 text-xs text-gray-400 mb-8">
+    <span class="text-coral font-bold">✓ Giỏ hàng</span><span>›</span><span class="text-coral font-bold">✓ Đặt hàng</span><span>›</span><span class="font-black text-dark">3. Thanh toán</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-black text-dark mb-5">💳 Phương Thức Thanh Toán</h2>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 p-4 border-2 border-coral rounded-2xl cursor-pointer bg-coral/5" onclick="showCard(true)">
+            <input type="radio" name="pay" checked class="accent-coral"/><span>💳</span><div><p class="font-black text-sm">Thẻ Tín Dụng / Ghi Nợ</p><p class="text-gray-400 text-xs">Visa · Mastercard · JCB · Napas</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-coral/30 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-coral"/><span>📱</span><div><p class="font-black text-sm">Ví MoMo / ZaloPay / VNPay</p><p class="text-gray-400 text-xs">Quét QR hoặc deeplink app</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-coral/30 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-coral"/><span>💵</span><div><p class="font-black text-sm">COD - Thanh Toán Khi Nhận</p><p class="text-gray-400 text-xs">Không phí phụ thu</p></div>
+          </label>
+        </div>
+        <div id="card-form" class="mt-5 space-y-4 p-5 bg-gray-50 rounded-2xl border-2 border-gray-200">
+          <div><label class="text-coral text-xs font-bold uppercase block mb-1">Số Thẻ</label><input type="text" placeholder="0000 0000 0000 0000" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+          <div><label class="text-coral text-xs font-bold uppercase block mb-1">Tên Chủ Thẻ</label><input type="text" placeholder="NGUYEN NGOC ANH" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-coral text-xs font-bold uppercase block mb-1">Hết Hạn</label><input type="text" placeholder="MM/YY" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+            <div><label class="text-coral text-xs font-bold uppercase block mb-1">CVV</label><input type="text" placeholder="***" class="w-full bg-white border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-medium"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <h2 class="font-black text-dark mb-3">📍 Địa Chỉ Giao Hàng</h2>
+        <div class="flex justify-between items-start">
+          <div><p class="font-black">Nguyễn Ngọc Anh</p><p class="text-gray-500 text-sm">0912 345 678</p><p class="text-gray-600 text-sm mt-1">52 Nguyễn Thị Minh Khai, P. 6, Q. 3, TP. Hồ Chí Minh</p></div>
+          <a href="order.html" class="text-coral text-xs font-bold">Đổi</a>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24 border border-gray-100">
+        <h2 class="font-black text-dark mb-4">Tổng Kết</h2>
+        <div class="space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Glow Serum Vit C</span><span>490.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Hydra Barrier Cream</span><span>380.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">SPF 50+ Shield</span><span>320.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-coral font-bold">Miễn phí</span></div>
+        </div>
+        <div class="border-t-2 border-gray-100 pt-4 flex justify-between font-black text-xl mb-5"><span>Tổng</span><span class="text-coral">1.190.000₫</span></div>
+        <p class="text-yellow text-xs mb-4 font-bold">✨ +1.190 Glow Points từ đơn này!</p>
+        <button onclick="window.location.href='orders.html'" class="w-full bg-coral text-white py-4 rounded-2xl font-black hover:bg-coral-dark transition text-sm">Xác Nhận Đặt Hàng ✨</button>
+        <div class="mt-4 flex justify-center gap-4 text-xs text-gray-400"><span>🔒 SSL</span><span>✓ Bảo mật 256-bit</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-500 text-xs">© 2025 Glow Up Beauty.</p></div></footer>
+<script>function showCard(show){document.getElementById('card-form').classList.toggle('hidden',!show);}</script>
+</body>
+</html>

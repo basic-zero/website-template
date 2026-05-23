@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Dermis Lab</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{clinic:'#003580',teal:'#00A896','clinic-dark':'#002060'}}}}</script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-clinic/10 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🔬</span><span class="font-bold text-xl text-clinic">Dermis<span class="text-teal">Lab</span></span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm"><a href="index.html" class="text-gray-600 hover:text-clinic">Trang Chủ</a><a href="products.html" class="text-gray-600 hover:text-clinic">Sản Phẩm</a><a href="blog.html" class="text-clinic font-semibold">Journal</a></div>
+    <div class="flex items-center gap-3"><a href="login.html" class="text-gray-600 hover:text-clinic"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a><a href="cart.html" class="relative text-gray-600 hover:text-clinic"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a></div>
+  </div>
+</nav>
+<section class="pt-24 pb-12 bg-clinic text-white text-center">
+  <span class="bg-teal/20 text-teal text-xs px-4 py-1 rounded-full border border-teal/30">🔬 Science Journal</span>
+  <h1 class="text-4xl font-bold mt-4 mb-3">Dermis Lab Journal</h1>
+  <p class="text-gray-300 max-w-lg mx-auto">Nghiên cứu khoa học, phân tích thành phần và hướng dẫn skincare dựa trên bằng chứng</p>
+</section>
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col md:flex-row gap-4 mb-10">
+    <div class="relative flex-1 max-w-md"><input type="text" placeholder="Tìm nghiên cứu, thành phần..." class="w-full bg-white border border-clinic/20 focus:border-clinic rounded-xl px-4 py-3 pl-10 text-sm outline-none"/><svg class="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+    <div class="flex flex-wrap gap-2">
+      <button class="bg-clinic text-white px-4 py-2 rounded-full text-xs font-semibold">Tất Cả</button>
+      <button class="bg-white border border-clinic/20 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-clinic transition">Retinoids</button>
+      <button class="bg-white border border-clinic/20 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-clinic transition">Vitamin C</button>
+      <button class="bg-white border border-clinic/20 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-clinic transition">AHA/BHA</button>
+      <button class="bg-white border border-clinic/20 text-gray-600 px-4 py-2 rounded-full text-xs hover:border-clinic transition">Barrier Repair</button>
+    </div>
+  </div>
+  <!-- Featured -->
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-12 group hover:shadow-md transition border border-gray-100">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="aspect-video lg:aspect-auto bg-gradient-to-br from-clinic to-clinic-dark flex items-center justify-center min-h-64"><span class="text-8xl opacity-20">🔬</span></div>
+      <div class="p-10 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-3"><span class="bg-teal text-white text-xs px-3 py-1 rounded-full font-semibold">Featured Research</span><span class="text-gray-400 text-xs">10 tháng 5, 2025</span></div>
+        <span class="bg-clinic/10 text-clinic text-xs px-3 py-1 rounded-full w-fit mb-3">Retinoids</span>
+        <h2 class="text-2xl font-bold mb-4 group-hover:text-teal transition text-clinic"><a href="blog-post.html">Retinol vs Tretinoin: Phân Tích Lâm Sàng Toàn Diện 2025</a></h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">Cả hai đều là Vitamin A derivative — nhưng hiệu quả, cơ chế tác động và tác dụng phụ có sự khác biệt lớn. Đây là tất cả những gì bạn cần biết từ góc độ khoa học...</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-clinic/10 rounded-full flex items-center justify-center text-clinic font-bold text-sm">A</div>
+            <div><p class="text-sm font-semibold">BS. Nguyễn Văn An</p><p class="text-gray-400 text-xs">MD, Dermatologist</p></div>
+          </div>
+          <a href="blog-post.html" class="text-clinic font-semibold text-sm hover:text-teal transition">Đọc →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-gradient-to-br from-teal/10 to-clinic/5 flex items-center justify-center"><span class="text-5xl opacity-50">🍋</span></div>
+      <div class="p-5"><span class="bg-teal/10 text-teal text-xs px-3 py-1 rounded-full">Vitamin C</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-clinic transition"><a href="blog-post.html">Tại Sao Vitamin C Serum Của Bạn Bị Oxy Hóa?</a></h3><p class="text-gray-500 text-sm mb-3">L-Ascorbic Acid không ổn định — đây là cách bảo quản và sử dụng đúng để đảm bảo hiệu quả tối đa...</p><div class="flex justify-between text-xs text-gray-400"><span>05/05/2025 · 6 phút</span><a href="blog-post.html" class="text-clinic hover:text-teal">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-gradient-to-br from-clinic/5 to-teal/10 flex items-center justify-center"><span class="text-5xl opacity-50">🧴</span></div>
+      <div class="p-5"><span class="bg-clinic/10 text-clinic text-xs px-3 py-1 rounded-full">AHA/BHA</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-clinic transition"><a href="blog-post.html">AHA vs BHA vs PHA: Chọn Acid Nào Cho Loại Da Nào?</a></h3><p class="text-gray-500 text-sm mb-3">Hướng dẫn đầy đủ về các loại exfoliating acid và cách lựa chọn dựa trên bằng chứng lâm sàng...</p><div class="flex justify-between text-xs text-gray-400"><span>28/04/2025 · 8 phút</span><a href="blog-post.html" class="text-clinic hover:text-teal">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-gradient-to-br from-teal/10 to-clinic/5 flex items-center justify-center"><span class="text-5xl opacity-50">🛡️</span></div>
+      <div class="p-5"><span class="bg-teal/10 text-teal text-xs px-3 py-1 rounded-full">Barrier Repair</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-clinic transition"><a href="blog-post.html">Skin Barrier Là Gì & Tại Sao Nó Quan Trọng Hơn Bạn Nghĩ?</a></h3><p class="text-gray-500 text-sm mb-3">Hàng rào da bảo vệ chúng ta khỏi 99% tác nhân gây hại. Khi nó bị tổn thương, toàn bộ da đều bị ảnh hưởng...</p><div class="flex justify-between text-xs text-gray-400"><span>20/04/2025 · 7 phút</span><a href="blog-post.html" class="text-clinic hover:text-teal">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-gradient-to-br from-clinic/5 to-teal/5 flex items-center justify-center"><span class="text-5xl opacity-50">☀️</span></div>
+      <div class="p-5"><span class="bg-clinic/10 text-clinic text-xs px-3 py-1 rounded-full">SPF</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-clinic transition"><a href="blog-post.html">SPF 50 vs SPF 100: Sự Thật Về Con Số Bạn Đang Tin</a></h3><p class="text-gray-500 text-sm mb-3">Nhiều người nghĩ SPF 100 = bảo vệ gấp đôi SPF 50. Nghiên cứu nói điều khác. Tìm hiểu ngay...</p><div class="flex justify-between text-xs text-gray-400"><span>15/04/2025 · 5 phút</span><a href="blog-post.html" class="text-clinic hover:text-teal">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-gradient-to-br from-teal/10 to-clinic/5 flex items-center justify-center"><span class="text-5xl opacity-50">💧</span></div>
+      <div class="p-5"><span class="bg-teal/10 text-teal text-xs px-3 py-1 rounded-full">Hyaluronic Acid</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-clinic transition"><a href="blog-post.html">Phân Tử HA: Tại Sao Trọng Lượng Phân Tử Quyết Định Hiệu Quả?</a></h3><p class="text-gray-500 text-sm mb-3">Low vs High molecular weight HA — không phải tất cả Hyaluronic Acid đều như nhau. Đây là khoa học đằng sau nó...</p><div class="flex justify-between text-xs text-gray-400"><span>08/04/2025 · 6 phút</span><a href="blog-post.html" class="text-clinic hover:text-teal">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-2xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-gradient-to-br from-clinic/5 to-teal/10 flex items-center justify-center"><span class="text-5xl opacity-50">🧬</span></div>
+      <div class="p-5"><span class="bg-clinic/10 text-clinic text-xs px-3 py-1 rounded-full">Peptides</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-clinic transition"><a href="blog-post.html">Peptides Trong Skincare: Hype Hay Hiệu Quả Thực Sự?</a></h3><p class="text-gray-500 text-sm mb-3">Signal peptides, carrier peptides, neurotransmitter peptides — phân tích từng loại và xem nghiên cứu nào ủng hộ...</p><div class="flex justify-between text-xs text-gray-400"><span>01/04/2025 · 9 phút</span><a href="blog-post.html" class="text-clinic hover:text-teal">Đọc →</a></div></div>
+    </article>
+  </div>
+  <div class="flex justify-center gap-2 mt-10">
+    <button class="w-10 h-10 bg-clinic text-white rounded-full font-bold text-sm">1</button>
+    <button class="w-10 h-10 bg-white border border-clinic/20 text-gray-600 rounded-full text-sm hover:border-clinic transition">2</button>
+    <button class="w-10 h-10 bg-white border border-clinic/20 text-gray-600 rounded-full text-sm hover:border-clinic transition">3</button>
+  </div>
+</div>
+<footer class="bg-clinic text-white py-10 mt-12"><div class="max-w-7xl mx-auto px-4 text-center"><div class="flex items-center justify-center gap-2 mb-3"><span class="text-2xl">🔬</span><span class="font-bold text-xl">Dermis<span class="text-teal">Lab</span></span></div><p class="text-teal text-xs">© 2025 Dermis Lab. Science-Backed. Dermatologist-Approved.</p></div></footer>
+</body>
+</html>

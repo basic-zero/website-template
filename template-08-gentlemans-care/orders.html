@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đơn Hàng - Gentleman's Care</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{charcoal:'#1C2233','charcoal-dark':'#0F1520',copper:'#B87333','copper-dark':'#966030',offwhite:'#F4F1EE'}}}}</script>
+</head>
+<body class="bg-offwhite font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-charcoal border-b border-white/10 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-xl">⚔️</span><span class="font-bold text-xl tracking-widest text-white">GENTLEMAN'S<span class="text-copper"> CARE</span></span></a>
+    <a href="cart.html" class="relative text-gray-400 hover:text-copper"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <aside class="lg:col-span-1">
+      <div class="bg-charcoal rounded-xl shadow-sm overflow-hidden mb-4">
+        <div class="p-5 text-center border-b border-white/10">
+          <div class="w-14 h-14 bg-copper/20 border-2 border-copper rounded-full flex items-center justify-center mx-auto mb-2 text-2xl font-bold text-copper">M</div>
+          <p class="font-bold text-white tracking-wider">NGUYỄN VĂN MẠNH</p>
+          <p class="text-copper text-xs mt-0.5 tracking-widest">GOLD MEMBER</p>
+        </div>
+        <div class="p-4 text-center border-b border-white/10">
+          <p class="text-2xl font-bold text-copper">2.400</p>
+          <p class="text-xs text-gray-400 tracking-wider">GENTLEMAN POINTS</p>
+          <div class="mt-2 bg-white/10 rounded-full h-1.5"><div class="bg-copper h-1.5 rounded-full" style="width:48%"></div></div>
+          <p class="text-xs text-gray-500 mt-1">Còn 2.600 pts → PLATINUM</p>
+        </div>
+        <nav class="p-3">
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-copper/20 text-copper font-semibold text-sm tracking-wider"><span>📦</span>ĐƠN HÀNG</a>
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:text-copper text-sm tracking-wider mt-1"><span>👤</span>HỒ SƠ</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:text-copper text-sm tracking-wider mt-1"><span>📍</span>ĐỊA CHỈ</a>
+          <a href="blog.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:text-copper text-sm tracking-wider mt-1"><span>📰</span>JOURNAL</a>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:text-copper text-sm tracking-wider mt-1"><span>🚪</span>ĐĂNG XUẤT</a>
+        </nav>
+      </div>
+    </aside>
+    <div class="lg:col-span-3">
+      <div class="flex items-center justify-between mb-6">
+        <h1 class="text-xl font-bold text-charcoal tracking-wider">LỊCH SỬ ĐƠN HÀNG</h1>
+        <select class="bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs outline-none text-gray-600 tracking-wider">
+          <option>TẤT CẢ</option><option>ĐANG GIAO</option><option>ĐÃ GIAO</option>
+        </select>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-bold text-charcoal tracking-wider">#GC-2025-0800</p><p class="text-gray-400 text-xs mt-0.5 tracking-wider">10/05/2025 · GIAO TIÊU CHUẨN</p></div>
+            <span class="bg-green-50 text-green-600 text-xs px-3 py-1 rounded font-semibold tracking-wider">✓ ĐÃ GIAO</span>
+          </div>
+          <div class="space-y-3 mb-4">
+            <div class="flex gap-3"><div class="w-12 h-12 bg-charcoal rounded-lg flex items-center justify-center flex-shrink-0"><span class="opacity-30 text-xl">🪒</span></div><div class="flex-1"><p class="font-semibold text-sm tracking-wide">Beard Oil Premium Cedar</p><p class="text-gray-400 text-xs tracking-wider">30ml ×1</p></div><p class="font-bold text-charcoal text-sm">420K</p></div>
+            <div class="flex gap-3"><div class="w-12 h-12 bg-copper/10 rounded-lg flex items-center justify-center flex-shrink-0"><span class="opacity-40 text-xl">🧴</span></div><div class="flex-1"><p class="font-semibold text-sm tracking-wide">Daily Moisturizer SPF 30</p><p class="text-gray-400 text-xs tracking-wider">50ml ×1</p></div><p class="font-bold text-charcoal text-sm">380K</p></div>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+            <div class="text-xs text-gray-500 tracking-wider">TỔNG: <span class="font-bold text-charcoal">800.000₫</span> · +800 PTS</div>
+            <div class="flex gap-2">
+              <button class="text-xs border border-charcoal text-charcoal px-3 py-1.5 rounded-lg hover:bg-charcoal/5 transition tracking-wider">MUA LẠI</button>
+              <a href="order-detail.html" class="text-xs bg-charcoal text-white px-3 py-1.5 rounded-lg hover:bg-charcoal-dark transition tracking-wider">CHI TIẾT</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-bold text-charcoal tracking-wider">#GC-2025-0650</p><p class="text-gray-400 text-xs mt-0.5 tracking-wider">22/04/2025 · EXPRESS</p></div>
+            <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded font-semibold tracking-wider">🚚 ĐANG GIAO</span>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-charcoal/80 rounded-lg flex items-center justify-center flex-shrink-0"><span class="opacity-20 text-xl">💈</span></div>
+            <div class="flex-1"><p class="font-semibold text-sm tracking-wide">Matt Clay Strong Hold</p><p class="text-gray-400 text-xs tracking-wider">100g ×1</p></div>
+            <p class="font-bold text-charcoal text-sm">310K</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+            <div class="text-xs text-gray-500 tracking-wider">GHN: 9934012</div>
+            <a href="order-detail.html" class="text-xs bg-copper text-white px-3 py-1.5 rounded-lg hover:bg-copper-dark transition tracking-wider">THEO DÕI</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="flex justify-between items-start mb-4">
+            <div><p class="font-bold text-charcoal tracking-wider">#GC-2025-0490</p><p class="text-gray-400 text-xs mt-0.5 tracking-wider">05/03/2025 · GIAO TIÊU CHUẨN</p></div>
+            <span class="bg-green-50 text-green-600 text-xs px-3 py-1 rounded font-semibold tracking-wider">✓ ĐÃ GIAO</span>
+          </div>
+          <div class="flex gap-3 mb-4">
+            <div class="w-12 h-12 bg-copper/20 rounded-lg flex items-center justify-center flex-shrink-0"><span class="opacity-40 text-xl">🌲</span></div>
+            <div class="flex-1"><p class="font-semibold text-sm tracking-wide">Cedar & Sandalwood Parfum</p><p class="text-gray-400 text-xs tracking-wider">50ml ×1</p></div>
+            <p class="font-bold text-charcoal text-sm">850K</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+            <div class="text-xs text-gray-500 tracking-wider">TỔNG: <span class="font-bold text-charcoal">850.000₫</span> · +850 PTS</div>
+            <div class="flex gap-2">
+              <button class="text-xs border border-charcoal text-charcoal px-3 py-1.5 rounded-lg hover:bg-charcoal/5 transition tracking-wider">MUA LẠI</button>
+              <a href="order-detail.html" class="text-xs bg-charcoal text-white px-3 py-1.5 rounded-lg hover:bg-charcoal-dark transition tracking-wider">CHI TIẾT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-charcoal text-white py-8 mt-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-copper/60 text-xs tracking-wider">© 2025 Gentleman's Care. Crafted for the Modern Man.</p></div></footer>
+</body>
+</html>

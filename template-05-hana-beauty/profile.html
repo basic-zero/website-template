@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồ Sơ - Hana Beauty</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{kpink:'#FFB7C5','kpink-dark':'#E8839A',lilac:'#C8B2DB',mint:'#B2DBC8'}}}}</script>
+</head>
+<body style="background-color:#FFF8FA;" class="font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-kpink/30">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl" style="color:#3d2b3d;">Hana<span style="color:#FFB7C5;">Beauty</span></span></a>
+    <a href="cart.html" class="relative text-gray-500 hover:text-kpink-dark"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-7xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <aside class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-5 shadow-sm mb-4">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl text-white" style="background:#E8839A;">L</div>
+          <div><p class="font-semibold" style="color:#3d2b3d;">Phạm Thùy Linh</p><p class="text-xs font-medium" style="color:#E8839A;">🌸 Hana Member</p></div>
+        </div>
+        <nav class="space-y-1">
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2 text-sm rounded-xl font-semibold" style="color:#E8839A;background:#FFF0F5;">👤 Thông Tin</a>
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-kpink-dark hover:bg-kpink/10 rounded-xl transition">📦 Đơn Hàng</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-kpink-dark hover:bg-kpink/10 rounded-xl transition">📍 Địa Chỉ</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-kpink-dark hover:bg-kpink/10 rounded-xl transition">❤️ Yêu Thích</a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-500 hover:text-kpink-dark hover:bg-kpink/10 rounded-xl transition">🌸 Hana Points</a>
+          <hr class="border-kpink/20 my-2"/>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2 text-sm text-gray-400 hover:text-red-400 rounded-xl transition">⬅️ Đăng Xuất</a>
+        </nav>
+      </div>
+      <div class="rounded-2xl p-5" style="background:#FFF0F5;">
+        <p class="text-xs font-semibold uppercase mb-2" style="color:#E8839A;">Hana Points</p>
+        <p class="text-2xl font-bold" style="color:#3d2b3d;">1.680 <span class="text-sm font-normal text-gray-500">pts</span></p>
+        <div class="mt-2 bg-white rounded-full h-2"><div class="h-2 rounded-full" style="width:56%;background:#E8839A;"></div></div>
+        <p class="text-gray-500 text-xs mt-1">Cần 1.320 pts lên Premium ✨</p>
+      </div>
+    </aside>
+    <div class="lg:col-span-3 space-y-6">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-white rounded-2xl p-5 shadow-sm text-center"><p class="text-3xl font-bold" style="color:#E8839A;">4</p><p class="text-gray-500 text-sm mt-1">Đơn Hàng</p></div>
+        <div class="bg-white rounded-2xl p-5 shadow-sm text-center"><p class="text-3xl font-bold" style="color:#E8839A;">1.680</p><p class="text-gray-500 text-sm mt-1">Hana Points</p></div>
+        <div class="bg-white rounded-2xl p-5 shadow-sm text-center"><p class="text-3xl font-bold" style="color:#E8839A;">5</p><p class="text-gray-500 text-sm mt-1">Đánh Giá</p></div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+          <h2 class="font-bold" style="color:#3d2b3d;">Thông Tin Cá Nhân</h2>
+          <button onclick="toggleEdit()" id="edit-btn" class="text-sm font-semibold" style="color:#E8839A;">✏️ Chỉnh Sửa</button>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-5 mb-6 pb-6 border-b border-gray-100">
+            <div class="w-20 h-20 rounded-full flex items-center justify-center text-4xl font-bold text-white" style="background:#E8839A;">L</div>
+            <div><p class="font-bold text-lg" style="color:#3d2b3d;">Phạm Thị Thùy Linh</p><p class="text-gray-500 text-sm">Thành viên từ tháng 2, 2025</p><p class="text-xs font-semibold mt-1" style="color:#E8839A;">🌸 Hana Member</p></div>
+          </div>
+          <div id="view-mode" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div><p class="text-xs font-semibold uppercase mb-1" style="color:#E8839A;">Họ Và Tên</p><p>Phạm Thị Thùy Linh</p></div>
+            <div><p class="text-xs font-semibold uppercase mb-1" style="color:#E8839A;">Ngày Sinh</p><p>05/12/1998</p></div>
+            <div><p class="text-xs font-semibold uppercase mb-1" style="color:#E8839A;">Email</p><p>thuylinh@gmail.com</p></div>
+            <div><p class="text-xs font-semibold uppercase mb-1" style="color:#E8839A;">Điện Thoại</p><p>0987 654 321</p></div>
+            <div><p class="text-xs font-semibold uppercase mb-1" style="color:#E8839A;">Loại Da</p><p>Da khô nhạy cảm</p></div>
+            <div><p class="text-xs font-semibold uppercase mb-1" style="color:#E8839A;">Mối Quan Tâm</p><p>Dưỡng ẩm, chống lão hóa</p></div>
+          </div>
+          <div id="edit-mode" class="hidden space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Họ</label><input type="text" value="Phạm Thị" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+              <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Tên</label><input type="text" value="Thùy Linh" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Email</label><input type="email" value="thuylinh@gmail.com" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+              <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Điện Thoại</label><input type="tel" value="0987 654 321" class="w-full border border-kpink/40 focus:border-kpink-dark rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;"/></div>
+            </div>
+            <div><label class="text-xs font-semibold uppercase block mb-1" style="color:#E8839A;">Loại Da</label>
+              <select class="w-full border border-kpink/40 rounded-xl px-4 py-2.5 text-sm outline-none" style="background:#FFF8FA;">
+                <option>Da khô nhạy cảm</option><option>Da dầu</option><option>Da hỗn hợp</option><option>Da thường</option>
+              </select>
+            </div>
+            <div class="flex gap-3"><button onclick="toggleEdit()" class="text-white px-6 py-2.5 rounded-xl text-sm font-semibold" style="background:#E8839A;">Lưu</button><button onclick="cancelEdit()" class="border border-kpink/40 px-6 py-2.5 rounded-xl text-sm hover:bg-kpink/10" style="color:#E8839A;">Hủy</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- Membership -->
+      <div class="rounded-2xl p-6 text-white" style="background:linear-gradient(135deg,#E8839A,#C8B2DB);">
+        <div class="flex items-center justify-between mb-4">
+          <div><p class="text-xs uppercase font-semibold" style="color:rgba(255,255,255,0.7);">Hạng Thành Viên</p><p class="text-2xl font-bold mt-1">🌸 Hana Member</p></div>
+          <div class="text-right"><p class="text-xs" style="color:rgba(255,255,255,0.7);">Hana Points</p><p class="text-3xl font-bold">1.680</p></div>
+        </div>
+        <div class="bg-white/20 rounded-full h-2 mb-2"><div class="bg-white h-2 rounded-full" style="width:56%;"></div></div>
+        <div class="flex justify-between text-xs" style="color:rgba(255,255,255,0.7);"><span>Member (0–3.000)</span><span>Premium ✨ (3.000+)</span></div>
+        <div class="mt-4 pt-4 border-t border-white/20 grid grid-cols-2 gap-3 text-sm">
+          <div>🌸 1 pt / 1.000₫</div><div>🎁 Quà sinh nhật</div>
+          <div>🚚 Free ship 500K+</div><div>🇰🇷 K-Beauty tips</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer style="background:#3d2b3d;" class="text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-kpink text-xs">© 2025 Hana Beauty.</p></div></footer>
+<script>
+function toggleEdit(){
+  const edit=document.getElementById('edit-mode'),view=document.getElementById('view-mode'),btn=document.getElementById('edit-btn');
+  const isEditing=!edit.classList.contains('hidden');
+  edit.classList.toggle('hidden',isEditing);view.classList.toggle('hidden',!isEditing);
+  btn.textContent=isEditing?'✏️ Chỉnh Sửa':'';
+}
+function cancelEdit(){
+  document.getElementById('edit-mode').classList.add('hidden');document.getElementById('view-mode').classList.remove('hidden');
+  document.getElementById('edit-btn').textContent='✏️ Chỉnh Sửa';
+}
+</script>
+</body>
+</html>

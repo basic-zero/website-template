@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vibe & Tips - Glow Up</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E05555',purple:'#7C3AED',yellow:'#FFD93D',dark:'#0F0F0F'}}}}</script>
+</head>
+<body class="bg-white font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-1"><span class="text-2xl">✨</span><span class="font-black text-xl text-dark">Glow<span class="text-coral">Up</span></span></a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium"><a href="index.html" class="text-gray-500 hover:text-coral">Home</a><a href="products.html" class="text-gray-500 hover:text-coral">Shop</a><a href="blog.html" class="text-coral font-black">Vibe</a></div>
+    <div class="flex items-center gap-3"><a href="login.html" class="text-gray-600 hover:text-coral"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a><a href="cart.html" class="relative text-gray-600 hover:text-coral"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a></div>
+  </div>
+</nav>
+<!-- Hero -->
+<section class="pt-24 pb-16 bg-gradient-to-br from-yellow/40 via-coral/20 to-purple/20 text-center">
+  <span class="bg-coral text-white text-xs px-4 py-1.5 rounded-full font-black">✨ Vibe & Beauty Tips</span>
+  <h1 class="text-4xl md:text-5xl font-black mt-4 mb-3 text-dark">The Glow Up <span class="text-coral">Blog</span></h1>
+  <p class="text-gray-600 max-w-lg mx-auto text-sm">Skincare tips, makeup hacks, trend alerts — tất cả cho gen Z từ gen Z 🤙</p>
+</section>
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <!-- Filter -->
+  <div class="flex flex-col md:flex-row gap-4 mb-10">
+    <div class="relative flex-1 max-w-md"><input type="text" placeholder="Tìm tips, products..." class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-2xl px-4 py-3 pl-10 text-sm outline-none font-medium"/><svg class="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+    <div class="flex flex-wrap gap-2">
+      <button class="bg-coral text-white px-4 py-2 rounded-full text-xs font-black">All Vibes</button>
+      <button class="bg-white border-2 border-gray-200 text-gray-600 px-4 py-2 rounded-full text-xs font-bold hover:border-coral transition">Skincare</button>
+      <button class="bg-white border-2 border-gray-200 text-gray-600 px-4 py-2 rounded-full text-xs font-bold hover:border-coral transition">Makeup</button>
+      <button class="bg-white border-2 border-gray-200 text-gray-600 px-4 py-2 rounded-full text-xs font-bold hover:border-coral transition">Trend</button>
+      <button class="bg-white border-2 border-gray-200 text-gray-600 px-4 py-2 rounded-full text-xs font-bold hover:border-coral transition">Routine</button>
+    </div>
+  </div>
+  <!-- Featured -->
+  <div class="bg-gradient-to-br from-yellow/20 to-coral/10 rounded-3xl overflow-hidden border-2 border-yellow/40 mb-12 group hover:shadow-lg transition">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="aspect-video lg:aspect-auto bg-gradient-to-br from-yellow to-coral flex items-center justify-center min-h-64"><span class="text-9xl">🌟</span></div>
+      <div class="p-10 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-3"><span class="bg-coral text-white text-xs px-3 py-1 rounded-full font-black">🔥 Hot Post</span><span class="text-gray-400 text-xs">12 tháng 5, 2025</span></div>
+        <span class="bg-yellow/30 text-dark text-xs px-3 py-1 rounded-full w-fit mb-3 font-bold">Skincare Routine</span>
+        <h2 class="text-2xl font-black mb-4 text-dark group-hover:text-coral transition"><a href="blog-post.html">Morning Routine 5 Bước Cho Da Căng Bóng Cả Ngày ☀️</a></h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">Không cần 10 bước rườm rà. Đây là minimal routine cực kỳ hiệu quả mà mình đã stick với suốt 6 tháng — da từ dầu bết thành glass skin thật sự...</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-coral rounded-full flex items-center justify-center text-white font-black text-sm">N</div>
+            <div><p class="text-sm font-black">Nguyễn Ngọc Anh</p><p class="text-gray-400 text-xs">Beauty Creator · 180K followers</p></div>
+          </div>
+          <a href="blog-post.html" class="text-coral font-black text-sm hover:text-coral-dark transition">Đọc →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="bg-white rounded-3xl overflow-hidden group hover:shadow-lg transition border-2 border-gray-100 hover:border-coral/30">
+      <div class="aspect-video bg-gradient-to-br from-purple/20 to-coral/10 flex items-center justify-center"><span class="text-5xl">💜</span></div>
+      <div class="p-5"><span class="bg-purple/10 text-purple text-xs px-3 py-1 rounded-full font-bold">Makeup</span><h3 class="font-black text-base mt-3 mb-2 group-hover:text-coral transition"><a href="blog-post.html">GRWM: Makeup Tím Đi Chơi Cuối Tuần 💜</a></h3><p class="text-gray-500 text-sm mb-3">Get Ready With Me với bộ makeup tím fantasy. Gợi ý sản phẩm dưới 500K vẫn cực chuẩn...</p><div class="flex justify-between text-xs text-gray-400"><span>08/05/2025 · 5 phút</span><a href="blog-post.html" class="text-coral font-bold hover:text-coral-dark">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-3xl overflow-hidden group hover:shadow-lg transition border-2 border-gray-100 hover:border-coral/30">
+      <div class="aspect-video bg-gradient-to-br from-yellow/30 to-coral/10 flex items-center justify-center"><span class="text-5xl">☀️</span></div>
+      <div class="p-5"><span class="bg-yellow/30 text-dark text-xs px-3 py-1 rounded-full font-bold">Skincare</span><h3 class="font-black text-base mt-3 mb-2 group-hover:text-coral transition"><a href="blog-post.html">SPF Là Vũ Khí Chống Lão Hóa #1 — Và Đây Là Cách Dùng Đúng</a></h3><p class="text-gray-500 text-sm mb-3">Dùng SPF hàng ngày từ năm 20 tuổi bạn sẽ cảm ơn bản thân khi 35. Đây là tất cả những gì bạn cần biết...</p><div class="flex justify-between text-xs text-gray-400"><span>03/05/2025 · 7 phút</span><a href="blog-post.html" class="text-coral font-bold hover:text-coral-dark">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-3xl overflow-hidden group hover:shadow-lg transition border-2 border-gray-100 hover:border-coral/30">
+      <div class="aspect-video bg-gradient-to-br from-coral/20 to-yellow/20 flex items-center justify-center"><span class="text-5xl">🔴</span></div>
+      <div class="p-5"><span class="bg-coral/10 text-coral text-xs px-3 py-1 rounded-full font-bold">Trend</span><h3 class="font-black text-base mt-3 mb-2 group-hover:text-coral transition"><a href="blog-post.html">Blush Neon — Xu Hướng Makeup Đang Chiếm TikTok 2025</a></h3><p class="text-gray-500 text-sm mb-3">Má hồng neon đang viral khắp FYP — cách mix màu, sản phẩm được dùng và cách tránh bị giống "bệnh nhân"...</p><div class="flex justify-between text-xs text-gray-400"><span>28/04/2025 · 4 phút</span><a href="blog-post.html" class="text-coral font-bold hover:text-coral-dark">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-3xl overflow-hidden group hover:shadow-lg transition border-2 border-gray-100 hover:border-coral/30">
+      <div class="aspect-video bg-gradient-to-br from-purple/10 to-yellow/20 flex items-center justify-center"><span class="text-5xl">💧</span></div>
+      <div class="p-5"><span class="bg-purple/10 text-purple text-xs px-3 py-1 rounded-full font-bold">Skincare</span><h3 class="font-black text-base mt-3 mb-2 group-hover:text-coral transition"><a href="blog-post.html">Niacinamide Có Đi Được Với Vitamin C Không? Sự Thật Cuối Cùng</a></h3><p class="text-gray-500 text-sm mb-3">Mọi người đã tranh cãi vấn đề này quá lâu rồi. Hãy để khoa học trả lời một lần và mãi mãi...</p><div class="flex justify-between text-xs text-gray-400"><span>21/04/2025 · 6 phút</span><a href="blog-post.html" class="text-coral font-bold hover:text-coral-dark">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-3xl overflow-hidden group hover:shadow-lg transition border-2 border-gray-100 hover:border-coral/30">
+      <div class="aspect-video bg-gradient-to-br from-yellow/20 to-purple/10 flex items-center justify-center"><span class="text-5xl">🌙</span></div>
+      <div class="p-5"><span class="bg-yellow/30 text-dark text-xs px-3 py-1 rounded-full font-bold">Routine</span><h3 class="font-black text-base mt-3 mb-2 group-hover:text-coral transition"><a href="blog-post.html">Night Routine Cho Da Dầu Mụn — Không Bí Bách Khi Ngủ</a></h3><p class="text-gray-500 text-sm mb-3">Skincare tối không cần quá nhiều sản phẩm. Đây là routine 4 bước mình dùng mỗi đêm, da sáng bật tone sáng hôm sau...</p><div class="flex justify-between text-xs text-gray-400"><span>14/04/2025 · 8 phút</span><a href="blog-post.html" class="text-coral font-bold hover:text-coral-dark">Đọc →</a></div></div>
+    </article>
+    <article class="bg-white rounded-3xl overflow-hidden group hover:shadow-lg transition border-2 border-gray-100 hover:border-coral/30">
+      <div class="aspect-video bg-gradient-to-br from-coral/15 to-purple/15 flex items-center justify-center"><span class="text-5xl">💄</span></div>
+      <div class="p-5"><span class="bg-coral/10 text-coral text-xs px-3 py-1 rounded-full font-bold">Makeup</span><h3 class="font-black text-base mt-3 mb-2 group-hover:text-coral transition"><a href="blog-post.html">Lip Combo Viral TikTok: 5 Bộ Đôi Son Liner Đỉnh Nhất</a></h3><p class="text-gray-500 text-sm mb-3">Lip liner trở lại đỉnh cao. Đây là 5 combo son liner được mình test và chốt ngay vì quá đẹp...</p><div class="flex justify-between text-xs text-gray-400"><span>07/04/2025 · 5 phút</span><a href="blog-post.html" class="text-coral font-bold hover:text-coral-dark">Đọc →</a></div></div>
+    </article>
+  </div>
+  <div class="flex justify-center gap-2 mt-10">
+    <button class="w-10 h-10 bg-coral text-white rounded-full font-black text-sm">1</button>
+    <button class="w-10 h-10 bg-white border-2 border-gray-200 text-gray-600 rounded-full text-sm font-bold hover:border-coral transition">2</button>
+    <button class="w-10 h-10 bg-white border-2 border-gray-200 text-gray-600 rounded-full text-sm font-bold hover:border-coral transition">3</button>
+  </div>
+</div>
+<footer class="bg-dark text-white py-10 mt-12"><div class="max-w-7xl mx-auto px-4 text-center"><div class="flex items-center justify-center gap-2 mb-3"><span class="text-2xl">✨</span><span class="font-black text-xl">Glow<span class="text-coral">Up</span></span></div><p class="text-gray-500 text-xs">© 2025 Glow Up Beauty. Stay glowing ✨</p></div></footer>
+</body>
+</html>

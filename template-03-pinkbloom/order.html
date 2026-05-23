@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đặt Hàng - PinkBloom</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{pink:'#FF1493','pink-dark':'#C71585','pink-light':'#FFB6C1',rose:'#FFE4E8','dark':'#1a1a2e'}}}}</script>
+</head>
+<body class="bg-rose font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-pink/20">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl text-dark">Pink<span class="text-pink">Bloom</span></span></a>
+    <a href="cart.html" class="text-pink text-sm">← Quay Lại Giỏ Hàng</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <!-- Steps -->
+  <div class="flex items-center justify-center gap-2 mb-10 text-sm">
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink/20 rounded-full flex items-center justify-center text-pink font-bold text-xs">✓</div><span class="text-gray-400">Giỏ Hàng</span></div>
+    <div class="w-12 h-0.5 bg-pink"></div>
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink rounded-full flex items-center justify-center text-white font-bold text-xs">2</div><span class="font-semibold text-pink">Đặt Hàng</span></div>
+    <div class="w-12 h-0.5 bg-pink/30"></div>
+    <div class="flex items-center gap-2"><div class="w-8 h-8 bg-pink/20 rounded-full flex items-center justify-center text-pink/50 font-bold text-xs">3</div><span class="text-gray-400">Thanh Toán</span></div>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- Left -->
+    <div class="lg:col-span-2 space-y-6">
+      <!-- Shipping Info -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h2 class="font-bold text-dark mb-5">📍 Thông Tin Giao Hàng</h2>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Họ</label><input type="text" placeholder="Lê Thị" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Tên</label><input type="text" placeholder="Bảo Trân" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Số Điện Thoại</label><input type="tel" placeholder="0901 234 567" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Email</label><input type="email" placeholder="bao.tran@gmail.com" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Địa Chỉ</label><input type="text" placeholder="Số nhà, tên đường" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Tỉnh/Thành</label>
+              <select class="w-full bg-rose border border-pink/30 rounded-xl px-3 py-2.5 text-sm outline-none">
+                <option>TP. HCM</option><option>Hà Nội</option><option>Đà Nẵng</option>
+              </select>
+            </div>
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Quận/Huyện</label>
+              <select class="w-full bg-rose border border-pink/30 rounded-xl px-3 py-2.5 text-sm outline-none">
+                <option>Quận 1</option><option>Quận 3</option><option>Bình Thạnh</option>
+              </select>
+            </div>
+            <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Phường/Xã</label>
+              <select class="w-full bg-rose border border-pink/30 rounded-xl px-3 py-2.5 text-sm outline-none">
+                <option>P. Bến Nghé</option><option>P. Bến Thành</option>
+              </select>
+            </div>
+          </div>
+          <div><label class="text-pink text-xs font-semibold uppercase block mb-1">Ghi Chú</label><textarea placeholder="Ghi chú cho shipper (không bắt buộc)..." rows="2" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-2.5 text-sm outline-none resize-none"></textarea></div>
+        </div>
+      </div>
+      <!-- Shipping Method -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h2 class="font-bold text-dark mb-4">🚚 Phương Thức Vận Chuyển</h2>
+        <div class="space-y-3">
+          <label class="flex items-center justify-between p-4 border-2 border-pink rounded-xl cursor-pointer bg-rose">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" checked class="accent-pink"/><div><p class="font-semibold text-sm">Giao Hàng Nhanh</p><p class="text-gray-500 text-xs">2-3 ngày làm việc</p></div></div>
+            <span class="text-pink font-bold text-sm">Miễn phí</span>
+          </label>
+          <label class="flex items-center justify-between p-4 border border-pink/20 rounded-xl cursor-pointer hover:border-pink/50 transition">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" class="accent-pink"/><div><p class="font-semibold text-sm">Giao Hỏa Tốc</p><p class="text-gray-500 text-xs">Trong ngày (nội thành HCM)</p></div></div>
+            <span class="font-bold text-sm">35.000₫</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Summary -->
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24">
+        <h2 class="font-bold text-dark mb-4">Tóm Tắt</h2>
+        <div class="space-y-3 mb-4">
+          <div class="flex items-center gap-3"><div class="w-10 h-10 bg-rose rounded-xl flex items-center justify-center flex-shrink-0"><span>💄</span></div><div class="flex-1 text-xs"><p class="font-semibold">Son Môi Matte #Ruby Kiss</p><p class="text-gray-400">×1</p></div><p class="text-pink font-bold text-sm">185K</p></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 bg-rose rounded-xl flex items-center justify-center flex-shrink-0"><span>✨</span></div><div class="flex-1 text-xs"><p class="font-semibold">Cushion Glow Glass</p><p class="text-gray-400">×2</p></div><p class="text-pink font-bold text-sm">840K</p></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 bg-rose rounded-xl flex items-center justify-center flex-shrink-0"><span>👁️</span></div><div class="flex-1 text-xs"><p class="font-semibold">Mascara Lash Queen</p><p class="text-gray-400">×1</p></div><p class="text-pink font-bold text-sm">220K</p></div>
+        </div>
+        <div class="border-t border-pink/20 pt-4 space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính</span><span>1.245.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Giảm giá</span><span class="text-red-400">-124.500₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-pink font-semibold">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-pink/20 pt-4 flex justify-between font-bold text-lg mb-5"><span>Tổng</span><span class="text-pink">1.120.500₫</span></div>
+        <a href="payment.html" class="block w-full bg-pink text-white py-3.5 rounded-2xl font-bold text-center hover:bg-pink-dark transition text-sm">Tiếp Tục Thanh Toán →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-pink-light text-xs">© 2025 PinkBloom. Made with 💗</p></div></footer>
+</body>
+</html>

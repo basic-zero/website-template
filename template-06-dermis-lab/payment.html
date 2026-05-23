@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh Toán - Dermis Lab</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{clinic:'#003580',teal:'#00A896','clinic-dark':'#002060'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-clinic/10 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🔬</span><span class="font-bold text-xl text-clinic">Dermis<span class="text-teal">Lab</span></span></a>
+    <a href="order.html" class="text-clinic text-sm">← Quay Lại</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-2 text-xs text-gray-400 mb-8">
+    <span class="text-teal font-bold">✓ Giỏ hàng</span><span>›</span><span class="text-teal font-bold">✓ Đặt hàng</span><span>›</span><span class="font-bold text-clinic">3. Thanh toán</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-clinic mb-5">Phương Thức Thanh Toán</h2>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 p-4 border-2 border-clinic rounded-xl cursor-pointer bg-clinic/5" onclick="showCard(true)">
+            <input type="radio" name="pay" checked class="accent-clinic"/><span>💳</span><div><p class="font-semibold text-sm">Thẻ Tín Dụng / Ghi Nợ</p><p class="text-gray-400 text-xs">Thanh toán bảo mật</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-clinic/30 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-clinic"/><span>📱</span><div><p class="font-semibold text-sm">Ví MoMo / ZaloPay</p><p class="text-gray-400 text-xs">Quét QR code</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-clinic/30 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-clinic"/><span>🏦</span><div><p class="font-semibold text-sm">Chuyển Khoản Ngân Hàng</p><p class="text-gray-400 text-xs">Thông tin sẽ gửi qua email</p></div>
+          </label>
+          <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-clinic/30 transition" onclick="showCard(false)">
+            <input type="radio" name="pay" class="accent-clinic"/><span>💵</span><div><p class="font-semibold text-sm">COD - Thu Tiền Khi Nhận</p><p class="text-gray-400 text-xs">Không phụ thu</p></div>
+          </label>
+        </div>
+        <div id="card-form" class="mt-5 space-y-4 p-4 bg-gray-50 rounded-xl border border-clinic/10">
+          <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Số Thẻ</label><input type="text" placeholder="0000 0000 0000 0000" class="w-full bg-white border border-clinic/20 focus:border-clinic rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Tên Chủ Thẻ</label><input type="text" placeholder="NGUYEN VAN AN" class="w-full bg-white border border-clinic/20 focus:border-clinic rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-teal text-xs font-semibold uppercase block mb-1">Hết Hạn</label><input type="text" placeholder="MM/YY" class="w-full bg-white border border-clinic/20 focus:border-clinic rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-teal text-xs font-semibold uppercase block mb-1">CVV</label><input type="text" placeholder="***" class="w-full bg-white border border-clinic/20 focus:border-clinic rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-clinic mb-3">Địa Chỉ Giao Hàng</h2>
+        <div class="flex justify-between items-start">
+          <div><p class="font-semibold">Nguyễn Văn An</p><p class="text-gray-500 text-sm">0921 234 567</p><p class="text-gray-600 text-sm mt-1">15 Tràng Tiền, P. Tràng Tiền, Q. Hoàn Kiếm, Hà Nội</p></div>
+          <a href="order.html" class="text-clinic text-xs font-semibold">Đổi</a>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-xl p-6 shadow-sm sticky top-24 border border-gray-100">
+        <h2 class="font-bold text-clinic mb-4">Tổng Kết</h2>
+        <div class="space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Retinol 0.3%</span><span>680.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vitamin C 20%</span><span>750.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-teal">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-clinic/10 pt-4 flex justify-between font-bold text-xl mb-5"><span>Tổng</span><span class="text-clinic">1.430.000₫</span></div>
+        <p class="text-teal text-xs mb-4">🔬 Bạn sẽ tích được 1.430 Lab Points từ đơn này</p>
+        <button onclick="window.location.href='orders.html'" class="w-full bg-clinic text-white py-3.5 rounded-xl font-bold hover:bg-clinic-dark transition text-sm">Xác Nhận Đặt Hàng 🔬</button>
+        <div class="mt-4 flex justify-center gap-4 text-xs text-gray-400"><span>🔒 SSL</span><span>✓ PCI DSS</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-clinic text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-teal text-xs">© 2025 Dermis Lab.</p></div></footer>
+<script>function showCard(show){document.getElementById('card-form').classList.toggle('hidden',!show);}</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đặt Hàng - Gentleman's Care</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{charcoal:'#1C2233','charcoal-dark':'#0F1520',copper:'#B87333','copper-dark':'#966030',offwhite:'#F4F1EE'}}}}</script>
+</head>
+<body class="bg-offwhite font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-charcoal border-b border-white/10 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-xl">⚔️</span><span class="font-bold text-xl tracking-widest text-white">GENTLEMAN'S<span class="text-copper"> CARE</span></span></a>
+    <a href="cart.html" class="text-copper text-sm tracking-wider font-semibold">← GIỎ HÀNG</a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-2 text-xs text-gray-400 mb-8 tracking-wider">
+    <span class="text-copper font-bold">✓ GIỎ HÀNG</span><span>›</span><span class="font-bold text-charcoal">2. ĐẶT HÀNG</span><span>›</span><span>3. THANH TOÁN</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-6">
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-charcoal mb-5 tracking-wider">THÔNG TIN GIAO HÀNG</h2>
+        <div class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Họ</label><input type="text" placeholder="Nguyễn" class="w-full bg-offwhite border border-gray-200 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Tên</label><input type="text" placeholder="Văn Mạnh" class="w-full bg-offwhite border border-gray-200 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          </div>
+          <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Email</label><input type="email" placeholder="vanmanh@email.com" class="w-full bg-offwhite border border-gray-200 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Số Điện Thoại</label><input type="tel" placeholder="0934 567 890" class="w-full bg-offwhite border border-gray-200 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Địa Chỉ</label><input type="text" placeholder="Số nhà, tên đường" class="w-full bg-offwhite border border-gray-200 focus:border-copper rounded-lg px-4 py-2.5 text-sm outline-none"/></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Tỉnh/Thành</label><select class="w-full bg-offwhite border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none"><option>Hà Nội</option><option>TP. HCM</option></select></div>
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Quận/Huyện</label><select class="w-full bg-offwhite border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none"><option>Hoàn Kiếm</option><option>Ba Đình</option></select></div>
+            <div><label class="text-copper text-xs font-semibold uppercase tracking-wider block mb-1">Phường/Xã</label><select class="w-full bg-offwhite border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none"><option>P. Tràng Tiền</option></select></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-bold text-charcoal mb-4 tracking-wider">PHƯƠNG THỨC VẬN CHUYỂN</h2>
+        <div class="space-y-3">
+          <label class="flex items-center justify-between p-4 border-2 border-charcoal rounded-xl cursor-pointer bg-charcoal/5">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" checked class="accent-charcoal"/><div><p class="font-semibold text-sm tracking-wider">GIAO HÀNG TIÊU CHUẨN</p><p class="text-gray-400 text-xs">2-3 ngày làm việc · GHN</p></div></div>
+            <span class="text-copper font-bold text-sm">Miễn phí</span>
+          </label>
+          <label class="flex items-center justify-between p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-copper/30 transition">
+            <div class="flex items-center gap-3"><input type="radio" name="ship" class="accent-charcoal"/><div><p class="font-semibold text-sm tracking-wider">GIAO NHANH EXPRESS</p><p class="text-gray-400 text-xs">Trong ngày (Hà Nội, TP.HCM)</p></div></div>
+            <span class="font-bold text-sm">40.000₫</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-xl p-6 shadow-sm sticky top-24 border border-gray-100">
+        <h2 class="font-bold text-charcoal mb-4 tracking-wider">ĐƠN HÀNG</h2>
+        <div class="space-y-3 mb-4">
+          <div class="flex items-center gap-3"><div class="w-10 h-10 bg-charcoal rounded-lg flex items-center justify-center"><span class="text-sm opacity-40">🪒</span></div><div class="flex-1 text-xs"><p class="font-semibold">Beard Oil Premium Cedar</p><p class="text-gray-400">30ml ×1</p></div><p class="text-charcoal font-bold text-sm">420K</p></div>
+          <div class="flex items-center gap-3"><div class="w-10 h-10 bg-copper/20 rounded-lg flex items-center justify-center"><span class="text-sm opacity-40">🧴</span></div><div class="flex-1 text-xs"><p class="font-semibold">Daily Moisturizer SPF 30</p><p class="text-gray-400">50ml ×1</p></div><p class="text-charcoal font-bold text-sm">380K</p></div>
+        </div>
+        <div class="border-t border-gray-200 pt-4 space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính</span><span>800.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-copper font-semibold">Miễn phí</span></div>
+        </div>
+        <div class="border-t border-gray-200 pt-4 flex justify-between font-bold text-lg mb-5"><span>Tổng</span><span class="text-charcoal">800.000₫</span></div>
+        <a href="payment.html" class="block w-full bg-charcoal text-white py-3.5 rounded-lg font-bold text-center hover:bg-charcoal-dark transition text-sm tracking-wider">TIẾP TỤC →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-charcoal text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-copper/60 text-xs tracking-wider">© 2025 Gentleman's Care.</p></div></footer>
+</body>
+</html>

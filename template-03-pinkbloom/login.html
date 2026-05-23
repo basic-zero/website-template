@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng Nhập - PinkBloom</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{pink:'#FF1493','pink-dark':'#C71585','pink-light':'#FFB6C1',rose:'#FFE4E8','dark':'#1a1a2e'}}}}</script>
+</head>
+<body class="bg-rose min-h-screen flex flex-col font-sans">
+<nav class="bg-white border-b border-pink/20 py-4 px-6 flex items-center justify-between">
+  <a href="index.html" class="flex items-center gap-2"><span class="text-2xl">🌸</span><span class="font-bold text-xl text-dark">Pink<span class="text-pink">Bloom</span></span></a>
+  <a href="index.html" class="text-pink text-sm hover:text-pink-dark">← Trang Chủ</a>
+</nav>
+<div class="flex-1 flex items-center justify-center px-4 py-12">
+  <div class="w-full max-w-md">
+    <div class="text-center mb-8"><span class="text-5xl">💗</span><h1 class="text-2xl font-bold text-dark mt-3">Chào Beauty!</h1><p class="text-gray-500 text-sm mt-1">Đăng nhập để tiếp tục hành trình làm đẹp</p></div>
+    <div class="flex rounded-2xl overflow-hidden border border-pink/30 mb-8">
+      <button id="tab-login" onclick="switchTab('login')" class="flex-1 py-3 text-sm font-semibold bg-pink text-white">Đăng Nhập</button>
+      <button id="tab-reg" onclick="switchTab('reg')" class="flex-1 py-3 text-sm font-semibold text-gray-500 hover:text-pink transition">Đăng Ký</button>
+    </div>
+    <div id="form-login" class="bg-white rounded-2xl p-8 shadow-sm space-y-4">
+      <div><label class="text-pink text-xs font-semibold uppercase tracking-wide block mb-2">Email *</label><input type="email" placeholder="email@example.com" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div><label class="text-pink text-xs font-semibold uppercase tracking-wide block mb-2">Mật Khẩu *</label><input type="password" placeholder="••••••••" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div class="flex justify-between items-center"><label class="flex items-center gap-2 text-sm text-gray-500 cursor-pointer"><input type="checkbox" class="accent-pink"/>Ghi nhớ đăng nhập</label><a href="#" class="text-pink text-xs hover:text-pink-dark">Quên mật khẩu?</a></div>
+      <a href="profile.html" class="block w-full bg-pink text-white py-3 rounded-xl font-bold text-center hover:bg-pink-dark transition">Đăng Nhập 💗</a>
+      <div class="relative"><div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200"></div></div><div class="relative flex justify-center"><span class="bg-white px-3 text-gray-400 text-xs">hoặc</span></div></div>
+      <div class="grid grid-cols-2 gap-3">
+        <button class="border border-gray-200 rounded-xl py-2.5 text-sm text-gray-600 hover:border-pink transition flex items-center justify-center gap-2">🔵 Google</button>
+        <button class="border border-gray-200 rounded-xl py-2.5 text-sm text-gray-600 hover:border-pink transition flex items-center justify-center gap-2">🔷 Facebook</button>
+      </div>
+    </div>
+    <div id="form-reg" class="hidden bg-white rounded-2xl p-8 shadow-sm space-y-4">
+      <div class="grid grid-cols-2 gap-3">
+        <div><label class="text-pink text-xs font-semibold uppercase tracking-wide block mb-2">Họ *</label><input type="text" placeholder="Lê Thị" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-3 text-sm outline-none"/></div>
+        <div><label class="text-pink text-xs font-semibold uppercase tracking-wide block mb-2">Tên *</label><input type="text" placeholder="Bảo Trân" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      </div>
+      <div><label class="text-pink text-xs font-semibold uppercase tracking-wide block mb-2">Email *</label><input type="email" placeholder="email@example.com" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div><label class="text-pink text-xs font-semibold uppercase tracking-wide block mb-2">Số Điện Thoại</label><input type="tel" placeholder="0901 234 567" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div><label class="text-pink text-xs font-semibold uppercase tracking-wide block mb-2">Ngày Sinh</label><input type="date" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <div><label class="text-pink text-xs font-semibold uppercase tracking-wide block mb-2">Mật Khẩu *</label><input type="password" placeholder="Tối thiểu 8 ký tự" class="w-full bg-rose border border-pink/30 focus:border-pink rounded-xl px-4 py-3 text-sm outline-none"/></div>
+      <label class="flex items-start gap-2 cursor-pointer"><input type="checkbox" class="accent-pink mt-1"/><span class="text-xs text-gray-500">Tôi đồng ý với <a href="#" class="text-pink">Điều khoản dịch vụ</a> và muốn nhận beauty tips từ PinkBloom</span></label>
+      <a href="profile.html" class="block w-full bg-pink text-white py-3 rounded-xl font-bold text-center hover:bg-pink-dark transition">Tạo Tài Khoản 💗</a>
+    </div>
+    <div class="mt-8 bg-white rounded-2xl p-5 shadow-sm">
+      <p class="text-pink text-xs font-semibold uppercase tracking-wide mb-3">Đặc Quyền Thành Viên PinkBloom 💗</p>
+      <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+        <div class="flex items-center gap-2">💗 Tích Pink Points mỗi đơn</div>
+        <div class="flex items-center gap-2">🎁 Quà sinh nhật xinh</div>
+        <div class="flex items-center gap-2">💌 Beauty tips hàng tuần</div>
+        <div class="flex items-center gap-2">🏷️ Deal members only</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function switchTab(t){
+  document.getElementById('form-login').classList.toggle('hidden',t!=='login');
+  document.getElementById('form-reg').classList.toggle('hidden',t!=='reg');
+  document.getElementById('tab-login').className=t==='login'?'flex-1 py-3 text-sm font-semibold bg-pink text-white':'flex-1 py-3 text-sm font-semibold text-gray-500';
+  document.getElementById('tab-reg').className=t==='reg'?'flex-1 py-3 text-sm font-semibold bg-pink text-white':'flex-1 py-3 text-sm font-semibold text-gray-500';
+}
+</script>
+</body>
+</html>

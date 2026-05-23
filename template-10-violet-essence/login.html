@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Đăng Nhập - Violet Essence</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{violet:'#4A0072','violet-light':'#7B2FA8',lavender:'#9F7AEA','lavender-light':'#C4B5FD',gold:'#D4AF37','gold-light':'#F0D070',rosegold:'#C9897C','bg-light':'#FAF8FF'}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>.font-serif{font-family:'Cormorant Garamond',serif}body{font-family:'Montserrat',sans-serif}</style>
+</head>
+<body class="bg-bg-light min-h-screen">
+<div class="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+  <!-- Left panel -->
+  <div class="hidden lg:flex flex-col justify-between bg-gradient-to-b from-violet to-violet-light p-12 text-white">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-3xl">💜</span><span class="font-serif text-2xl tracking-widest">VIOLET<span class="text-gold"> ESSENCE</span></span></a>
+    <div>
+      <p class="text-lavender-light tracking-[0.3em] text-xs uppercase mb-4">— Collection 2025 —</p>
+      <h2 class="font-serif text-5xl leading-tight mb-6">Chào Mừng<br/>Trở Về<br/><em class="text-gold">Thế Giới Hương Thơm</em></h2>
+      <div class="space-y-3 mb-8">
+        <div class="flex items-center gap-3 bg-white/10 rounded-2xl px-4 py-3">
+          <span class="text-xl">💜</span>
+          <p class="text-sm">24 fragrances độc quyền — Floral, Oriental, Woody, Fresh</p>
+        </div>
+        <div class="flex items-center gap-3 bg-white/10 rounded-2xl px-4 py-3">
+          <span class="text-xl">✨</span>
+          <p class="text-sm">Tích điểm Violet Points — đổi quà và ưu đãi đặc biệt</p>
+        </div>
+        <div class="flex items-center gap-3 bg-white/10 rounded-2xl px-4 py-3">
+          <span class="text-xl">🎁</span>
+          <p class="text-sm">Gói quà cao cấp theo yêu cầu — hộp nhung tím + ribbon gold</p>
+        </div>
+        <div class="flex items-center gap-3 bg-white/10 rounded-2xl px-4 py-3">
+          <span class="text-xl">🚚</span>
+          <p class="text-sm">Miễn phí giao hàng toàn quốc — White-glove delivery</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white/10 rounded-2xl p-5 border border-lavender/30">
+      <p class="text-lavender-light text-sm italic leading-relaxed">"Violet Bloom là tình yêu sét đánh của tôi. Hương thơm mở đầu bằng violet tươi mát, rồi dần chuyển sang rose ấm áp — hoàn hảo cho mọi dịp."</p>
+      <p class="text-lavender-light/60 text-xs mt-2">— Linh Nguyễn, TP.HCM ★★★★★</p>
+    </div>
+  </div>
+  <!-- Right panel -->
+  <div class="flex flex-col justify-center px-6 py-12 md:px-12 lg:px-16">
+    <div class="lg:hidden flex items-center gap-2 mb-8"><span class="text-2xl">💜</span><span class="font-serif text-xl tracking-widest text-violet">VIOLET<span class="text-gold"> ESSENCE</span></span></div>
+    <!-- Tabs -->
+    <div class="flex border-b border-lavender/20 mb-8">
+      <button onclick="showTab('login')" id="tab-login" class="flex-1 py-3 text-sm tracking-widest uppercase font-medium text-violet border-b-2 border-violet">Đăng Nhập</button>
+      <button onclick="showTab('register')" id="tab-register" class="flex-1 py-3 text-sm tracking-widest uppercase text-gray-400 border-b-2 border-transparent hover:text-violet">Đăng Ký</button>
+    </div>
+    <!-- Login -->
+    <div id="form-login">
+      <h1 class="font-serif text-4xl text-violet mb-2">Bonjour 💜</h1>
+      <p class="text-gray-500 text-sm mb-6">Đăng nhập để tiếp tục hành trình hương thơm của bạn</p>
+      <div class="space-y-4">
+        <div><label class="text-xs tracking-widest uppercase text-gray-500 block mb-1">Email</label><input type="email" placeholder="email@example.com" class="w-full bg-bg-light border border-lavender/30 focus:border-violet rounded-xl px-4 py-3 text-sm outline-none"/></div>
+        <div><label class="text-xs tracking-widest uppercase text-gray-500 block mb-1">Mật Khẩu</label><input type="password" placeholder="••••••••" class="w-full bg-bg-light border border-lavender/30 focus:border-violet rounded-xl px-4 py-3 text-sm outline-none"/></div>
+        <div class="flex items-center justify-between text-xs"><label class="flex items-center gap-2 text-gray-500"><input type="checkbox" class="accent-violet"/> Ghi nhớ</label><a href="#" class="text-violet hover:text-violet-light tracking-wider">Quên mật khẩu?</a></div>
+        <button class="w-full bg-violet text-white py-4 tracking-widest uppercase text-sm hover:bg-violet-light transition">Đăng Nhập 💜</button>
+      </div>
+      <div class="flex items-center gap-3 my-5"><div class="flex-1 h-px bg-lavender/20"></div><span class="text-xs text-gray-400 tracking-wider">ou</span><div class="flex-1 h-px bg-lavender/20"></div></div>
+      <div class="space-y-3">
+        <button class="w-full flex items-center justify-center gap-3 bg-white border border-lavender/30 py-3 rounded-xl text-sm text-gray-600 hover:bg-bg-light transition">
+          <svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Tiếp tục với Google
+        </button>
+      </div>
+    </div>
+    <!-- Register -->
+    <div id="form-register" class="hidden">
+      <h1 class="font-serif text-4xl text-violet mb-2">Bienvenue 🌸</h1>
+      <p class="text-gray-500 text-sm mb-5">Gia nhập thế giới hương thơm Violet Essence</p>
+      <div class="bg-lavender/10 border border-lavender/30 rounded-2xl p-4 mb-5">
+        <p class="text-xs font-medium text-violet tracking-wider mb-1">✨ Quà Chào Mừng Thành Viên Mới</p>
+        <div class="text-xs text-gray-500 space-y-0.5">
+          <p>💜 1.000 Violet Points ngay khi đăng ký</p>
+          <p>🚚 Miễn phí vận chuyển cho đơn đầu tiên</p>
+          <p>🎁 Mini tester set 4 hương thơm (đơn từ 1.500.000₫)</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="text-xs tracking-widest uppercase text-gray-500 block mb-1">Họ</label><input type="text" placeholder="Nguyễn" class="w-full bg-bg-light border border-lavender/30 focus:border-violet rounded-xl px-4 py-3 text-sm outline-none"/></div>
+          <div><label class="text-xs tracking-widest uppercase text-gray-500 block mb-1">Tên</label><input type="text" placeholder="Thị Linh" class="w-full bg-bg-light border border-lavender/30 focus:border-violet rounded-xl px-4 py-3 text-sm outline-none"/></div>
+        </div>
+        <div><label class="text-xs tracking-widest uppercase text-gray-500 block mb-1">Email</label><input type="email" placeholder="email@example.com" class="w-full bg-bg-light border border-lavender/30 focus:border-violet rounded-xl px-4 py-3 text-sm outline-none"/></div>
+        <div><label class="text-xs tracking-widest uppercase text-gray-500 block mb-1">Điện Thoại</label><input type="tel" placeholder="0901 234 567" class="w-full bg-bg-light border border-lavender/30 focus:border-violet rounded-xl px-4 py-3 text-sm outline-none"/></div>
+        <div><label class="text-xs tracking-widest uppercase text-gray-500 block mb-1">Gia Đình Hương Thơm Yêu Thích</label>
+          <select class="w-full bg-bg-light border border-lavender/30 focus:border-violet rounded-xl px-4 py-3 text-sm outline-none text-gray-500">
+            <option value="">Chọn gia đình hương thơm...</option>
+            <option>🌸 Floral — Hoa, lãng mạn</option><option>🕌 Oriental — Huyền bí, bí ẩn</option><option>🌿 Woody — Ấm áp, sang trọng</option><option>💧 Fresh — Tươi mát, năng động</option>
+          </select>
+        </div>
+        <div><label class="text-xs tracking-widest uppercase text-gray-500 block mb-1">Mật Khẩu</label><input type="password" placeholder="Ít nhất 8 ký tự" class="w-full bg-bg-light border border-lavender/30 focus:border-violet rounded-xl px-4 py-3 text-sm outline-none"/></div>
+        <button class="w-full bg-violet text-white py-4 tracking-widest uppercase text-sm hover:bg-violet-light transition">Tạo Tài Khoản & Nhận Quà 💜</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function showTab(t){
+  document.getElementById('form-login').classList.toggle('hidden',t!=='login');
+  document.getElementById('form-register').classList.toggle('hidden',t!=='register');
+  document.getElementById('tab-login').className=t==='login'?'flex-1 py-3 text-sm tracking-widest uppercase font-medium text-violet border-b-2 border-violet':'flex-1 py-3 text-sm tracking-widest uppercase text-gray-400 border-b-2 border-transparent hover:text-violet';
+  document.getElementById('tab-register').className=t==='register'?'flex-1 py-3 text-sm tracking-widest uppercase font-medium text-violet border-b-2 border-violet':'flex-1 py-3 text-sm tracking-widest uppercase text-gray-400 border-b-2 border-transparent hover:text-violet';
+}
+</script>
+</body>
+</html>

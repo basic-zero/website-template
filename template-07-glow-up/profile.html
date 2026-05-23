@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồ Sơ - Glow Up</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E05555',purple:'#7C3AED',yellow:'#FFD93D',dark:'#0F0F0F'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-1"><span class="text-2xl">✨</span><span class="font-black text-xl text-dark">Glow<span class="text-coral">Up</span></span></a>
+    <a href="cart.html" class="relative text-gray-600 hover:text-coral"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1">
+      <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+        <div class="bg-gradient-to-br from-yellow via-coral to-purple p-5 text-center">
+          <div class="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-2 text-2xl font-black text-white">N</div>
+          <p class="font-black text-white">Nguyễn Ngọc Anh</p>
+          <p class="text-white/70 text-xs mt-0.5">✨ Glow Member</p>
+        </div>
+        <div class="p-4 text-center bg-yellow/5 border-b border-gray-100">
+          <p class="text-2xl font-black text-coral">3.190</p>
+          <p class="text-xs text-gray-500 font-medium">Glow Points</p>
+          <div class="mt-2 bg-gray-200 rounded-full h-2"><div class="bg-coral h-2 rounded-full" style="width:64%"></div></div>
+          <p class="text-xs text-gray-400 mt-1">Còn 1.810 pts → Super Glow ⚡</p>
+        </div>
+        <nav class="p-3">
+          <a href="orders.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm"><span>📦</span>Đơn Hàng</a>
+          <a href="profile.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl bg-coral/10 text-coral font-black text-sm mt-1"><span>👤</span>Hồ Sơ</a>
+          <a href="addresses.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>📍</span>Địa Chỉ</a>
+          <a href="blog.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>✨</span>Vibe Blog</a>
+          <a href="login.html" class="flex items-center gap-3 px-3 py-2.5 rounded-2xl text-gray-600 hover:bg-gray-50 font-bold text-sm mt-1"><span>🚪</span>Đăng Xuất</a>
+        </nav>
+      </div>
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+        <p class="text-xs font-black text-gray-500 uppercase mb-3">Stats ✨</p>
+        <div class="space-y-2">
+          <div class="flex justify-between text-sm font-medium"><span class="text-gray-500">Tổng đơn</span><span class="font-black text-dark">8</span></div>
+          <div class="flex justify-between text-sm font-medium"><span class="text-gray-500">Glow Points</span><span class="font-black text-coral">3.190</span></div>
+          <div class="flex justify-between text-sm font-medium"><span class="text-gray-500">Reviews</span><span class="font-black text-dark">12</span></div>
+          <div class="flex justify-between text-sm font-medium"><span class="text-gray-500">Member từ</span><span class="text-gray-600">03/2024</span></div>
+        </div>
+      </div>
+    </aside>
+    <!-- Main -->
+    <div class="lg:col-span-3 space-y-6">
+      <!-- Glow Card -->
+      <div class="bg-gradient-to-r from-yellow via-coral to-purple rounded-3xl p-6 text-white relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-32 h-32 bg-white/10 rounded-full -translate-y-10 translate-x-10"></div>
+        <div class="relative z-10 flex justify-between items-start">
+          <div>
+            <p class="text-white/70 text-xs font-black uppercase tracking-widest mb-1">✨ Glow Member</p>
+            <p class="text-xl font-black">Nguyễn Ngọc Anh</p>
+            <p class="text-white/70 text-sm mt-1">Member từ tháng 03/2024</p>
+            <div class="mt-4">
+              <div class="flex items-baseline gap-2"><span class="text-3xl font-black">3.190</span><span class="text-white/70 text-sm">Glow Points</span></div>
+              <div class="mt-2 bg-white/30 rounded-full h-2 w-48"><div class="bg-white h-2 rounded-full" style="width:64%"></div></div>
+              <p class="text-xs text-white/70 mt-1">64% → Super Glow (5.000 pts)</p>
+            </div>
+          </div>
+          <div class="text-right"><span class="text-4xl">✨</span><p class="text-xs text-white/50 mt-1">Glow Up</p></div>
+        </div>
+      </div>
+      <!-- Profile info -->
+      <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-100">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="font-black text-dark">Thông Tin Cá Nhân</h2>
+          <button id="edit-btn" onclick="toggleEdit()" class="text-coral text-sm font-black hover:text-coral-dark">✏️ Edit</button>
+        </div>
+        <div id="view-mode" class="grid grid-cols-2 gap-4 text-sm">
+          <div><p class="text-xs text-coral font-black uppercase mb-1">Họ Tên</p><p class="font-medium">Nguyễn Ngọc Anh</p></div>
+          <div><p class="text-xs text-coral font-black uppercase mb-1">Email</p><p class="font-medium">ngocanh@email.com</p></div>
+          <div><p class="text-xs text-coral font-black uppercase mb-1">Số ĐT</p><p class="font-medium">0912 345 678</p></div>
+          <div><p class="text-xs text-coral font-black uppercase mb-1">Ngày Sinh</p><p class="font-medium">20/10/2001</p></div>
+          <div><p class="text-xs text-coral font-black uppercase mb-1">Loại Da</p><p class="font-medium">Da dầu (Oily)</p></div>
+          <div><p class="text-xs text-coral font-black uppercase mb-1">Skin Goals</p><p class="font-medium">Glass skin, mờ thâm ✨</p></div>
+        </div>
+        <div id="edit-mode" class="hidden space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Họ</label><input type="text" value="Nguyễn" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Tên</label><input type="text" value="Ngọc Anh" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          </div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Email</label><input type="email" value="ngocanh@email.com" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Số ĐT</label><input type="tel" value="0912 345 678" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Ngày Sinh</label><input type="date" value="2001-10-20" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Loại Da</label>
+            <select class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium">
+              <option>Da thường</option><option selected>Da dầu (Oily)</option><option>Da khô</option><option>Da hỗn hợp</option><option>Da nhạy cảm</option>
+            </select>
+          </div>
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Skin Goals</label><input type="text" value="Glass skin, mờ thâm ✨" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          <div class="flex gap-3 pt-2">
+            <button onclick="cancelEdit()" class="flex-1 border-2 border-gray-200 text-gray-600 py-2.5 rounded-2xl text-sm font-black hover:bg-gray-50 transition">Hủy</button>
+            <button onclick="cancelEdit()" class="flex-1 bg-coral text-white py-2.5 rounded-2xl text-sm font-black hover:bg-coral-dark transition">Lưu ✨</button>
+          </div>
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-100">
+        <h2 class="font-black text-dark mb-4">Đổi Mật Khẩu 🔒</h2>
+        <div class="space-y-4">
+          <div><label class="text-coral text-xs font-black uppercase block mb-1">Mật Khẩu Hiện Tại</label><input type="password" placeholder="••••••••" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Mật Khẩu Mới</label><input type="password" placeholder="••••••••" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+            <div><label class="text-coral text-xs font-black uppercase block mb-1">Xác Nhận</label><input type="password" placeholder="••••••••" class="w-full bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-3 py-2.5 text-sm outline-none font-medium"/></div>
+          </div>
+          <button class="bg-coral text-white px-6 py-2.5 rounded-2xl text-sm font-black hover:bg-coral-dark transition">Cập Nhật</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8 mt-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-500 text-xs">© 2025 Glow Up Beauty. Stay glowing ✨</p></div></footer>
+<script>
+function toggleEdit(){
+  const e=document.getElementById('edit-mode'),v=document.getElementById('view-mode'),b=document.getElementById('edit-btn');
+  const isEditing=!e.classList.contains('hidden');
+  e.classList.toggle('hidden',isEditing);v.classList.toggle('hidden',!isEditing);
+  b.textContent=isEditing?'✏️ Edit':'';
+}
+function cancelEdit(){
+  document.getElementById('edit-mode').classList.add('hidden');
+  document.getElementById('view-mode').classList.remove('hidden');
+  document.getElementById('edit-btn').textContent='✏️ Edit';
+}
+</script>
+</body>
+</html>

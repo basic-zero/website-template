@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giỏ Hàng - Glow Up</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{coral:'#FF6B6B','coral-dark':'#E05555',purple:'#7C3AED',yellow:'#FFD93D',dark:'#0F0F0F'}}}}</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-1"><span class="text-2xl">✨</span><span class="font-black text-xl text-dark">Glow<span class="text-coral">Up</span></span></a>
+    <div class="flex items-center gap-3"><a href="login.html" class="text-gray-500 hover:text-coral"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a><a href="cart.html" class="relative text-coral"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg><span class="absolute -top-2 -right-2 bg-coral text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a></div>
+  </div>
+</nav>
+<div class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+  <div class="flex items-center gap-2 text-xs text-gray-400 mb-8">
+    <span class="font-bold text-coral">1. Giỏ hàng</span><span>›</span><span>2. Đặt hàng</span><span>›</span><span>3. Thanh toán</span>
+  </div>
+  <h1 class="text-2xl font-black text-dark mb-6">Giỏ Hàng 🛒</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 space-y-4">
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4 border border-gray-100">
+        <div class="w-20 h-20 bg-yellow/20 rounded-2xl flex items-center justify-center flex-shrink-0"><span class="text-3xl">🌟</span></div>
+        <div class="flex-1"><p class="text-xs text-coral uppercase font-bold">Serum</p><p class="font-black text-dark">Glow Serum Vitamin C 15%</p><p class="text-gray-400 text-sm">30ml × 1</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-black text-coral">490.000₫</p>
+          <div class="flex items-center gap-2 border-2 border-gray-200 rounded-xl px-3 py-1"><button class="text-coral font-black">−</button><span class="w-6 text-center text-sm font-bold">1</span><button class="text-coral font-black">+</button></div>
+          <button class="text-gray-400 text-xs hover:text-red-400">Xóa</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4 border border-gray-100">
+        <div class="w-20 h-20 bg-purple/10 rounded-2xl flex items-center justify-center flex-shrink-0"><span class="text-3xl">💜</span></div>
+        <div class="flex-1"><p class="text-xs text-purple uppercase font-bold">Moisturizer</p><p class="font-black text-dark">Hydra Barrier Cream</p><p class="text-gray-400 text-sm">50ml × 1</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-black text-coral">380.000₫</p>
+          <div class="flex items-center gap-2 border-2 border-gray-200 rounded-xl px-3 py-1"><button class="text-coral font-black">−</button><span class="w-6 text-center text-sm font-bold">1</span><button class="text-coral font-black">+</button></div>
+          <button class="text-gray-400 text-xs hover:text-red-400">Xóa</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4 border border-gray-100">
+        <div class="w-20 h-20 bg-coral/10 rounded-2xl flex items-center justify-center flex-shrink-0"><span class="text-3xl">☀️</span></div>
+        <div class="flex-1"><p class="text-xs text-coral uppercase font-bold">Sunscreen</p><p class="font-black text-dark">SPF 50+ Invisible Shield</p><p class="text-gray-400 text-sm">50ml × 1</p></div>
+        <div class="flex flex-col items-end gap-2">
+          <p class="font-black text-coral">320.000₫</p>
+          <div class="flex items-center gap-2 border-2 border-gray-200 rounded-xl px-3 py-1"><button class="text-coral font-black">−</button><span class="w-6 text-center text-sm font-bold">1</span><button class="text-coral font-black">+</button></div>
+          <button class="text-gray-400 text-xs hover:text-red-400">Xóa</button>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <p class="font-bold text-sm text-dark mb-3">💰 Mã Giảm Giá</p>
+        <div class="flex gap-2"><input type="text" placeholder="GLOWUP20..." class="flex-1 bg-gray-50 border-2 border-gray-200 focus:border-coral rounded-xl px-4 py-2.5 text-sm outline-none font-semibold"/><button class="bg-coral text-white px-5 py-2.5 rounded-xl text-sm font-black hover:bg-coral-dark transition">Áp Dụng</button></div>
+      </div>
+    </div>
+    <div class="lg:col-span-1">
+      <div class="bg-white rounded-2xl p-6 shadow-sm sticky top-24 border border-gray-100">
+        <h2 class="font-black text-dark mb-4">Tổng Đơn</h2>
+        <div class="space-y-3 text-sm mb-4">
+          <div class="flex justify-between"><span class="text-gray-500">Tạm tính</span><span class="font-bold">1.190.000₫</span></div>
+          <div class="flex justify-between"><span class="text-gray-500">Vận chuyển</span><span class="text-coral font-bold">Miễn phí</span></div>
+          <div class="flex justify-between text-coral"><span class="font-bold">Glow Points</span><span class="font-bold">+1.190 pts</span></div>
+        </div>
+        <div class="border-t-2 border-gray-100 pt-4 flex justify-between font-black text-lg mb-5"><span>Tổng</span><span class="text-coral">1.190.000₫</span></div>
+        <a href="order.html" class="block w-full bg-coral text-white py-4 rounded-2xl font-black text-center hover:bg-coral-dark transition">Đặt Hàng →</a>
+        <a href="products.html" class="block text-center text-coral font-semibold text-sm mt-3">← Tiếp tục mua sắm</a>
+        <div class="mt-4 pt-4 border-t border-gray-100 space-y-1 text-xs text-gray-400">
+          <p>✨ Sản phẩm chính hãng 100%</p><p>🚚 Giao nhanh 2-3 ngày</p><p>↩️ Đổi trả 30 ngày</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-8"><div class="max-w-7xl mx-auto px-4 text-center"><p class="text-gray-500 text-xs">© 2025 Glow Up Beauty. Stay glowing ✨</p></div></footer>
+</body>
+</html>

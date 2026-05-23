@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal - Gentleman's Care</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{charcoal:'#1C2233','charcoal-dark':'#0F1520',copper:'#B87333','copper-dark':'#966030',offwhite:'#F4F1EE'}}}}</script>
+</head>
+<body class="bg-offwhite font-sans">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-charcoal border-b border-white/10 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><span class="text-xl">⚔️</span><span class="font-bold text-xl tracking-widest text-white">GENTLEMAN'S<span class="text-copper"> CARE</span></span></a>
+    <div class="hidden md:flex items-center gap-8 text-sm"><a href="index.html" class="text-gray-400 hover:text-copper tracking-wider">HOME</a><a href="products.html" class="text-gray-400 hover:text-copper tracking-wider">SHOP</a><a href="blog.html" class="text-copper font-semibold tracking-wider">JOURNAL</a></div>
+    <div class="flex items-center gap-3"><a href="login.html" class="text-gray-400 hover:text-copper"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></a><a href="cart.html" class="relative text-gray-400 hover:text-copper"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></a></div>
+  </div>
+</nav>
+<section class="pt-24 pb-16 bg-charcoal text-white text-center">
+  <p class="text-copper text-xs tracking-widest uppercase font-semibold mb-3">The Gentleman's Journal</p>
+  <h1 class="text-4xl font-bold tracking-wider mb-3">Grooming Intelligence</h1>
+  <p class="text-gray-400 max-w-lg mx-auto text-sm">Hướng dẫn grooming, phong cách sống và bí quyết chăm sóc bản thân dành riêng cho quý ông hiện đại</p>
+</section>
+<div class="max-w-7xl mx-auto px-4 py-12">
+  <div class="flex flex-col md:flex-row gap-4 mb-10">
+    <div class="relative flex-1 max-w-md"><input type="text" placeholder="Tìm bài viết..." class="w-full bg-white border border-gray-200 focus:border-copper rounded-lg px-4 py-3 pl-10 text-sm outline-none"/><svg class="absolute left-3 top-3.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></div>
+    <div class="flex flex-wrap gap-2">
+      <button class="bg-charcoal text-white px-4 py-2 rounded-lg text-xs font-semibold tracking-wider">TẤT CẢ</button>
+      <button class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-lg text-xs tracking-wider hover:border-copper transition">BEARD</button>
+      <button class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-lg text-xs tracking-wider hover:border-copper transition">SKINCARE</button>
+      <button class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-lg text-xs tracking-wider hover:border-copper transition">LIFESTYLE</button>
+      <button class="bg-white border border-gray-200 text-gray-600 px-4 py-2 rounded-lg text-xs tracking-wider hover:border-copper transition">STYLE</button>
+    </div>
+  </div>
+  <!-- Featured -->
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-12 group hover:shadow-md transition border border-gray-100">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="aspect-video lg:aspect-auto bg-charcoal flex items-center justify-center min-h-64"><span class="text-8xl opacity-10">🧔</span></div>
+      <div class="p-10 flex flex-col justify-center">
+        <div class="flex items-center gap-3 mb-3"><span class="bg-copper text-white text-xs px-3 py-1 rounded font-semibold tracking-wider">FEATURED</span><span class="text-gray-400 text-xs">10 tháng 5, 2025</span></div>
+        <span class="border border-copper text-copper text-xs px-3 py-1 rounded w-fit mb-3 tracking-wider">BEARD CARE</span>
+        <h2 class="text-2xl font-bold mb-4 group-hover:text-copper transition text-charcoal tracking-wide"><a href="blog-post.html">Hướng Dẫn Nuôi Râu Toàn Diện: Từ Stubble Đến Full Beard</a></h2>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6">Nuôi râu không chỉ là dừng cạo. Đây là lộ trình đầy đủ từ 3 ngày đến 3 tháng — chăm sóc, tạo hình và giữ bộ râu trong tình trạng tốt nhất...</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-copper rounded-full flex items-center justify-center text-white font-bold text-sm">M</div>
+            <div><p class="text-sm font-semibold">Minh Tuấn</p><p class="text-gray-400 text-xs">Grooming Expert · 8 năm kinh nghiệm</p></div>
+          </div>
+          <a href="blog-post.html" class="text-charcoal font-semibold text-sm hover:text-copper transition tracking-wider">ĐỌC →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <article class="bg-white rounded-xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-charcoal/80 flex items-center justify-center"><span class="text-5xl opacity-20">🧴</span></div>
+      <div class="p-5"><span class="border border-copper text-copper text-xs px-2 py-0.5 rounded tracking-wider">SKINCARE</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-copper transition tracking-wide"><a href="blog-post.html">Skincare Cho Nam: Đơn Giản Nhưng Không Thể Bỏ Qua</a></h3><p class="text-gray-500 text-sm mb-3">5 bước cơ bản mà mọi quý ông nên biết. Không phức tạp, không mất thời gian — hiệu quả thật sự...</p><div class="flex justify-between text-xs text-gray-400 tracking-wider"><span>05/05/2025 · 6 phút</span><a href="blog-post.html" class="text-charcoal hover:text-copper font-semibold">ĐỌC →</a></div></div>
+    </article>
+    <article class="bg-white rounded-xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-copper/20 flex items-center justify-center"><span class="text-5xl opacity-40">💈</span></div>
+      <div class="p-5"><span class="border border-copper text-copper text-xs px-2 py-0.5 rounded tracking-wider">HAIR</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-copper transition tracking-wide"><a href="blog-post.html">Các Kiểu Tóc Nam Trendy 2025: Textured Crop, Mid Fade & More</a></h3><p class="text-gray-500 text-sm mb-3">Xu hướng tóc nam năm nay nghiêng về textured, tự nhiên và dễ tạo kiểu. Đây là top 5 kiểu bạn nên thử...</p><div class="flex justify-between text-xs text-gray-400 tracking-wider"><span>28/04/2025 · 5 phút</span><a href="blog-post.html" class="text-charcoal hover:text-copper font-semibold">ĐỌC →</a></div></div>
+    </article>
+    <article class="bg-white rounded-xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-charcoal/60 flex items-center justify-center"><span class="text-5xl opacity-20">👔</span></div>
+      <div class="p-5"><span class="border border-copper text-copper text-xs px-2 py-0.5 rounded tracking-wider">LIFESTYLE</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-copper transition tracking-wide"><a href="blog-post.html">Morning Routine Của Người Thành Công: 7 Thói Quen Vàng</a></h3><p class="text-gray-500 text-sm mb-3">Buổi sáng quyết định cả ngày. Đây là quy trình được nhiều CEO và chuyên gia thực hiện để bắt đầu ngày mới đúng cách...</p><div class="flex justify-between text-xs text-gray-400 tracking-wider"><span>20/04/2025 · 8 phút</span><a href="blog-post.html" class="text-charcoal hover:text-copper font-semibold">ĐỌC →</a></div></div>
+    </article>
+    <article class="bg-white rounded-xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-copper/10 flex items-center justify-center"><span class="text-5xl opacity-40">🪒</span></div>
+      <div class="p-5"><span class="border border-copper text-copper text-xs px-2 py-0.5 rounded tracking-wider">BEARD</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-copper transition tracking-wide"><a href="blog-post.html">Wet Shave vs Dry Shave: Cái Nào Tốt Hơn Cho Da Nhạy Cảm?</a></h3><p class="text-gray-500 text-sm mb-3">Dao cạo thẳng, safety razor hay máy điện? Phân tích ưu nhược điểm từng loại và lựa chọn phù hợp...</p><div class="flex justify-between text-xs text-gray-400 tracking-wider"><span>14/04/2025 · 7 phút</span><a href="blog-post.html" class="text-charcoal hover:text-copper font-semibold">ĐỌC →</a></div></div>
+    </article>
+    <article class="bg-white rounded-xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-charcoal/40 flex items-center justify-center"><span class="text-5xl opacity-20">🌲</span></div>
+      <div class="p-5"><span class="border border-copper text-copper text-xs px-2 py-0.5 rounded tracking-wider">LIFESTYLE</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-copper transition tracking-wide"><a href="blog-post.html">Nước Hoa Nam 2025: Hương Gỗ Nào Đang Thống Trị?</a></h3><p class="text-gray-500 text-sm mb-3">Cedar, sandalwood, oud, vetiver — hướng dẫn chọn nước hoa phù hợp với cá tính và dịp sử dụng...</p><div class="flex justify-between text-xs text-gray-400 tracking-wider"><span>07/04/2025 · 6 phút</span><a href="blog-post.html" class="text-charcoal hover:text-copper font-semibold">ĐỌC →</a></div></div>
+    </article>
+    <article class="bg-white rounded-xl overflow-hidden group hover:shadow-md transition border border-gray-100">
+      <div class="aspect-video bg-copper/15 flex items-center justify-center"><span class="text-5xl opacity-40">💪</span></div>
+      <div class="p-5"><span class="border border-copper text-copper text-xs px-2 py-0.5 rounded tracking-wider">STYLE</span><h3 class="font-bold text-base mt-3 mb-2 group-hover:text-copper transition tracking-wide"><a href="blog-post.html">Dress Code Công Sở 2025: Business Casual Không Còn Nhàm Chán</a></h3><p class="text-gray-500 text-sm mb-3">Từ smart casual đến business formal — cách xây dựng tủ đồ công sở versatile với ngân sách hợp lý...</p><div class="flex justify-between text-xs text-gray-400 tracking-wider"><span>01/04/2025 · 9 phút</span><a href="blog-post.html" class="text-charcoal hover:text-copper font-semibold">ĐỌC →</a></div></div>
+    </article>
+  </div>
+  <div class="flex justify-center gap-2 mt-10">
+    <button class="w-10 h-10 bg-charcoal text-white rounded-full font-bold text-sm">1</button>
+    <button class="w-10 h-10 bg-white border border-gray-200 text-gray-600 rounded-full text-sm hover:border-copper transition">2</button>
+    <button class="w-10 h-10 bg-white border border-gray-200 text-gray-600 rounded-full text-sm hover:border-copper transition">3</button>
+  </div>
+</div>
+<footer class="bg-charcoal text-white py-10 mt-12"><div class="max-w-7xl mx-auto px-4 text-center"><div class="flex items-center justify-center gap-2 mb-3"><span class="text-xl">⚔️</span><span class="font-bold tracking-widest">GENTLEMAN'S<span class="text-copper"> CARE</span></span></div><p class="text-copper/60 text-xs tracking-wider">© 2025 Gentleman's Care. Crafted for the Modern Man.</p></div></footer>
+</body>
+</html>
